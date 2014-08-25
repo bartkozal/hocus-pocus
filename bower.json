@@ -1,0 +1,24 @@
+{
+  "name": "hocus-pocus",
+  "version": "0.1.0.dev",
+  "homepage": "https://github.com/bkzl/hocus-pocus",
+  "authors": [
+    "Bartlomiej Kozal <bkzl@me.com>"
+  ],
+  "description": "Design-free SASS micro framework",
+  "main": "hocus-pocus.sass",
+  "keywords": [
+    "css",
+    "sass",
+    "framework"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
+
