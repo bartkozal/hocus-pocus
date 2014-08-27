@@ -12,6 +12,10 @@ The easiest way to install it is using Bower:
 $ bower install hocus-pocus
 ```
 
+## Principles
+
+1. Use [autoprefixer](https://github.com/postcss/autoprefixer)/[autoprefixer-rails](https://github.com/ai/autoprefixer-rails)
+
 ## Contributing
 
 [Add a new issue](https://github.com/bkzl/hocus-pocus/issues) for bugs and ideas.
