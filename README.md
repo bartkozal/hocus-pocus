@@ -1,12 +1,10 @@
 # Hocus-Pocus
 
-Hocus-Pocus is a simple, design-free SASS micro framework ideal as a stylesheets starter kit. I chose the best parts of libraries like [inuit.css](https://github.com/inuitcss) or [mvcss](http://mvcss.github.io) and mixed them with my own ideas.
+Hocus-Pocus is a simple, design-free SASS micro framework, ideal as a starter kit for stylesheets. I chose my favourite parts of libraries like [inuit.css](https://github.com/inuitcss) or [mvcss](http://mvcss.github.io) and mixed them with my own ideas.
 
 ## Usage
 
-Hocus-Pocus requires [SASS](http://sass-lang.com).
-
-The easiest way to install it is using Bower:
+Hocus-Pocus requires [SASS](http://sass-lang.com). To install it you can use bower:
 
 ```shell
 $ bower install hocus-pocus
@@ -14,7 +12,12 @@ $ bower install hocus-pocus
 
 ## Principles
 
-1. Use [autoprefixer](https://github.com/postcss/autoprefixer)/[autoprefixer-rails](https://github.com/ai/autoprefixer-rails)
+1. Use [autoprefixer](https://github.com/postcss/autoprefixer) or [autoprefixer-rails](https://github.com/ai/autoprefixer-rails)
+
+## Components
+
+1. Normalize
+2. Box-sizing global reset
 
 ## Contributing
 
