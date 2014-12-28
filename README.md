@@ -49,8 +49,11 @@ application.sass
 ```
 
 `core/` - All low-level sass files like functions, mixins, helpers and also the base styles (for html elements). Please check the source code of Hocus-Pocus to get the referance.
+
 `objects/` - Reusable abstractions and components of application specific elements f.e. `.meter` or `.price-box`.
+
 `inbox/` - Temporary styles, especially useful when you work with someone who isn't familiar with app's stylesheet.
+
 `application.sass` - Main file, use it only for imports.
 
 ## What is included?
