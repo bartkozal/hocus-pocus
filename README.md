@@ -2,13 +2,13 @@
 
 Hocus-Pocus is a simple, design-free [SASS][1] micro framework, ideal as a starter kit for stylesheets. I chose my favourite parts of concepts like [inuit.css][2], [SMACSS][3] or [mvcss][4] and mixed them with my own ideas.
 
-To install it use bower:
+To install Hocus-Pocus use Bower:
 
 ```shell
 $ bower install hocus-pocus
 ```
 
-Or [Rails Assets][5] if it's a Rails app:
+Or [Rails Assets][5] if you have a Rails app:
 
 ```rb
 # Gemfile
