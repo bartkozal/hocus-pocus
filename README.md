@@ -55,7 +55,7 @@ $hp-base-font-family: "Open Sans", sans-serif
 
   `application.sass` - Main file, use it only for imports
 
-3. Use syntax rules from [Mark's Otto Code Guide][8]
+3. Use syntax rules from [Mark Otto's Code Guide][8]
 4. Use the following name convenctions:
 
   ```html
@@ -77,15 +77,14 @@ $hp-base-font-family: "Open Sans", sans-serif
     <a class="btn is-btn-active"></a>
     <a class="btn is-btn-disabled"></a>
 
-    <!-- Object which requires a wrapper (f.e. "position: relative" and "position: absolute" pair) -->
+    <!-- Object which requires wrapper (f.e. "position: relative" and "position: absolute" pair) -->
     <div class="box has-close-link">
-      <a class="close-link">x</a>
+      <a class="close-link"></a>
     </div>
 
     <!-- JavaScript handler -->
     <div class="alert js-alert"></div>
   ```
-
 4. Use classes over IDs
 5. Avoid styles for generic HTML elements
 6. Avoid more than a one modifier and a one state class per object
