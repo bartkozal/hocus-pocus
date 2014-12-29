@@ -33,7 +33,7 @@ $hp-base-font-family: "Open Sans", sans-serif
 ## Principles
 
 1. Use [autoprefixer][6] or [autoprefixer-rails][7]
-2. Use the following directories structure (please check the source code of Hocus-Pocus to get the referance):
+2. Use the following directories structure (please check the source code of Hocus-Pocus to get the reference):
 
   ```
   core/
@@ -56,7 +56,7 @@ $hp-base-font-family: "Open Sans", sans-serif
   `application.sass` - Main file, use it only for imports
 
 3. Use syntax rules from [Mark Otto's Code Guide][8]
-4. Use the following name convenctions:
+4. Use the following naming conventions:
 
   ```html
     <!-- Objects -->
