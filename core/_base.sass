@@ -1,17 +1,9 @@
-/*
- * Remove margin and padding on base elements
- */
-
 h1, h2, h3, h4, h5, h6,
 p, ul, ol, dl, dd, hr,
 blockquote, pre, table, th, td,
 form, fieldset, caption, legend
   margin: 0
   padding: 0
-
-/*
- * Remove margin and padding on base elements
- */
 
 body
   @include hp-font-size($hp-base-font-size)
@@ -28,12 +20,12 @@ h3
 h4, h5, h6
   @include hp-font-size-step(0)
 
-p, ul, ol, dl, blockquote, pre, table
+p, ul, ol, dl, hr,
+blockquote, pre, table
   margin-bottom: $hp-spacing-unit
 
 hr
   margin-top: -1px
-  margin-bottom: $hp-spacing-unit
   border: 1px solid
 
 ul ul, ol ol, ul ol, ol ul
