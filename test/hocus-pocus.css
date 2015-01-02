@@ -1,3 +1,7 @@
+/* Constants - don't change
+ */
+/* Private
+ */
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -366,9 +370,70 @@ html {
 img {
   box-sizing: content-box; }
 
+/* Source:
+ * http://www.gridlover.net
+ * https://github.com/hiulit/Sassy-Gridlover
+ */
 /* Remove margin and padding on base elements
  */
-blockquote, caption, dd, dl, fieldset, form, h1, h2, h3, h4, h5, h6, hr,
-legend, ol, p, pre, table, td, th, ul {
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, dl, dd, hr,
+blockquote, pre, table, th, td,
+form, fieldset, caption, legend {
   margin: 0;
   padding: 0; }
+
+/* Remove margin and padding on base elements
+ */
+body {
+  font-size: 1rem;
+  line-height: 1.375rem; }
+
+h1 {
+  font-size: 3.375rem;
+  line-height: 4.125rem;
+  margin-bottom: 1.375rem;
+  margin-top: 2.75rem; }
+
+h2 {
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  margin-bottom: 1.375rem;
+  margin-top: 2.75rem; }
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 2.75rem;
+  margin-bottom: 1.375rem;
+  margin-top: 1.375rem; }
+
+h4, h5, h6 {
+  font-size: 1rem;
+  line-height: 1.375rem;
+  margin-bottom: 1.375rem;
+  margin-top: 1.375rem; }
+
+p, ul, ol, dl, blockquote, pre, table {
+  margin-bottom: 1.375rem; }
+
+hr {
+  margin-top: -1px;
+  margin-bottom: 1.375rem;
+  border: 1px solid; }
+
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+strong, em, small, code {
+  line-height: 1; }
+
+sup, sub {
+  vertical-align: baseline;
+  position: relative; }
+
+sup {
+  top: -0.4em; }
+
+sub {
+  top: 0.4em; }
