@@ -1,0 +1,23 @@
+/*
+ * Source:
+ * http://www.gridlover.net
+ * https://github.com/hiulit/Sassy-Gridlover
+ */
+
+@mixin hp-font-size($font-size: $hp-base-font-size)
+  font-size: $font-size / $hp-font-size-factor * 1rem
+  line-height: round($font-size * $hp-base-line-height) / $hp-font-size-factor * 1rem
+
+@mixin hp-font-size-step($step)
+  $font-size: $hp-base-font-size
+  $line-height: round($font-size * $hp-base-line-height)
+  $computed-font-size: round($font-size * hp-vertical-rhythm-exponent($hp-vertical-align-factor, $step))
+
+  font-size: $computed-font-size / $hp-font-size-factor * 1rem
+  line-height: $line-height * ceil($computed-font-size / $line-height) / $hp-font-size-factor * 1rem
+  margin-bottom: $line-height / $hp-font-size-factor * 1rem
+
+  @if $step > 1
+    margin-top: $line-height * 2 / $hp-font-size-factor * 1rem
+  @else
+    margin-top: $line-height / $hp-font-size-factor * 1rem

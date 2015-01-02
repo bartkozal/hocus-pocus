@@ -94,6 +94,7 @@ $hp-base-font-family: "Open Sans", sans-serif
 
 1. Normalize
 2. Box-sizing global reset
+3. Vertical rhythm
 
 ## Contributing
 
