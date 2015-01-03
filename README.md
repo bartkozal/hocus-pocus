@@ -1,6 +1,6 @@
 # Hocus-Pocus
 
-Hocus-Pocus is a simple, design-free [SASS][1] micro framework, ideal as a css starter kit.
+Hocus-Pocus is a simple and design-free [SASS][1] micro framework, ideal as a css starter kit.
 
 It could not exist without work of the awesome people. There is a list of resources which I used:
 
