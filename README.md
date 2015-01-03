@@ -1,6 +1,6 @@
 # Hocus-Pocus
 
-Hocus-Pocus is a simple, design-free [SASS][1] micro framework, ideal as a starter kit for stylesheets. I chose my favourite parts of concepts like [inuit.css][2], [SMACSS][3] or [mvcss][4] and mixed them with my own ideas.
+Hocus-Pocus is a simple, design-free [SASS][1] micro framework, ideal as a css starter kit. I chose my favourite parts of libraries like [inuit.css][2], [SMACSS][3] or [mvcss][4] and mixed them with my own ideas.
 
 To install Hocus-Pocus use Bower:
 
@@ -14,10 +14,11 @@ Or [Rails Assets][5] if you have a Rails app:
 # Gemfile
 
 source 'https://rails-assets.org'
+
 gem 'rails-assets-hocus-pocus'
 ```
 
-Then you can include the main Hocus-Pocus file after your variables and before the rest of stylesheets:
+Then include the main Hocus-Pocus file after your settings, but before the rest of stylesheets:
 
 ```sass
 $hp-base-container: 1337px
@@ -33,7 +34,7 @@ $hp-base-font-family: "Open Sans", sans-serif
 ## Principles
 
 1. Use [autoprefixer][6] or [autoprefixer-rails][7]
-2. Use the following directories structure (please check the source code of Hocus-Pocus to get the reference):
+2. Use the following directories structure (you should check the source code of Hocus-Pocus to get the reference):
 
   ```
   core/
@@ -47,13 +48,13 @@ $hp-base-font-family: "Open Sans", sans-serif
   application.sass
   ```
 
-  `core/` - All low-level sass files like functions, mixins, helpers and also the base styles for html elements
+  `core/` - All low-level sass files like functions, mixins, helpers and base styles for html elements
 
-  `objects/` - Reusable abstractions and components of application specific elements f.e. `.meter` or `.price-box`
+  `objects/` - Reusable abstractions of application specific elements f.e. `.meter` or `.price-box`
 
-  `inbox/` - Temporary styles, especially useful when you work with someone who isn't familiar with app's stylesheet
+  `inbox/` - Temporary styles, especially useful when you work with someone who isn't familiar with application's css
 
-  `application.sass` - Main file, use it only for imports
+  `application.sass` - Main file, use it only to import partials
 
 3. Use syntax rules from [Mark Otto's Code Guide][8]
 4. Use the following naming conventions:
@@ -77,7 +78,8 @@ $hp-base-font-family: "Open Sans", sans-serif
     <a class="btn is-btn-active"></a>
     <a class="btn is-btn-disabled"></a>
 
-    <!-- Object which requires wrapper (f.e. "position: relative" and "position: absolute" pair) -->
+    <!-- Object which requires wrapper -->
+    <!-- f.e. "position: relative" and "position: absolute" pair -->
     <div class="box has-close-link">
       <a class="close-link"></a>
     </div>
@@ -86,7 +88,7 @@ $hp-base-font-family: "Open Sans", sans-serif
     <div class="alert js-alert"></div>
   ```
 4. Use classes over IDs
-5. Avoid styles for generic HTML elements
+5. Avoid styling generic HTML elements
 6. Avoid more than a one modifier and a one state class per object
 7. Avoid nested classes, use the `.object-subobject` rule instead
 
