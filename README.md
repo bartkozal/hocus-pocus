@@ -15,6 +15,8 @@ It could not exist without work of the awesome people. There is a list of resour
 * [Gridlover][12]
 * [Inheriting box-sizing Probably Slightly Better Best-Practice][3]
 
+## How to install
+
 To install Hocus-Pocus use Bower:
 
 ```shell
