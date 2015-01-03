@@ -1,0 +1,35 @@
+/*
+ * Source:
+ * https://github.com/inuitcss/tools.functions
+ */
+
+@function hp-quarter($value)
+  @return $value / 4
+
+@function hp-third($value)
+  @return $value / 3
+
+@function hp-half($value)
+  @return $value / 2
+
+@function hp-double($value)
+  @return $value * 2
+
+@function hp-triple($value)
+  @return $value * 3
+
+@function hp-quadruple($value)
+  @return $value * 4
+
+@function hp-vertical-rhythm-exponent($base, $exponent)
+  @if pow(2, 2) == 4
+    @return pow($base, $exponent)
+
+  $value: $base
+  @if $exponent > 1
+    @for $i from 2 through $exponent
+      $value: $value * $base
+  @if $exponent < 1
+    @for $i from 0 through -$exponent
+      $value: $value / $base
+  @return $value

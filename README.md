@@ -97,6 +97,8 @@ $hp-base-font-family: "Open Sans", sans-serif
 1. Normalize
 2. Box-sizing global reset
 3. Vertical rhythm
+4. Grid based on flexbox
+5. Widths helpers in fraction format
 
 ## Contributing
 
