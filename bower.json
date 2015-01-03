@@ -1,6 +1,6 @@
 {
   "name": "hocus-pocus",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "homepage": "https://github.com/bkzl/hocus-pocus",
   "authors": [
     "Bartlomiej Kozal <bkzl@me.com>"
@@ -16,9 +16,9 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
     "test",
-    "tests"
+    "package.json",
+    "Gruntfile.js"
   ]
 }
 
