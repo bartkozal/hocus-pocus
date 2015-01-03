@@ -241,7 +241,7 @@ sup {
   top: -0.4em; }
 
 sub {
-  top: 0.4em; }
+  bottom: -0.25em; }
 
 .container {
   max-width: 68rem;
