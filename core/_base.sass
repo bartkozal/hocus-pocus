@@ -6,23 +6,23 @@ form, fieldset, caption, legend
   padding: 0
 
 body
-  @include hp-font-size($hp-base-font-size)
+  @include font-size($base-font-size)
 
 h1
-  @include hp-font-size-step(3)
+  @include font-size-heading(3)
 
 h2
-  @include hp-font-size-step(2)
+  @include font-size-heading(2)
 
 h3
-  @include hp-font-size-step(1)
+  @include font-size-heading(1)
 
 h4, h5, h6
-  @include hp-font-size-step(0)
+  @include font-size-heading(0)
 
 p, ul, ol, dl, hr,
 blockquote, pre, table
-  margin-bottom: $hp-spacing-unit
+  margin-bottom: $spacing-unit
 
 hr
   margin-top: -1px

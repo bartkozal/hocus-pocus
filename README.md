@@ -34,8 +34,8 @@ gem 'rails-assets-hocus-pocus'
 Then include the main Hocus-Pocus file after your settings, but before the rest of stylesheets:
 
 ```sass
-$hp-base-container: 1337px
-$hp-base-font-family: "Open Sans", sans-serif
+$base-font-family: "Open Sans", sans-serif
+$grid-container: 70rem
 
 @import "bower_components/hocus-pocus/hocus-pocus"
 

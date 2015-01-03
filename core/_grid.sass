@@ -1,16 +1,16 @@
 .container
-  max-width: $hp-grid-container
+  max-width: $grid-container
   margin: auto
-  padding-left: $hp-grid-gutter
-  padding-right: $hp-grid-gutter
+  padding-left: $grid-gutter
+  padding-right: $grid-gutter
 
 .grid
   display: flex
   flex: 0 1 auto
   flex-direction: row
   flex-wrap: wrap
-  margin-left: hp-half($hp-grid-gutter) * -1
-  margin-right: hp-half($hp-grid-gutter) * -1
+  margin-left: halve($grid-gutter) * -1
+  margin-right: halve($grid-gutter) * -1
 
 .grid-item
   display: flex
@@ -18,8 +18,8 @@
   flex-direction: column
   flex-grow: 0
   flex-shrink: 0
-  padding-left: hp-half($hp-grid-gutter)
-  padding-right: hp-half($hp-grid-gutter)
+  padding-left: halve($grid-gutter)
+  padding-right: halve($grid-gutter)
 
 .left-grid
   justify-content: flext-start
