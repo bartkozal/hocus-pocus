@@ -57,7 +57,7 @@ $hp-base-font-family: "Open Sans", sans-serif
   `application.sass` - Main file, use it only to import partials
 
 3. Use syntax rules from [Mark Otto's Code Guide][8]
-4. Use the following naming conventions:
+4. Use the following `modifier-object-subobject` naming convention:
 
   ```html
     <!-- Objects -->
@@ -71,12 +71,12 @@ $hp-base-font-family: "Open Sans", sans-serif
     </div>
 
     <!-- Object with modifier -->
-    <div class="media media-milli"></div>
-    <a class="btn btn-primary"></a>
+    <div class="media milli-media"></div>
+    <a class="btn primary-btn"></a>
 
     <!-- Object with state -->
-    <a class="btn is-btn-active"></a>
-    <a class="btn is-btn-disabled"></a>
+    <a class="btn is-active-btn"></a>
+    <a class="btn is-disabled-btn"></a>
 
     <!-- Object which requires wrapper -->
     <!-- f.e. "position: relative" and "position: absolute" pair -->
