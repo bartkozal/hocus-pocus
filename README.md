@@ -14,8 +14,7 @@ It could not exist without work of the awesome people. There is a list of resour
 * [MVCSS][15]
 * [Gridlover][12]
 * [Inheriting box-sizing Probably Slightly Better Best-Practice][3]
-
-## How to install
+* [BEM modifiers: multiple classes vs @extend][17]
 
 To install Hocus-Pocus use Bower:
 
@@ -133,3 +132,4 @@ $grid-container: 70rem
 [14]: https://smacss.com
 [15]: http://mvcss.io
 [16]: https://github.com/inuitcss/trumps.widths
+[17]: http://bensmithett.com/bem-modifiers-multiple-classes-vs-extend/
