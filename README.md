@@ -91,12 +91,12 @@ $grid-container: 70rem
     </div>
 
     <!-- Object with modifier -->
-    <div class="media milli-media"></div>
-    <a class="btn primary-btn"></a>
+    <div class="media media-milli"></div>
+    <a class="btn btn-primary"></a>
 
     <!-- Object with state -->
-    <a class="btn is-active-btn"></a>
-    <a class="btn is-disabled-btn"></a>
+    <a class="btn is-btn-active"></a>
+    <a class="btn is-btn-disabled"></a>
 
     <!-- Object which requires wrapper -->
     <!-- f.e. "position: relative" and "position: absolute" pair -->

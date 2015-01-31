@@ -5,6 +5,14 @@ form, fieldset, caption, legend
   margin: 0
   padding: 0
 
+p, ul, ol, dl, hr,
+blockquote, pre, table
+  margin-bottom: $spacing-unit
+
+ul ul, ol ol, ul ol, ol ul
+  margin-top: 0
+  margin-bottom: 0
+
 body
   @include font-size($base-font-size)
 
@@ -20,18 +28,6 @@ h3
 h4, h5, h6
   @include font-size-heading(0)
 
-p, ul, ol, dl, hr,
-blockquote, pre, table
-  margin-bottom: $spacing-unit
-
-hr
-  margin-top: -1px
-  border: 1px solid
-
-ul ul, ol ol, ul ol, ol ul
-  margin-top: 0
-  margin-bottom: 0
-
 strong, em, small, code
   line-height: 1
 
@@ -44,3 +40,8 @@ sup
 
 sub
   bottom: -0.25em
+
+hr
+  margin-top: -1px
+  border: 1px solid
+
