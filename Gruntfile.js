@@ -19,6 +19,9 @@ module.exports = function(grunt) {
     watch: {
       files: ['**/*.sass'],
       tasks: ['sass', 'autoprefixer'],
+      options: {
+        livereload: true
+      }
     },
     connect: {
       server: {
