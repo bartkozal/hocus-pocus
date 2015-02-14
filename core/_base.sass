@@ -15,21 +15,37 @@ ul ul, ol ol, ul ol, ol ul
 
 body
   @include font-size($base-font-size)
+  color: $base-font-color
 
-h1
+h1, .h1
   @include font-size-heading(3)
 
-h2
+h2, .h2
   @include font-size-heading(2)
 
-h3
+h3, .h3
   @include font-size-heading(1)
 
-h4, h5, h6
+h4, .h4
   @include font-size-heading(0)
 
-strong, em, small, code
+h5, .h5
+  @include font-size-heading(0)
+
+h6, .h6
+  @include font-size-heading(0)
+
+strong, em, small, code, hr
   line-height: 1
+
+strong
+  font-weight: $font-weight-bold
+
+em
+  font-style: italic
+
+a
+  color: $link-color
 
 sup, sub
   vertical-align: baseline
@@ -41,7 +57,11 @@ sup
 sub
   bottom: -0.25em
 
-hr
-  margin-top: -1px
-  border: 1px solid
+ul > li, ol > li
+  margin-left: $spacing-unit
 
+hr
+  height: 1px
+  border: 0 none
+  background-color: $hr-color
+  color: $hr-color
