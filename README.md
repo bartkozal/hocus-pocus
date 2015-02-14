@@ -10,6 +10,7 @@ It could not exist without work of the awesome people. There is a list of resour
 * [inuitcss/trumps.widths][16]
 * [kristoferjoseph/flexboxgrid][10]
 * [hiulit/Sassy-Gridlover][13]
+* [mrmrs/colors][18]
 * [SMACSS][14]
 * [MVCSS][15]
 * [Gridlover][12]
@@ -133,3 +134,4 @@ $grid-container: 70rem
 [15]: http://mvcss.io
 [16]: https://github.com/inuitcss/trumps.widths
 [17]: http://bensmithett.com/bem-modifiers-multiple-classes-vs-extend/
+[18]: https://github.com/mrmrs/colors
