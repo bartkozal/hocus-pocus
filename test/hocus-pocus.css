@@ -201,6 +201,7 @@ ul ul, ol ol, ul ol, ol ul {
 body {
   font-size: 1rem;
   line-height: 1.375rem;
+  font-weight: 400;
   color: #111; }
 
 h1, .h1 {
@@ -269,6 +270,21 @@ hr {
   border: 0 none;
   background-color: #ddd;
   color: #ddd; }
+
+blockquote {
+  padding-left: 1.375rem;
+  border-left: 3px solid #ddd;
+  font-style: italic;
+  color: #aaa; }
+
+table {
+  width: 100%; }
+
+thead {
+  text-align: left; }
+
+td, th {
+  padding: 0.34375rem; }
 
 .container {
   max-width: 68rem;

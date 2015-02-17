@@ -15,7 +15,8 @@ ul ul, ol ol, ul ol, ol ul
 
 body
   @include font-size($base-font-size)
-  color: $base-font-color
+  font-weight: $font-weight-normal
+  color: $color-font
 
 h1, .h1
   @include font-size-heading(3)
@@ -45,7 +46,7 @@ em
   font-style: italic
 
 a
-  color: $link-color
+  color: $color-link
 
 sup, sub
   vertical-align: baseline
@@ -63,5 +64,20 @@ ul > li, ol > li
 hr
   height: 1px
   border: 0 none
-  background-color: $hr-color
-  color: $hr-color
+  background-color: $color-ui
+  color: $color-ui
+
+blockquote
+  padding-left: $spacing-unit
+  border-left: 3px solid $color-ui
+  font-style: italic
+  color: $color-muted
+
+table
+  width: 100%
+
+thead
+  text-align: left
+
+td, th
+  padding: quarter($spacing-unit)
