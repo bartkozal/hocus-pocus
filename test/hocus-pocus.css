@@ -192,7 +192,7 @@ form, fieldset, caption, legend {
 
 p, ul, ol, dl, hr,
 blockquote, pre, table {
-  margin-bottom: 1.375rem; }
+  margin-bottom: 1.3125rem; }
 
 ul ul, ol ol, ul ol, ol ul {
   margin-top: 0;
@@ -203,34 +203,34 @@ html {
   min-height: 100%; }
 
 body {
-  font-size: 1rem;
-  line-height: 1.375rem;
+  font-size: 0.9375rem;
+  line-height: 1.3125rem;
   font-weight: 400;
   color: #111; }
 
 h1 {
-  font-size: 3.375rem;
-  line-height: 4.125rem;
-  margin-bottom: 1.375rem;
-  margin-top: 2.75rem; }
+  font-size: 3.1875rem;
+  line-height: 3.9375rem;
+  margin-bottom: 1.3125rem;
+  margin-top: 2.625rem; }
 
 h2 {
-  font-size: 2.25rem;
-  line-height: 2.75rem;
-  margin-bottom: 1.375rem;
-  margin-top: 2.75rem; }
+  font-size: 2.125rem;
+  line-height: 2.625rem;
+  margin-bottom: 1.3125rem;
+  margin-top: 2.625rem; }
 
 h3 {
-  font-size: 1.5rem;
-  line-height: 2.75rem;
-  margin-bottom: 1.375rem;
-  margin-top: 1.375rem; }
+  font-size: 1.4375rem;
+  line-height: 2.625rem;
+  margin-bottom: 1.3125rem;
+  margin-top: 1.3125rem; }
 
 h4, h5, h6 {
-  font-size: 1rem;
-  line-height: 1.375rem;
-  margin-bottom: 1.375rem;
-  margin-top: 1.375rem; }
+  font-size: 0.9375rem;
+  line-height: 1.3125rem;
+  margin-bottom: 1.3125rem;
+  margin-top: 1.3125rem; }
 
 strong, em, small, code, hr {
   line-height: 1; }
@@ -259,13 +259,13 @@ small {
   line-height: 1.125rem; }
 
 blockquote {
-  padding-left: 1.375rem;
+  padding-left: 1.3125rem;
   border-left: 3px solid #ddd;
   font-style: italic;
   color: #aaa; }
 
 ul > li, ol > li {
-  margin-left: 1.375rem; }
+  margin-left: 1.3125rem; }
 
 dl > dt {
   font-weight: 700; }
@@ -283,7 +283,7 @@ thead {
   text-align: left; }
 
 td, th {
-  padding: 0.34375rem; }
+  padding: 0.32813rem; }
 
 code {
   white-space: nowrap; }
@@ -294,8 +294,8 @@ pre code {
 .container {
   max-width: 68rem;
   margin: auto;
-  padding-left: 1.375rem;
-  padding-right: 1.375rem; }
+  padding-left: 1.3125rem;
+  padding-right: 1.3125rem; }
 
 .grid {
   display: -webkit-box;
@@ -314,8 +314,8 @@ pre code {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  margin-left: -0.6875rem;
-  margin-right: -0.6875rem; }
+  margin-left: -0.65625rem;
+  margin-right: -0.65625rem; }
 
 .grid-item {
   display: -webkit-box;
@@ -338,8 +338,8 @@ pre code {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
-  padding-left: 0.6875rem;
-  padding-right: 0.6875rem; }
+  padding-left: 0.65625rem;
+  padding-right: 0.65625rem; }
 
 .grid-left {
   -webkit-box-pack: flext-start;
