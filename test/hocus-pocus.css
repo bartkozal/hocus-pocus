@@ -198,43 +198,35 @@ ul ul, ol ol, ul ol, ol ul {
   margin-top: 0;
   margin-bottom: 0; }
 
+html {
+  overflow-y: scroll;
+  min-height: 100%; }
+
 body {
   font-size: 1rem;
   line-height: 1.375rem;
   font-weight: 400;
   color: #111; }
 
-h1, .h1 {
+h1 {
   font-size: 3.375rem;
   line-height: 4.125rem;
   margin-bottom: 1.375rem;
   margin-top: 2.75rem; }
 
-h2, .h2 {
+h2 {
   font-size: 2.25rem;
   line-height: 2.75rem;
   margin-bottom: 1.375rem;
   margin-top: 2.75rem; }
 
-h3, .h3 {
+h3 {
   font-size: 1.5rem;
   line-height: 2.75rem;
   margin-bottom: 1.375rem;
   margin-top: 1.375rem; }
 
-h4, .h4 {
-  font-size: 1rem;
-  line-height: 1.375rem;
-  margin-bottom: 1.375rem;
-  margin-top: 1.375rem; }
-
-h5, .h5 {
-  font-size: 1rem;
-  line-height: 1.375rem;
-  margin-bottom: 1.375rem;
-  margin-top: 1.375rem; }
-
-h6, .h6 {
+h4, h5, h6 {
   font-size: 1rem;
   line-height: 1.375rem;
   margin-bottom: 1.375rem;
@@ -262,20 +254,27 @@ sup {
 sub {
   bottom: -0.25em; }
 
-ul > li, ol > li {
-  margin-left: 1.375rem; }
-
-hr {
-  height: 1px;
-  border: 0 none;
-  background-color: #ddd;
-  color: #ddd; }
+small {
+  font-size: 0.8125rem;
+  line-height: 1.125rem; }
 
 blockquote {
   padding-left: 1.375rem;
   border-left: 3px solid #ddd;
   font-style: italic;
   color: #aaa; }
+
+ul > li, ol > li {
+  margin-left: 1.375rem; }
+
+dl > dt {
+  font-weight: 700; }
+
+hr {
+  height: 1px;
+  border: 0 none;
+  background-color: #ddd;
+  color: #ddd; }
 
 table {
   width: 100%; }
@@ -291,9 +290,6 @@ code {
 
 pre code {
   white-space: pre-wrap; }
-
-dl > dt {
-  font-weight: 700; }
 
 .container {
   max-width: 68rem;

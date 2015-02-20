@@ -4,36 +4,28 @@ blockquote, pre, table, th, td,
 form, fieldset, caption, legend
   margin: 0
   padding: 0
-
 p, ul, ol, dl, hr,
 blockquote, pre, table
   margin-bottom: $spacing-unit
-
 ul ul, ol ol, ul ol, ol ul
   margin-top: 0
   margin-bottom: 0
 
+html
+  overflow-y: scroll
+  min-height: 100%
 body
   @include font-size($base-font-size)
   font-weight: $font-weight-normal
   color: $color-font
 
-h1, .h1
+h1
   @include font-size-heading(3)
-
-h2, .h2
+h2
   @include font-size-heading(2)
-
-h3, .h3
+h3
   @include font-size-heading(1)
-
-h4, .h4
-  @include font-size-heading(0)
-
-h5, .h5
-  @include font-size-heading(0)
-
-h6, .h6
+h4, h5, h6
   @include font-size-heading(0)
 
 strong, em, small, code, hr
@@ -41,25 +33,29 @@ strong, em, small, code, hr
 
 strong
   font-weight: $font-weight-bold
-
 em
   font-style: italic
-
 a
   color: $color-link
-
 sup, sub
   vertical-align: baseline
   position: relative
-
 sup
   top: -0.4em
-
 sub
   bottom: -0.25em
+small
+  @include font-size($font-size-small)
+blockquote
+  padding-left: $spacing-unit
+  border-left: 3px solid $color-ui
+  font-style: italic
+  color: $color-muted
 
 ul > li, ol > li
   margin-left: $spacing-unit
+dl > dt
+  font-weight: $font-weight-bold
 
 hr
   height: 1px
@@ -67,26 +63,14 @@ hr
   background-color: $color-ui
   color: $color-ui
 
-blockquote
-  padding-left: $spacing-unit
-  border-left: 3px solid $color-ui
-  font-style: italic
-  color: $color-muted
-
 table
   width: 100%
-
 thead
   text-align: left
-
 td, th
   padding: quarter($spacing-unit)
 
 code
   white-space: nowrap
-
 pre code
   white-space: pre-wrap
-
-dl > dt
-  font-weight: $font-weight-bold

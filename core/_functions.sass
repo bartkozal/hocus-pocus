@@ -1,25 +1,20 @@
 @function quarter($value)
   @return $value / 4
-
 @function third($value)
   @return $value / 3
-
 @function halve($value)
   @return $value / 2
 
 @function double($value)
   @return $value * 2
-
 @function triple($value)
   @return $value * 3
-
 @function quadruple($value)
   @return $value * 4
 
 @function vertical-rhythm-exponent($base, $exponent)
   @if pow(2, 2) == 4
     @return pow($base, $exponent)
-
   $value: $base
   @if $exponent > 1
     @for $i from 2 through $exponent
