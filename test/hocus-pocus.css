@@ -244,6 +244,10 @@ em {
 a {
   color: #0074d9; }
 
+a:active {
+  position: relative;
+  top: 1px; }
+
 sup, sub {
   vertical-align: baseline;
   position: relative; }
