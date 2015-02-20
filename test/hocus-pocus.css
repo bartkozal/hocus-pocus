@@ -286,6 +286,15 @@ thead {
 td, th {
   padding: 0.34375rem; }
 
+code {
+  white-space: nowrap; }
+
+pre code {
+  white-space: pre-wrap; }
+
+dl > dt {
+  font-weight: 700; }
+
 .container {
   max-width: 68rem;
   margin: auto;
