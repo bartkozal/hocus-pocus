@@ -12,36 +12,29 @@
 .text-bold
   font-weight: $font-weight-bold !important
 
-.m0
-  margin: 0 !important
-.mt0
-  margin-top: 0 !important
-.mr0
-  margin-right: 0 !important
-.mb0
-  margin-bottom: 0 !important
-.ml0
-  margin-left: 0 !important
-.mv0
-  margin-top: 0 !important
-  margin-bottom: 0 !important
-.mh0
-  margin-left: 0 !important
-  margin-right: 0 !important
+@each $attr in margin, padding
+  $abbr: str-slice($attr, 1, 1)
+  @each $spacing, $size in $spacing-map
+    @if $spacing == base
+      $spacing: ""
+    @else if $spacing == zero
+      $spacing: 0
+    @else
+      $spacing: str-slice($spacing, 1, 1)
 
-.p0
-  padding: 0 !important
-.pt0
-  padding-top: 0 !important
-.pr0
-  padding-right: 0 !important
-.pb0
-  padding-bottom: 0 !important
-.pl0
-  padding-left: 0 !important
-.pv0
-  padding-top: 0 !important
-  padding-bottom: 0 !important
-.ph0
-  padding-left: 0 !important
-  padding-right: 0 !important
+    .#{$abbr}#{$spacing}
+      #{$attr}: $size !important
+    .#{$abbr}t#{$spacing}
+      #{$attr}-top: $size !important
+    .#{$abbr}r#{$spacing}
+      #{$attr}-right: $size !important
+    .#{$abbr}b#{$spacing}
+      #{$attr}-bottom: $size !important
+    .#{$abbr}l#{$spacing}
+      #{$attr}-left: $size !important
+    .#{$abbr}v#{$spacing}
+      #{$attr}-top: $size !important
+      #{$attr}-bottom: $size !important
+    .#{$abbr}h#{$spacing}
+      #{$attr}-left: $size !important
+      #{$attr}-right: $size !important

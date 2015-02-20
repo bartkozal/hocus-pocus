@@ -584,3 +584,233 @@ pre code {
   -webkit-flex-basis: 91.6666%;
       -ms-flex-preferred-size: 91.6666%;
           flex-basis: 91.6666%; }
+
+.text-left {
+  text-align: left !important; }
+
+.text-center {
+  text-align: center !important; }
+
+.text-right {
+  text-align: right !important; }
+
+.text-light {
+  font-weight: 100 !important; }
+
+.text-normal {
+  font-weight: 400 !important; }
+
+.text-bold {
+  font-weight: 700 !important; }
+
+.mh {
+  margin: 0.65625rem !important; }
+
+.mth {
+  margin-top: 0.65625rem !important; }
+
+.mrh {
+  margin-right: 0.65625rem !important; }
+
+.mbh {
+  margin-bottom: 0.65625rem !important; }
+
+.mlh {
+  margin-left: 0.65625rem !important; }
+
+.mvh {
+  margin-top: 0.65625rem !important;
+  margin-bottom: 0.65625rem !important; }
+
+.mhh {
+  margin-left: 0.65625rem !important;
+  margin-right: 0.65625rem !important; }
+
+.m0 {
+  margin: 0 !important; }
+
+.mt0 {
+  margin-top: 0 !important; }
+
+.mr0 {
+  margin-right: 0 !important; }
+
+.mb0 {
+  margin-bottom: 0 !important; }
+
+.ml0 {
+  margin-left: 0 !important; }
+
+.mv0 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important; }
+
+.mh0 {
+  margin-left: 0 !important;
+  margin-right: 0 !important; }
+
+.m {
+  margin: 1.3125rem !important; }
+
+.mt {
+  margin-top: 1.3125rem !important; }
+
+.mr {
+  margin-right: 1.3125rem !important; }
+
+.mb {
+  margin-bottom: 1.3125rem !important; }
+
+.ml {
+  margin-left: 1.3125rem !important; }
+
+.mv {
+  margin-top: 1.3125rem !important;
+  margin-bottom: 1.3125rem !important; }
+
+.mh {
+  margin-left: 1.3125rem !important;
+  margin-right: 1.3125rem !important; }
+
+.md {
+  margin: 2.625rem !important; }
+
+.mtd {
+  margin-top: 2.625rem !important; }
+
+.mrd {
+  margin-right: 2.625rem !important; }
+
+.mbd {
+  margin-bottom: 2.625rem !important; }
+
+.mld {
+  margin-left: 2.625rem !important; }
+
+.mvd {
+  margin-top: 2.625rem !important;
+  margin-bottom: 2.625rem !important; }
+
+.mhd {
+  margin-left: 2.625rem !important;
+  margin-right: 2.625rem !important; }
+
+.ph {
+  padding: 0.65625rem !important; }
+
+.pth {
+  padding-top: 0.65625rem !important; }
+
+.prh {
+  padding-right: 0.65625rem !important; }
+
+.pbh {
+  padding-bottom: 0.65625rem !important; }
+
+.plh {
+  padding-left: 0.65625rem !important; }
+
+.pvh {
+  padding-top: 0.65625rem !important;
+  padding-bottom: 0.65625rem !important; }
+
+.phh {
+  padding-left: 0.65625rem !important;
+  padding-right: 0.65625rem !important; }
+
+.p0 {
+  padding: 0 !important; }
+
+.pt0 {
+  padding-top: 0 !important; }
+
+.pr0 {
+  padding-right: 0 !important; }
+
+.pb0 {
+  padding-bottom: 0 !important; }
+
+.pl0 {
+  padding-left: 0 !important; }
+
+.pv0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important; }
+
+.ph0 {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
+.p {
+  padding: 1.3125rem !important; }
+
+.pt {
+  padding-top: 1.3125rem !important; }
+
+.pr {
+  padding-right: 1.3125rem !important; }
+
+.pb {
+  padding-bottom: 1.3125rem !important; }
+
+.pl {
+  padding-left: 1.3125rem !important; }
+
+.pv {
+  padding-top: 1.3125rem !important;
+  padding-bottom: 1.3125rem !important; }
+
+.ph {
+  padding-left: 1.3125rem !important;
+  padding-right: 1.3125rem !important; }
+
+.pd {
+  padding: 2.625rem !important; }
+
+.ptd {
+  padding-top: 2.625rem !important; }
+
+.prd {
+  padding-right: 2.625rem !important; }
+
+.pbd {
+  padding-bottom: 2.625rem !important; }
+
+.pld {
+  padding-left: 2.625rem !important; }
+
+.pvd {
+  padding-top: 2.625rem !important;
+  padding-bottom: 2.625rem !important; }
+
+.phd {
+  padding-left: 2.625rem !important;
+  padding-right: 2.625rem !important; }
+
+.h1 {
+  font-size: 3.1875rem;
+  line-height: 3.9375rem;
+  margin-bottom: 1.3125rem;
+  margin-top: 2.625rem; }
+
+.h2 {
+  font-size: 2.125rem;
+  line-height: 2.625rem;
+  margin-bottom: 1.3125rem;
+  margin-top: 2.625rem; }
+
+.h3 {
+  font-size: 1.4375rem;
+  line-height: 2.625rem;
+  margin-bottom: 1.3125rem;
+  margin-top: 1.3125rem; }
+
+.h4, .h5, .h6 {
+  font-size: 0.9375rem;
+  line-height: 1.3125rem;
+  margin-bottom: 1.3125rem;
+  margin-top: 1.3125rem; }
+
+.micro {
+  font-size: 0.6875rem;
+  line-height: 0.9375rem; }

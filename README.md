@@ -8,6 +8,7 @@ It could not exist without work of the awesome people. There is a list of resour
 * [inuitcss/generic.reset][2]
 * [inuitcss/tools.functions][4]
 * [inuitcss/trumps.widths][16]
+* [inuitcss/trumps.spacing][19]
 * [kristoferjoseph/flexboxgrid][10]
 * [hiulit/Sassy-Gridlover][13]
 * [mrmrs/colors][18]
@@ -135,3 +136,4 @@ $grid-container: 70rem
 [16]: https://github.com/inuitcss/trumps.widths
 [17]: http://bensmithett.com/bem-modifiers-multiple-classes-vs-extend/
 [18]: https://github.com/mrmrs/colors
+[19]: https://github.com/inuitcss/trumps.spacing
