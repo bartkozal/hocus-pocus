@@ -50,6 +50,9 @@ $grid-container: 70rem
 3. Vertical rhythm
 4. Grid based on flexbox
 5. Widths helpers in fraction format
+6. Styling for base html elements
+7. Box model helpers
+8. Text helpers
 
 ## Principles
 
