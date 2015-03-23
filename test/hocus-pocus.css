@@ -815,6 +815,10 @@ pre code {
   margin-bottom: 1.3125rem;
   margin-top: 1.3125rem; }
 
+.small {
+  font-size: 0.8125rem;
+  line-height: 1.125rem; }
+
 .micro {
   font-size: 0.6875rem;
   line-height: 0.9375rem; }
