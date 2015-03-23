@@ -205,6 +205,7 @@ html {
 body {
   font-size: 0.9375rem;
   line-height: 1.3125rem;
+  font-family: sans-serif;
   font-weight: 400;
   color: #111; }
 
@@ -212,25 +213,29 @@ h1 {
   font-size: 3.1875rem;
   line-height: 3.9375rem;
   margin-bottom: 1.3125rem;
-  margin-top: 2.625rem; }
+  margin-top: 2.625rem;
+  font-family: sans-serif; }
 
 h2 {
   font-size: 2.125rem;
   line-height: 2.625rem;
   margin-bottom: 1.3125rem;
-  margin-top: 2.625rem; }
+  margin-top: 2.625rem;
+  font-family: sans-serif; }
 
 h3 {
   font-size: 1.4375rem;
   line-height: 2.625rem;
   margin-bottom: 1.3125rem;
-  margin-top: 1.3125rem; }
+  margin-top: 1.3125rem;
+  font-family: sans-serif; }
 
 h4, h5, h6 {
   font-size: 0.9375rem;
   line-height: 1.3125rem;
   margin-bottom: 1.3125rem;
-  margin-top: 1.3125rem; }
+  margin-top: 1.3125rem;
+  font-family: sans-serif; }
 
 strong, em, small, code, hr {
   line-height: 1; }
@@ -290,6 +295,7 @@ td, th {
   padding: 0.32813rem; }
 
 code {
+  font-family: monospace;
   white-space: nowrap; }
 
 pre code {
@@ -822,3 +828,6 @@ pre code {
 .micro {
   font-size: 0.6875rem;
   line-height: 0.9375rem; }
+
+.mono {
+  font-family: monospace; }

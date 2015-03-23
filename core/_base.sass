@@ -19,20 +19,25 @@ html
 
 body
   @include font-size($base-font-size)
+  font-family: $font-family-base
   font-weight: $font-weight-normal
   color: $color-font
 
 h1
   @include font-size-heading(3)
+  font-family: $font-family-heading
 
 h2
   @include font-size-heading(2)
+  font-family: $font-family-heading
 
 h3
   @include font-size-heading(1)
+  font-family: $font-family-heading
 
 h4, h5, h6
   @include font-size-heading(0)
+  font-family: $font-family-heading
 
 strong, em, small, code, hr
   line-height: 1
@@ -91,6 +96,7 @@ td, th
   padding: quarter($spacing-unit)
 
 code
+  font-family: $font-family-monospace
   white-space: nowrap
 
 pre code
