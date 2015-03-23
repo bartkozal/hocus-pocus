@@ -78,7 +78,7 @@ $grid-container: 70rem
   `application.sass` - Main file, use it only to import partials
 
 3. Use syntax rules from [Mark Otto's Code Guide][8]
-4. Use the following `modifier-object-subobject` naming convention:
+4. Use the following `object-(subobject|modifier)` naming convention:
 
   ```html
     <!-- Objects -->
