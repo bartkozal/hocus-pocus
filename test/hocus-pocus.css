@@ -280,6 +280,9 @@ ul > li, ol > li {
 dl > dt {
   font-weight: 700; }
 
+dd + dt {
+  margin-top: 0.65625rem; }
+
 hr {
   height: 1px;
   border: 0 none;
