@@ -247,7 +247,8 @@ em {
   font-style: italic; }
 
 a {
-  color: #0074d9; }
+  color: #0074d9;
+  word-wrap: break-word; }
 
 a:active {
   position: relative;
