@@ -91,9 +91,9 @@ $grid-container: 70rem
     .blog-post-body > p {
       ...
     }
-  ``` 
+  ```
 
-1. Avoid nested classes
+1. Avoid nested classes:
 
   ```css
     /* bad */
@@ -119,7 +119,7 @@ $grid-container: 70rem
     .headline {
       ...
     }
-  ``` 
+  ```
 
 ## Contributing
 
