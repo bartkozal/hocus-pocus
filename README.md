@@ -45,7 +45,9 @@ $grid-container: 70rem
 
 
 1. Follow the rules from [Mark Otto's Code Guide][code-guide]
+
 1. Use [autoprefixer][autoprefixer] or [autoprefixer-rails][autoprefixer-rails]
+
 1. Use the following naming convention:
 
   ```html
@@ -80,12 +82,12 @@ $grid-container: 70rem
 1. Avoid styling generic HTML elements:
 
   ```css
-    // bad
+    /* bad */
     p {
       ...
     }
 
-    // good
+    /* good */
     .blog-post-body > p {
       ...
     }
@@ -94,12 +96,12 @@ $grid-container: 70rem
 1. Avoid nested classes
 
   ```css
-    // bad
+    /* bad */
     .blog-post .meta .author {
       ...
     }
 
-    // good
+    /* good */
     .blog-post-meta-author {
       ...
     }
@@ -108,12 +110,12 @@ $grid-container: 70rem
 1. Never use the HTML id attribute in stylesheets:
 
   ```css
-    // bad
+    /* bad */
     #headline {
       ...
     }
 
-    // good
+    /* good */
     .headline {
       ...
     }
@@ -128,10 +130,9 @@ $grid-container: 70rem
 [autoprefixer]: https://github.com/postcss/autoprefixer
 [autoprefixer-rails]: https://github.com/ai/autoprefixer-rails
 [code-guide]: http://codeguide.co/#css
-[issues]: https://github.com/bkzl/hocus-pocus/issues
-[flexboxgrid]: https://github.com/kristoferjoseph/flexboxgrid
+[inuitcss]: https://github.com/inuitcss
 [normalize]: https://github.com/necolas/normalize.css
+[flexboxgrid]: https://github.com/kristoferjoseph/flexboxgrid
 [sassy-gridlover]: https://github.com/hiulit/Sassy-Gridlover
 [colors]: https://github.com/mrmrs/colors
-[inuitcss]: https://github.com/inuitcss
-[inbox-patter]: http://mvcss.io/manifest/#inbox
+[issues]: https://github.com/bkzl/hocus-pocus/issues
