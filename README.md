@@ -1,18 +1,16 @@
 # Hocus-Pocus
 
-Hocus-Pocus is a simple and design-free [SASS][1] micro framework, ideal as a css starter kit.
+Hocus-Pocus is a simple and design-free [SASS][sass] micro framework, ideal as a CSS starter kit.
 
-It could not exist without work of the awesome people. There is a list of resources which I used:
+It could not exist without work of awesome people behind these projects:
 
-* [normalize.css][11]
-* [inuitcss][20]
-* [flexboxgrid][10]
-* [sassy-gridlover][13]
-* [colors][18]
-* [SMACSS][14]
-* [MVCSS][15]
-* [Inheriting box-sizing Probably Slightly Better Best-Practice][3]
-* [BEM modifiers: multiple classes vs @extend][17]
+* [inuitcss][inuitcss]
+* [normalize.css][normalize]
+* [flexboxgrid][flexboxgrid]
+* [sassy-gridlover][sassy-gridlover]
+* [colors][colors]
+
+## Quick Start
 
 To install Hocus-Pocus use Bower:
 
@@ -20,7 +18,7 @@ To install Hocus-Pocus use Bower:
 $ bower install hocus-pocus
 ```
 
-Or [Rails Assets][5] if you have a Rails app:
+Or [Rails Assets][rails-assets] if you have a Ruby app:
 
 ```rb
 # Gemfile
@@ -43,42 +41,12 @@ $grid-container: 70rem
 @import "inbox/landing-headings-fix"
 ```
 
-## What is included?
-
-1. Normalize
-2. Box-sizing global reset
-3. Vertical rhythm
-4. Grid based on flexbox
-5. Widths helpers in fraction format
-6. Styling for base html elements
-7. Box model helpers
-8. Text helpers
-
 ## Principles
 
-1. Use [autoprefixer][6] or [autoprefixer-rails][7]
-2. Use the following directories structure (you should check the source code of Hocus-Pocus to get the reference):
 
-  ```
-  core/
-    |- ...
-  objects/
-    |- ...
-  inbox/
-    |- ...
-  application.sass
-  ```
-
-  `core/` - All low-level sass files like functions, mixins, helpers and base styles for html elements
-
-  `objects/` - Reusable abstractions of application specific elements f.e. `.meter` or `.price-box`
-
-  `inbox/` - Temporary styles, especially useful when you work with someone who isn't familiar with application's css
-
-  `application.sass` - Main file, use it only to import partials
-
-3. Use syntax rules from [Mark Otto's Code Guide][8]
-4. Use the following `object-(subobject|modifier)` naming convention:
+1. Follow the rules from [Mark Otto's Code Guide][code-guide]
+1. Use [autoprefixer][autoprefixer] or [autoprefixer-rails][autoprefixer-rails]
+1. Use the following naming convention:
 
   ```html
     <!-- Objects -->
@@ -108,27 +76,62 @@ $grid-container: 70rem
     <!-- JavaScript handler -->
     <div class="alert js-alert"></div>
   ```
-4. Use classes over IDs
-5. Avoid styling generic HTML elements
-6. Avoid more than a one modifier and a one state class per object
-7. Avoid nested classes, use the `.object-subobject` rule instead
+
+1. Avoid styling generic HTML elements:
+
+  ```css
+    // bad
+    p {
+      ...
+    }
+
+    // good
+    .blog-post-body > p {
+      ...
+    }
+  ``` 
+
+1. Avoid nested classes
+
+  ```css
+    // bad
+    .blog-post .meta .author {
+      ...
+    }
+
+    // good
+    .blog-post-meta-author {
+      ...
+    }
+  ```
+
+1. Never use the HTML id attribute in stylesheets:
+
+  ```css
+    // bad
+    #headline {
+      ...
+    }
+
+    // good
+    .headline {
+      ...
+    }
+  ``` 
 
 ## Contributing
 
-[Add a new issue][9] for bugs and ideas.
+[Add a new issue][issues] for bugs and ideas.
 
-[1]: http://sass-lang.com
-[3]: http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
-[5]: https://rails-assets.org
-[6]: https://github.com/postcss/autoprefixer
-[7]: https://github.com/ai/autoprefixer-rails
-[8]: http://codeguide.co/#css
-[9]: https://github.com/bkzl/hocus-pocus/issues
-[10]: https://github.com/kristoferjoseph/flexboxgrid
-[11]: https://github.com/necolas/normalize.css
-[13]: https://github.com/hiulit/Sassy-Gridlover
-[14]: https://smacss.com
-[15]: http://mvcss.io
-[17]: http://bensmithett.com/bem-modifiers-multiple-classes-vs-extend/
-[18]: https://github.com/mrmrs/colors
-[20]: https://github.com/inuitcss
+[sass]: http://sass-lang.com
+[rails-assets]: https://rails-assets.org
+[autoprefixer]: https://github.com/postcss/autoprefixer
+[autoprefixer-rails]: https://github.com/ai/autoprefixer-rails
+[code-guide]: http://codeguide.co/#css
+[issues]: https://github.com/bkzl/hocus-pocus/issues
+[flexboxgrid]: https://github.com/kristoferjoseph/flexboxgrid
+[normalize]: https://github.com/necolas/normalize.css
+[sassy-gridlover]: https://github.com/hiulit/Sassy-Gridlover
+[colors]: https://github.com/mrmrs/colors
+[inuitcss]: https://github.com/inuitcss
+[inbox-patter]: http://mvcss.io/manifest/#inbox
