@@ -7,13 +7,13 @@ module.exports = function(grunt) {
           sourcemap: 'none'
         },
         files: {
-          'test/hocus-pocus.css': 'hocus-pocus.sass'
+          'docs/hocus-pocus.css': 'sass/hocus-pocus.sass'
         }
       }
     },
     autoprefixer: {
       no_dest: {
-        src: 'test/hocus-pocus.css'
+        src: 'docs/hocus-pocus.css'
       }
     },
     watch: {
@@ -27,7 +27,7 @@ module.exports = function(grunt) {
       server: {
         options: {
           port: 3000,
-          base: 'test/'
+          base: 'docs/'
         }
       }
     }
