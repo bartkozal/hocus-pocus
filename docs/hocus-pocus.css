@@ -183,128 +183,6 @@ html {
 img {
   box-sizing: content-box; }
 
-h1, h2, h3, h4, h5, h6,
-p, ul, ol, dl, dd, hr,
-blockquote, pre, table, th, td,
-form, fieldset, caption, legend {
-  margin: 0;
-  padding: 0; }
-
-p, ul, ol, dl, hr,
-blockquote, pre, table {
-  margin-bottom: 1.3125rem; }
-
-ul ul, ol ol, ul ol, ol ul {
-  margin-top: 0;
-  margin-bottom: 0; }
-
-html {
-  overflow-y: scroll;
-  min-height: 100%; }
-
-body {
-  font-size: 0.9375rem;
-  line-height: 1.3125rem;
-  font-family: sans-serif;
-  font-weight: 400;
-  color: #111; }
-
-h1 {
-  font-size: 3.1875rem;
-  line-height: 3.9375rem;
-  margin-bottom: 1.3125rem;
-  margin-top: 2.625rem;
-  font-family: sans-serif; }
-
-h2 {
-  font-size: 2.125rem;
-  line-height: 2.625rem;
-  margin-bottom: 1.3125rem;
-  margin-top: 2.625rem;
-  font-family: sans-serif; }
-
-h3 {
-  font-size: 1.4375rem;
-  line-height: 2.625rem;
-  margin-bottom: 1.3125rem;
-  margin-top: 1.3125rem;
-  font-family: sans-serif; }
-
-h4, h5, h6 {
-  font-size: 0.9375rem;
-  line-height: 1.3125rem;
-  margin-bottom: 1.3125rem;
-  margin-top: 1.3125rem;
-  font-family: sans-serif; }
-
-strong, em, small, code, hr {
-  line-height: 1; }
-
-strong {
-  font-weight: 700; }
-
-em {
-  font-style: italic; }
-
-a {
-  color: #0074d9;
-  word-wrap: break-word; }
-
-a:active {
-  position: relative;
-  top: 1px; }
-
-sup, sub {
-  vertical-align: baseline;
-  position: relative; }
-
-sup {
-  top: -0.4em; }
-
-sub {
-  bottom: -0.25em; }
-
-small {
-  font-size: 0.8125rem;
-  line-height: 1.125rem; }
-
-blockquote {
-  padding-left: 1.3125rem;
-  border-left: 3px solid #ddd;
-  font-style: italic;
-  color: #aaa; }
-
-ul > li, ol > li {
-  margin-left: 1.3125rem; }
-
-dl > dt {
-  font-weight: 700; }
-
-dd + dt {
-  margin-top: 0.65625rem; }
-
-hr {
-  height: 1px;
-  border: 0 none;
-  background-color: #ddd;
-  color: #ddd; }
-
-table {
-  width: 100%; }
-
-thead {
-  text-align: left; }
-
-td, th {
-  padding: 0.32813rem; }
-
-code {
-  font-family: monospace;
-  white-space: nowrap; }
-
-pre code {
-  white-space: pre-wrap; }
-
 .container {
   max-width: 68rem;
   margin: auto;
@@ -599,46 +477,54 @@ pre code {
       -ms-flex-preferred-size: 91.6666%;
           flex-basis: 91.6666%; }
 
-.text-left {
-  text-align: left !important; }
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, dl, dd, hr,
+blockquote, pre, table, th, td,
+form, fieldset, caption, legend {
+  margin: 0;
+  padding: 0; }
 
-.text-center {
-  text-align: center !important; }
+p, ul, ol, dl, hr,
+blockquote, pre, table {
+  margin-bottom: 1.3125rem; }
 
-.text-right {
-  text-align: right !important; }
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0;
+  margin-bottom: 0; }
 
-.text-light {
-  font-weight: 100 !important; }
+html {
+  overflow-y: scroll;
+  min-height: 100%; }
 
-.text-normal {
-  font-weight: 400 !important; }
-
-.text-bold {
-  font-weight: 700 !important; }
+body {
+  font-size: 0.9375rem;
+  line-height: 1.3125rem;
+  font-family: sans-serif;
+  font-weight: 400;
+  color: #111; }
 
 .mh {
-  margin: 0.65625rem !important; }
+  margin: halve(1.3125rem) !important; }
 
 .mth {
-  margin-top: 0.65625rem !important; }
+  margin-top: halve(1.3125rem) !important; }
 
 .mrh {
-  margin-right: 0.65625rem !important; }
+  margin-right: halve(1.3125rem) !important; }
 
 .mbh {
-  margin-bottom: 0.65625rem !important; }
+  margin-bottom: halve(1.3125rem) !important; }
 
 .mlh {
-  margin-left: 0.65625rem !important; }
+  margin-left: halve(1.3125rem) !important; }
 
 .mvh {
-  margin-top: 0.65625rem !important;
-  margin-bottom: 0.65625rem !important; }
+  margin-top: halve(1.3125rem) !important;
+  margin-bottom: halve(1.3125rem) !important; }
 
 .mhh {
-  margin-left: 0.65625rem !important;
-  margin-right: 0.65625rem !important; }
+  margin-left: halve(1.3125rem) !important;
+  margin-right: halve(1.3125rem) !important; }
 
 .m0 {
   margin: 0 !important; }
@@ -687,50 +573,50 @@ pre code {
   margin-right: 1.3125rem !important; }
 
 .md {
-  margin: 2.625rem !important; }
+  margin: double(1.3125rem) !important; }
 
 .mtd {
-  margin-top: 2.625rem !important; }
+  margin-top: double(1.3125rem) !important; }
 
 .mrd {
-  margin-right: 2.625rem !important; }
+  margin-right: double(1.3125rem) !important; }
 
 .mbd {
-  margin-bottom: 2.625rem !important; }
+  margin-bottom: double(1.3125rem) !important; }
 
 .mld {
-  margin-left: 2.625rem !important; }
+  margin-left: double(1.3125rem) !important; }
 
 .mvd {
-  margin-top: 2.625rem !important;
-  margin-bottom: 2.625rem !important; }
+  margin-top: double(1.3125rem) !important;
+  margin-bottom: double(1.3125rem) !important; }
 
 .mhd {
-  margin-left: 2.625rem !important;
-  margin-right: 2.625rem !important; }
+  margin-left: double(1.3125rem) !important;
+  margin-right: double(1.3125rem) !important; }
 
 .ph {
-  padding: 0.65625rem !important; }
+  padding: halve(1.3125rem) !important; }
 
 .pth {
-  padding-top: 0.65625rem !important; }
+  padding-top: halve(1.3125rem) !important; }
 
 .prh {
-  padding-right: 0.65625rem !important; }
+  padding-right: halve(1.3125rem) !important; }
 
 .pbh {
-  padding-bottom: 0.65625rem !important; }
+  padding-bottom: halve(1.3125rem) !important; }
 
 .plh {
-  padding-left: 0.65625rem !important; }
+  padding-left: halve(1.3125rem) !important; }
 
 .pvh {
-  padding-top: 0.65625rem !important;
-  padding-bottom: 0.65625rem !important; }
+  padding-top: halve(1.3125rem) !important;
+  padding-bottom: halve(1.3125rem) !important; }
 
 .phh {
-  padding-left: 0.65625rem !important;
-  padding-right: 0.65625rem !important; }
+  padding-left: halve(1.3125rem) !important;
+  padding-right: halve(1.3125rem) !important; }
 
 .p0 {
   padding: 0 !important; }
@@ -779,59 +665,149 @@ pre code {
   padding-right: 1.3125rem !important; }
 
 .pd {
-  padding: 2.625rem !important; }
+  padding: double(1.3125rem) !important; }
 
 .ptd {
-  padding-top: 2.625rem !important; }
+  padding-top: double(1.3125rem) !important; }
 
 .prd {
-  padding-right: 2.625rem !important; }
+  padding-right: double(1.3125rem) !important; }
 
 .pbd {
-  padding-bottom: 2.625rem !important; }
+  padding-bottom: double(1.3125rem) !important; }
 
 .pld {
-  padding-left: 2.625rem !important; }
+  padding-left: double(1.3125rem) !important; }
 
 .pvd {
-  padding-top: 2.625rem !important;
-  padding-bottom: 2.625rem !important; }
+  padding-top: double(1.3125rem) !important;
+  padding-bottom: double(1.3125rem) !important; }
 
 .phd {
-  padding-left: 2.625rem !important;
-  padding-right: 2.625rem !important; }
+  padding-left: double(1.3125rem) !important;
+  padding-right: double(1.3125rem) !important; }
 
+hr {
+  height: 1px;
+  border: 0 none;
+  background-color: #ddd;
+  color: #ddd; }
+
+h1,
 .h1 {
   font-size: 3.1875rem;
   line-height: 3.9375rem;
   margin-bottom: 1.3125rem;
-  margin-top: 2.625rem; }
+  margin-top: 2.625rem;
+  font-family: sans-serif; }
 
+h2,
 .h2 {
   font-size: 2.125rem;
   line-height: 2.625rem;
   margin-bottom: 1.3125rem;
-  margin-top: 2.625rem; }
+  margin-top: 2.625rem;
+  font-family: sans-serif; }
 
+h3,
 .h3 {
   font-size: 1.4375rem;
   line-height: 2.625rem;
   margin-bottom: 1.3125rem;
-  margin-top: 1.3125rem; }
+  margin-top: 1.3125rem;
+  font-family: sans-serif; }
 
+h4, h5, h5,
 .h4, .h5, .h6 {
   font-size: 0.9375rem;
   line-height: 1.3125rem;
   margin-bottom: 1.3125rem;
-  margin-top: 1.3125rem; }
+  margin-top: 1.3125rem;
+  font-family: sans-serif; }
 
-.small {
+strong, em, small, code, hr {
+  line-height: 1; }
+
+strong {
+  font-weight: 700; }
+
+em {
+  font-style: italic; }
+
+a {
+  color: #0074d9;
+  word-wrap: break-word; }
+  a:active {
+    position: relative;
+    top: 1px; }
+
+sup, sub {
+  vertical-align: baseline;
+  position: relative; }
+
+sup {
+  top: -0.4em; }
+
+sub {
+  bottom: -0.25em; }
+
+blockquote {
+  padding-left: 1.3125rem;
+  border-left: 3px solid #ddd;
+  font-style: italic;
+  color: #aaa; }
+
+code {
+  font-family: monospace;
+  white-space: nowrap; }
+
+pre code {
+  white-space: pre-wrap; }
+
+ul > li, ol > li {
+  margin-left: 1.3125rem; }
+
+dl > dt {
+  font-weight: 700; }
+
+dd + dt {
+  margin-top: 0.65625rem; }
+
+small,
+.text-small {
   font-size: 0.8125rem;
   line-height: 1.125rem; }
 
-.micro {
+.text-micro {
   font-size: 0.6875rem;
   line-height: 0.9375rem; }
 
-.mono {
+.text-mono {
   font-family: monospace; }
+
+.text-left {
+  text-align: left; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.text-light {
+  font-weight: 100; }
+
+.text-normal {
+  font-weight: 400; }
+
+.text-bold {
+  font-weight: 700; }
+
+table {
+  width: 100%; }
+
+thead {
+  text-align: left; }
+
+td, th {
+  padding: 0.32813rem; }
