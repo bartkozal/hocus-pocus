@@ -18,7 +18,8 @@
     "node_modules",
     "docs",
     "package.json",
-    "Gruntfile.js"
+    "Gruntfile.js",
+    "jekyll.yml"
   ]
 }
 

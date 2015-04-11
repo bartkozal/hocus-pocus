@@ -1,6 +1,7 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+
     sass: {
       dist: {
         options: {
@@ -11,39 +12,64 @@ module.exports = function(grunt) {
         }
       }
     },
+
     autoprefixer: {
       no_dest: {
-        src: 'docs/hocus-pocus.css'
+        src: 'docs/*.css'
       }
     },
+
+    jekyll: {
+      options: {
+        src : 'docs'
+      },
+      dist: {
+        options: {
+          dest: 'build'
+        }
+      }
+    },
+
     watch: {
-      files: ['**/*.sass'],
-      tasks: ['sass', 'autoprefixer'],
+      files: ['sass/*.sass', 'docs/**/*.html', 'docs/*.css'],
+      tasks: ['sass', 'autoprefixer', 'jekyll'],
       options: {
         livereload: true
       }
     },
+
+    buildcontrol: {
+      options: {
+        dir: 'build',
+        commit: true,
+        push: true,
+        message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+      },
+      pages: {
+        options: {
+          remote: 'git@github.com:bkzl/hocus-pocus.git',
+          branch: 'gh-pages'
+        }
+      }
+    },
+
     connect: {
       server: {
         options: {
           port: 3000,
-          base: 'docs'
+          base: 'build'
         }
       }
     },
-    'gh-pages': {
-      options: {
-        base: 'docs'
-      },
-      src: '**/*'
-    }
   });
 
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-autoprefixer');
-  grunt.loadNpmTasks('grunt-gh-pages');
+  grunt.loadNpmTasks('grunt-jekyll');
+  grunt.loadNpmTasks('grunt-build-control');
 
   grunt.registerTask('default', ['connect', 'watch']);
+  grunt.registerTask('publish', ['jekyll', 'buildcontrol'])
 };
