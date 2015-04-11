@@ -27,9 +27,15 @@ module.exports = function(grunt) {
       server: {
         options: {
           port: 3000,
-          base: 'docs/'
+          base: 'docs'
         }
       }
+    },
+    'gh-pages': {
+      options: {
+        base: 'docs'
+      },
+      src: '**/*'
     }
   });
 
@@ -37,6 +43,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-gh-pages');
 
   grunt.registerTask('default', ['connect', 'watch']);
 };
