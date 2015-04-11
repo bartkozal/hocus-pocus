@@ -44,86 +44,6 @@ $grid-container: 70rem
 @import "inbox/landing-headings-fix"
 ```
 
-## Principles
-
-
-1. Follow the rules from [Mark Otto's Code Guide][code-guide]
-
-1. Use [autoprefixer][autoprefixer] or [autoprefixer-rails][autoprefixer-rails]
-
-1. Use the following naming convention:
-
-  ```html
-    <!-- Objects -->
-    <div class="media"></div>
-    <a class="btn"></a>
-
-    <!-- Object with a related sub-object -->
-    <div class="media">
-      <img class="media-img"></div>
-      <div class="media-body"></div>
-    </div>
-
-    <!-- Object with modifier -->
-    <div class="media media-milli"></div>
-    <a class="btn btn-primary"></a>
-
-    <!-- Object with state -->
-    <a class="btn is-btn-active"></a>
-    <a class="btn is-btn-disabled"></a>
-
-    <!-- Object which requires wrapper -->
-    <!-- f.e. "position: relative" and "position: absolute" pair -->
-    <div class="box has-close-link">
-      <a class="close-link"></a>
-    </div>
-
-    <!-- JavaScript handler -->
-    <div class="alert js-alert"></div>
-  ```
-
-1. Avoid styling generic HTML elements:
-
-  ```css
-    /* bad */
-    p {
-      ...
-    }
-
-    /* good */
-    .blog-post-body > p {
-      ...
-    }
-  ```
-
-1. Avoid nested classes:
-
-  ```css
-    /* bad */
-    .blog-post .meta .author {
-      ...
-    }
-
-    /* good */
-    .blog-post-meta-author {
-      ...
-    }
-  ```
-
-1. Never use the HTML id attribute in stylesheets:
-
-  ```css
-    /* bad */
-    #headline {
-      ...
-    }
-
-    /* good */
-    .headline {
-      ...
-    }
-  ```
-
 ## Contributing
 
 [Add a new issue][issues] for bugs and ideas.
@@ -131,9 +51,6 @@ $grid-container: 70rem
 [sass]: http://sass-lang.com
 [documentation]: http://bkzl.github.io/hocus-pocus/
 [rails-assets]: https://rails-assets.org
-[autoprefixer]: https://github.com/postcss/autoprefixer
-[autoprefixer-rails]: https://github.com/ai/autoprefixer-rails
-[code-guide]: http://codeguide.co/#css
 [inuitcss]: https://github.com/inuitcss
 [normalize]: https://github.com/necolas/normalize.css
 [flexboxgrid]: https://github.com/kristoferjoseph/flexboxgrid

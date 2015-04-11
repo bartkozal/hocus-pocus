@@ -6,12 +6,23 @@
     <title>Hocus-Pocus</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="hocus-pocus.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="docs.css">
   </head>
 
   <body>
     <div class="container">
-      {{ content }}
+      <h2>Hocus-Pocus</h2>
+      <div class="grid">
+        <div class="grid-item 1/5">
+          <ul>
+            <li><a href="index.html">Quick Start</a></li>
+            <li><a href="principles.html">Principles</a></li>
+          </ul>
+        </div>
+        <div class="grid-item 4/5">
+          {{ content }}
+        </div>
+      </div>
     </div>
   </body>
 </html>
