@@ -2,8 +2,6 @@
 
 Hocus-Pocus is a simple and design-free [SASS][sass] micro framework, ideal as a CSS starter kit.
 
-**[Check out the Hocus-Pocus documentation.][documentation]**
-
 It could not exist without work of awesome people behind these projects:
 
 * [inuitcss][inuitcss]
@@ -11,6 +9,8 @@ It could not exist without work of awesome people behind these projects:
 * [flexboxgrid][flexboxgrid]
 * [sassy-gridlover][sassy-gridlover]
 * [colors][colors]
+
+[Check out the Hocus-Pocus documentation][documentation] to learn more.
 
 ## Quick Start
 
