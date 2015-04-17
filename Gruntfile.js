@@ -32,7 +32,7 @@ module.exports = function(grunt) {
 
     watch: {
       files: ['sass/*.sass', 'docs/**/*.html', 'docs/*.css'],
-      tasks: ['sass', 'autoprefixer', 'jekyll'],
+      tasks: ['sass', 'autoprefixer'],
       options: {
         livereload: true
       }
@@ -70,6 +70,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-jekyll');
   grunt.loadNpmTasks('grunt-build-control');
 
-  grunt.registerTask('default', ['connect', 'watch']);
+  grunt.registerTask('default', ['sass', 'autoprefixer', 'jekyll']);
   grunt.registerTask('publish', ['jekyll', 'buildcontrol'])
 };
