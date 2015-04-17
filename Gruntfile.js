@@ -31,7 +31,7 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      files: ['sass/*.sass', 'docs/**/*.html', 'docs/*.css'],
+      files: ['sass/*.sass', 'docs/*.css'],
       tasks: ['sass', 'autoprefixer'],
       options: {
         livereload: true
@@ -51,21 +51,11 @@ module.exports = function(grunt) {
           branch: 'gh-pages'
         }
       }
-    },
-
-    connect: {
-      server: {
-        options: {
-          port: 3000,
-          base: 'build'
-        }
-      }
-    },
+    }
   });
 
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-jekyll');
   grunt.loadNpmTasks('grunt-build-control');
