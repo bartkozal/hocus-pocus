@@ -2,40 +2,21 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
-    sass: {
-      dist: {
-        options: {
-          sourcemap: 'none'
-        },
-        files: {
-          'docs/css/hocus-pocus.css': 'sass/hocus-pocus.sass'
-        }
-      }
-    },
-
     autoprefixer: {
       no_dest: {
-        src: 'docs/css/*.css'
+        src: 'build/css/hocus-pocus.css'
       }
     },
 
     jekyll: {
       options: {
         src : 'docs',
-        config: 'docs/_config.yml'
+        config: '_config.yml'
       },
       dist: {
         options: {
           dest: 'build'
         }
-      }
-    },
-
-    watch: {
-      files: ['sass/*.sass', 'docs/css/*.css'],
-      tasks: ['sass', 'autoprefixer'],
-      options: {
-        livereload: true
       }
     },
 
@@ -55,12 +36,9 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-jekyll');
+  grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-build-control');
 
-  grunt.registerTask('default', ['sass', 'autoprefixer', 'jekyll']);
-  grunt.registerTask('publish', ['jekyll', 'buildcontrol'])
+  grunt.registerTask('publish', ['jekyll', 'autoprefixer', 'buildcontrol'])
 };

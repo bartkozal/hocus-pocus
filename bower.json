@@ -16,10 +16,11 @@
   "ignore": [
     "**/.*",
     "node_modules",
+    "package.json",
     "build",
     "docs",
-    "package.json",
-    "Gruntfile.js"
+    "Gruntfile.js",
+    "_config.yml"
   ]
 }
 
