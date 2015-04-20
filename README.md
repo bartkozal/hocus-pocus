@@ -1,33 +1,33 @@
 # Hocus-Pocus
 
-Hocus-Pocus is a simple and design-free [SASS][sass] micro framework, ideal as a CSS starter kit.
+Hocus-Pocus is a simple and design-free [SASS](http://sass-lang.com)
+micro framework, ideal as a CSS starter kit.
 
 It could not exist without work of awesome people behind these projects:
 
-* [inuitcss][inuitcss]
-* [normalize.css][normalize]
-* [flexboxgrid][flexboxgrid]
-* [sassy-gridlover][sassy-gridlover]
-* [colors][colors]
+* [inuitcss](https://github.com/inuitcss)
+* [primer](https://github.com/primer/primer)
+* [normalize.css](https://github.com/necolas/normalize.css)
+* [flexboxgrid](https://github.com/kristoferjoseph/flexboxgrid)
+* [sassy-gridlover](https://github.com/hiulit/Sassy-Gridlover)
+* [colors](https://github.com/mrmrs/colors)
 
-[Check out the Hocus-Pocus documentation][documentation] to learn more.
-
-## Quick Start
+### Quick Start
 
 To install Hocus-Pocus use Bower:
 
-```shell
+```sh
 $ bower install hocus-pocus
 ```
 
-Or [Rails Assets][rails-assets] if you have a Ruby app:
+Or [Rails Assets](https://rails-assets.org) if you have a Ruby app:
 
-```rb
+```ruby
 # Gemfile
 
-source 'https://rails-assets.org'
-
-gem 'rails-assets-hocus-pocus'
+source 'https://rails-assets.org' do
+  gem 'rails-assets-hocus-pocus'
+end
 ```
 
 Then include the main Hocus-Pocus file after your variables, but before
@@ -44,16 +44,23 @@ $grid-container: 70rem
 @import "inbox/landing-headings-fix"
 ```
 
-## Contributing
+### Contributing
 
-[Add a new issue][issues] for bugs and ideas.
+[Add a new issue](https://github.com/bkzl/hocus-pocus/issues)
+for bugs and ideas.
 
-[sass]: http://sass-lang.com
-[documentation]: http://bkzl.github.io/hocus-pocus/
-[rails-assets]: https://rails-assets.org
-[inuitcss]: https://github.com/inuitcss
-[normalize]: https://github.com/necolas/normalize.css
-[flexboxgrid]: https://github.com/kristoferjoseph/flexboxgrid
-[sassy-gridlover]: https://github.com/hiulit/Sassy-Gridlover
-[colors]: https://github.com/mrmrs/colors
-[issues]: https://github.com/bkzl/hocus-pocus/issues
+### Development
+
+To run docs locally you need to install `jekyll` and `redcarpet` gems,
+then run:
+
+```sh
+$ jekyll serve
+```
+
+To build and deploy to production:
+
+```sh
+$ npm install
+$ grunt publish
+```

@@ -8,6 +8,7 @@ micro framework, ideal as a CSS starter kit.
 It could not exist without work of awesome people behind these projects:
 
 * [inuitcss](https://github.com/inuitcss)
+* [primer](https://github.com/primer/primer)
 * [normalize.css](https://github.com/necolas/normalize.css)
 * [flexboxgrid](https://github.com/kristoferjoseph/flexboxgrid)
 * [sassy-gridlover](https://github.com/hiulit/Sassy-Gridlover)
@@ -49,3 +50,19 @@ $grid-container: 70rem
 
 [Add a new issue](https://github.com/bkzl/hocus-pocus/issues)
 for bugs and ideas.
+
+### Development
+
+To run docs locally you need to install `jekyll` and `redcarpet` gems,
+then run:
+
+```sh
+$ jekyll serve
+```
+
+To build and deploy to production:
+
+```sh
+$ npm install
+$ grunt publish
+```
