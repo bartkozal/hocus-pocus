@@ -8,14 +8,14 @@ module.exports = function(grunt) {
           sourcemap: 'none'
         },
         files: {
-          'docs/hocus-pocus.css': 'sass/hocus-pocus.sass'
+          'docs/css/hocus-pocus.css': 'sass/hocus-pocus.sass'
         }
       }
     },
 
     autoprefixer: {
       no_dest: {
-        src: 'docs/*.css'
+        src: 'docs/css/*.css'
       }
     },
 
@@ -32,7 +32,7 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      files: ['sass/*.sass', 'docs/*.css'],
+      files: ['sass/*.sass', 'docs/css/*.css'],
       tasks: ['sass', 'autoprefixer'],
       options: {
         livereload: true
