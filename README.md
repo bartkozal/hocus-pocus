@@ -3,6 +3,8 @@
 Hocus-Pocus is a simple and design-free [SASS](http://sass-lang.com)
 micro framework, ideal as a CSS starter kit.
 
+[Please check the documentation.](http://hocus-pocus.io)
+
 It could not exist without work of awesome people behind these projects:
 
 * [inuitcss](https://github.com/inuitcss)
