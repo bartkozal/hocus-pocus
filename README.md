@@ -48,86 +48,87 @@ $grid-container: 70rem
 
 ### Principles
 
-1. Follow the rules from [Mark Otto's Code Guide](http://codeguide.co/#css)
-2. Use [autoprefixer](https://github.com/postcss/autoprefixer) or
-   [autoprefixer-rails](https://github.com/ai/autoprefixer-rails)
-3. Use the following naming convention:
+Follow the rules from [Mark Otto's Code Guide](http://codeguide.co/#css)
 
-    ```html
-    <!-- Objects -->
-    <div class="media"></div>
-    <a class="btn"></a>
+Use [autoprefixer](https://github.com/postcss/autoprefixer) or [autoprefixer-rails](https://github.com/ai/autoprefixer-rails)
 
-    <!-- Object with a related sub-object -->
-    <div class="media">
-      <img class="media-img"></div>
-      <div class="media-body"></div>
-    </div>
+Use the following naming convention:
 
-    <!-- Object with modifier -->
-    <div class="media media-milli"></div>
-    <a class="btn btn-primary"></a>
+```html
+<!-- Objects -->
+<div class="media"></div>
+<a class="btn"></a>
 
-    <!-- Object with state -->
-    <a class="btn is-btn-active"></a>
-    <a class="btn is-btn-disabled"></a>
+<!-- Object with a related sub-object -->
+<div class="media">
+  <img class="media-img"></div>
+  <div class="media-body"></div>
+</div>
 
-    <!-- Object which requires wrapper -->
-    <!-- f.e. "position: relative" and "position: absolute" pair -->
-    <div class="box has-close-link">
-      <a class="close-link"></a>
-    </div>
+<!-- Object with modifier -->
+<div class="media media-milli"></div>
+<a class="btn btn-primary"></a>
 
-    <!-- JavaScript handler -->
-    <div class="alert js-alert"></div>
-    ```
+<!-- Object with state -->
+<a class="btn is-btn-active"></a>
+<a class="btn is-btn-disabled"></a>
 
-4. Avoid styling generic HTML elements:
+<!-- Object which requires wrapper -->
+<!-- f.e. "position: relative" and "position: absolute" pair -->
+<div class="box has-close-link">
+  <a class="close-link"></a>
+</div>
 
-    ```css
-    /* bad */
-    p {
-      ...
-    }
+<!-- JavaScript handler -->
+<div class="alert js-alert"></div>
+```
 
-    /* good */
-    .blog-post-body > p {
-      ...
-    }
-    ```
+Avoid styling generic HTML elements:
 
-5. Avoid nested classes:
+```css
+/* bad */
+p {
+  ...
+}
 
-    ```css
-    /* bad */
-    .blog-post .meta .author {
-      ...
-    }
+/* good */
+.blog-post-body > p {
+  ...
+}
+```
 
-    /* better */
-    .blog-post-meta-author {
-      ...
-    }
+Avoid nested classes:
 
-    /* good */
-    .post-author {
-      ...
-    }
-    ```
+```css
+/* bad */
+.blog-post .meta .author {
+  ...
+}
 
-6. Never use the HTML id attribute in stylesheets:
+/* better */
+.blog-post-meta-author {
+  ...
+}
 
-    ```css
-    /* bad */
-    #headline {
-      ...
-    }
+/* good */
+.post-author {
+  ...
+}
+```
 
-    /* good */
-    .headline {
-      ...
-    }
-    ```
+Never use the HTML id attribute in stylesheets:
+
+```css
+/* bad */
+#headline {
+  ...
+}
+
+/* good */
+.headline {
+  ...
+}
+```
 
 ### Contributing
 
