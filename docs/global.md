@@ -18,7 +18,7 @@ Vertical scrollbar is always visible.
 
 ### Functions
 
-Sizing functions, return quotient/product of the provided value.
+Sizing functions return a quotient/product of the provided value.
 
 ```sass
 // quarter($value)
