@@ -137,16 +137,21 @@ for bugs and ideas.
 
 ### Development
 
-To run docs locally you need to install `jekyll` and `redcarpet` gems,
-then run:
+To run docs locally you need to install `jekyll` and `redcarpet` Ruby gems
+first, then fetch npm dependencies with:
 
 ```sh
-$ jekyll serve
+$ npm install
+```
+
+Now you can start a local server by running:
+
+```sh
+$ grunt server
 ```
 
 To build and deploy to production:
 
 ```sh
-$ npm install
 $ grunt publish
 ```

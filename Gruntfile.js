@@ -20,6 +20,22 @@ module.exports = function(grunt) {
       }
     },
 
+    watch: {
+      scripts: {
+        files: ['**/*.md', '**/*.sass'],
+        tasks: ['jekyll', 'autoprefixer'],
+      },
+    },
+
+    connect: {
+      server: {
+        options: {
+          port: 4000,
+          base: 'build'
+        }
+      }
+    },
+
     buildcontrol: {
       options: {
         dir: 'build',
@@ -39,6 +55,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-jekyll');
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-build-control');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-connect');
 
+  grunt.registerTask('server', ['connect', 'watch']);
   grunt.registerTask('publish', ['jekyll', 'autoprefixer', 'buildcontrol'])
 };
