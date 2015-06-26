@@ -1,10 +1,10 @@
-@mixin font-size($font-size: $base-font-size)
+@mixin font-size($font-size: $font-size-base)
   font-size: $font-size / $vertical-align-body * 1rem
-  line-height: round($font-size * $base-line-height) / $vertical-align-body * 1rem
+  line-height: round($font-size * $font-leading) / $vertical-align-body * 1rem
 
 @mixin font-size-heading($step)
-  $font-size: $base-font-size
-  $line-height: round($font-size * $base-line-height)
+  $font-size: $font-size-base
+  $line-height: round($font-size * $font-leading)
   $computed-font-size: round($font-size * vertical-rhythm-exponent($vertical-align-factor, $step))
 
   font-size: $computed-font-size / $vertical-align-body * 1rem

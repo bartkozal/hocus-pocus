@@ -4,7 +4,8 @@ layout: default
 
 Vertical rhythm based on [sassy-gridlover](https://github.com/hiulit/Sassy-Gridlover).
 
-Base font is described by following variables: `$base-font-size`, `$font-family-base`, `$font-weight-normal` and `$color-font`
+Base font is described by following variables: `$font-size-base`,
+`$font-family-base`, `$font-weight-normal` and `$color-font`
 
 ### Headings
 

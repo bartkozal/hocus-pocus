@@ -21,8 +21,12 @@ $color-font: $color-black !default
 $color-link: $color-blue !default
 $color-muted: $color-gray !default
 
-$base-font-size: 15 !default
-$base-line-height: 1.4 !default
+
+$font-size-micro: 11 !default
+$font-size-small: 13 !default
+
+$font-size-base: 15 !default
+$font-leading: 1.4 !default
 
 $font-family-base: sans-serif !default
 $font-family-headings: $font-family-base !default
@@ -32,13 +36,10 @@ $font-weight-light: 100 !default
 $font-weight-normal: 400 !default
 $font-weight-bold: 700 !default
 
-$font-size-micro: 11 !default
-$font-size-small: 13 !default
-
 $vertical-align-body: 16 !default
 $vertical-align-factor: 1.5 !default
 
-$spacing-unit: round($base-font-size * $base-line-height) / $vertical-align-body * 1rem
+$spacing-unit: round($font-size-base * $font-leading) / $vertical-align-body * 1rem
 $spacing-map: ""
 
 $grid-container: 68rem !default

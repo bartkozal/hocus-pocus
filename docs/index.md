@@ -36,7 +36,7 @@ Then include the main Hocus-Pocus file after your variables, but before
 the rest of stylesheets:
 
 ```sass
-$base-font-family: "Open Sans", sans-serif
+$font-family-base: "Open Sans", sans-serif
 $grid-container: 70rem
 
 @import "bower_components/hocus-pocus/hocus-pocus"
