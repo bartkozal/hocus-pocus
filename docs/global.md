@@ -16,6 +16,10 @@ Vertical scrollbar is always visible.
 
 *upcoming*
 
+### Mixins
+
+*upcoming*
+
 ### Functions
 
 Sizing functions return a quotient/product of the provided value.

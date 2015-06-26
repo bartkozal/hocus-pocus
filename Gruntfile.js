@@ -22,7 +22,7 @@ module.exports = function(grunt) {
 
     watch: {
       scripts: {
-        files: ['**/*.md', '**/*.sass'],
+        files: ['**/*.md', '**/*.sass', '**/*.html'],
         tasks: ['jekyll', 'autoprefixer'],
       },
     },

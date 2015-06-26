@@ -2,7 +2,7 @@
 layout: default
 ---
 
-### Grid system
+### Grid
 
 Centered page wrapper with width set to `$grid-container`
 
@@ -16,8 +16,7 @@ Centered page wrapper with width set to `$grid-container`
 </div>
 ```
 
-`.grid` with nested `.grid-item` and <a href="/spacing">width helper</a>
-are used to build grid:
+`.grid` with nested `.grid-item` and width helper are used to build grid:
 
 <div class="grid">
   <div class="grid-item 1/3">
@@ -167,3 +166,11 @@ Moreover, you can create flat grid without the gutter:
   ...
 </div>
 ```
+
+### Spacing
+
+*upcoming*
+
+### Widths
+
+*upcoming*

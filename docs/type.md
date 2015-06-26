@@ -24,7 +24,7 @@ Base font is described by following variables: `$base-font-size`, `$font-family-
 <h6>Heading Level 6</h6>
 ```
 
-### Paragraph
+### Paragraphs
 
 <p>
   <strong>Pellentesque habitant morbi tristique</strong> senectus et netus
@@ -94,5 +94,3 @@ Base font is described by following variables: `$base-font-size`, `$font-family-
 ```html
 <hr>
 ```
-
-### Text helpers
