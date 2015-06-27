@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 
     autoprefixer: {
       no_dest: {
-        src: 'build/css/hocus-pocus.css'
+        src: 'build/css/docs.css'
       }
     },
 
