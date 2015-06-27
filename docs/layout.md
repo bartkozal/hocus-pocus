@@ -171,7 +171,7 @@ Moreover, you can create flat grid without the gutter:
 ### Width helpers
 
 Width helpers can be use for various elements like grid items, inputs or
-table. Fractions of the following numbers are available: `n/1`, `n/2`,
+table cells. Fractions of the following numbers are available: `n/1`, `n/2`,
 `n/3`, `n/4`, `n/5`, `n/6`, `n/8`, `n/9`, `n/10` and `n/12`.
 
 <div class="grid">
@@ -278,5 +278,4 @@ Examples:
 
 .padding-third-top
   padding-top: third($spacing-unit)
-
 ```

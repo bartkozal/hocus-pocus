@@ -3,6 +3,11 @@ layout: default
 ---
 
 <table>
+  <colgroup>
+    <col class="1/4"></col>
+    <col class="1/2"></col>
+    <col class="1/4"></col>
+  </colgroup>
   <thead>
     <tr>
       <th>Heading 1</th>
@@ -26,6 +31,11 @@ layout: default
 
 ```html
 <table>
+  <colgroup>
+    <col class="1/4"></col>
+    <col class="1/2"></col>
+    <col class="1/4"></col>
+  </colgroup>
   <thead>
     <tr>
       <th>Heading 1</th>
