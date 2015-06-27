@@ -5,6 +5,12 @@
   background-color: $color-black
   color: #c5c8c6
 
+%code-block
+  @extend %code
+  padding: third($spacing-unit)
+  margin-bottom: $spacing-unit
+  color: $color-white
+
 p > code
   @extend %code
   padding: halve(quarter($spacing-unit)) quarter($spacing-unit)
