@@ -31,7 +31,7 @@ $font-family-monospace: monospace
 $grid-container: 68rem
 $grid-gutter: $spacing-unit
 
-$base-border-radius: 4px
+$border-radius-base: 4px
 ```
 
 ### Colors
