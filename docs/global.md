@@ -32,6 +32,9 @@ $grid-container: 68rem
 $grid-gutter: $spacing-unit
 
 $border-radius-base: 4px
+
+$link-underline: true
+$link-active: true
 ```
 
 ### Colors

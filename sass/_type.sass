@@ -30,10 +30,15 @@ em
 a
   color: $color-link
   word-wrap: break-word
+  text-decoration: none
 
-  &:active
-    position: relative
-    top: 1px
+  @if $link-underline
+    text-decoration: underline
+
+  @if $link-active
+    &:active
+      position: relative
+      top: 1px
 
 sup, sub
   vertical-align: baseline
