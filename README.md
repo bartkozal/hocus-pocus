@@ -33,7 +33,7 @@ end
 ```
 
 Then include the main Hocus-Pocus file after your variables, but before
-the rest of stylesheets:
+the rest of your stylesheets:
 
 ```sass
 $font-family-base: "Open Sans", sans-serif
