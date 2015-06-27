@@ -172,7 +172,7 @@ Moreover, you can create flat grid without the gutter:
 
 Width helpers can be use for various elements like grid items, inputs or
 table. Fractions of the following numbers are available: `n/1`, `n/2`,
-`n/3`, `n/4`, `n/5`, `n/6`, `n/8`, `n/9`, `n/10` and `n/12`. 
+`n/3`, `n/4`, `n/5`, `n/6`, `n/8`, `n/9`, `n/10` and `n/12`.
 
 <div class="grid">
   <div class="grid-item 1/1">
@@ -239,6 +239,44 @@ table. Fractions of the following numbers are available: `n/1`, `n/2`,
   </div>
 </div>
 
-### Spacing
+### Spacing helpers
 
-*upcoming*
+Spacing helpers are generated based on the `$spacing-map` hash where key
+is a name and value is a size. By default every pair produces seven
+helpers in eight sizes (with special size where size is equal 0) for both
+margin and padding. By default you get following combinations:
+
+```sass
+.margin[-size][-type]
+.padding[-size][-type]
+.no-margin[-type]
+.no-padding[-type]
+
+// size: base, quarter, third, halve, double, triple, quadruple
+// type: top, right, bottom, left, sides, ends
+```
+
+Examples:
+
+```sass
+.no-margin
+  margin: 0
+
+.no-margin-ends
+  margin-top: 0
+  margin-bottom: 0
+
+.margin-base
+  margin: $spacing-unit
+
+.margin-double-right
+  margin-right: double($spacing-unit)
+
+.no-padding-sides
+  padding-right: 0
+  padding-left: 0
+
+.padding-third-top
+  padding-top: third($spacing-unit)
+
+```

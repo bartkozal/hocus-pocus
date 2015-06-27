@@ -39,7 +39,7 @@ $vertical-align-body: 16 !default
 $vertical-align-factor: 1.5 !default
 
 $spacing-unit: round($font-size-base * $font-leading) / $vertical-align-body * 1rem !default
-$spacing-map: "" !default
+$spacing-map: (base: $spacing-unit, quarter: quarter($spacing-unit), third: third($spacing-unit), halve: halve($spacing-unit), double: double($spacing-unit), triple: triple($spacing-unit), quadruple: quadruple($spacing-unit)) !default
 
 $grid-container: 68rem !default
 $grid-gutter: $spacing-unit !default
