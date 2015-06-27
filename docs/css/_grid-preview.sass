@@ -1,8 +1,12 @@
+
 .grid-preview
   @extend %code-block
   background-color: $color-blue
   color: $color-white
   text-align: center
+
+  .grid-pair > .grid-item > &
+    text-align: inherit
 
   .grid-preview
     margin-bottom: 0
