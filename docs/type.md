@@ -10,18 +10,38 @@ Base font is described by following variables: `$font-size-base`,
 ### Headings
 
 <h1>Heading Level 1</h1>
-<h2>Heading Level 2</h2>
-<h3>Heading Level 3</h3>
-<h4>Heading Level 4</h4>
-<h5>Heading Level 5</h5>
-<h6>Heading Level 6</h6>
 
 ```html
 <h1>Heading Level 1</h1>
+```
+
 <h2>Heading Level 2</h2>
+
+```html
+<h2>Heading Level 2</h2>
+```
+
 <h3>Heading Level 3</h3>
+
+```html
+<h3>Heading Level 3</h3>
+```
+
 <h4>Heading Level 4</h4>
+
+```html
+<h4>Heading Level 4</h4>
+```
+
 <h5>Heading Level 5</h5>
+
+```html
+<h5>Heading Level 5</h5>
+```
+
+<h6>Heading Level 6</h6>
+
+```html
 <h6>Heading Level 6</h6>
 ```
 
@@ -29,25 +49,39 @@ Base font is described by following variables: `$font-size-base`,
 
 <p>
   <strong>Pellentesque habitant morbi tristique</strong> senectus et netus
-  et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
-  ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas
-  semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo.
-  Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi,
-  condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean
-  fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis
-  tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar
-  facilisis. Ut felis.
+  et malesuada fames ac turpis egestas. <em>Vestibulum tortor quam</em>,
+  feugiat vitae, ultricies eget, <small>tempor sit amet, ante</small>. Donec eu
+  libero sit amet quam egestas semper. <a href="#">Aenean ultricies</a>
+  mi vitae est.
 </p>
+
+```html
+<p>
+  <strong>Pellentesque habitant morbi tristique</strong> senectus et netus
+  et malesuada fames ac turpis egestas. <em>Vestibulum tortor quam</em>,
+  feugiat vitae, ultricies eget, <small>tempor sit amet, ante</small>.
+  Donec eu libero sit amet quam egestas semper. <a href="#">Aenean
+  ultricies</a> mi vitae est.
+</p>
+```
+
+### Blockquote
 
 <blockquote>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna.
     Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida.
-    Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est
-    malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium
-    ornare est.
   </p>
 </blockquote>
+
+```html
+<blockquote>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna.
+    Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida.
+  </p>
+</blockquote>
+```
 
 ### Lists
 
@@ -56,37 +90,76 @@ Base font is described by following variables: `$font-size-base`,
   <li>Aliquam tincidunt mauris eu risus.</li>
 </ol>
 
+```html
+<ol>
+  <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+  <li>Aliquam tincidunt mauris eu risus.</li>
+</ol>
+```
+
 <ul>
   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-  <li>Aliquam <small>tincidunt mauris</small> eu risus.</li>
-  <li>Lorem ipsum dolor sit amet
+  <li>
+    Aliquam tincidunt mauris eu risus.
     <ul>
-      <li>Lorem ipsum <span class="micro">dolor sit amet</span>, consectetuer adipiscing elit.</li>
+      <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
       <li>Aliquam tincidunt mauris eu risus.</li>
     </ul>
   </li>
 </ul>
 
+```html
+<ul>
+  <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+  <li>
+    Aliquam tincidunt mauris eu risus.
+    <ul>
+      <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+      <li>Aliquam tincidunt mauris eu risus.</li>
+    </ul>
+  </li>
+</ul>
+```
+
 <dl>
   <dt>Definition list</dt>
-  <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+  <dd>
+    Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-    commodo consequat.</dd>
-  <dt>Lorem ipsum dolor sit amet</dt>
-  <dd>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-    commodo consequat.</dd>
+    commodo consequat.
+  </dd>
 </dl>
+
+```html
+<dl>
+  <dt>Definition list</dt>
+  <dd>
+    Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+    commodo consequat.
+  </dd>
+</dl>
+```
 
 ### Code
 
-<pre><code>
+<pre>
+<code>
 .hocus-pocus {
   display: block;
-  color: black;
-  text-align: center;
 }
-</code></pre>
+</code>
+</pre>
+
+```html
+<pre>
+  <code>
+    .hocus-pocus {
+      display: block;
+    }
+  </code>
+</pre>
+```
 
 ### Rule
 
@@ -98,4 +171,56 @@ Base font is described by following variables: `$font-size-base`,
 
 ### Text helpers
 
-*upcoming*
+<p class="text-light">Lorem ipsum dolor sit amet</p>
+
+```html
+<p class="text-light">Lorem ipsum dolor sit amet</p>
+```
+
+<p class="text-normal">Lorem ipsum dolor sit amet</p>
+
+```html
+<p class="text-normal">Lorem ipsum dolor sit amet</p>
+```
+
+<p class="text-bold">Lorem ipsum dolor sit amet</p>
+
+```html
+<p class="text-bold">Lorem ipsum dolor sit amet</p>
+```
+
+<p class="text-small">Lorem ipsum dolor sit amet</p>
+
+```html
+<p class="text-small">Lorem ipsum dolor sit amet</p>
+```
+
+<p class="text-micro">Lorem ipsum dolor sit amet</p>
+
+```html
+<p class="text-micro">Lorem ipsum dolor sit amet</p>
+```
+
+<p class="text-mono">Lorem ipsum dolor sit amet</p>
+
+```html
+<p class="text-mono">Lorem ipsum dolor sit amet</p>
+```
+
+<p class="text-left">Lorem ipsum dolor sit amet</p>
+
+```html
+<p class="text-left">Lorem ipsum dolor sit amet</p>
+```
+
+<p class="text-center">Lorem ipsum dolor sit amet</p>
+
+```html
+<p class="text-center">Lorem ipsum dolor sit amet</p>
+```
+
+<p class="text-right">Lorem ipsum dolor sit amet</p>
+
+```html
+<p class="text-right">Lorem ipsum dolor sit amet</p>
+```
