@@ -95,3 +95,7 @@ Base font is described by following variables: `$font-size-base`,
 ```html
 <hr>
 ```
+
+### Text helpers
+
+*upcoming*

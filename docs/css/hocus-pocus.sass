@@ -2,6 +2,9 @@
 # this ensures Jekyll reads the file to be transformed into CSS later
 ---
 
+$font-family-base: 'Roboto'
+$font-family-monospace: 'Roboto Mono'
+
 @import '../sass/hocus-pocus'
 @import 'css/base16'
 
@@ -10,10 +13,11 @@
   color: transparent
 
   pre
+    @include font-size(12)
+    padding: third($spacing-unit)
+    border-radius: $base-border-radius
     background-color: $color-black
     color: $color-white
-    border-radius: $base-border-radius
-    padding: third($spacing-unit)
 
 .grid-preview
   background: #0074d9
