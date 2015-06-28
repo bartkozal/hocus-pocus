@@ -305,7 +305,7 @@ margin and padding. By default you get following combinations:
 .no-margin[-type]
 .no-padding[-type]
 
-// size: base, quarter, third, halve, double, triple, quadruple
+// size: base, quarter, third, half, double, triple, quadruple
 // type: top, right, bottom, left, sides, ends
 ```
 
