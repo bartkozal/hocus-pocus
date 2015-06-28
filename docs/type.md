@@ -148,6 +148,18 @@ and `<a>`.
 </ul>
 ```
 
+<ul class="list-menu">
+  <li><a href="#">List item 1</a></li>
+  <li><a href="#">List item 2</a></li>
+  <li><a href="#">List item 3</a></li>
+</ul>
+
+```html
+<ul class="list-menu">
+  ...
+</ul>
+```
+
 <dl>
   <dt>Definition list title</dt>
   <dd>Definition list description</dd>

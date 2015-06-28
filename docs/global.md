@@ -35,6 +35,8 @@ $border-radius-base: 4px
 
 $link-underline: true
 $link-active: true
+$link-menu-color: $color-white 
+$link-menu-background: $color-link 
 ```
 
 ### Colors

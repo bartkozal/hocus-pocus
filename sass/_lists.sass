@@ -1,0 +1,42 @@
+ul > li, ol > li
+  margin-left: $spacing-unit
+
+dl > dt
+  font-weight: $font-weight-bold
+
+dd + dt
+  margin-top: halve($spacing-unit)
+
+%list-reset,
+.list-reset
+  padding-left: 0
+  list-style: none
+
+  > li
+    margin-left: 0
+
+%list-inline,
+.list-inline
+  @extend %list-reset
+  margin-bottom: 0
+  margin-left: quarter($spacing-unit) * -1
+
+  > li
+    display: inline-block
+    padding-left: quarter($spacing-unit)
+    padding-right: quarter($spacing-unit)
+
+%list-menu,
+.list-menu
+  @extend %list-reset
+  margin-top: quarter($spacing-unit) * -1
+
+  > li > a
+    display: block
+    padding: quarter($spacing-unit)
+    border-radius: $border-radius-base
+    text-decoration: none
+
+    &:hover
+      color: $link-menu-color
+      background: $link-menu-background
