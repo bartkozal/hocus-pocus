@@ -1,0 +1,24 @@
+.navbar
+  margin-bottom: double($spacing-unit)
+  padding-top: halve($spacing-unit)
+  padding-bottom: halve($spacing-unit)
+  background: $navbar-background
+  color: $navbar-color
+
+.navbar-menu
+  @extend %list-menu
+  @extend %list-inline
+  margin-top: 0
+
+  > li > a
+    padding: halve($spacing-unit)
+    border-radius: $border-radius-base
+    color: $navbar-link-color
+
+    &:hover
+      background-color: $navbar-link-background
+
+.navbar-container > .grid > .grid-item
+  display: flex
+  justify-content: center
+  flex-direction: column

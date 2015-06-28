@@ -6,6 +6,7 @@ General:
 
 Features:
   
+  - navbar
   - `.list-menu`
 
 ## v0.0.7 (2015-06-28)
