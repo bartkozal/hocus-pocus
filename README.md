@@ -46,11 +46,6 @@ $grid-container: 70rem
 @import "inbox/landing-headings-fix"
 ```
 
-### Contributing
-
-[Add a new issue](https://github.com/bkzl/hocus-pocus/issues)
-for bugs and ideas.
-
 ### Development
 
 To run docs locally you need to install `jekyll` and `redcarpet` Ruby gems
@@ -71,3 +66,8 @@ To build and deploy to production:
 ```sh
 $ grunt publish
 ```
+
+### Contributing
+
+[Add a new issue](https://github.com/bkzl/hocus-pocus/issues)
+for bugs and ideas.
