@@ -1,3 +1,10 @@
+## v0.0.8 (master)
+
+General:
+  
+  - documentation
+
+
 ## v0.0.7 (2015-06-28)
 
 General:

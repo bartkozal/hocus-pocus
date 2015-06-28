@@ -19,10 +19,10 @@ $color-font: $color-black
 $color-link: $color-blue
 $color-muted: $color-gray
 
-$font-leading: 1.4 !default
-$font-size-micro: 11 !default
-$font-size-small: 13 !default
-$font-size-base: 15 !default
+$font-leading: 1.4
+$font-size-micro: 11
+$font-size-small: 13
+$font-size-base: 15
 
 $font-family-base: sans-serif
 $font-family-headings: $font-family-base

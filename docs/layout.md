@@ -17,18 +17,18 @@ Use `.container` class to create a centered wrapper which has width of
 
 ### Grid
 
-Use `.grid` with nested `.grid-item` elements to build a grid:
+Use `.grid` with nested `.grid-item` elements to build a grid.
 
 <div class="grid">
   <div class="grid-item 1/3">
     <div class="grid-preview">
-      .grid > .grid-item.1/3
+      .grid-item.1/3
     </div>
   </div>
 
   <div class="grid-item 2/3">
     <div class="grid-preview">
-      .grid > .grid-item.2/3
+      .grid-item.2/3
     </div>
   </div>
 </div>
@@ -46,12 +46,12 @@ Use `.grid` with nested `.grid-item` elements to build a grid:
 ```
 
 There are a few additional classes to align block elements horizontally
-and vertically:
+and vertically.
 
 <div class="grid grid-left">
   <div class="grid-item 1/3">
     <div class="grid-preview">
-      .grid.grid-left > .grid-item.1/3
+      .grid-item.1/3
     </div>
   </div>
 </div>
@@ -67,7 +67,7 @@ and vertically:
 <div class="grid grid-center">
   <div class="grid-item 1/3">
     <div class="grid-preview">
-      .grid.grid-center > .grid-item.1/3
+      .grid-item.1/3
     </div>
   </div>
 </div>
@@ -83,7 +83,7 @@ and vertically:
 <div class="grid grid-right">
   <div class="grid-item 1/3">
     <div class="grid-preview">
-      .grid.grid-right > .grid-item.1/3
+      .grid-item.1/3
     </div>
   </div>
 </div>
@@ -99,12 +99,12 @@ and vertically:
 <div class="grid grid-top">
   <div class="grid-item 1/2">
     <div class="grid-preview grid-preview-large">
-      .grid.grid-top > .grid-item.1/2
+      .grid-item.1/2
     </div>
   </div>
   <div class="grid-item 1/2">
     <div class="grid-preview">
-      .grid.grid-top > .grid-item.1/2
+      .grid-item.1/2
     </div>
   </div>
 </div>
@@ -123,12 +123,12 @@ and vertically:
 <div class="grid grid-middle">
   <div class="grid-item 1/2">
     <div class="grid-preview grid-preview-large">
-      .grid.grid-middle > .grid-item.1/2
+      .grid-item.1/2
     </div>
   </div>
   <div class="grid-item 1/2">
     <div class="grid-preview">
-      .grid.grid-middle > .grid-item.1/2
+      .grid-item.1/2
     </div>
   </div>
 </div>
@@ -147,12 +147,12 @@ and vertically:
 <div class="grid grid-bottom">
   <div class="grid-item 1/2">
     <div class="grid-preview grid-preview-large">
-      .grid.grid-bottom > .grid-item.1/2
+      .grid-item.1/2
     </div>
   </div>
   <div class="grid-item 1/2">
     <div class="grid-preview">
-      .grid.grid-bottom > .grid-item.1/2
+      .grid-item.1/2
     </div>
   </div>
 </div>
@@ -168,17 +168,17 @@ and vertically:
 </div>
 ```
 
-Moreover, you can create a flat grid without the gutter:
+Moreover, you can create a flat grid without the gutter.
 
 <div class="grid grid-flat grid-preview">
   <div class="grid-item 1/2">
     <div class="grid-preview">
-      .grid.grid-flat > .grid-item.1/2
+      .grid-item.1/2
     </div>
   </div>
   <div class="grid-item 1/2">
     <div class="grid-preview">
-      .grid.grid-flat > .grid-item.1/2
+      .grid-item.1/2
     </div>
   </div>
 </div>
@@ -194,18 +194,18 @@ Moreover, you can create a flat grid without the gutter:
 </div>
 ```
 
-Or two elements grid where contet of the first one is aligned to the left
+Or two elements grid where content of the first one is aligned to the left
 but content of the second one is aligned to the right.
 
 <div class="grid grid-pair">
   <div class="grid-item 1/2">
     <div class="grid-preview">
-      .grid.grid-pair > .grid-item.1/2
+      .grid-item.1/2
     </div>
   </div>
   <div class="grid-item 1/2">
     <div class="grid-preview">
-      .grid.grid-pair > .grid-item.1/2
+      .grid-item.1/2
     </div>
   </div>
 </div>
@@ -329,6 +329,6 @@ Examples:
   padding-right: 0
   padding-left: 0
 
-.padding-third-top
-  padding-top: third($spacing-unit)
+.padding-half-top
+  padding-top: halve($spacing-unit)
 ```

@@ -5,7 +5,7 @@ layout: default
 Vertical rhythm based on [sassy-gridlover](https://github.com/hiulit/Sassy-Gridlover).
 
 Base font is described by following variables: `$font-size-base`,
-`$font-family-base`, `$font-weight-normal` and `$color-font`
+`$font-family-base`, `$font-weight-normal` and `$color-font`.
 
 ### Headings
 
@@ -47,21 +47,24 @@ Base font is described by following variables: `$font-size-base`,
 
 ### Paragraphs
 
+Default styles for `<p>`, `<strong>`, `<em>`, `<sup>`, `<sub>`, `<small>`
+and `<a>`.
+
 <p>
   <strong>Pellentesque habitant morbi tristique</strong> senectus et netus
-  et malesuada fames ac turpis egestas. <em>Vestibulum tortor quam</em>,
-  feugiat vitae, ultricies eget, <small>tempor sit amet, ante</small>. Donec eu
-  libero sit amet quam egestas semper. <a href="#">Aenean ultricies</a>
-  mi vitae est.
+  et malesuada fames <sub>ac turpis</sub> egestas. <em>Vestibulum tortor
+  quam</em>, feugiat vitae, ultricies eget, <small>tempor sit amet,
+  ante</small>. Donec eu libero <sup>sit amet</sup> quam egestas semper.
+  <a href="#">Aenean ultricies</a> mi vitae est.
 </p>
 
 ```html
 <p>
   <strong>Pellentesque habitant morbi tristique</strong> senectus et netus
-  et malesuada fames ac turpis egestas. <em>Vestibulum tortor quam</em>,
-  feugiat vitae, ultricies eget, <small>tempor sit amet, ante</small>.
-  Donec eu libero sit amet quam egestas semper. <a href="#">Aenean
-  ultricies</a> mi vitae est.
+  et malesuada fames <sub>ac turpis</sub> egestas. <em>Vestibulum tortor
+  quam</em>, feugiat vitae, ultricies eget, <small>tempor sit amet,
+  ante</small>. Donec eu libero <sup>sit amet</sup> quam egestas semper.
+  <a href="#">Aenean ultricies</a> mi vitae est.
 </p>
 ```
 
@@ -86,45 +89,45 @@ Base font is described by following variables: `$font-size-base`,
 ### Lists
 
 <ol>
-  <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-  <li>Aliquam tincidunt mauris eu risus.</li>
+  <li>List item 1</li>
+  <li>List item 2</li>
 </ol>
 
 ```html
 <ol>
-  <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-  <li>Aliquam tincidunt mauris eu risus.</li>
+  <li>List item 1</li>
+  <li>List item 2</li>
 </ol>
 ```
 
 <ul>
-  <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+  <li>List item 1</li>
   <li>
-    Aliquam tincidunt mauris eu risus.
+    List item 2
     <ul>
-      <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-      <li>Aliquam tincidunt mauris eu risus.</li>
+      <li>List item A</li>
+      <li>List item B</li>
     </ul>
   </li>
 </ul>
 
 ```html
 <ul>
-  <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+  <li>List item 1</li>
   <li>
-    Aliquam tincidunt mauris eu risus.
+    List item 2
     <ul>
-      <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-      <li>Aliquam tincidunt mauris eu risus.</li>
+      <li>List item A</li>
+      <li>List item B</li>
     </ul>
   </li>
 </ul>
 ```
 
 <ul class="list-reset">
-  <li>Item 1</li>
-  <li>Item 2</li>
-  <li>Item 3</li>
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
 </ul>
 
 ```html
@@ -134,9 +137,9 @@ Base font is described by following variables: `$font-size-base`,
 ```
 
 <ul class="list-inline">
-  <li>Item 1</li>
-  <li>Item 2</li>
-  <li>Item 3</li>
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
 </ul>
 
 ```html
@@ -146,22 +149,14 @@ Base font is described by following variables: `$font-size-base`,
 ```
 
 <dl>
-  <dt>Definition list</dt>
-  <dd>
-    Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-    commodo consequat.
-  </dd>
+  <dt>Definition list title</dt>
+  <dd>Definition list description</dd>
 </dl>
 
 ```html
 <dl>
-  <dt>Definition list</dt>
-  <dd>
-    Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-    commodo consequat.
-  </dd>
+  <dt>Definition list title</dt>
+  <dd>Definition list description</dd>
 </dl>
 ```
 
@@ -195,56 +190,56 @@ Base font is described by following variables: `$font-size-base`,
 
 ### Text helpers
 
-<p class="text-light">Lorem ipsum dolor sit amet</p>
+<p class="text-light">Light weight text</p>
 
 ```html
-<p class="text-light">Lorem ipsum dolor sit amet</p>
+<p class="text-light">Light weight text</p>
 ```
 
-<p class="text-normal">Lorem ipsum dolor sit amet</p>
+<p class="text-normal">Normal weight text</p>
 
 ```html
-<p class="text-normal">Lorem ipsum dolor sit amet</p>
+<p class="text-normal">Normal weight text</p>
 ```
 
-<p class="text-bold">Lorem ipsum dolor sit amet</p>
+<p class="text-bold">Bold weight text</p>
 
 ```html
-<p class="text-bold">Lorem ipsum dolor sit amet</p>
+<p class="text-bold">Bold weight text</p>
 ```
 
-<p class="text-small">Lorem ipsum dolor sit amet</p>
+<p class="text-small">Small text</p>
 
 ```html
-<p class="text-small">Lorem ipsum dolor sit amet</p>
+<p class="text-small">Small text</p>
 ```
 
-<p class="text-micro">Lorem ipsum dolor sit amet</p>
+<p class="text-micro">Micro text</p>
 
 ```html
-<p class="text-micro">Lorem ipsum dolor sit amet</p>
+<p class="text-micro">Micro text</p>
 ```
 
-<p class="text-mono">Lorem ipsum dolor sit amet</p>
+<p class="text-mono">Mono text</p>
 
 ```html
-<p class="text-mono">Lorem ipsum dolor sit amet</p>
+<p class="text-mono">Mono text</p>
 ```
 
-<p class="text-left">Lorem ipsum dolor sit amet</p>
+<p class="text-left">Left aligned text</p>
 
 ```html
-<p class="text-left">Lorem ipsum dolor sit amet</p>
+<p class="text-left">Left aligned text</p>
 ```
 
-<p class="text-center">Lorem ipsum dolor sit amet</p>
+<p class="text-center">Center aligned text</p>
 
 ```html
-<p class="text-center">Lorem ipsum dolor sit amet</p>
+<p class="text-center">Center aligned text</p>
 ```
 
-<p class="text-right">Lorem ipsum dolor sit amet</p>
+<p class="text-right">Right aligned text</p>
 
 ```html
-<p class="text-right">Lorem ipsum dolor sit amet</p>
+<p class="text-right">Right aligned text</p>
 ```

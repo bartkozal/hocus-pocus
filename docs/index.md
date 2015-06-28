@@ -36,11 +36,14 @@ Then include the main Hocus-Pocus file after your variables, but before
 the rest of your stylesheets:
 
 ```sass
+// Your variables
 $font-family-base: "Open Sans", sans-serif
 $grid-container: 70rem
 
+// Hocus-Pocus include
 @import "bower_components/hocus-pocus/hocus-pocus"
 
+// Your stylesheets
 @import "objects/meter"
 @import "objects/price-box"
 @import "inbox/landing-headings-fix"

@@ -10,9 +10,9 @@ layout: default
   </colgroup>
   <thead>
     <tr>
-      <th>Heading 1</th>
-      <th>Heading 2</th>
-      <th>Heading 3</th>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
     </tr>
   </thead>
   <tbody>
@@ -38,9 +38,9 @@ layout: default
   </colgroup>
   <thead>
     <tr>
-      <th>Heading 1</th>
-      <th>Heading 2</th>
-      <th>Heading 3</th>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
     </tr>
   </thead>
   <tbody>
@@ -61,9 +61,9 @@ layout: default
 <table class="table-bordered">
   <thead>
     <tr>
-      <th>Heading 1</th>
-      <th>Heading 2</th>
-      <th>Heading 3</th>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
     </tr>
   </thead>
   <tbody>
