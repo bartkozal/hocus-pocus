@@ -121,6 +121,30 @@ Base font is described by following variables: `$font-size-base`,
 </ul>
 ```
 
+<ul class="list-reset">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+
+```html
+<ul class="list-reset">
+  ...
+</ul>
+```
+
+<ul class="list-inline">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+
+```html
+<ul class="list-inline">
+  ...
+</ul>
+```
+
 <dl>
   <dt>Definition list</dt>
   <dd>

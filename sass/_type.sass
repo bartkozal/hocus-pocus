@@ -75,6 +75,24 @@ dl > dt
 dd + dt
   margin-top: halve($spacing-unit)
 
+%list-reset,
+.list-reset
+  padding-left: 0
+  list-style: none
+
+  > li
+    margin-left: 0
+
+.list-inline
+  @extend %list-reset
+  margin-bottom: 0
+  margin-left: quarter($spacing-unit) * -1
+
+  > li
+    display: inline-block
+    padding-left: quarter($spacing-unit)
+    padding-right: quarter($spacing-unit)
+
 small,
 .text-small
   @include font-size($font-size-small)
