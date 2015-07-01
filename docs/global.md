@@ -35,13 +35,13 @@ $border-radius-base: 4px
 
 $link-underline: true
 $link-active: true
-$link-menu-color: $color-white 
-$link-menu-background: $color-link 
+$link-menu-color: $color-white
+$link-menu-background: $color-link
 
-$navbar-background: $color-black 
-$navbar-color: $color-white 
-$navbar-link-color: $color-white 
-$navbar-link-background: rgba($color-white, .15) 
+$navbar-background: $color-black
+$navbar-color: $color-white
+$navbar-link-color: $color-white
+$navbar-link-background: rgba($color-white, .15)
 ```
 
 ### Colors
@@ -71,7 +71,7 @@ $navbar-link-background: rgba($color-white, .15)
 ### Mixins
 
 There is a `font-size` mixin which allows to set the element's font size
-and keep the proper vertical rhytm:
+and keep the proper vertical rhythm:
 
 ```sass
 div
