@@ -9,37 +9,49 @@ Base font is described by following variables: `$font-size-base`,
 
 ### Headings
 
-<h1>Heading Level 1</h1>
+<div class="example">
+  <h1>Heading Level 1</h1>
+</div>
 
 ```html
 <h1>Heading Level 1</h1>
 ```
 
-<h2>Heading Level 2</h2>
+<div class="example">
+  <h2>Heading Level 2</h2>
+</div>
 
 ```html
 <h2>Heading Level 2</h2>
 ```
 
-<h3>Heading Level 3</h3>
+<div class="example">
+  <h3>Heading Level 3</h3>
+</div>
 
 ```html
 <h3>Heading Level 3</h3>
 ```
 
-<h4>Heading Level 4</h4>
+<div class="example">
+  <h4>Heading Level 4</h4>
+</div>
 
 ```html
 <h4>Heading Level 4</h4>
 ```
 
-<h5>Heading Level 5</h5>
+<div class="example">
+  <h5>Heading Level 5</h5>
+</div>
 
 ```html
 <h5>Heading Level 5</h5>
 ```
 
-<h6>Heading Level 6</h6>
+<div class="example">
+  <h6>Heading Level 6</h6>
+</div>
 
 ```html
 <h6>Heading Level 6</h6>
@@ -50,13 +62,15 @@ Base font is described by following variables: `$font-size-base`,
 Default styles for `<p>`, `<strong>`, `<em>`, `<sup>`, `<sub>`, `<small>`
 and `<a>`.
 
-<p>
-  <strong>Pellentesque habitant morbi tristique</strong> senectus et netus
-  et malesuada fames <sub>ac turpis</sub> egestas. <em>Vestibulum tortor
-  quam</em>, feugiat vitae, ultricies eget, <small>tempor sit amet,
-  ante</small>. Donec eu libero <sup>sit amet</sup> quam egestas semper.
-  <a href="#">Aenean ultricies</a> mi vitae est.
-</p>
+<div class="example">
+  <p>
+    <strong>Pellentesque habitant morbi tristique</strong> senectus et netus
+    et malesuada fames <sub>ac turpis</sub> egestas. <em>Vestibulum tortor
+    quam</em>, feugiat vitae, ultricies eget, <small>tempor sit amet,
+    ante</small>. Donec eu libero <sup>sit amet</sup> quam egestas semper.
+    <a href="#">Aenean ultricies</a> mi vitae est.
+  </p>
+</div>
 
 ```html
 <p>
@@ -70,12 +84,14 @@ and `<a>`.
 
 ### Blockquote
 
-<blockquote>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna.
-    Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida.
-  </p>
-</blockquote>
+<div class="example">
+  <blockquote>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna.
+      Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida.
+    </p>
+  </blockquote>
+</div>
 
 ```html
 <blockquote>
@@ -88,10 +104,12 @@ and `<a>`.
 
 ### Lists
 
-<ol>
-  <li>List item 1</li>
-  <li>List item 2</li>
-</ol>
+<div class="example">
+  <ol>
+    <li>List item 1</li>
+    <li>List item 2</li>
+  </ol>
+</div>
 
 ```html
 <ol>
@@ -100,6 +118,20 @@ and `<a>`.
 </ol>
 ```
 
+<div class="example">
+  <ul>
+    <li>List item 1</li>
+    <li>
+      List item 2
+      <ul>
+        <li>List item A</li>
+        <li>List item B</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+```html
 <ul>
   <li>List item 1</li>
   <li>
@@ -110,25 +142,15 @@ and `<a>`.
     </ul>
   </li>
 </ul>
-
-```html
-<ul>
-  <li>List item 1</li>
-  <li>
-    List item 2
-    <ul>
-      <li>List item A</li>
-      <li>List item B</li>
-    </ul>
-  </li>
-</ul>
 ```
 
-<ul class="list-reset">
-  <li>List item 1</li>
-  <li>List item 2</li>
-  <li>List item 3</li>
-</ul>
+<div class="example">
+  <ul class="list-reset">
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+  </ul>
+</div>
 
 ```html
 <ul class="list-reset">
@@ -136,11 +158,13 @@ and `<a>`.
 </ul>
 ```
 
-<ul class="list-inline">
-  <li>List item 1</li>
-  <li>List item 2</li>
-  <li>List item 3</li>
-</ul>
+<div class="example">
+  <ul class="list-inline">
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+  </ul>
+</div>
 
 ```html
 <ul class="list-inline">
@@ -148,11 +172,13 @@ and `<a>`.
 </ul>
 ```
 
-<ul class="list-menu">
-  <li><a href="#">List item 1</a></li>
-  <li><a href="#">List item 2</a></li>
-  <li><a href="#">List item 3</a></li>
-</ul>
+<div class="example">
+  <ul class="list-menu">
+    <li><a href="#">List item 1</a></li>
+    <li><a href="#">List item 2</a></li>
+    <li><a href="#">List item 3</a></li>
+  </ul>
+</div>
 
 ```html
 <ul class="list-menu">
@@ -160,10 +186,12 @@ and `<a>`.
 </ul>
 ```
 
-<dl>
-  <dt>Definition list title</dt>
-  <dd>Definition list description</dd>
-</dl>
+<div class="example">
+  <dl>
+    <dt>Definition list title</dt>
+    <dd>Definition list description</dd>
+  </dl>
+</div>
 
 ```html
 <dl>
@@ -174,6 +202,7 @@ and `<a>`.
 
 ### Code
 
+<div class="example">
 <pre>
 <code>
 .hocus-pocus {
@@ -181,6 +210,7 @@ and `<a>`.
 }
 </code>
 </pre>
+</div>
 
 ```html
 <pre>
@@ -194,7 +224,9 @@ and `<a>`.
 
 ### Rule
 
-<hr>
+<div class="example">
+  <hr>
+</div>
 
 ```html
 <hr>
@@ -202,55 +234,74 @@ and `<a>`.
 
 ### Text helpers
 
-<p class="text-light">Light weight text</p>
-
-```html
-<p class="text-light">Light weight text</p>
-```
-
-<p class="text-normal">Normal weight text</p>
-
-```html
-<p class="text-normal">Normal weight text</p>
-```
-
-<p class="text-bold">Bold weight text</p>
-
-```html
-<p class="text-bold">Bold weight text</p>
-```
-
-<p class="text-small">Small text</p>
-
-```html
-<p class="text-small">Small text</p>
-```
-
-<p class="text-micro">Micro text</p>
+<div class="example">
+  <p class="text-micro">Micro text</p>
+</div>
 
 ```html
 <p class="text-micro">Micro text</p>
 ```
 
-<p class="text-mono">Mono text</p>
+<div class="example">
+  <p class="text-small">Small text</p>
+</div>
+
+
+```html
+<p class="text-small">Small text</p>
+```
+
+<div class="example">
+  <p class="text-mono">Mono text</p>
+</div>
 
 ```html
 <p class="text-mono">Mono text</p>
 ```
 
-<p class="text-left">Left aligned text</p>
+<div class="example">
+  <p class="text-light">Light weight text</p>
+</div>
+
+```html
+<p class="text-light">Light weight text</p>
+```
+
+<div class="example">
+  <p class="text-normal">Normal weight text</p>
+</div>
+
+```html
+<p class="text-normal">Normal weight text</p>
+```
+
+<div class="example">
+  <p class="text-bold">Bold weight text</p>
+</div>
+
+```html
+<p class="text-bold">Bold weight text</p>
+```
+
+<div class="example">
+  <p class="text-left">Left aligned text</p>
+</div>
 
 ```html
 <p class="text-left">Left aligned text</p>
 ```
 
-<p class="text-center">Center aligned text</p>
+<div class="example">
+  <p class="text-center">Center aligned text</p>
+</div>
 
 ```html
 <p class="text-center">Center aligned text</p>
 ```
 
-<p class="text-right">Right aligned text</p>
+<div class="example">
+  <p class="text-right">Right aligned text</p>
+</div>
 
 ```html
 <p class="text-right">Right aligned text</p>

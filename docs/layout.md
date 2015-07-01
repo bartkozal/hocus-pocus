@@ -5,8 +5,10 @@ layout: default
 Use `.container` class to create a centered wrapper which has width of
 `$grid-container`.
 
-<div class="container grid-preview">
-  .container
+<div class="example">
+  <div class="container grid-preview">
+    .container
+  </div>
 </div>
 
 ```html
@@ -19,16 +21,18 @@ Use `.container` class to create a centered wrapper which has width of
 
 Use `.grid` with nested `.grid-item` elements to build a grid.
 
-<div class="grid">
-  <div class="grid-item 1/3">
-    <div class="grid-preview">
-      .grid-item.1/3
+<div class="example">
+  <div class="grid">
+    <div class="grid-item 1/3">
+      <div class="grid-preview">
+        .grid-item.1/3
+      </div>
     </div>
-  </div>
 
-  <div class="grid-item 2/3">
-    <div class="grid-preview">
-      .grid-item.2/3
+    <div class="grid-item 2/3">
+      <div class="grid-preview">
+        .grid-item.2/3
+      </div>
     </div>
   </div>
 </div>
@@ -48,10 +52,12 @@ Use `.grid` with nested `.grid-item` elements to build a grid.
 There are a few additional classes to align block elements horizontally
 and vertically.
 
-<div class="grid grid-left">
-  <div class="grid-item 1/3">
-    <div class="grid-preview">
-      .grid-item.1/3
+<div class="example">
+  <div class="grid grid-left">
+    <div class="grid-item 1/3">
+      <div class="grid-preview">
+        .grid-item.1/3
+      </div>
     </div>
   </div>
 </div>
@@ -64,10 +70,12 @@ and vertically.
 </div>
 ```
 
-<div class="grid grid-center">
-  <div class="grid-item 1/3">
-    <div class="grid-preview">
-      .grid-item.1/3
+<div class="example">
+  <div class="grid grid-center">
+    <div class="grid-item 1/3">
+      <div class="grid-preview">
+        .grid-item.1/3
+      </div>
     </div>
   </div>
 </div>
@@ -80,10 +88,12 @@ and vertically.
 </div>
 ```
 
-<div class="grid grid-right">
-  <div class="grid-item 1/3">
-    <div class="grid-preview">
-      .grid-item.1/3
+<div class="example">
+  <div class="grid grid-right">
+    <div class="grid-item 1/3">
+      <div class="grid-preview">
+        .grid-item.1/3
+      </div>
     </div>
   </div>
 </div>
@@ -96,15 +106,17 @@ and vertically.
 </div>
 ```
 
-<div class="grid grid-top">
-  <div class="grid-item 1/2">
-    <div class="grid-preview grid-preview-large">
-      .grid-item.1/2
+<div class="example">
+  <div class="grid grid-top">
+    <div class="grid-item 1/2">
+      <div class="grid-preview grid-preview-large">
+        .grid-item.1/2
+      </div>
     </div>
-  </div>
-  <div class="grid-item 1/2">
-    <div class="grid-preview">
-      .grid-item.1/2
+    <div class="grid-item 1/2">
+      <div class="grid-preview">
+        .grid-item.1/2
+      </div>
     </div>
   </div>
 </div>
@@ -120,15 +132,17 @@ and vertically.
 </div>
 ```
 
-<div class="grid grid-middle">
-  <div class="grid-item 1/2">
-    <div class="grid-preview grid-preview-large">
-      .grid-item.1/2
+<div class="example">
+  <div class="grid grid-middle">
+    <div class="grid-item 1/2">
+      <div class="grid-preview grid-preview-large">
+        .grid-item.1/2
+      </div>
     </div>
-  </div>
-  <div class="grid-item 1/2">
-    <div class="grid-preview">
-      .grid-item.1/2
+    <div class="grid-item 1/2">
+      <div class="grid-preview">
+        .grid-item.1/2
+      </div>
     </div>
   </div>
 </div>
@@ -144,15 +158,17 @@ and vertically.
 </div>
 ```
 
-<div class="grid grid-bottom">
-  <div class="grid-item 1/2">
-    <div class="grid-preview grid-preview-large">
-      .grid-item.1/2
+<div class="example">
+  <div class="grid grid-bottom">
+    <div class="grid-item 1/2">
+      <div class="grid-preview grid-preview-large">
+        .grid-item.1/2
+      </div>
     </div>
-  </div>
-  <div class="grid-item 1/2">
-    <div class="grid-preview">
-      .grid-item.1/2
+    <div class="grid-item 1/2">
+      <div class="grid-preview">
+        .grid-item.1/2
+      </div>
     </div>
   </div>
 </div>
@@ -170,15 +186,17 @@ and vertically.
 
 Moreover, you can create a flat grid without the gutter.
 
-<div class="grid grid-flat grid-preview">
-  <div class="grid-item 1/2">
-    <div class="grid-preview">
-      .grid-item.1/2
+<div class="example">
+  <div class="grid grid-flat grid-preview">
+    <div class="grid-item 1/2">
+      <div class="grid-preview">
+        .grid-item.1/2
+      </div>
     </div>
-  </div>
-  <div class="grid-item 1/2">
-    <div class="grid-preview">
-      .grid-item.1/2
+    <div class="grid-item 1/2">
+      <div class="grid-preview">
+        .grid-item.1/2
+      </div>
     </div>
   </div>
 </div>
@@ -197,15 +215,17 @@ Moreover, you can create a flat grid without the gutter.
 Or two elements grid where content of the first one is aligned to the left
 but content of the second one is aligned to the right.
 
-<div class="grid grid-pair">
-  <div class="grid-item 1/2">
-    <div class="grid-preview">
-      .grid-item.1/2
+<div class="example">
+  <div class="grid grid-pair">
+    <div class="grid-item 1/2">
+      <div class="grid-preview">
+        .grid-item.1/2
+      </div>
     </div>
-  </div>
-  <div class="grid-item 1/2">
-    <div class="grid-preview">
-      .grid-item.1/2
+    <div class="grid-item 1/2">
+      <div class="grid-preview">
+        .grid-item.1/2
+      </div>
     </div>
   </div>
 </div>
