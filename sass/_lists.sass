@@ -32,8 +32,11 @@ dd + dt
   margin-top: quarter($spacing-unit) * -1
 
   > li > a
+    $link-menu-vertical-size: quarter($spacing-unit) * $link-menu-vertical-ratio
     display: block
     padding: quarter($spacing-unit)
+    padding-top: $link-menu-vertical-size + $link-menu-vertical-size * (1 - $link-menu-vertical-ratio)
+    padding-bottom: $link-menu-vertical-size - $link-menu-vertical-size * (1 - $link-menu-vertical-ratio)
     border-radius: $border-radius-base
     text-decoration: none
 
