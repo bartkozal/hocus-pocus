@@ -5,7 +5,14 @@ layout: default
 Hocus-Pocus is a simple and design-free [SASS](http://sass-lang.com)
 micro framework, ideal as a CSS starter kit.
 
-It could not exist without work of awesome people behind these projects:
+The main idea behind the Hocus-Pocus is to make the most universal and
+lightweight framework as possible. It includes only the most common stuff
+without the specific design. You don't have to overwrite provided CSS
+classes and every default can be modified in a clean way just by adjusting
+the appropriate variable.
+
+It could not exist without work of awesome people responsible for these
+projects:
 
 * [inuitcss](https://github.com/inuitcss)
 * [primer](https://github.com/primer/primer)
@@ -13,6 +20,11 @@ It could not exist without work of awesome people behind these projects:
 * [flexboxgrid](https://github.com/kristoferjoseph/flexboxgrid)
 * [sassy-gridlover](https://github.com/hiulit/Sassy-Gridlover)
 * [colors](https://github.com/mrmrs/colors)
+
+Sites built with Hocus-Pocus:
+
+* [Shelly Cloud Status](https://status.shellycloud.com)
+
 
 ### Quick Start
 
