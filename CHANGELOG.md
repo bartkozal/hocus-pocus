@@ -1,5 +1,7 @@
 ## (master)
 
+## v0.0.8 (2015-07-08)
+
 General:
 
   - documentation
