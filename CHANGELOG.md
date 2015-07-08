@@ -7,6 +7,7 @@ General:
 Features:
 
   - navbar
+  - sticky footer
   - `.list-menu`
 
 ## v0.0.7 (2015-06-28)

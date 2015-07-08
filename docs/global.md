@@ -42,6 +42,8 @@ $navbar-background: $color-black
 $navbar-color: $color-white
 $navbar-link-color: $color-white
 $navbar-link-background: rgba($color-white, .15)
+
+$sticky-footer-height: triple($spacing-unit)
 ```
 
 ### Colors
