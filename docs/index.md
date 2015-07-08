@@ -75,7 +75,7 @@ Use the following naming convention:
 
 <!-- Object with a related sub-object -->
 <div class="media">
-  <img class="media-img"></div>
+  <img class="media-img"></img>
   <div class="media-body"></div>
 </div>
 
@@ -88,7 +88,7 @@ Use the following naming convention:
 <a class="btn is-btn-disabled"></a>
 
 <!-- Object which requires wrapper -->
-<!-- f.e. "position: relative" and "position: absolute" pair -->
+<!-- i.e. "position: relative" and "position: absolute" pair -->
 <div class="box has-close-link">
   <a class="close-link"></a>
 </div>

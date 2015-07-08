@@ -10,8 +10,8 @@ Vertical scrollbar is always visible.
 
 ### Defaults
 
-To see all available defaults please check the `sass/_defaults.sass` file.
-Variables listed below are recommended to set on your part.
+To see the all available defaults please check the `sass/_defaults.sass`
+file. Variables listed below are recommended to set on your part.
 
 ```sass
 $color-ui: $color-silver

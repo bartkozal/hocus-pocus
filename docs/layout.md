@@ -314,10 +314,8 @@ table cells. Fractions of the following numbers are available: `n/1`, `n/2`,
 
 ### Spacing helpers
 
-Spacing helpers are generated based on the `$spacing-map` hash where key
-is a name and value is a size. By default every pair produces seven
-helpers in eight sizes (with special size where size is equal 0) for both
-margin and padding. By default you get following combinations:
+Spacing helpers are based on the `$spacing-map` hash. By default there are
+helper with value equal to 0 and seven helpers in eight sizes:
 
 ```sass
 .margin[-size][-type]
