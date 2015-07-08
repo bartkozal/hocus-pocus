@@ -6,7 +6,7 @@ Hocus-Pocus is a simple and design-free [SASS](http://sass-lang.com)
 micro framework, ideal as a CSS starter kit.
 
 The main idea behind the Hocus-Pocus is to make the most universal and
-lightweight framework as possible. It includes only the most common stuff
+lightweight framework as possible. It includes only the common stuff
 without the specific design. You don't have to overwrite provided CSS
 classes and every default can be modified in a clean way just by adjusting
 the appropriate variable.
@@ -24,7 +24,6 @@ projects:
 Sites built with Hocus-Pocus:
 
 * [Shelly Cloud Status](https://status.shellycloud.com)
-
 
 ### Quick Start
 
