@@ -72,7 +72,7 @@ $sticky-footer-height: triple($spacing-unit)
 
 ### Mixins
 
-There is a `font-size` mixin which allows to set the element's font size
+There is a `+font-size` mixin which allows to set the element's font size
 and keep the proper vertical rhythm:
 
 ```sass
@@ -83,6 +83,23 @@ div
 //   font-size: 0.75rem;
 //   line-height: 1.0625rem;
 
+```
+
+`+img-replace` mixin allows to replace any element contains text with
+image.
+
+
+```sass
+div
+  @mixin img-replace('path/to/img.svg', 100px, 40px)
+
+// div
+//   background-repeat: no-repeat
+//   background-image: url('path/to/img.svg')
+//   width: 100px
+//   height: 40px
+//   text-indent: -9999px
+//   white-space: nowrap
 ```
 
 ### Functions
