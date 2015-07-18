@@ -15,6 +15,7 @@ Base font is described by following variables: `$font-size-base`,
 
 ```html
 <h1>Heading Level 1</h1>
+<span class="h1">Heading Level 1</span>
 ```
 
 <div class="example">
@@ -23,6 +24,7 @@ Base font is described by following variables: `$font-size-base`,
 
 ```html
 <h2>Heading Level 2</h2>
+<span class="h2">Heading Level 2</span>
 ```
 
 <div class="example">
@@ -31,6 +33,7 @@ Base font is described by following variables: `$font-size-base`,
 
 ```html
 <h3>Heading Level 3</h3>
+<span class="h3">Heading Level 3</span>
 ```
 
 <div class="example">
@@ -39,6 +42,7 @@ Base font is described by following variables: `$font-size-base`,
 
 ```html
 <h4>Heading Level 4</h4>
+<span class="h4">Heading Level 4</span>
 ```
 
 <div class="example">
@@ -47,6 +51,7 @@ Base font is described by following variables: `$font-size-base`,
 
 ```html
 <h5>Heading Level 5</h5>
+<span class="h5">Heading Level 5</span>
 ```
 
 <div class="example">
@@ -55,6 +60,7 @@ Base font is described by following variables: `$font-size-base`,
 
 ```html
 <h6>Heading Level 6</h6>
+<span class="h6">Heading Level 6</span>
 ```
 
 ### Paragraphs
