@@ -17,8 +17,6 @@
   @return $value * 4
 
 @function vertical-rhythm-exponent($base, $exponent)
-  @if pow(2, 2) == 4
-    @return pow($base, $exponent)
   $value: $base
   @if $exponent > 1
     @for $i from 2 through $exponent
