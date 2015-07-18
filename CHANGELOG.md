@@ -4,6 +4,10 @@ Features:
 
   - `img-replace` mixin
 
+Bugfixes:
+
+  - `h6` element
+
 ## v0.0.8 (2015-07-08)
 
 General:
