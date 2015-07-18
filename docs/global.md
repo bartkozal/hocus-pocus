@@ -70,38 +70,6 @@ $sticky-footer-height: triple($spacing-unit)
   <div class="grid-item 1/6"><div class="color-block color-block-black">$color-black</div></div>
 </div>
 
-### Mixins
-
-There is a `+font-size` mixin which allows to set the element's font size
-and keep the proper vertical rhythm:
-
-```sass
-div
-  @include font-size(12)
-
-// div
-//   font-size: 0.75rem;
-//   line-height: 1.0625rem;
-
-```
-
-`+img-replace` mixin allows to replace any element contains text with
-image.
-
-
-```sass
-div
-  @mixin img-replace('path/to/img.svg', 100px, 40px)
-
-// div
-//   background-repeat: no-repeat
-//   background-image: url('path/to/img.svg')
-//   width: 100px
-//   height: 40px
-//   text-indent: -9999px
-//   white-space: nowrap
-```
-
 ### Functions
 
 Sizing functions return a quotient/product of the provided value.

@@ -7,6 +7,19 @@ Vertical rhythm based on [sassy-gridlover](https://github.com/hiulit/Sassy-Gridl
 Base font is described by following variables: `$font-size-base`,
 `$font-family-base`, `$font-weight-normal` and `$color-font`.
 
+The `+font-size` mixin allows to set the element's font size
+and keep the proper vertical rhythm:
+
+```sass
+div
+  @include font-size(12)
+
+// div
+//   font-size: 0.75rem;
+//   line-height: 1.0625rem;
+
+```
+
 ### Headings
 
 <div class="example">
