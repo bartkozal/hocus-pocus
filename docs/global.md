@@ -23,6 +23,7 @@ $font-leading: 1.4
 $font-size-micro: 11
 $font-size-small: 13
 $font-size-base: 15
+$font-size-lead: 18
 
 $font-family-base: sans-serif
 $font-family-headings: $font-family-base

@@ -269,10 +269,12 @@ Default styles for `<p>`, `<strong>`, `<em>`, `<sup>`, `<sub>`, `<small>`,
 
 <div class="example">
   <p class="text-small">Small text</p>
+  <p class="text-lead">Lead text</p>
 </div>
 
 ```html
 <p class="text-small">Small text</p>
+<p class="text-lead">Lead text</p>
 ```
 
 <div class="example">
