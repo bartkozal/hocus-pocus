@@ -7,6 +7,8 @@ Features:
   - `.text-lowercase`, `.text-uppercase`, `.text-capitalize`
   - `.text-positive`, `.text-negative`, `.text-informative`
   - `.text-lead`
+  - `.hidden`
+  - `.float-left`, `.float-right`, `.clearfix`
 
 Bugfixes:
 

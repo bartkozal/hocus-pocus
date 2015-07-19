@@ -350,3 +350,21 @@ Examples:
 .padding-half-top
   padding-top: halve($spacing-unit)
 ```
+
+### Layout helpers
+
+`.hidden` which makes element hidden.
+
+<div class="example">
+  <div class="clearfix">
+    <div class="float-left">.float-left</div>
+    <div class="float-right">.float-right</div>
+  </div>
+</div>
+
+```html
+<div class="clearfix">
+  <div class="float-left">.float-left</div>
+  <div class="float-right">.float-right</div>
+</div>
+```

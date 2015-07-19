@@ -49,3 +49,20 @@
 
   > .grid-item + .grid-item
     text-align: right
+
+.float-left
+  float: left
+
+.float-right
+  float: right
+
+.clearfix
+  &:before,
+  &:after
+    content: " "
+    display: table
+  &:after
+    clear: both
+
+.hidden
+  display: none
