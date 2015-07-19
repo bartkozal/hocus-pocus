@@ -3,6 +3,7 @@
 Features:
 
   - `img-replace` mixin
+  - `mark`, `del`, `ins`, `s` and `u` elements
 
 Bugfixes:
 

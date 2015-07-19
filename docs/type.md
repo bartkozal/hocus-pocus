@@ -271,7 +271,6 @@ Default styles for `<p>`, `<strong>`, `<em>`, `<sup>`, `<sub>`, `<small>`,
   <p class="text-small">Small text</p>
 </div>
 
-
 ```html
 <p class="text-small">Small text</p>
 ```
