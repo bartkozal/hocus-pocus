@@ -9,6 +9,7 @@ Features:
   - `.text-lead`
   - `.hidden`
   - `.float-left`, `.float-right`, `.clearfix`
+  - `.table-zebra`, `.table-hover`
 
 Bugfixes:
 
