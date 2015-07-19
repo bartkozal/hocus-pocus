@@ -1,5 +1,7 @@
 ## (master)
 
+## v0.0.9 (2015-07-20)
+
 Features:
 
   - `+img-replace` mixin
