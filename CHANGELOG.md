@@ -2,8 +2,10 @@
 
 Features:
 
-  - `img-replace` mixin
+  - `+img-replace` mixin
   - `mark`, `del`, `ins`, `s` and `u` elements
+  - `.text-lowercase`, `.text-uppercase`, `.text-capitalize`
+  - `.text-positive`, `.text-negative`, `.text-informative`
   - `.text-lead`
 
 Bugfixes:

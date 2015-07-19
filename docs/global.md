@@ -19,6 +19,10 @@ $color-font: $color-black
 $color-link: $color-blue
 $color-muted: $color-gray
 
+$color-positive: $color-green
+$color-negative: $color-red
+$color-informative: $color-orange
+
 $font-leading: 1.4
 $font-size-micro: 11
 $font-size-small: 13

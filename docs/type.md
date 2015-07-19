@@ -261,18 +261,12 @@ Default styles for `<p>`, `<strong>`, `<em>`, `<sup>`, `<sub>`, `<small>`,
 
 <div class="example">
   <p class="text-micro">Micro text</p>
-</div>
-
-```html
-<p class="text-micro">Micro text</p>
-```
-
-<div class="example">
   <p class="text-small">Small text</p>
   <p class="text-lead">Lead text</p>
 </div>
 
 ```html
+<p class="text-micro">Micro text</p>
 <p class="text-small">Small text</p>
 <p class="text-lead">Lead text</p>
 ```
@@ -287,48 +281,48 @@ Default styles for `<p>`, `<strong>`, `<em>`, `<sup>`, `<sub>`, `<small>`,
 
 <div class="example">
   <p class="text-light">Light weight text</p>
-</div>
-
-```html
-<p class="text-light">Light weight text</p>
-```
-
-<div class="example">
   <p class="text-normal">Normal weight text</p>
-</div>
-
-```html
-<p class="text-normal">Normal weight text</p>
-```
-
-<div class="example">
   <p class="text-bold">Bold weight text</p>
 </div>
 
 ```html
+<p class="text-light">Light weight text</p>
+<p class="text-normal">Normal weight text</p>
 <p class="text-bold">Bold weight text</p>
 ```
 
 <div class="example">
+  <p class="text-lowercase">Lowercased text</p>
+  <p class="text-uppercase">Uppercased text</p>
+  <p class="text-capitalize">Capitalized text</p>
+</div>
+
+```html
+<p class="text-lowercase">Lowercase text</p>
+<p class="text-uppercase">Uppercase text</p>
+<p class="text-capitalize">Capitalize text</p>
+```
+
+<div class="example">
   <p class="text-left">Left aligned text</p>
-</div>
-
-```html
-<p class="text-left">Left aligned text</p>
-```
-
-<div class="example">
   <p class="text-center">Center aligned text</p>
-</div>
-
-```html
-<p class="text-center">Center aligned text</p>
-```
-
-<div class="example">
   <p class="text-right">Right aligned text</p>
 </div>
 
 ```html
+<p class="text-left">Left aligned text</p>
+<p class="text-center">Center aligned text</p>
 <p class="text-right">Right aligned text</p>
+```
+
+<div class="example">
+  <p class="text-positive">Positive text</p>
+  <p class="text-negative">Negative text</p>
+  <p class="text-informative">Informative text</p>
+</div>
+
+```html
+<p class="text-positive">Positive text</p>
+<p class="text-negative">Negative text</p>
+<p class="text-informative">Informative text</p>
 ```
