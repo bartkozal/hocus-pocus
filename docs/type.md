@@ -78,27 +78,33 @@ div
 
 ### Paragraphs
 
-Default styles for `<p>`, `<strong>`, `<em>`, `<sup>`, `<sub>`, `<small>`
-and `<a>`.
+Default styles for `<p>`, `<strong>`, `<em>`, `<sup>`, `<sub>`, `<small>`,
+`<a>`, `<mark>`, `<del>`, `<ins>`, `<s>` and `<u>`.
 
 <div class="example">
-  <p>
-    <strong>Pellentesque habitant morbi tristique</strong> senectus et netus
-    et malesuada fames <sub>ac turpis</sub> egestas. <em>Vestibulum tortor
-    quam</em>, feugiat vitae, ultricies eget, <small>tempor sit amet,
-    ante</small>. Donec eu libero <sup>sit amet</sup> quam egestas semper.
-    <a href="#">Aenean ultricies</a> mi vitae est.
-  </p>
+  <p>Paragraph with a <strong>strong</strong> element.</p>
+  <p>Paragraph with an <em>emphasis</em> element.</p>
+  <p>Paragraph with a <sup>sup</sup> element.</p>
+  <p>Paragraph with a <sub>sub</sub> element.</p>
+  <p>Paragraph with a <small>small</small> element.</p>
+  <p>Paragraph with a <a href="#">link</a>.</p>
+  <p>Paragraph with a <mark>mark</mark> element.</p>
+  <p>Paragraph with a <del>deleted text</del> and an <ins>inserted text</ins> elements.</p>
+  <p>Paragraph with a <s>strikethrough</s> element.</p>
+  <p>Paragraph with an <u>underline</u> element.</p>
 </div>
 
 ```html
-<p>
-  <strong>Pellentesque habitant morbi tristique</strong> senectus et netus
-  et malesuada fames <sub>ac turpis</sub> egestas. <em>Vestibulum tortor
-  quam</em>, feugiat vitae, ultricies eget, <small>tempor sit amet,
-  ante</small>. Donec eu libero <sup>sit amet</sup> quam egestas semper.
-  <a href="#">Aenean ultricies</a> mi vitae est.
-</p>
+<p>Paragraph with a <strong>strong</strong> element.</p>
+<p>Paragraph with an <em>emphasis</em> element.</p>
+<p>Paragraph with a <sup>sup</sup> element.</p>
+<p>Paragraph with a <sub>sub</sub> element.</p>
+<p>Paragraph with a <small>small</small> element.</p>
+<p>Paragraph with a <a href="#">link</a>.</p>
+<p>Paragraph with a <mark>mark</mark> element.</p>
+<p>Paragraph with a <del>deleted text</del> and an <ins>inserted text</ins> elements.</p>
+<p>Paragraph with a <s>strikethrough</s> element.</p>
+<p>Paragraph with an <u>underline</u> element.</p>
 ```
 
 ### Blockquote
