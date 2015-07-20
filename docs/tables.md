@@ -105,6 +105,9 @@ layout: default
 </table>
 ```
 
+You can change the odd rows background by editing the
+`$table-zebra-background` variable.
+
 <div class="example">
   <table class="table-bordered table-zebra">
     <thead>
@@ -139,6 +142,9 @@ layout: default
   ...
 </table>
 ```
+
+Edit the `$table-hover-background` variable to change the hover background
+color.
 
 <div class="example">
   <table class="table-bordered table-hover">
