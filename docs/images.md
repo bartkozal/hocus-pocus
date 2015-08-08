@@ -2,6 +2,33 @@
 layout: default
 ---
 
+By default all images are verically aligned to the middle and their
+`box-sizing` is set to `content-box`.
+
+<div class="example">
+  <img src="http://placehold.it/1200x200" alt="example" class="img-responsive">
+</div>
+
+```html
+<img src="img.png" alt="placeholder" class="img-responsive">
+```
+
+<div class="example">
+  <img src="http://placehold.it/150x150" alt="example" class="img-rounded">
+</div>
+
+```html
+<img src="img.png" alt="placeholder" class="img-rounded">
+```
+
+<div class="example">
+  <img src="http://placehold.it/150x150" alt="example" class="img-circle">
+</div>
+
+```html
+<img src="img.png" alt="placeholder" class="img-circle">
+```
+
 The `+img-replace` mixin allows to replace any element contains text with
 image.
 
