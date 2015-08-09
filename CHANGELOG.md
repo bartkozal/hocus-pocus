@@ -1,5 +1,10 @@
 ## (master)
 
+Features:
+
+  - `.img-responsive`, `.img-circle`, `.img-rounded`
+  - `.box`
+
 ## v0.0.9 (2015-07-20)
 
 Features:

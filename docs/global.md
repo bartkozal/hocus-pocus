@@ -15,6 +15,7 @@ file. Variables listed below are recommended to set on your part.
 
 ```sass
 $color-ui: $color-silver
+$color-box: $color-silver
 $color-font: $color-black
 $color-link: $color-blue
 $color-muted: $color-gray
