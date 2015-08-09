@@ -3,7 +3,7 @@ layout: default
 ---
 
 Use `.box` to create an element out of your content. It has default
-padding background equal the value of `$color-ui` and removes bottom
+padding background equal the value of `$color-box` and removes bottom
 margin from a last element inside it.
 
 <div class="example">
