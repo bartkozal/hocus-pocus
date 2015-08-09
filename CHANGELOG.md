@@ -2,9 +2,10 @@
 
 Features:
 
-  - `.img-responsive`, `.img-circle`, `.img-rounded`
-  - `.box`
-  - `.flash-positive`, `.flash-negative`, `.flash-informative`
+  - image helpers
+  - box
+  - flashes
+  - buttons
 
 ## v0.0.9 (2015-07-20)
 
