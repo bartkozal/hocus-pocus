@@ -38,7 +38,7 @@ $font-family-monospace: monospace
 $grid-container: 68rem
 $grid-gutter: $spacing-unit
 
-$border-radius-base: 4px
+$global-border-radius: 4px
 
 $link-underline: true
 $link-active: true
