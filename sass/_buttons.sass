@@ -12,24 +12,10 @@ button,
   background-color: $color-btn
   color: $color-white
   text-decoration: none
-  transition: background-color .2s ease
-
-  &:hover
-    background-color: lighten($color-btn, 5%)
-
-  &:active
-    background-color: darken($color-btn, 5%)
 
 button[disabled],
 .btn-disabled
   background-color: $color-muted
-  cursor: not-allowed
-
-  &:hover
-    background-color: $color-muted
-
-  &:active
-    background-color: $color-muted
 
   @if $link-active
     &:active
@@ -38,20 +24,8 @@ button[disabled],
 .btn-proceed
   background-color: $color-positive
 
-  &:hover
-    background-color: lighten($color-positive, 5%)
-
-  &:active
-    background-color: darken($color-positive, 5%)
-
 .btn-danger
   background-color: $color-negative
-
-  &:hover
-    background-color: lighten($color-negative, 5%)
-
-  &:active
-    background-color: darken($color-negative, 5%)
 
 .btn-block
   display: block
