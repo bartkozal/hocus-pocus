@@ -105,12 +105,13 @@ small,
 .text-capitalize
   text-transform: capitalize
 
-.text-positive
-  color: $color-positive
+@if $global-extras
 
-.text-negative
-  color: $color-negative
+  .text-positive
+    color: $color-positive
 
-.text-informative
-  color: $color-informative
+  .text-negative
+    color: $color-negative
 
+  .text-informative
+    color: $color-informative

@@ -368,3 +368,37 @@ Examples:
   <div class="float-right">.float-right</div>
 </div>
 ```
+
+### Box
+
+Use `.box` to create an element out of your content. It has the default
+padding and the last element inside it has no bottom margin.
+
+<div class="example">
+  <div class="box" style="background-color: #eee;">
+    <p>Element inside a box</p>
+  </div>
+</div>
+
+```html
+<div class="box" style="background-color: #eee;">
+  ...
+</div>
+```
+
+### Flash
+
+Flash is very similar to box, but has a smaller padding.
+
+<div class="example">
+  <div class="flash" style="background-color: #eee;">
+    <p>Flash</p>
+  </div>
+</div>
+
+```html
+<div class="flash" style="background-color: #eee;">
+  <p>Flash</p>
+</div>
+```
+

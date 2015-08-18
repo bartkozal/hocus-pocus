@@ -23,22 +23,6 @@ layout: default
 ```
 
 <div class="example">
-  <a href="#" class="btn btn-proceed">Proceed button</a>
-</div>
-
-```html
-<a href="#" class="btn btn-proceed">Proceed button</a>
-```
-
-<div class="example">
-  <a href="#" class="btn btn-danger">Danger button</a>
-</div>
-
-```html
-<a href="#" class="btn btn-danger">Danger button</a>
-```
-
-<div class="example">
   <a href="#" class="btn btn-block">Block button</a>
 </div>
 

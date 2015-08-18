@@ -314,15 +314,3 @@ Default styles for `<p>`, `<strong>`, `<em>`, `<sup>`, `<sub>`, `<small>`,
 <p class="text-center">Center aligned text</p>
 <p class="text-right">Right aligned text</p>
 ```
-
-<div class="example">
-  <p class="text-positive">Positive text</p>
-  <p class="text-negative">Negative text</p>
-  <p class="text-informative">Informative text</p>
-</div>
-
-```html
-<p class="text-positive">Positive text</p>
-<p class="text-negative">Negative text</p>
-<p class="text-informative">Informative text</p>
-```

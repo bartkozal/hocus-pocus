@@ -21,14 +21,16 @@ button[disabled],
     &:active
       top: 0
 
-.btn-proceed
-  background-color: $color-positive
-
-.btn-danger
-  background-color: $color-negative
-
 .btn-block
   display: block
   padding-left: 0
   padding-right: 0
   text-align: center
+
+@if $global-extras
+
+  .btn-positive
+    background-color: $color-positive
+
+  .btn-negative
+    background-color: $color-negative
