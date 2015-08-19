@@ -17,7 +17,7 @@
             <div class="brand">Hocus-Pocus</div>
           </div>
           <div class="grid-item 1/2">
-            <ul class="navbar-menu">
+            <ul class="navbar-menu mobile-hidden">
               <li><a href="https://github.com/bkzl/hocus-pocus">View the GitHub project</a></li>
             </ul>
           </div>
@@ -27,22 +27,18 @@
 
     <div class="container padding-double-bottom">
       <div class="grid">
-        <div class="grid-item 1/5">
+        <div class="grid-item 1/5 mobile-hidden">
           <ul class="list-menu">
-            <li><a href="/">Quick Start</a></li>
-            <li><a href="/global">Global</a></li>
-            <li><a href="/layout">Layout</a></li>
-            <li><a href="/type">Type</a></li>
-            <li><a href="/images">Images</a></li>
-            <li><a href="/tables">Tables</a></li>
-            <li><a href="/forms">Forms</a></li>
-            <li><a href="/buttons">Buttons</a></li>
-            <li><a href="/navbar">Navbar</a></li>
-            <li><a href="/sticky-footer">Sticky Footer</a></li>
-            <li><a href="/extras">Extras</a></li>
+            {% include navigation.ext %}
           </ul>
         </div>
-        <div class="grid-item 4/5">
+        <div class="grid-item 4/5 mobile-1/1">
+          <div class="hidden mobile-visible margin-double-bottom">
+            <ul class="list-inline">
+              {% include navigation.ext %}
+            </ul>
+          </div>
+
           {{ content }}
         </div>
       </div>
@@ -52,8 +48,10 @@
       <div class="container">
         <div class="grid grid-pair">
           <div class="grid-item 1/2">
-            Maintained by <a href="http://bkzl.github.io">bkzl</a>
-            under the <a href="https://github.com/bkzl/hocus-pocus/blob/master/LICENSE">MIT license</a>.
+            <div class="mobile-hidden">
+              Maintained by <a href="http://bkzl.github.io">bkzl</a>
+              under the <a href="https://github.com/bkzl/hocus-pocus/blob/master/LICENSE">MIT license</a>.
+            </div>
           </div>
           <div class="grid-item 1/2">
             Latest release: <a href="https://github.com/bkzl/hocus-pocus/tree/v0.0.10">v0.0.10</a>

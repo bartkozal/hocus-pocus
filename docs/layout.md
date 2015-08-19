@@ -351,9 +351,11 @@ Examples:
   padding-top: halve($spacing-unit)
 ```
 
-### Layout helpers
+### Visibility helpers
 
-`.hidden` which makes element hidden.
+`.hidden`, `.visible`, `.visible-block`, `.visible-inline-block`, `.visible-inline`
+
+### Layout helpers
 
 <div class="example">
   <div class="clearfix">

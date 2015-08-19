@@ -31,8 +31,11 @@ $font-family-base: sans-serif
 $font-family-headings: $font-family-base
 $font-family-monospace: monospace
 
-$grid-container: 68rem
+$grid-container: 1020px
 $grid-gutter: $spacing-unit
+
+$responsive-type: max
+$responsive-map: (tablet: 768px 1200px, desktop: 1201px)
 
 $global-extras: true
 $global-border-radius: 4px
