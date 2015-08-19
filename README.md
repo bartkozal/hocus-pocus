@@ -1,4 +1,4 @@
-# Hocus-Pocus
+<img src="http://bkzl.github.io/hocus-pocus/images/brand-light.png" width="144px" height="72px">
 
 Hocus-Pocus is a simple and design-free [SASS](http://sass-lang.com)
 micro framework, ideal as a CSS starter kit.
