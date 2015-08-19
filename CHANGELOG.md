@@ -1,8 +1,16 @@
 ## (master)
 
+## v0.0.11 (2015-08-19)
+
 Features:
 
   - forms
+  - extras
+  - responsive
+
+Bugfixes:
+
+  - `.list-menu`
 
 ## v0.0.10 (2015-08-09)
 
