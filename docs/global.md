@@ -34,7 +34,7 @@ $font-family-monospace: monospace
 $grid-container: 1020px
 $grid-gutter: $spacing-unit
 
-$responsive-type: max
+$responsive-type: mobile-first
 $responsive-map: (tablet: 768px 1200px, desktop: 1201px)
 
 $global-extras: true

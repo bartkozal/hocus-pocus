@@ -12,7 +12,7 @@
   .#{$name}-visible-inline
     display: inline
 
-  [class~="#{$name}-1/1-#{$name}"]
+  [class~="#{$name}-1/1"]
     width: 100%
     flex-basis: 100%
 
@@ -158,5 +158,8 @@
     @media screen and (min-width: nth($size, 1)) and (max-width: nth($size, 2))
       @include responsive-helpers($name)
   @else
-    @media screen and (#{$responsive-type}-width: nth($size, 1))
+    $responsive-type-attr: min-width
+    @if $responsive-type == desktop-first
+      $responsive-type-attr: max-width
+    @media screen and (#{$responsive-type-attr}: nth($size, 1))
       @include responsive-helpers($name)

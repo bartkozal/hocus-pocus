@@ -3,13 +3,13 @@ layout: default
 ---
 
 First you can define preffered way of writting RWD by setting the
-`$responsive-type` variable with `min` or `max` keyword. Then, you should
+`$responsive-type` variable with `mobile-first` or `desktop-first` keyword. Then, you should
 define brakepoints in `$responsive-map` variable. There are two types of
 them: with single and double arguments. For each breakpoint will be
 generated visibility helpers and grid i.e.
 
 ```sass
-$responsive-type: max
+$responsive-type: desktop-first
 $responsive-map: (mobile: 680px)
 ```
 
