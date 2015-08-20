@@ -1,93 +1,47 @@
-.no-margin
-  margin: 0
+@each $attr in (margin, padding)
+  .no-#{$attr}
+    #{$attr}: 0
 
-.no-margin-top
-  margin-top: 0
+  .no-#{$attr}-top
+    #{$attr}-top: 0
 
-.no-margin-right
-  margin-right: 0
+  .no-#{$attr}-right
+    #{$attr}-right: 0
 
-.no-margin-bottom
-  margin-bottom: 0
+  .no-#{$attr}-bottom
+    #{$attr}-bottom: 0
 
-.no-margin-left
-  margin-left: 0
+  .no-#{$attr}-left
+    #{$attr}-left: 0
 
-.no-margin-sides
-  margin-right: 0
-  margin-left: 0
+  .no-#{$attr}-sides
+    #{$attr}-right: 0
+    #{$attr}-left: 0
 
-.no-margin-ends
-  margin-top: 0
-  margin-bottom: 0
+  .no-#{$attr}-ends
+    #{$attr}-top: 0
+    #{$attr}-bottom: 0
 
-@each $name, $size in $spacing-map
-  .margin-#{$name}
-    margin: #{$size}
+  @each $name, $size in $spacing-map
+    .#{$attr}-#{$name}
+      #{$attr}: #{$size}
 
-  .margin-#{$name}-top
-    margin-top: #{$size}
+    .#{$attr}-#{$name}-top
+      #{$attr}-top: #{$size}
 
-  .margin-#{$name}-right
-    margin-right: #{$size}
+    .#{$attr}-#{$name}-right
+      #{$attr}-right: #{$size}
 
-  .margin-#{$name}-bottom
-    margin-bottom: #{$size}
+    .#{$attr}-#{$name}-bottom
+      #{$attr}-bottom: #{$size}
 
-  .margin-#{$name}-left
-    margin-left: #{$size}
+    .#{$attr}-#{$name}-left
+      #{$attr}-left: #{$size}
 
-  .margin-#{$name}-sides
-    margin-right: #{$size}
-    margin-left: #{$size}
+    .#{$attr}-#{$name}-sides
+      #{$attr}-right: #{$size}
+      #{$attr}-left: #{$size}
 
-  .margin-#{$name}-ends
-    margin-top: #{$size}
-    margin-bottom: #{$size}
-
-.no-padding
-  padding: 0
-
-.no-padding-top
-  padding-top: 0
-
-.no-padding-right
-  padding-right: 0
-
-.no-padding-bottom
-  padding-bottom: 0
-
-.no-padding-left
-  padding-left: 0
-
-.no-padding-sides
-  padding-right: 0
-  padding-left: 0
-
-.no-padding-ends
-  padding-top: 0
-  padding-bottom: 0
-
-@each $name, $size in $spacing-map
-  .padding-#{$name}
-    padding: #{$size}
-
-  .padding-#{$name}-top
-    padding-top: #{$size}
-
-  .padding-#{$name}-right
-    padding-right: #{$size}
-
-  .padding-#{$name}-bottom
-    padding-bottom: #{$size}
-
-  .padding-#{$name}-left
-    padding-left: #{$size}
-
-  .padding-#{$name}-sides
-    padding-right: #{$size}
-    padding-left: #{$size}
-
-  .padding-#{$name}-ends
-    padding-top: #{$size}
-    padding-bottom: #{$size}
+    .#{$attr}-#{$name}-ends
+      #{$attr}-top: #{$size}
+      #{$attr}-bottom: #{$size}
