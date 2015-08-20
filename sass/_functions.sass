@@ -15,13 +15,3 @@
 
 @function quadruple($value)
   @return $value * 4
-
-@function vertical-rhythm-exponent($base, $exponent)
-  $value: $base
-  @if $exponent > 1
-    @for $i from 2 through $exponent
-      $value: $value * $base
-  @if $exponent < 1
-    @for $i from 0 through -$exponent
-      $value: $value / $base
-  @return $value

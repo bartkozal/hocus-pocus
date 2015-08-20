@@ -1,3 +1,13 @@
+@function vertical-rhythm-exponent($base, $exponent)
+  $value: $base
+  @if $exponent > 1
+    @for $i from 2 through $exponent
+      $value: $value * $base
+  @if $exponent < 1
+    @for $i from 0 through -$exponent
+      $value: $value / $base
+  @return $value
+
 @mixin font-size($font-size: $font-size-base)
   font-size: $font-size / $vertical-align-body * 1rem
   line-height: round($font-size * $font-leading) / $vertical-align-body * 1rem
