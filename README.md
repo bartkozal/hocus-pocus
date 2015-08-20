@@ -78,6 +78,11 @@ To build and deploy to production:
 $ grunt publish
 ```
 
+### Changelog
+
+Changelog is available under [the releases
+section](https://github.com/bkzl/hocus-pocus/releases).
+
 ### Contributing
 
 [Add a new issue](https://github.com/bkzl/hocus-pocus/issues)
