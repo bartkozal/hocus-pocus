@@ -3,7 +3,7 @@ button,
   display: inline-block
   appearance: none
   margin: 0
-  padding: third($spacing-unit) halve($spacing-unit)
+  padding: quarter($spacing-unit) halve($spacing-unit)
   border: 0
   border-radius: $global-border-radius
   vertical-align: middle
@@ -16,6 +16,7 @@ button,
 button[disabled],
 .btn-disabled
   background-color: $color-muted
+  cursor: default
 
   @if $link-active
     &:active
