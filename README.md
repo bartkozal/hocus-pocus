@@ -1,15 +1,15 @@
 <img src="http://bkzl.github.io/hocus-pocus/images/brand-light.png" width="144px" height="72px">
 
-Hocus-Pocus is a simple and design-free [SASS](http://sass-lang.com)
-micro framework, ideal as a CSS starter kit.
+Hocus-Pocus is a simple and design-free CSS micro-framework built in
+[SASS](http://sass-lang.com).
 
-The main idea behind the Hocus-Pocus is to make the most universal and
-lightweight framework as possible. It includes only the common stuff
-without the specific design. You don't have to overwrite provided CSS
-classes and every default can be modified in a clean way just by adjusting
-the appropriate variable.
+The main idea behind the Hocus-Pocus was to make a universal and
+lightweight CSS starter kit that only includes the most common stuff.
+Every default can be modified in a clean way by changing a variable, so
+there is no need to overwrite provided classes.
 
-**[Learn more from the documentation.](http://hocus-pocus.io)**
+**[Looking for a quick start? Learn more from the
+documentation.](http://hocus-pocus.io)**
 
 It could not exist without work of awesome people responsible for these
 projects:
@@ -25,58 +25,29 @@ Sites built with Hocus-Pocus:
 
 * [Shelly Cloud Status](https://status.shellycloud.com)
 
-### Quick Start
+Features included:
 
-To install Hocus-Pocus use Bower:
-
-```sh
-$ bower install hocus-pocus
-```
-
-Or [Rails Assets](https://rails-assets.org) if you have a Ruby app:
-
-```ruby
-# Gemfile
-
-source 'https://rails-assets.org' do
-  gem 'rails-assets-hocus-pocus'
-end
-```
-
-Then include the main Hocus-Pocus file after your variables, but before
-the rest of your stylesheets:
-
-```sass
-$font-family-base: "Open Sans", sans-serif
-$grid-container: 70rem
-
-@import "bower_components/hocus-pocus/hocus-pocus"
-
-@import "objects/meter"
-@import "objects/price-box"
-@import "inbox/landing-headings-fix"
-```
+* Normalize
+* Colors
+* Vertical rhythm
+* Global box-sizing set to border-box
+* Grid system based on fractals with flexbox under the hood
+* Responsive support with customizable breakpoints (and approach, you can
+  choose between mobile-first and desktop-first)
+* Helpers: layout, spacing, size, visibility
+* Components: type, list, rule, image, table, form, box, flash, navbar,
+  sticky footer
+* Extras
 
 ### Development
 
-To run docs locally you need to install `jekyll` and `redcarpet` Ruby gems
-first, then fetch npm dependencies with:
+To edit and compile documentation locally you have to install two Ruby
+gems first: `$ gem install jekyll redcarpet`. Then fetch the npm
+dependencies with `$ npm install`. There are two
+[Grunt](http://gruntjs.com) tasks available:
 
-```sh
-$ npm install
-```
-
-Now you can start a local server by running:
-
-```sh
-$ grunt server
-```
-
-To build and deploy to production:
-
-```sh
-$ grunt publish
-```
+* `$ grunt server` - start a server and compile CSS on every edit
+* `$ grunt publish` - build and push changes to production
 
 ### Changelog
 
@@ -85,5 +56,5 @@ section](https://github.com/bkzl/hocus-pocus/releases).
 
 ### Contributing
 
-[Add a new issue](https://github.com/bkzl/hocus-pocus/issues)
-for bugs and ideas.
+Noticed a bug or have an idea? Please [add a new
+issue](https://github.com/bkzl/hocus-pocus/issues). Thanks!
