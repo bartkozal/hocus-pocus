@@ -1,6 +1,6 @@
 <img src="http://bkzl.github.io/hocus-pocus/images/brand-light.png" width="144px" height="72px">
 
-Hocus-Pocus is a simple and design-free CSS micro-framework built in
+Hocus-Pocus is a simple and design-free CSS micro-framework built with
 [SASS](http://sass-lang.com).
 
 The main idea behind the Hocus-Pocus was to make a universal and
@@ -25,6 +25,12 @@ Features included:
   sticky footer
 * Extras
 
+Sites built with Hocus-Pocus:
+
+* [Shelly Cloud Status](https://status.shellycloud.com)
+
+* * * 
+
 Hocus-Pocus could not exist without work of awesome people responsible for
 these projects:
 
@@ -34,10 +40,6 @@ these projects:
 * [flexboxgrid](https://github.com/kristoferjoseph/flexboxgrid)
 * [sassy-gridlover](https://github.com/hiulit/Sassy-Gridlover)
 * [colors](https://github.com/mrmrs/colors)
-
-Sites built with Hocus-Pocus:
-
-* [Shelly Cloud Status](https://status.shellycloud.com)
 
 ### Development
 
