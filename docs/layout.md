@@ -2,7 +2,7 @@
 layout: default
 ---
 
-Use `.container` class to create a centered wrapper which has width of
+Use `.container` class to create a centered wrapper. It has a width of
 `$grid-container`.
 
 <div class="example">
@@ -184,7 +184,7 @@ and vertically.
 </div>
 ```
 
-Moreover, you can create a flat grid without the gutter.
+You can create a flat grid without the gutter too:
 
 <div class="example">
   <div class="grid grid-flat grid-preview">
@@ -212,8 +212,8 @@ Moreover, you can create a flat grid without the gutter.
 </div>
 ```
 
-Or two elements grid where content of the first one is aligned to the left
-but content of the second one is aligned to the right.
+Or a grid with two elements where content of the first one is aligned to the
+left and content of the second one is aligned to the right.
 
 <div class="example">
   <div class="grid grid-pair">
@@ -243,9 +243,9 @@ but content of the second one is aligned to the right.
 
 ### Width helpers
 
-Width helpers can be use for various elements like grid items, inputs or
-table cells. Fractions of the following numbers are available: `n/1`, `n/2`,
-`n/3`, `n/4`, `n/5`, `n/6`, `n/8`, `n/9`, `n/10` and `n/12`.
+Use width helpers with various elements like grid items, inputs or table cells.
+There are available fractions of these numbers: `n/1`, `n/2`, `n/3`, `n/4`,
+`n/5`, `n/6`, `n/8`, `n/9`, `n/10` and `n/12`.
 
 <div class="grid">
   <div class="grid-item 1/1">
@@ -312,10 +312,30 @@ table cells. Fractions of the following numbers are available: `n/1`, `n/2`,
   </div>
 </div>
 
+### Layout helpers
+
+<div class="example">
+  <div class="clearfix">
+    <div class="float-left grid-preview">.float-left</div>
+    <div class="float-right grid-preview">.float-right</div>
+  </div>
+</div>
+
+```html
+<div class="clearfix">
+  <div class="float-left">.float-left</div>
+  <div class="float-right">.float-right</div>
+</div>
+```
+
+### Visibility helpers
+
+`.hidden`, `.visible`, `.visible-block`, `.visible-inline-block`, `.visible-inline`
+
 ### Spacing helpers
 
-Spacing helpers are based on the `$spacing-map` hash. By default there are
-helper with value equal to 0 and seven helpers in eight sizes:
+Spacing helpers are generated based on the `$spacing-map` hash. By default you
+get access to four helpers with various types and sizes:
 
 ```sass
 .margin[-size][-type]
@@ -323,8 +343,8 @@ helper with value equal to 0 and seven helpers in eight sizes:
 .no-margin[-type]
 .no-padding[-type]
 
-// size: base, quarter, third, half, double, triple, quadruple
-// type: top, right, bottom, left, sides, ends
+// type: -top, -right, -bottom, -left, -sides, -ends
+// size: -base, -quarter, -third, -half, -double, -triple, -quadruple
 ```
 
 Examples:
@@ -351,30 +371,10 @@ Examples:
   padding-top: halve($spacing-unit)
 ```
 
-### Visibility helpers
-
-`.hidden`, `.visible`, `.visible-block`, `.visible-inline-block`, `.visible-inline`
-
-### Layout helpers
-
-<div class="example">
-  <div class="clearfix">
-    <div class="float-left">.float-left</div>
-    <div class="float-right">.float-right</div>
-  </div>
-</div>
-
-```html
-<div class="clearfix">
-  <div class="float-left">.float-left</div>
-  <div class="float-right">.float-right</div>
-</div>
-```
-
 ### Box
 
 Use `.box` to create an element out of your content. It has the default
-padding and the last element inside it has no bottom margin.
+padding and the last element inside has no bottom margin.
 
 <div class="example">
   <div class="box" style="background-color: #eee;">
@@ -390,7 +390,7 @@ padding and the last element inside it has no bottom margin.
 
 ### Flash
 
-Flash is very similar to box, but has a smaller padding.
+Flash is very similar to box but has a smaller padding.
 
 <div class="example">
   <div class="flash" style="background-color: #eee;">
@@ -403,4 +403,3 @@ Flash is very similar to box, but has a smaller padding.
   <p>Flash</p>
 </div>
 ```
-

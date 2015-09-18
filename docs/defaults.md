@@ -2,16 +2,8 @@
 layout: default
 ---
 
-[Normalize](https://github.com/necolas/normalize.css) is included.
-
-Box-sizing is changed for all elements (excluding `<img>`) and set to `border-box`.
-
-Vertical scrollbar is always visible.
-
-### Defaults
-
-To see the all available defaults please check the `sass/_defaults.sass`
-file. Variables listed below are recommended to set on your part.
+I prefer to adjust settings listed below per each project. List of all
+variables is available under `sass/_defaults.sass`.
 
 ```sass
 $color-ui: $color-silver
@@ -77,32 +69,26 @@ $sticky-footer-height: triple($spacing-unit)
   <div class="grid-item 1/6"><div class="color-block color-block-black">$color-black</div></div>
 </div>
 
-### Functions
+### Size functions
 
-Sizing functions return a quotient/product of the provided value.
+Size functions return a quotient/product of the provided value.
 
 ```sass
 div
-  padding: quarter(12px)
-  // padding: 3px
+  padding: quarter(12px) // padding: 3px
 
 div
-  padding: third(12px)
-  // padding: 4px
+  padding: third(12px) // padding: 4px
 
 div
-  padding: halve(12px)
-  // padding: 6px
+  padding: halve(12px) // padding: 6px
 
 div
-  padding: double(12px)
-  // padding: 24px
+  padding: double(12px) // padding: 24px
 
 div
-  padding: triple(12px)
-  // padding: 36px
+  padding: triple(12px) // padding: 36px
 
 div
-  padding: quadruple(12px)
-  // padding: 48px
+  padding: quadruple(12px) // padding: 48px
 ```

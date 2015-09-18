@@ -2,7 +2,7 @@
 layout: default
 ---
 
-Can be modified with the following variables: `$navbar-background`,
+Modify following variables to adjust colors: `$navbar-background`,
 `$navbar-color`, `$navbar-link-color` and `$navbar-link-background`
 
 <div class="example">

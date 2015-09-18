@@ -16,7 +16,7 @@ Features included:
 * Normalize
 * Colors
 * Vertical rhythm
-* Global box-sizing set to border-box
+* Box-sizing for all elements (excluding `<img>`) is set to `border-box`
 * Grid system based on fractals with flexbox under the hood
 * Responsive support with customizable breakpoints (and approach, you can
   choose between mobile-first and desktop-first)
@@ -40,6 +40,8 @@ these projects:
 * [flexboxgrid](https://github.com/kristoferjoseph/flexboxgrid)
 * [sassy-gridlover](https://github.com/hiulit/Sassy-Gridlover)
 * [colors](https://github.com/mrmrs/colors)
+
+* * *
 
 ### Development
 

@@ -1,6 +1,7 @@
-<li><a href="/">Quick Start</a></li>
-<li><a href="/global">Global</a></li>
-<li><a href="/layout">Layout</a></li>
+<li><a href="/">Home</a></li>
+<li><a href="/quick-start">Quick Start</a></li>
+<li><a href="/defaults">Defaults</a></li>
+<li><a href="/layout">Grid & Layout</a></li>
 <li><a href="/responsive">Responsive</a></li>
 <li><a href="/type">Type</a></li>
 <li><a href="/images">Images</a></li>

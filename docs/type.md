@@ -2,12 +2,10 @@
 layout: default
 ---
 
-Vertical rhythm based on [sassy-gridlover](https://github.com/hiulit/Sassy-Gridlover).
-
-Base font is described by following variables: `$font-size-base`,
+Base font is described by: `$font-size-base`,
 `$font-family-base`, `$font-weight-normal` and `$color-font`.
 
-The `+font-size` mixin allows to set the element's font size
+The `+font-size` mixin allows to set a custom font size
 and keep the proper vertical rhythm:
 
 ```sass
