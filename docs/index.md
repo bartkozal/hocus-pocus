@@ -2,33 +2,31 @@
 layout: default
 ---
 
-Hocus-Pocus is a simple and design-free CSS micro-framework built with
-[SASS](http://sass-lang.com).
+Hocus-Pocus is a simple and design-free [SASS](http://sass-lang.com)
+micro-framework.
 
-The main idea behind the Hocus-Pocus was to make a universal and
-lightweight CSS starter kit that only includes the most common stuff.
-Every default can be modified in a clean way by changing a variable, so
-there is no need to overwrite provided classes.
+The main idea behind is to make a universal and lightweight starter kit
+that only includes the most common stuff. There is no need to overwrite
+existing Hocus-Pocus classes because every default can be modified in
+a clean way by changing a variable.
 
-Features included:
+Included features:
 
 * Normalize
 * Colors
 * Vertical rhythm
-* Global box-sizing set to border-box
-* Box-sizing for all elements (excluding `<img>`) is set to `border-box`
-* Responsive support with customizable breakpoints (and approach, you can
-  choose between mobile-first and desktop-first)
-* Helpers: layout, spacing, size, visibility
-* Components: type, list, rule, image, table, form, box, flash, navbar,
+* Global box-sizing set to border-box (excluding `<img>`)
+* Responsive with design support with customizable breakpoints and approach
+  (you can choose between mobile-first and desktop-first)
+* Components like: type, list, rule, image, table, form, box, flash, navbar,
   sticky footer
-* Extras
+* Layout helpers, spacing helpers, size helpers and visibility helpers
 
 Sites built with Hocus-Pocus:
 
 * [Shelly Cloud Status](https://status.shellycloud.com)
 
-* * * 
+* * *
 
 Hocus-Pocus could not exist without work of awesome people responsible for
 these projects:
