@@ -1,11 +1,11 @@
 button,
 .btn
-  @include global-padding
+  @include ui-padding
   display: inline-block
   appearance: none
   margin: 0
   border: 0
-  border-radius: $global-border-radius
+  border-radius: $ui-border-radius
   vertical-align: middle
   white-space: nowrap
   cursor: pointer
@@ -28,7 +28,7 @@ button[disabled],
   padding-right: 0
   text-align: center
 
-@if $global-extras
+@if $ui-extras
 
   .btn-positive
     background-color: $color-positive

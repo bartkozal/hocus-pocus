@@ -2,7 +2,7 @@
 layout: default
 ---
 
-Available if `$global-extras` is set to true.
+Available if `$ui-extras` is set to true.
 
 ### Type
 
