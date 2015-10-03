@@ -20,7 +20,7 @@ input[type="password"],
 input[type="search"],
 input[type="url"],
 textarea
-  padding: $form-element-padding-vertical $form-element-padding-horizontal
+  @include global-padding
   border: 1px solid $color-ui
 
 input[type="radio"],
@@ -59,9 +59,9 @@ input[disabled]
     margin-bottom: $spacing-unit
 
   .form-item > label
+    @include global-padding
     display: inline-block
     margin: 0
-    padding: $form-element-padding-vertical $form-element-padding-horizontal
     text-align: right
 
   .grid-item > .form-item > label
