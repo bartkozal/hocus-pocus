@@ -5,18 +5,23 @@
   background: $navbar-background
   color: $navbar-color
 
+%navbar-link,
+.navbar-link
+  @include ui-padding
+  border-radius: $ui-border-radius
+  color: $navbar-link-color
+  text-decoration: none
+
+  &:hover
+    background-color: $navbar-link-background
+
 .navbar-menu
   @extend %list-menu
   @extend %list-inline
   margin-top: 0
 
   > li > a
-    padding: halve($spacing-unit)
-    border-radius: $ui-border-radius
-    color: $navbar-link-color
-
-    &:hover
-      background-color: $navbar-link-background
+    @extend %navbar-link
 
 .navbar-container > .grid > .grid-item
   display: flex
