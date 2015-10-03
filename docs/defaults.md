@@ -8,39 +8,26 @@ variables is available under `sass/_defaults.sass`.
 ```sass
 $color-ui: $color-silver
 $color-btn: $color-black
-$color-box: $color-silver
 $color-font: $color-black
 $color-link: $color-blue
-$color-muted: $color-gray
 
 $font-leading: 1.4
-$font-size-micro: 11
-$font-size-small: 13
 $font-size-base: 15
-$font-size-lead: 18
 
 $font-family-base: sans-serif
 $font-family-headings: $font-family-base
 $font-family-monospace: monospace
 
 $grid-container: 1020px
-$grid-gutter: $spacing-unit
 
 $responsive-type: mobile-first
 $responsive-map: (tablet: 768px 1200px, desktop: 1201px)
 
-$global-extras: true
-$global-border-radius: 4px
 
 $link-underline: true
 $link-active: true
-$link-menu-color: $color-white
-$link-menu-background: $color-link
 
 $navbar-background: $color-black
-$navbar-color: $color-white
-$navbar-link-color: $color-white
-$navbar-link-background: rgba($color-white, .15)
 
 $sticky-footer-height: triple($spacing-unit)
 ```
