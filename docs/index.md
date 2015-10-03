@@ -19,7 +19,7 @@ Included features:
 * Global box-sizing set to border-box (excluding `<img>`)
 * Responsive with design support with customizable breakpoints and approach
   (you can choose between mobile-first and desktop-first)
-* Components like: type, list, rule, image, table, form, box, flash, navbar,
+* Components like: type, list, rule, image, table, form, box, navbar,
   sticky footer
 * Layout helpers, spacing helpers, size helpers and visibility helpers
 

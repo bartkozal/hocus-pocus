@@ -373,8 +373,8 @@ Examples:
 
 ### Box
 
-Use `.box` to create an element out of your content. It has the default
-padding and the last element inside has no bottom margin.
+Use `.box` to create an element out of your content. The last element inside
+has no bottom margin.
 
 <div class="example">
   <div class="box" style="background-color: #eee;">
@@ -385,21 +385,5 @@ padding and the last element inside has no bottom margin.
 ```html
 <div class="box" style="background-color: #eee;">
   ...
-</div>
-```
-
-### Flash
-
-Flash is very similar to box but has a smaller padding.
-
-<div class="example">
-  <div class="flash" style="background-color: #eee;">
-    <p>Flash</p>
-  </div>
-</div>
-
-```html
-<div class="flash" style="background-color: #eee;">
-  <p>Flash</p>
 </div>
 ```
