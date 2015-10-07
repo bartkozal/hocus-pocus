@@ -27,7 +27,7 @@ $grid-container: 70rem
 
 ### Principles
 
-Hocus-Pocus requires [SASS](http://sass-lang.com) and
+Hocus-Pocus requires [Sass](http://sass-lang.com) and
 [autoprefixer](https://github.com/postcss/autoprefixer) to proper work.
 
 I recommend to follow the rules from [Mark Otto's Code Guide](http://codeguide.co/#css)

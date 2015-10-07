@@ -5,7 +5,7 @@
   "authors": [
     "Bartlomiej Kozal <bkzl@me.com>"
   ],
-  "description": "Design-free SASS micro framework",
+  "description": "Design-free Sass micro framework",
   "main": "sass/hocus-pocus.sass",
   "keywords": [
     "css",

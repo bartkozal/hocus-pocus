@@ -2,7 +2,7 @@
   <img src="http://bkzl.github.io/hocus-pocus/images/brand-light.png" width="144px" height="72px">
 </a>
 
-Hocus-Pocus is a simple and design-free [SASS](http://sass-lang.com)
+Hocus-Pocus is a simple and design-free [Sass](http://sass-lang.com)
 micro-framework.
 
 The main idea behind is to make a universal and lightweight starter kit
