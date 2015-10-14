@@ -2,13 +2,14 @@
 layout: default
 ---
 
-Hocus-Pocus is a simple and design-free [Sass](http://sass-lang.com)
+Hocus-Pocus is a design-free [Sass](http://sass-lang.com)
 micro-framework.
 
 The main idea behind is to make a universal and lightweight starter kit
 that only includes the most common stuff. There is no need to overwrite
 existing Hocus-Pocus classes because every default can be modified in
-a clean way by changing a variable.
+a clean way by changing a variable. I wrote [a short story](https://medium.com/@bkzl/hocus-pocus-e76a6d52801b)
+why have I started working on another CSS framework.
 
 Included features:
 
