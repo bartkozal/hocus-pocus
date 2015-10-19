@@ -20,6 +20,8 @@ div
 
 ### Headings
 
+You can change a font-weight for all headings with `$font-weight-headings`.
+
 <div class="example">
   <h1>Heading Level 1</h1>
 </div>

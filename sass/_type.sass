@@ -32,22 +32,23 @@ body
 h1,
 .h1
   @include font-size-heading(3)
-  font-family: $font-family-headings
 
 h2,
 .h2
   @include font-size-heading(2)
-  font-family: $font-family-headings
 
 h3,
 .h3
   @include font-size-heading(1)
-  font-family: $font-family-headings
 
 h4, h5, h6,
 .h4, .h5, .h6
   @include font-size-heading(0)
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6
   font-family: $font-family-headings
+  font-weight: $font-weight-headings
 
 strong, em, small, code, hr
   line-height: 1
