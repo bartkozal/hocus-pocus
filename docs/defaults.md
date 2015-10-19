@@ -30,7 +30,7 @@ $link-active: true
 
 $navbar-background: $color-black
 
-$sticky-footer-height: triple($spacing-unit)
+$sticky-footer-height: 0
 ```
 
 ### Colors

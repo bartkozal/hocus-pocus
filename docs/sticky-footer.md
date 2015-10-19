@@ -2,8 +2,9 @@
 layout: default
 ---
 
-Footer pin to the bottom of viewport, like on this page.
-Set its height as `$sticky-footer-height`.
+Pin footer to the bottom of a viewport, like on this page.
+
+Please remember to set the height of footer first with `$sticky-footer-height`.
 
 ```html
 <footer class="sticky-footer">
