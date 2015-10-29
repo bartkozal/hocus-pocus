@@ -26,7 +26,7 @@ $responsive-map: (tablet: 768px 1200px, desktop: 1201px)
 $ui-extras: true
 
 $link-underline: true
-$link-active: true
+$link-active: false
 
 $navbar-background: $color-black
 
