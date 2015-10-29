@@ -17,7 +17,7 @@ Included features:
 
 * Normalize
 * Colors
-* Vertical rhythm
+* Typography with vertical rhythm
 * Flexbox grid
 * Global box-sizing set to border-box (excluding `<img>`)
 * Responsive design support with customizable breakpoints and approach
