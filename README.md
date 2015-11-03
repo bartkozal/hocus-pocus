@@ -52,7 +52,7 @@ gems first: `$ gem install jekyll redcarpet`. Then fetch the npm
 dependencies with `$ npm install`. There are two
 [Grunt](http://gruntjs.com) tasks available:
 
-* `$ grunt server` - start a server and compile CSS on every edit
+* `$ grunt serve` - start a server and compile CSS on every edit
 * `$ grunt publish` - build and push changes to production
 
 ### Changelog

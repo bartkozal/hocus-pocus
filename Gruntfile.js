@@ -20,19 +20,21 @@ module.exports = function(grunt) {
       }
     },
 
-    watch: {
-      scripts: {
-        files: ['**/*.md', '**/*.sass', '**/*.html'],
-        tasks: ['jekyll', 'autoprefixer'],
-      },
+    shell: {
+      jekyllServe: {
+        command: 'jekyll serve --watch --incremental',
+        options: {
+          async: true,
+          stdout: true
+        }
+      }
     },
 
-    connect: {
-      server: {
-        options: {
-          port: 4000,
-          base: 'build'
-        }
+    watch: {
+      scripts: {
+        files: ['**/*.md', '**/*.sass', '**/*.html', '**/*.ext'],
+        tasks: ['autoprefixer'],
+        options: { livereload: true }
       }
     },
 
@@ -52,12 +54,12 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.loadNpmTasks('grunt-jekyll');
   grunt.loadNpmTasks('grunt-autoprefixer');
   grunt.loadNpmTasks('grunt-build-control');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-jekyll');
+  grunt.loadNpmTasks('grunt-shell-spawn');
 
-  grunt.registerTask('server', ['connect', 'watch']);
-  grunt.registerTask('publish', ['jekyll', 'autoprefixer', 'buildcontrol'])
+  grunt.registerTask('serve', ['shell', 'watch']);
+  grunt.registerTask('publish', ['jekyll', 'autoprefixer', 'buildcontrol']);
 };
