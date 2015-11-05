@@ -29,3 +29,21 @@ layout: default
 ```html
 <a href="#" class="btn btn-block">Block button</a>
 ```
+
+Extras available if `$ui-extras` is set to true.
+
+<div class="example">
+  <a href="#" class="btn btn-positive">Positive button</a>
+</div>
+
+```html
+<a href="#" class="btn btn-positive">Positive button</a>
+```
+
+<div class="example">
+  <a href="#" class="btn btn-negative">Negative button</a>
+</div>
+
+```html
+<a href="#" class="btn btn-negative">Negative button</a>
+```

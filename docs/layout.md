@@ -387,3 +387,41 @@ has no bottom margin.
   ...
 </div>
 ```
+
+Extras available if `$ui-extras` is set to true.
+
+<div class="example">
+  <div class="box box-positive">
+    <p>Positive box</p>
+  </div>
+</div>
+
+```html
+<div class="box box-positive">
+  <p>Positive box</p>
+</div>
+```
+
+<div class="example">
+  <div class="box box-negative">
+    <p>Negative box</p>
+  </div>
+</div>
+
+```html
+<div class="box box-negative">
+  <p>Negative box</p>
+</div>
+```
+
+<div class="example">
+  <div class="box box-informative">
+    <p>Informative box</p>
+  </div>
+</div>
+
+```html
+<div class="box box-informative">
+  <p>Informative box</p>
+</div>
+```
