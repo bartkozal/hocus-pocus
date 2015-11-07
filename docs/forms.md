@@ -35,7 +35,7 @@ layout: default
     <input type="text" id="disabled" disabled>
 
     <label>
-      <input type="checkbox">Remember me</input>
+      <input type="checkbox"> Remember me
     </label>
 
     <label for="gender">Gender</label>
