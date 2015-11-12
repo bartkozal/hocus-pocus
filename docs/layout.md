@@ -388,8 +388,6 @@ has no bottom margin.
 </div>
 ```
 
-Extras available if `$ui-extras` is set to true.
-
 <div class="example">
   <div class="box box-positive">
     <p>Positive box</p>

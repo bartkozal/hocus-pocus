@@ -30,8 +30,6 @@ layout: default
 <a href="#" class="btn btn-block">Block button</a>
 ```
 
-Extras available if `$ui-extras` is set to true.
-
 <div class="example">
   <a href="#" class="btn btn-positive">Positive button</a>
 </div>

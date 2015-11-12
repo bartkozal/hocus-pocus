@@ -23,8 +23,6 @@ $grid-container: 1020px
 $responsive-type: mobile-first
 $responsive-map: (tablet: 768px 1200px, desktop: 1201px)
 
-$ui-extras: true
-
 $link-underline: true
 $link-active: false
 

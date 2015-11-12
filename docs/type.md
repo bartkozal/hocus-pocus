@@ -315,8 +315,6 @@ Default styles for `<p>`, `<strong>`, `<em>`, `<sup>`, `<sub>`, `<small>`,
 <p class="text-right">Right aligned text</p>
 ```
 
-Extras available if `$ui-extras` is set to true.
-
 <div class="example">
   <p class="text-muted">Muted text</p>
   <p class="text-positive">Positive text</p>
@@ -325,6 +323,7 @@ Extras available if `$ui-extras` is set to true.
 </div>
 
 ```html
+<p class="text-muted">Muted text</p>
 <p class="text-positive">Positive text</p>
 <p class="text-negative">Negative text</p>
 <p class="text-informative">Informative text</p>
