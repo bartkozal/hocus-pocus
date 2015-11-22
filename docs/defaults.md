@@ -20,8 +20,8 @@ $font-family-monospace: monospace
 
 $grid-container: 1020px
 
-$responsive-type: mobile-first
-$responsive-map: (tablet: 768px 1200px, desktop: 1201px)
+$rwd-type: mobile-first
+$rwd-map: (tablet: 768px 1200px, desktop: 1201px)
 
 $link-underline: true
 $link-active: false

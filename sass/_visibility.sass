@@ -10,3 +10,19 @@
 
 .visible-inline
   display: inline
+
+@mixin rwd-helpers-content($rwd-screen-name)
+  .#{$rwd-screen-name}-hidden
+    display: none
+
+  .#{$rwd-screen-name}-visible,
+  .#{$rwd-screen-name}-visible-block
+    display: block
+
+  .#{$rwd-screen-name}-visible-inline-block
+    display: inline-block
+
+  .#{$rwd-screen-name}-visible-inline
+    display: inline
+
+@include rwd-helpers

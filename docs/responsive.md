@@ -3,16 +3,16 @@ layout: default
 ---
 
 Choose your preferred way of writing RWD by setting the
-`$responsive-type` variable to `mobile-first` or `desktop-first`.
+`$rwd-type` variable to `mobile-first` or `desktop-first`.
 
-Define custom breakpoints as `$responsive-map` variable. You can provide values
+Define custom breakpoints as `$rwd-map` variable. You can provide values
 with one or two sizes.
 
 Each breakpoint gets visibility and grid helpers.
 
 ```sass
-$responsive-type: desktop-first
-$responsive-map: (mobile: 680px, tablet: 681px 1200px)
+$rwd-type: desktop-first
+$rwd-map: (mobile: 680px, tablet: 681px 1200px)
 ```
 
 ```html
