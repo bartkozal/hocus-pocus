@@ -2,14 +2,17 @@
 layout: default
 ---
 
-To install Hocus-Pocus use Bower:
+Hocus-Pocus requires [Sass](http://sass-lang.com) and
+[autoprefixer](https://github.com/postcss/autoprefixer) to proper work.
+
+
+To install it use Bower:
 
 ```sh
 $ bower install hocus-pocus
 ```
 
-Then include the main Hocus-Pocus file after your variables, but before
-the rest of your stylesheets:
+Then import a main file just after your variables, but before the rest of stylesheets:
 
 ```sass
 // Your defaults
@@ -25,34 +28,29 @@ $grid-container: 70rem
 @import "inbox/landing-headings-fix"
 ```
 
-### Principles
-
-Hocus-Pocus requires [Sass](http://sass-lang.com) and
-[autoprefixer](https://github.com/postcss/autoprefixer) to proper work.
-
-I recommend to follow the rules from [Mark Otto's Code Guide](http://codeguide.co/#css)
-and the following naming convention:
+Stick to the rules from [Mark Otto's Code Guide](http://codeguide.co/#css).
+Hocus-Pocus applies a following naming convention:
 
 ```html
-<!-- Object -->
+<!-- Element -->
 <div class="media"></div>
 <a class="btn"></a>
 
-<!-- Object with a related sub-object -->
+<!-- Element with a related sub-element -->
 <div class="media">
   <img class="media-img"></img>
   <div class="media-body"></div>
 </div>
 
-<!-- Object with modifier -->
+<!-- Element with modifier -->
 <div class="media media-milli"></div>
 <a class="btn btn-primary"></a>
 
-<!-- Object with state -->
+<!-- Element with state -->
 <a class="btn is-btn-active"></a>
 <a class="btn is-btn-disabled"></a>
 
-<!-- Object which requires wrapper -->
+<!-- Element that requires a wrapper -->
 <!-- i.e. "position: relative" and "position: absolute" pair -->
 <div class="box has-close-link">
   <a class="close-link"></a>

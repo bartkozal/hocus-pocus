@@ -13,16 +13,22 @@ why have I started working on another CSS framework.
 
 Included features:
 
-* Normalize
-* Colors
-* Typography with vertical rhythm
-* Flexbox grid
+* Improved Normalize reset
+* Default colors set
 * Global box-sizing set to border-box (excluding `<img>`)
-* Responsive design support with customizable breakpoints and approach
-  (you can choose between mobile-first and desktop-first)
-* Components like: type, list, rule, image, table, form, box, navbar,
-  sticky footer
-* Layout helpers, spacing helpers, size helpers and visibility helpers
+* Flexbox based grid
+* Fraction width helpers
+* Visibility and spacing helpers (automatically generated for all brakepoints)
+* Responsive web design support with customizable breakpoints and approach (mobile or desktop first)
+* Base typography with vertical rhythm and additional helpers
+* Lists, definition lists and menus
+* Image helpers
+* Tables
+* Forms
+* Buttons
+* Boxes
+* Navbar
+* Sticky footer
 
 Sites built with Hocus-Pocus:
 

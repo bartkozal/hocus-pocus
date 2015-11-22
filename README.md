@@ -5,26 +5,32 @@
 Hocus-Pocus is a design-free [Sass](http://sass-lang.com)
 micro-framework.
 
+**[Learn more from the documentation.](http://hocus-pocus.io)**
+
 The main idea behind is to make a universal and lightweight starter kit
 that only includes the most common stuff. There is no need to overwrite
 existing Hocus-Pocus classes because every default can be modified in
 a clean way by changing a variable. I wrote [a short story](https://medium.com/@bkzl/hocus-pocus-e76a6d52801b)
 why have I started working on another CSS framework.
 
-**[Learn more from the documentation.](http://hocus-pocus.io)**
-
 Included features:
 
-* Normalize
-* Colors
-* Typography with vertical rhythm
-* Flexbox grid
+* Improved Normalize reset
+* Default colors set
 * Global box-sizing set to border-box (excluding `<img>`)
-* Responsive design support with customizable breakpoints and approach
-  (you can choose between mobile-first and desktop-first)
-* Components like: type, list, rule, image, table, form, box, navbar,
-  sticky footer
-* Layout helpers, spacing helpers, size helpers and visibility helpers
+* Flexbox based grid
+* Fraction width helpers
+* Visibility and spacing helpers (automatically generated for all brakepoints)
+* Responsive web design support with customizable breakpoints and approach (mobile or desktop first)
+* Base typography with vertical rhythm and additional helpers
+* Lists, definition lists and menus
+* Image helpers
+* Tables
+* Forms
+* Buttons
+* Boxes
+* Navbar
+* Sticky footer
 
 Sites built with Hocus-Pocus:
 
@@ -44,17 +50,16 @@ these projects:
 * [sassy-gridlover](https://github.com/hiulit/Sassy-Gridlover)
 * [colors](https://github.com/mrmrs/colors)
 
-* * *
-
 ### Development
 
 To edit and compile documentation locally you have to install two Ruby
-gems first: `$ gem install jekyll redcarpet`. Then fetch the npm
-dependencies with `$ npm install`. There are two
-[Grunt](http://gruntjs.com) tasks available:
+gems: `$ gem install jekyll redcarpet`. Then fetch the npm
+dependencies with `$ npm install`.
+
+There are two [Grunt](http://gruntjs.com) tasks:
 
 * `$ grunt serve` - start a server and compile CSS on every edit
-* `$ grunt publish` - build and push changes to production
+* `$ grunt publish` - publish changes to production
 
 ### Changelog
 
@@ -63,5 +68,5 @@ section](https://github.com/bkzl/hocus-pocus/releases).
 
 ### Contributing
 
-Noticed a bug or have an idea? Please [add a new
+Have you noticed a bug or have an idea? Please [add a new
 issue](https://github.com/bkzl/hocus-pocus/issues). Thanks!

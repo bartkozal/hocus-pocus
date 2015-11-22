@@ -2,8 +2,8 @@
 layout: default
 ---
 
-I prefer to adjust settings listed below per each project. List of all
-variables is available under `sass/_defaults.sass`.
+The most common project defaults are listed below. All available settings
+you can find under `sass/_defaults.sass`.
 
 ```sass
 $color-ui: $color-silver
@@ -54,27 +54,3 @@ $sticky-footer-height: 0
   <div class="grid-item 1/6"><div class="color-block color-block-gray">$color-gray</div></div>
   <div class="grid-item 1/6"><div class="color-block color-block-black">$color-black</div></div>
 </div>
-
-### Size functions
-
-Size functions return a quotient/product of the provided value.
-
-```sass
-div
-  padding: quarter(12px) // padding: 3px
-
-div
-  padding: third(12px) // padding: 4px
-
-div
-  padding: halve(12px) // padding: 6px
-
-div
-  padding: double(12px) // padding: 24px
-
-div
-  padding: triple(12px) // padding: 36px
-
-div
-  padding: quadruple(12px) // padding: 48px
-```
