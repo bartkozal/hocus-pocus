@@ -26,8 +26,9 @@ Included features:
 
 Sites built with Hocus-Pocus:
 
-* [Shelly Cloud Status](https://status.shellycloud.com)
 * [Echotags](http://echotags.io)
+* [Shelly Cloud Status](https://status.shellycloud.com)
+* [UIshots](http://uishots.com)
 
 * * *
 
