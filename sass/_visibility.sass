@@ -1,28 +1,28 @@
 .hidden
-  display: none
+  display: none !important
 
 .visible,
 .visible-block
-  display: block
+  display: block !important
 
 .visible-inline-block
-  display: inline-block
+  display: inline-block !important
 
 .visible-inline
-  display: inline
+  display: inline !important
 
 @mixin rwd-helpers-content($rwd-screen-name)
   .#{$rwd-screen-name}-hidden
-    display: none
+    display: none !important
 
   .#{$rwd-screen-name}-visible,
   .#{$rwd-screen-name}-visible-block
-    display: block
+    display: block !important
 
   .#{$rwd-screen-name}-visible-inline-block
-    display: inline-block
+    display: inline-block !important
 
   .#{$rwd-screen-name}-visible-inline
-    display: inline
+    display: inline !important
 
 @include rwd-helpers
