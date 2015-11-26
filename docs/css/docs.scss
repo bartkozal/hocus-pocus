@@ -1,0 +1,20 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+---
+
+$font-family-base: "Roboto";
+$font-family-monospace: "Roboto Mono";
+$rwd-type: desktop-first;
+$rwd-map: (mobile: 680px);
+$navbar-background: #000;
+$sticky-footer-height: 60px;
+
+@import "../hocus-pocus";
+@import "css/brand";
+@import "css/code";
+@import "css/color-block";
+@import "css/colorscheme";
+@import "css/example";
+@import "css/footer";
+@import "css/grid-preview";
+@import "css/button";

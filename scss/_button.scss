@@ -1,0 +1,45 @@
+input[type="button"],
+input[type="submit"],
+button,
+.btn {
+  @include ui-padding;
+
+  display: inline-block;
+  appearance: none;
+  margin: 0;
+  border: 0;
+  border-radius: $ui-border-radius;
+  vertical-align: middle;
+  white-space: nowrap;
+  cursor: pointer;
+  background-color: $color-btn;
+  color: $color-white;
+  text-decoration: none;
+}
+
+button[disabled],
+.btn-disabled {
+  background-color: $color-muted;
+  cursor: default;
+
+  @if $link-active {
+    &:active {
+      top: 0;
+    }
+  }
+}
+
+.btn-block {
+  display: block;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+
+.btn-positive {
+  background-color: $color-positive;
+}
+
+.btn-negative {
+  background-color: $color-negative;
+}

@@ -1,0 +1,291 @@
+@mixin width-element($size) {
+  width: $size;
+  max-width: $size;
+  flex-basis: $size;
+}
+
+[class~="1/1"] {
+  @include width-element(100%);
+}
+
+[class~="1/2"],
+[class~="2/4"],
+[class~="3/6"],
+[class~="4/8"],
+[class~="5/10"],
+[class~="6/12"] {
+  @include width-element(50%);
+}
+
+[class~="1/3"],
+[class~="2/6"],
+[class~="3/9"],
+[class~="4/12"] {
+  @include width-element(33.3333%);
+}
+
+[class~="2/3"],
+[class~="4/6"],
+[class~="6/9"],
+[class~="8/12"] {
+  @include width-element(66.6666%);
+}
+
+[class~="1/4"],
+[class~="2/8"],
+[class~="3/12"] {
+  @include width-element(25%);
+}
+
+[class~="3/4"],
+[class~="6/8"],
+[class~="9/12"] {
+  @include width-element(75%);
+}
+
+[class~="1/5"],
+[class~="2/10"] {
+  @include width-element(20%);
+}
+
+[class~="2/5"],
+[class~="4/10"] {
+  @include width-element(40%);
+}
+
+[class~="3/5"],
+[class~="6/10"] {
+  @include width-element(60%);
+}
+
+[class~="4/5"],
+[class~="8/10"] {
+  @include width-element(80%);
+}
+
+[class~="1/6"],
+[class~="2/12"] {
+  @include width-element(16.6666%);
+}
+
+[class~="5/6"],
+[class~="10/12"] {
+  @include width-element(83.3333%);
+}
+
+[class~="1/8"] {
+  @include width-element(12.5%);
+}
+
+[class~="3/8"] {
+  @include width-element(37.5%);
+}
+
+[class~="5/8"] {
+  @include width-element(62.5%);
+}
+
+[class~="7/8"] {
+  @include width-element(87.5%);
+}
+
+[class~="1/9"] {
+  @include width-element(11.1111%);
+}
+
+[class~="2/9"] {
+  @include width-element(22.2222%);
+}
+
+[class~="4/9"] {
+  @include width-element(44.4444%);
+}
+
+[class~="5/9"] {
+  @include width-element(55.5555%);
+}
+
+[class~="7/9"] {
+  @include width-element(77.7777%);
+}
+
+[class~="8/9"] {
+  @include width-element(88.8888%);
+}
+
+[class~="1/10"] {
+  @include width-element(10%);
+}
+
+[class~="3/10"] {
+  @include width-element(30%);
+}
+
+[class~="7/10"] {
+  @include width-element(70%);
+}
+
+[class~="9/10"] {
+  @include width-element(90%);
+}
+
+[class~="1/12"] {
+  @include width-element(8.3333%);
+}
+
+[class~="5/12"] {
+  @include width-element(41.6666%);
+}
+
+[class~="7/12"] {
+  @include width-element(58.3333%);
+}
+
+[class~="11/12"] {
+  @include width-element(91.6666%);
+}
+
+@mixin rwd-helpers-content($rwd-screen-name) {
+  [class~="#{$rwd-screen-name}-1/1"] {
+    @include width-element(100%);
+  }
+
+  [class~="#{$rwd-screen-name}-1/2"],
+  [class~="#{$rwd-screen-name}-2/4"],
+  [class~="#{$rwd-screen-name}-3/6"],
+  [class~="#{$rwd-screen-name}-4/8"],
+  [class~="#{$rwd-screen-name}-5/10"],
+  [class~="#{$rwd-screen-name}-6/12"] {
+    @include width-element(50%);
+  }
+
+  [class~="#{$rwd-screen-name}-1/3"],
+  [class~="#{$rwd-screen-name}-2/6"],
+  [class~="#{$rwd-screen-name}-3/9"],
+  [class~="#{$rwd-screen-name}-4/12"] {
+    @include width-element(33.3333%);
+  }
+
+  [class~="#{$rwd-screen-name}-2/3"],
+  [class~="#{$rwd-screen-name}-4/6"],
+  [class~="#{$rwd-screen-name}-6/9"],
+  [class~="#{$rwd-screen-name}-8/12"] {
+    @include width-element(66.6666%);
+  }
+
+  [class~="#{$rwd-screen-name}-1/4"],
+  [class~="#{$rwd-screen-name}-2/8"],
+  [class~="#{$rwd-screen-name}-3/12"] {
+    @include width-element(25%);
+  }
+
+  [class~="#{$rwd-screen-name}-3/4"],
+  [class~="#{$rwd-screen-name}-6/8"],
+  [class~="#{$rwd-screen-name}-9/12"] {
+    @include width-element(75%);
+  }
+
+  [class~="#{$rwd-screen-name}-1/5"],
+  [class~="#{$rwd-screen-name}-2/10"] {
+    @include width-element(20%);
+  }
+
+  [class~="#{$rwd-screen-name}-2/5"],
+  [class~="#{$rwd-screen-name}-4/10"] {
+    @include width-element(40%);
+  }
+
+  [class~="#{$rwd-screen-name}-3/5"],
+  [class~="#{$rwd-screen-name}-6/10"] {
+    @include width-element(60%);
+  }
+
+  [class~="#{$rwd-screen-name}-4/5"],
+  [class~="#{$rwd-screen-name}-8/10"], {
+    @include width-element(80%);
+  }
+
+  [class~="#{$rwd-screen-name}-1/6"],
+  [class~="#{$rwd-screen-name}-2/12"] {
+    @include width-element(16.6666%);
+  }
+
+  [class~="#{$rwd-screen-name}-5/6"],
+  [class~="#{$rwd-screen-name}-10/12"] {
+    @include width-element(83.3333%);
+  }
+
+  [class~="#{$rwd-screen-name}-1/8"] {
+    @include width-element(12.5%);
+  }
+
+  [class~="#{$rwd-screen-name}-3/8"] {
+    @include width-element(37.5%);
+  }
+
+  [class~="#{$rwd-screen-name}-5/8"] {
+    @include width-element(62.5%);
+  }
+
+  [class~="#{$rwd-screen-name}-7/8"] {
+    @include width-element(87.5%);
+  }
+
+  [class~="#{$rwd-screen-name}-1/9"] {
+    @include width-element(11.1111%);
+  }
+
+  [class~="#{$rwd-screen-name}-2/9"] {
+    @include width-element(22.2222%);
+  }
+
+  [class~="#{$rwd-screen-name}-4/9"] {
+    @include width-element(44.4444%);
+  }
+
+  [class~="#{$rwd-screen-name}-5/9"] {
+    @include width-element(55.5555%);
+  }
+
+  [class~="#{$rwd-screen-name}-7/9"] {
+    @include width-element(77.7777%);
+  }
+
+  [class~="#{$rwd-screen-name}-8/9"] {
+    @include width-element(88.8888%);
+  }
+
+  [class~="#{$rwd-screen-name}-1/10"] {
+    @include width-element(10%);
+  }
+
+  [class~="#{$rwd-screen-name}-3/10"] {
+    @include width-element(30%);
+  }
+
+  [class~="#{$rwd-screen-name}-7/10"] {
+    @include width-element(70%);
+  }
+
+  [class~="#{$rwd-screen-name}-9/10"] {
+    @include width-element(90%);
+  }
+
+  [class~="#{$rwd-screen-name}-1/12"] {
+    @include width-element(8.3333%);
+  }
+
+  [class~="#{$rwd-screen-name}-5/12"] {
+    @include width-element(41.6666%);
+  }
+
+  [class~="#{$rwd-screen-name}-7/12"] {
+    @include width-element(58.3333%);
+  }
+
+  [class~="#{$rwd-screen-name}-11/12"] {
+    @include width-element(91.6666%);
+  }
+}
+
+@include rwd-helpers;

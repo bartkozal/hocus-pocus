@@ -1,0 +1,25 @@
+.box {
+  padding: halve($spacing-unit);
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.box-positive {
+  border: 1px solid $color-positive;
+  background: lighten($color-positive, 35%);
+  color: darken($color-positive, 35%);
+}
+
+.box-negative {
+  border: 1px solid $color-negative;
+  background: lighten($color-negative, 35%);
+  color: darken($color-negative, 35%);
+}
+
+.box-informative {
+  border: 1px solid $color-informative;
+  background: lighten($color-informative, 35%);
+  color: darken($color-informative, 35%);
+}

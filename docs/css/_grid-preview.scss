@@ -1,0 +1,26 @@
+.grid-preview {
+  @extend %code-block;
+
+  background-color: $color-blue;
+  color: $color-white;
+  text-align: center;
+
+  .grid-pair > .grid-item > & {
+    text-align: inherit;
+  }
+
+  .example & {
+    margin-bottom: 0;
+  }
+
+  .grid-preview {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: $color-aqua;
+  }
+}
+
+.grid-preview-large {
+  padding-top: double($spacing-unit);
+  padding-bottom: double($spacing-unit);
+}

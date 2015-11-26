@@ -1,0 +1,72 @@
+.color-block {
+  @extend %code-block;
+}
+
+.color-block-aqua {
+  background-color: $color-aqua;
+}
+
+.color-block-blue {
+  background-color: $color-blue;
+}
+
+.color-block-navy {
+  background-color: $color-navy;
+}
+
+.color-block-teal {
+  background-color: $color-teal;
+}
+
+.color-block-green {
+  background-color: $color-green;
+}
+
+.color-block-olive {
+  background-color: $color-olive;
+}
+
+.color-block-lime {
+  background-color: $color-lime;
+}
+
+.color-block-yellow {
+  background-color: $color-yellow;
+}
+
+.color-block-orange {
+  background-color: $color-orange;
+}
+
+.color-block-red {
+  background-color: $color-red;
+}
+
+.color-block-fuchsia {
+  background-color: $color-fuchsia;
+}
+
+.color-block-purple {
+  background-color: $color-purple;
+}
+
+.color-block-maroon {
+  background-color: $color-maroon;
+}
+
+.color-block-white {
+  background-color: $color-white;
+  color: $color-black;
+}
+
+.color-block-silver {
+  background-color: $color-silver;
+}
+
+.color-block-gray {
+  background-color: $color-gray;
+}
+
+.color-block-black {
+  background-color: $color-black;
+}
