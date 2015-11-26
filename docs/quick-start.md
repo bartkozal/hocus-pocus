@@ -20,7 +20,7 @@ $font-family-base: "Open Sans", sans-serif
 $grid-container: 70rem
 
 // Hocus-Pocus include
-@import "bower_components/hocus-pocus/hocus-pocus"
+@import "bower_components/hocus-pocus/sass/hocus-pocus"
 
 // Your stylesheets
 @import "objects/meter"
