@@ -1,7 +1,3 @@
----
-layout: default
----
-
 ### Width Helpers
 
 Use width helpers with various elements like grid items, inputs or table cells.
@@ -85,11 +81,11 @@ brakepoints and using !important directive.*
 Spacing helpers are generated based on the `$spacing-map` hash. By default you
 get access to four helpers with various types and sizes:
 
-```sass
-.margin[-size][-type]
-.padding[-size][-type]
-.no-margin[-type]
-.no-padding[-type]
+```scss
+.margin[-size][-type];
+.padding[-size][-type];
+.no-margin[-type];
+.no-padding[-type];
 
 // type: -top, -right, -bottom, -left, -sides, -ends
 // size: -base, -quarter, -third, -half, -double, -triple, -quadruple
@@ -97,26 +93,32 @@ get access to four helpers with various types and sizes:
 
 Examples:
 
-```sass
-.no-margin
-  margin: 0
+```scss
+.no-margin {
+  margin: 0;
+}
 
-.no-margin-ends
-  margin-top: 0
-  margin-bottom: 0
+.no-margin-ends {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
-.margin-base
-  margin: $spacing-unit
+.margin-base {
+  margin: $spacing-unit;
+}
 
-.margin-double-right
-  margin-right: double($spacing-unit)
+.margin-double-right {
+  margin-right: double($spacing-unit);
+}
 
-.no-padding-sides
-  padding-right: 0
-  padding-left: 0
+.no-padding-sides {
+  padding-right: 0;
+  padding-left: 0;
+}
 
-.padding-half-top
-  padding-top: halve($spacing-unit)
+.padding-half-top {
+  padding-top: halve($spacing-unit);
+}
 ```
 
 *Spacing helpers are automatically generated for responsive web design

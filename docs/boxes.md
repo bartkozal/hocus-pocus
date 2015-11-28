@@ -1,7 +1,3 @@
----
-layout: default
----
-
 Use `.box` to create an element out of your content. The last element inside
 has no bottom margin.
 

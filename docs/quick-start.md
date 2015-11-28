@@ -1,10 +1,5 @@
----
-layout: default
----
-
 Hocus-Pocus requires [Sass](http://sass-lang.com) and
 [autoprefixer](https://github.com/postcss/autoprefixer) to proper work.
-
 
 To install it use Bower:
 
@@ -14,18 +9,18 @@ $ bower install hocus-pocus
 
 Then import a main file just after your variables, but before the rest of stylesheets:
 
-```sass
+```scss
 // Your defaults
-$font-family-base: "Open Sans", sans-serif
-$grid-container: 70rem
+$font-family-base: "Open Sans", sans-serif;
+$grid-container: 70rem;
 
 // Hocus-Pocus include
-@import "bower_components/hocus-pocus/sass/hocus-pocus"
+@import "bower_components/hocus-pocus/sass/hocus-pocus";
 
 // Your stylesheets
-@import "objects/meter"
-@import "objects/price-box"
-@import "inbox/landing-headings-fix"
+@import "objects/meter";
+@import "objects/price-box";
+@import "inbox/landing-headings-fix";
 ```
 
 Stick to the rules from [Mark Otto's Code Guide](http://codeguide.co/#css).

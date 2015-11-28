@@ -15,21 +15,11 @@
   color: $color-white;
 }
 
+li > code,
 p > code {
   @extend %code;
 
   padding: halve(quarter($spacing-unit)) quarter($spacing-unit);
   margin-left: halve(quarter($spacing-unit));
   margin-right: halve(quarter($spacing-unit));
-}
-
-.highlight {
-  background-color: transparent;
-  color: transparent;
-
-  > pre {
-    @extend %code;
-
-    padding: third($spacing-unit);
-  }
 }

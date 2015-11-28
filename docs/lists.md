@@ -1,7 +1,3 @@
----
-layout: default
----
-
 <div class="example">
   <ol>
     <li>List item 1</li>

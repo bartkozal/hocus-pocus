@@ -1,34 +1,29 @@
----
-layout: default
----
-
 ### Size Functions
 
 Return a quotient/product of the provided value.
 
-```sass
-div
-  // padding: 3px
-  padding: quarter(12px)
+```scss
+div {
+  padding: quarter(12px); // padding: 3px
+}
 
-div
-  // padding: 4px
-  padding: third(12px)
+div {
+  padding: third(12px); // padding: 4px
+}
 
-div
-  // padding: 6px
-  padding: halve(12px)
+div {
+  padding: halve(12px); // padding: 6px
+}
 
-div
-  // padding: 24px
-  padding: double(12px)
+div {
+  padding: double(12px); // padding: 24px
+}
 
-div
-  // padding: 36px
-  padding: triple(12px)
+div {
+  padding: triple(12px); // padding: 36px
+}
 
-div
-  // padding: 48px
-  padding: quadruple(12px)
+div {
+  padding: quadruple(12px); // padding: 48px
+}
 ```
-

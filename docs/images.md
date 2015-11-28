@@ -1,24 +1,13 @@
----
-layout: default
----
-
 Images are verically aligned to the middle and their
 `box-sizing` is set to `content-box`.
 
 The `+img-replace` mixin allows to replace any element contains text with
 image.
 
-```sass
-div
-  @mixin img-replace('path/to/img.svg', 100px, 40px)
-
-// div
-//   background-repeat: no-repeat
-//   background-image: url('path/to/img.svg')
-//   width: 100px
-//   height: 40px
-//   text-indent: -9999px
-//   white-space: nowrap
+```scss
+div {
+  @include img-replace('path/to/img.svg', 100px, 40px);
+}
 ```
 
 ### Image helpers

@@ -1,11 +1,9 @@
 <a href="http://hocus-pocus.io">
-  <img src="http://bkzl.github.io/hocus-pocus/images/brand-light.png" width="144px" height="72px">
+  <img src="http://bkzl.github.io/hocus-pocus/img/brand-light.png" width="144px" height="72px">
 </a>
 
 Hocus-Pocus is a design-free [Sass](http://sass-lang.com)
 micro-framework.
-
-**[Learn more from the documentation.](http://hocus-pocus.io)**
 
 The main idea behind is to make a universal and lightweight starter kit
 that only includes the most common stuff. There is no need to overwrite
@@ -52,14 +50,13 @@ these projects:
 
 ### Development
 
-To edit and compile documentation locally you have to install two Ruby
-gems: `$ gem install jekyll redcarpet`. Then fetch the npm
-dependencies with `$ npm install`.
+To edit and compile documentation locally fetch npm dependencies
+first: `$ npm install`. Then run `$ gulp build`.
 
-There are two [Grunt](http://gruntjs.com) tasks:
+There are two main [Gulp](http://gulpjs.com) tasks:
 
-* `$ grunt serve` - start a server and compile CSS on every edit
-* `$ grunt publish` - publish changes to production
+* `$ gulp serve` - start a server and compile CSS on every edit
+* `$ gulp publish` - publish changes to production
 
 ### Changelog
 

@@ -1,7 +1,3 @@
----
-layout: default
----
-
 Modify following variables to adjust colors: `$navbar-background`,
 `$navbar-color`, `$navbar-link-color` and `$navbar-link-background`
 

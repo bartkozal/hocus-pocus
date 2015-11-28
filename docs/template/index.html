@@ -31,18 +31,14 @@
     <div class="container padding-double-bottom">
       <div class="grid">
         <div class="grid-item 1/5 mobile-hidden">
-          <ul class="list-menu">
-            {% include navigation.ext %}
-          </ul>
+          <navigation list="menu"></navigation>
         </div>
         <div class="grid-item 4/5 mobile-1/1">
           <div class="hidden mobile-visible margin-double-bottom">
-            <ul class="list-inline">
-              {% include navigation.ext %}
-            </ul>
+            <navigation list="inline"></navigation>
           </div>
 
-          {{ content }}
+          <page></page>
         </div>
       </div>
     </div>
@@ -61,15 +57,19 @@
       </div>
     </footer>
 
-    {% if site.serving %}
-      <script src="//localhost:35729/livereload.js"></script>
-    {% else %}
-      <script type="text/javascript">
-        !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
-        analytics.load("MHCdjmSpfnYsst2T14Vsl1BomVT7CV3X");
-        analytics.page()
-        }}();
-      </script>
-    {% endif %}
+    <script src="tag/navigation.tag" type="riot/tag"></script>
+    <script src="tag/page.tag" type="riot/tag"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/riot/2.3.11/riot+compiler.min.js"></script>
+    <script>
+      riot.mount('*');
+      riot.route.start(true);
+    </script>
+
+    <script type="text/javascript">
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
+      analytics.load("MHCdjmSpfnYsst2T14Vsl1BomVT7CV3X");
+      analytics.page()
+      }}();
+    </script>
   </body>
 </html>

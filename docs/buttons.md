@@ -1,7 +1,3 @@
----
-layout: default
----
-
 <div class="example">
   <button type="submit">Form button</button> <a href="#" class="btn">Link as a button</a>
 </div>

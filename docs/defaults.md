@@ -1,7 +1,3 @@
----
-layout: default
----
-
 The most common project defaults are listed below. All available settings
 you can find under `sass/_defaults.sass`.
 

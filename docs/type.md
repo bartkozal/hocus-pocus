@@ -1,21 +1,13 @@
----
-layout: default
----
-
 Base font is described by: `$font-size-base`,
 `$font-family-base`, `$font-weight-normal` and `$color-font`.
 
 The `+font-size` mixin allows to set a custom font size
 and keep the proper vertical rhythm:
 
-```sass
-div
-  @include font-size(12)
-
-// div
-//   font-size: 0.75rem;
-//   line-height: 1.0625rem;
-
+```scss
+div {
+  @include font-size(12);
+}
 ```
 
 ### Headings

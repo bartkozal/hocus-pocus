@@ -1,0 +1,5 @@
+.brand {
+  @include img-replace("/img/brand-dark.png", 144px, 72px);
+
+  background-size: 144px 72px;
+}

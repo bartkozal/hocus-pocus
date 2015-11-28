@@ -1,7 +1,3 @@
----
-layout: default
----
-
 Choose your preferred way of writing RWD by setting the
 `$rwd-type` variable to `mobile-first` or `desktop-first`.
 
@@ -10,9 +6,9 @@ with one or two sizes.
 
 Each breakpoint gets visibility and grid helpers.
 
-```sass
-$rwd-type: desktop-first
-$rwd-map: (mobile: 680px, tablet: 681px 1200px)
+```scss
+$rwd-type: desktop-first;
+$rwd-map: (mobile: 680px, tablet: 681px 1200px);
 ```
 
 ```html

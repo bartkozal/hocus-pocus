@@ -1,7 +1,3 @@
----
-layout: default
----
-
 <div class="example">
   <table>
     <colgroup>

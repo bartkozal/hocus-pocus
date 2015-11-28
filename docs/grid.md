@@ -1,7 +1,3 @@
----
-layout: default
----
-
 Use `.container` class to create a centered wrapper. It has a width of
 `$grid-container`.
 
@@ -23,17 +19,13 @@ Use `.grid` with nested `.grid-item` elements to build a grid.
 
 <div class="example">
   <div class="grid">
-    <div class="grid-item 1/3">
-      <div class="grid-preview">
-        .grid-item.1/3
-      </div>
-    </div>
+  <div class="grid-item 1/3">
+    <div class="grid-preview">.grid-item.1/3</div>
+  </div>
 
-    <div class="grid-item 2/3">
-      <div class="grid-preview">
-        .grid-item.2/3
-      </div>
-    </div>
+  <div class="grid-item 2/3">
+    <div class="grid-preview">.grid-item.2/3</div>
+  </div>
   </div>
 </div>
 

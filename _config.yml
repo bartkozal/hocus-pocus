@@ -1,8 +1,0 @@
-source: docs
-destination: build
-
-markdown: redcarpet
-permalink: pretty
-
-sass:
-  sass_dir: ../
