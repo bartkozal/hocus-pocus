@@ -1,30 +1,30 @@
 The most common project defaults are listed below. All available settings
 you can find under `sass/_defaults.sass`.
 
-```sass
+```scss
 $color-ui: $color-silver
-$color-btn: $color-black
-$color-font: $color-black
-$color-link: $color-blue
+$color-btn: $color-black;
+$color-font: $color-black;
+$color-link: $color-blue;
 
-$font-leading: 1.4
-$font-size-base: 15
+$font-leading: 1.4;
+$font-size-base: 15;
 
-$font-family-base: sans-serif
-$font-family-headings: $font-family-base
-$font-family-monospace: monospace
+$font-family-base: sans-serif;
+$font-family-headings: $font-family-base;
+$font-family-monospace: monospace;
 
-$grid-container: 1020px
+$grid-container: 1020px;
 
-$rwd-type: mobile-first
-$rwd-map: (tablet: 768px 1200px, desktop: 1201px)
+$rwd-type: mobile-first;
+$rwd-map: (tablet: 768px 1200px, desktop: 1201px);
 
-$link-underline: true
-$link-active: false
+$link-underline: true;
+$link-active: false;
 
-$navbar-background: $color-black
+$navbar-background: $color-black;
 
-$sticky-footer-height: 0
+$sticky-footer-height: 0;
 ```
 
 ### Colors

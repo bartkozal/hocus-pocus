@@ -26,6 +26,6 @@
     "gulp-sass": "^2.1.0",
     "gulp-util": "^3.0.7",
     "highlight.js": "^8.9.1",
-    "pygmentize-bundled": "^2.3.0"
+    "run-sequence": "^1.1.5"
   }
 }
