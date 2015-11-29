@@ -1,13 +1,23 @@
+### Installation
+
 Hocus-Pocus requires [Sass](http://sass-lang.com) and
 [autoprefixer](https://github.com/postcss/autoprefixer) to proper work.
 
-To install it use Bower:
+Use Bower to install it:
 
 ```sh
 $ bower install hocus-pocus
 ```
 
-Then import a main file just after your variables, but before the rest of stylesheets:
+If you prefer, it's available as the NPM package too:
+
+```sh
+$ npm install hocus-pocus
+```
+
+Then import a main file just after your variables, but before
+the rest of stylesheets. If you want to use color variables
+in your settings import them at the beginning.
 
 ```scss
 // Your defaults
@@ -22,6 +32,8 @@ $grid-container: 70rem;
 @import "objects/price-box";
 @import "inbox/landing-headings-fix";
 ```
+
+### Principles
 
 Stick to the rules from [Mark Otto's Code Guide](http://codeguide.co/#css).
 Hocus-Pocus applies a following naming convention:
