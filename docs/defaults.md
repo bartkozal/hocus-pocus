@@ -1,12 +1,7 @@
-The most common project defaults are listed below. All available settings
-you can find under `sass/_defaults.sass`.
+The most common settins are listed below. All available defaults
+you can find under `scss/_defaults.scss`.
 
 ```scss
-$color-ui: $color-silver
-$color-btn: $color-black;
-$color-font: $color-black;
-$color-link: $color-blue;
-
 $font-leading: 1.4;
 $font-size-base: 15;
 
@@ -21,8 +16,6 @@ $rwd-map: (tablet: 768px 1200px, desktop: 1201px);
 
 $link-underline: true;
 $link-active: false;
-
-$navbar-background: $color-black;
 
 $sticky-footer-height: 0;
 ```

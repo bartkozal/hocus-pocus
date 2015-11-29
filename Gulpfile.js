@@ -10,9 +10,15 @@ var del       = require('del'),
     sass      = require('gulp-sass'),
     util      = require('gulp-util');
 
+var paths = {
+      sass: ['docs/template/scss/*.scss', 'scss/*.scss', 'hocus-pocus.scss'],
+  markdown: ['README.md', 'docs/*.md'],
+  template: ['docs/template/index.html', 'docs/template/tag/*.tag']
+};
+
 gulp.task('sass', function() {
   return gulp.src('docs/template/scss/docs.scss')
-    .pipe(sass({outputStyle: 'compressed'}).on('error', util.log))
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(gulp.dest('build/css'))
     .pipe(connect.reload());
 });
@@ -53,9 +59,9 @@ gulp.task('clean', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch(['docs/template/scss/*.scss', 'scss/*.scss'], ['sass']);
-  gulp.watch(['README.md', 'docs/*.md'], ['markdown']);
-  gulp.watch(['docs/template/index.html', 'docs/template/tag/*.tag'], ['template']);
+  gulp.watch(paths.sass, ['sass']);
+  gulp.watch(paths.markdown, ['markdown']);
+  gulp.watch(paths.template, ['template']);
 });
 
 gulp.task('connect', function() {

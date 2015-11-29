@@ -20,17 +20,21 @@ the rest of stylesheets. If you want to use color variables
 in your settings import them at the beginning.
 
 ```scss
-// Your defaults
+// Import colors
+@import "bower_components/hocus-pocus/hocus-pocus/scss/colors";
+
+// Define your settings
 $font-family-base: "Open Sans", sans-serif;
 $grid-container: 70rem;
+$navbar-background: $color-blue;
 
-// Hocus-Pocus include
-@import "bower_components/hocus-pocus/sass/hocus-pocus";
+// Import framework
+@import "bower_components/hocus-pocus/hocus-pocus";
 
-// Your stylesheets
-@import "objects/meter";
-@import "objects/price-box";
-@import "inbox/landing-headings-fix";
+// Import your stylesheets
+@import "compontents/meter",
+        "compontents/price-box",
+        "inbox/landing-headings-fix";
 ```
 
 ### Principles
