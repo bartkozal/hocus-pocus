@@ -21,6 +21,7 @@
     "node_modules",
     "Gulpfile.js",
     "package.json",
-    ".codeclimate.yml"
+    ".codeclimate.yml",
+    ".scss-lint.yml"
   ]
 }

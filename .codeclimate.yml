@@ -1,3 +1,7 @@
 engines:
+  codeclimate-eslint:
+    enabled: true
+  codeclimate-fixme:
+    enabled: true
   scss-lint:
     enabled: true
