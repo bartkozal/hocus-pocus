@@ -1,4 +1,4 @@
-scss_files: "**/*.scss"
+scss_files: "scss/*.scss"
 
 linters:
   PropertySortOrder:
