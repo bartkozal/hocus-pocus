@@ -1,0 +1,3 @@
+engines:
+  scss-lint:
+    enabled: true

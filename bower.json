@@ -20,6 +20,7 @@
     "docs",
     "node_modules",
     "Gulpfile.js",
-    "package.json"
+    "package.json",
+    ".codeclimate.yml"
   ]
 }
