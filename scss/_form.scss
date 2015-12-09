@@ -32,12 +32,12 @@ input[type="radio"],
 input[type="checkbox"] {
   position: relative;
   bottom: 1px;
-  vertical-align: middle;
   margin-right: quarter($spacing-unit);
+  vertical-align: middle;
 }
 
 input[disabled] {
-  background-color: lighten($color-ui, 5%);
+  background-color: $color-disabled;
 }
 
 .form-inline {
@@ -67,14 +67,14 @@ input[disabled] {
 .form-horizontal {
   .form-item {
     margin-bottom: $spacing-unit;
-  }
 
-  .form-item > label {
-    @include ui-padding;
+    > label {
+      @include ui-padding;
 
-    display: inline-block;
-    margin: 0;
-    text-align: right;
+      display: inline-block;
+      margin: 0;
+      text-align: right;
+    }
   }
 
   .grid-item > .form-item > label {

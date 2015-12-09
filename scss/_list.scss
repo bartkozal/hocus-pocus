@@ -30,8 +30,8 @@ dd + dt {
 
   > li {
     display: inline-block;
-    padding-left: quarter($spacing-unit);
     padding-right: quarter($spacing-unit);
+    padding-left: quarter($spacing-unit);
   }
 }
 
@@ -49,13 +49,13 @@ dd + dt {
     text-decoration: none;
 
     &:hover {
-      color: $link-menu-color;
       background: $link-menu-background;
+      color: $link-menu-color;
     }
 
     @if $link-active {
       &:active {
-        top: 0px;
+        top: 0;
       }
     }
   }

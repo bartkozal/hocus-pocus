@@ -1,9 +1,9 @@
 .sticky-footer {
   position: absolute;
-  left: 0;
   bottom: 0;
-  height: $sticky-footer-height;
+  left: 0;
   width: 100%;
+  height: $sticky-footer-height;
   padding-top: $spacing-unit;
   padding-bottom: $spacing-unit;
 }

@@ -32,8 +32,7 @@
 
   @if $step > 1 {
     margin-top: $line-height * 2 / $vertical-align-body * 1rem;
-  }
-  @else {
+  } @else {
     margin-top: $line-height / $vertical-align-body * 1rem;
   }
 }
@@ -82,8 +81,8 @@ em {
 
 a {
   color: $color-link;
-  word-wrap: break-word;
   text-decoration: none;
+  word-wrap: break-word;
 
   @if $link-underline {
     text-decoration: underline;
@@ -98,16 +97,16 @@ a {
 }
 
 sup, sub {
-  vertical-align: baseline;
   position: relative;
+  vertical-align: baseline;
 }
 
 sup {
-  top: -0.4em;
+  top: -.4em;
 }
 
 sub {
-  bottom: -0.25em;
+  bottom: -.25em;
 }
 
 blockquote {

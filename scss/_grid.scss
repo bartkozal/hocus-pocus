@@ -1,8 +1,8 @@
 .container {
   max-width: $grid-container;
   margin: auto;
-  padding-left: $grid-gutter;
   padding-right: $grid-gutter;
+  padding-left: $grid-gutter;
 }
 
 .grid {
@@ -10,13 +10,13 @@
   flex: 0 1 auto;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-left: halve($grid-gutter) * -1;
   margin-right: halve($grid-gutter) * -1;
+  margin-left: halve($grid-gutter) * -1;
 }
 
 .grid-item {
-  padding-left: halve($grid-gutter);
   padding-right: halve($grid-gutter);
+  padding-left: halve($grid-gutter);
 }
 
 .grid-left {
@@ -44,21 +44,22 @@
 }
 
 .grid-flat {
-  margin-left: 0;
   margin-right: 0;
+  margin-left: 0;
 
   > .grid-item {
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
   }
 }
 
 .grid-pair {
   > .grid-item {
     text-align: left;
+
+    + .grid-item {
+      text-align: right;
+    }
   }
 
-  > .grid-item + .grid-item {
-    text-align: right;
-  }
 }

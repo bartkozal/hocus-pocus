@@ -1,6 +1,6 @@
 @mixin ui-padding {
-  padding-top: $ui-padding-vertical + $ui-padding-vertical * 0.2;
-  padding-bottom: $ui-padding-vertical - $ui-padding-vertical * 0.2;
+  padding-top: $ui-padding-vertical + $ui-padding-vertical * .2;
+  padding-bottom: $ui-padding-vertical - $ui-padding-vertical * .2;
   padding-right: $ui-padding-horizontal;
   padding-left: $ui-padding-horizontal;
 }
@@ -18,20 +18,23 @@ blockquote, pre, table {
   margin-bottom: $spacing-unit;
 }
 
-ul ul, ol ol, ul ol, ol ul {
+ul ul,
+ol ol,
+ul ol,
+ol ul {
   margin-top: 0;
   margin-bottom: 0;
 }
 
 html {
   position: relative;
-  overflow-y: scroll;
   min-height: 100%;
+  overflow-y: scroll;
 }
 
 body {
   margin-bottom: $sticky-footer-height;
+  color: $color-font;
   font-family: $font-family-base;
   font-weight: $font-weight-normal;
-  color: $color-font;
 }
