@@ -1,7 +1,7 @@
 code[class^=lang] {
   @include font-size(12);
-  padding: halve($spacing-unit);
   display: block;
+  padding: halve($spacing-unit);
   background: #1d1f21;
   color: #c5c8c6;
 }
@@ -55,7 +55,7 @@ code[class^=lang] {
 }
 
 .hljs-type,
-.hljs-built_in,
+.hljs-built-in,
 .hljs-builtin-name,
 .hljs-quote,
 .hljs-section,

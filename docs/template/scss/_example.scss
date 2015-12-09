@@ -1,14 +1,14 @@
 .example {
+  padding: $spacing-unit;
   border: 1px solid $color-ui;
   border-bottom: 0;
-  padding: $spacing-unit;
 
   > *:last-child {
     margin-top: 0;
     margin-bottom: 0;
   }
 
-  & + pre {
+  + pre {
     margin-bottom: double($spacing-unit);
   }
 }

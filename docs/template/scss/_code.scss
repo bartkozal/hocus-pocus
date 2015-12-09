@@ -1,25 +1,22 @@
 %code {
   @include font-size(12);
-
-  font-family: $font-family-monospace;
   background-color: $color-black;
   color: #c5c8c6;
+  font-family: $font-family-monospace;
 }
 
 %code-block {
   @extend %code;
-
-  border-radius: $ui-border-radius;
-  padding: third($spacing-unit);
   margin-bottom: $spacing-unit;
+  padding: third($spacing-unit);
+  border-radius: $ui-border-radius;
   color: $color-white;
 }
 
 li > code,
 p > code {
   @extend %code;
-
-  padding: halve(quarter($spacing-unit)) quarter($spacing-unit);
-  margin-left: halve(quarter($spacing-unit));
   margin-right: halve(quarter($spacing-unit));
+  margin-left: halve(quarter($spacing-unit));
+  padding: halve(quarter($spacing-unit)) quarter($spacing-unit);
 }

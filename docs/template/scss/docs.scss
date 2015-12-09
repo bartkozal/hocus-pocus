@@ -1,17 +1,17 @@
-$font-family-base: "Roboto";
-$font-family-monospace: "Roboto Mono";
+$font-family-base: 'Roboto';
+$font-family-monospace: 'Roboto Mono';
 $rwd-type: desktop-first;
 $rwd-map: (mobile: 680px);
 $navbar-background: #000;
 $sticky-footer-height: 60px;
 
-@import "../../../hocus-pocus";
+@import '../../../hocus-pocus';
 
-@import "brand",
-        "code",
-        "color-block",
-        "colorscheme",
-        "example",
-        "footer",
-        "grid-preview",
-        "button";
+@import 'brand',
+        'code',
+        'color-block',
+        'colorscheme',
+        'example',
+        'footer',
+        'grid-preview',
+        'button';
