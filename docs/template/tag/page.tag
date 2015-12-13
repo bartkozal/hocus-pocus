@@ -1,6 +1,12 @@
 <page>
   <div></div>
 
+  <style scoped>
+    h3:first-child {
+      margin-top: 0;
+    }
+  </style>
+
   <script>
     var self = this;
 
