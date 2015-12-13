@@ -2,6 +2,8 @@ The most common settins are listed below. All available defaults
 you can find under `scss/_defaults.scss`.
 
 ```scss
+$color-brand: $color-blue;
+
 $font-leading: 1.4;
 $font-size-base: 15;
 
