@@ -13,7 +13,7 @@ div {
 ### Image helpers
 
 <div class="example">
-  <img src="http://placehold.it/1200x200" alt="example" class="img-responsive">
+  <img src="http://placehold.it/1200x200/39cccc/fff" alt="example" class="img-responsive">
 </div>
 
 ```html
@@ -21,7 +21,7 @@ div {
 ```
 
 <div class="example">
-  <img src="http://placehold.it/150x150" alt="example" class="img-rounded">
+  <img src="http://placehold.it/150x150/39cccc/fff" alt="example" class="img-rounded">
 </div>
 
 ```html
@@ -29,7 +29,7 @@ div {
 ```
 
 <div class="example">
-  <img src="http://placehold.it/150x150" alt="example" class="img-circle">
+  <img src="http://placehold.it/150x150/39cccc/fff" alt="example" class="img-circle">
 </div>
 
 ```html
