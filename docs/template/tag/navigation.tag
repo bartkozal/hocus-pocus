@@ -15,6 +15,7 @@
     <li><a href="#forms">Forms</a></li>
     <li><a href="#buttons">Buttons</a></li>
     <li><a href="#boxes">Boxes</a></li>
+    <li><a href="#media">Media</a></li>
     <li><a href="#navbar">Navbar</a></li>
     <li><a href="#sticky-footer">Sticky Footer</a></li>
   </ul>
