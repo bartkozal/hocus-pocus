@@ -3,15 +3,15 @@
 }
 
 .visible,
-.visible-block {
+.block {
   display: block !important;
 }
 
-.visible-inline-block {
+.inline-block {
   display: inline-block !important;
 }
 
-.visible-inline {
+.inline {
   display: inline !important;
 }
 
@@ -21,15 +21,15 @@
   }
 
   .#{$rwd-screen-name}-visible,
-  .#{$rwd-screen-name}-visible-block {
+  .#{$rwd-screen-name}-block {
     display: block !important;
   }
 
-  .#{$rwd-screen-name}-visible-inline-block {
+  .#{$rwd-screen-name}-inline-block {
     display: inline-block !important;
   }
 
-  .#{$rwd-screen-name}-visible-inline {
+  .#{$rwd-screen-name}-inline {
     display: inline !important;
   }
 }

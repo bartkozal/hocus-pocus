@@ -71,7 +71,7 @@ There are available fractions of these numbers: `n/1`, `n/2`, `n/3`, `n/4`,
 
 ### Visibility Helpers
 
-`.hidden`, `.visible`, `.visible-block`, `.visible-inline-block`, `.visible-inline`
+`.hidden`, `.visible`, `.block`, `.inline-block`, `.inline`
 
 *Visibility helpers are automatically generated for responsive web design
 brakepoints and using !important directive.*
