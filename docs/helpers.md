@@ -116,7 +116,8 @@ brakepoints and using !important directive.*
 Spacing helpers are based on the `$spacing-map`. There are four
 helpers with different variants and sizes:
 
-*Spacing helpers are using !important directive.*
+*Spacing helpers are automatically generated for responsive web design
+brakepoints and using !important directive.*
 
 ```scss
 .margin[-size][-type];

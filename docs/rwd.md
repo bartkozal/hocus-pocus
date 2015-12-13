@@ -4,7 +4,7 @@ Choose your preferred way of writing RWD by setting the
 Define custom breakpoints as `$rwd-map` variable. You can provide values
 with one or two sizes.
 
-Each breakpoint gets width and visibility helpers.
+Each breakpoint gets width, spacing and visibility helpers.
 
 ```scss
 $rwd-type: desktop-first;
@@ -21,7 +21,9 @@ $rwd-map: (mobile: 680px, tablet: 681px 1200px);
   </div>
 
   <div class="grid-item 3/4 mobile-1/1">
-    ...
+    <h1 class="mobile-no-margin-top">
+      ...
+    </h1>
   </div>
 </div>
 ```
