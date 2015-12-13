@@ -126,7 +126,7 @@ brakepoints and using !important directive.*
 .no-padding[-type];
 
 // type: -top, -right, -bottom, -left, -sides, -ends
-// size: -base, -quarter, -third, -half, -double, -triple, -quadruple
+// size: -quarter, -third, -half, -double, -triple, -quadruple
 ```
 
 Examples:

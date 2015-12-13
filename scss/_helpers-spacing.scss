@@ -1,4 +1,34 @@
 @each $attr in margin, padding {
+  .#{$attr} {
+    #{$attr}: $spacing-unit !important;
+  }
+
+  .#{$attr}-top {
+    #{$attr}-top: $spacing-unit !important;
+  }
+
+  .#{$attr}-right {
+    #{$attr}-right: $spacing-unit !important;
+  }
+
+  .#{$attr}-bottom {
+    #{$attr}-bottom: $spacing-unit !important;
+  }
+
+  .#{$attr}-left {
+    #{$attr}-left: $spacing-unit !important;
+  }
+
+  .#{$attr}-sides {
+    #{$attr}-right: $spacing-unit !important;
+    #{$attr}-left: $spacing-unit !important;
+  }
+
+  .#{$attr}-ends {
+    #{$attr}-top: $spacing-unit !important;
+    #{$attr}-bottom: $spacing-unit !important;
+  }
+
   .no-#{$attr} {
     #{$attr}: 0 !important;
   }
@@ -64,6 +94,36 @@
 
 @mixin rwd-helpers-content($rwd-screen-name) {
   @each $attr in margin, padding {
+    .#{$rwd-screen-name}-#{$attr} {
+      #{$attr}: $spacing-unit !important;
+    }
+
+    .#{$rwd-screen-name}-#{$attr}-top {
+      #{$attr}-top: $spacing-unit !important;
+    }
+
+    .#{$rwd-screen-name}-#{$attr}-right {
+      #{$attr}-right: $spacing-unit !important;
+    }
+
+    .#{$rwd-screen-name}-#{$attr}-bottom {
+      #{$attr}-bottom: $spacing-unit !important;
+    }
+
+    .#{$rwd-screen-name}-#{$attr}-left {
+      #{$attr}-left: $spacing-unit !important;
+    }
+
+    .#{$rwd-screen-name}-#{$attr}-sides {
+      #{$attr}-right: $spacing-unit !important;
+      #{$attr}-left: $spacing-unit !important;
+    }
+
+    .#{$rwd-screen-name}-#{$attr}-ends {
+      #{$attr}-top: $spacing-unit !important;
+      #{$attr}-bottom: $spacing-unit !important;
+    }
+
     .#{$rwd-screen-name}-no-#{$attr} {
       #{$attr}: 0 !important;
     }
