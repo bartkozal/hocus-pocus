@@ -14,6 +14,18 @@ has no bottom margin.
 ```
 
 <div class="example">
+  <div class="box box-informative">
+    <p>Informative box</p>
+  </div>
+</div>
+
+```html
+<div class="box box-informative">
+  <p>Informative box</p>
+</div>
+```
+
+<div class="example">
   <div class="box box-positive">
     <p>Positive box</p>
   </div>
@@ -36,16 +48,3 @@ has no bottom margin.
   <p>Negative box</p>
 </div>
 ```
-
-<div class="example">
-  <div class="box box-informative">
-    <p>Informative box</p>
-  </div>
-</div>
-
-```html
-<div class="box box-informative">
-  <p>Informative box</p>
-</div>
-```
-

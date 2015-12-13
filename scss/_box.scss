@@ -6,20 +6,17 @@
   }
 }
 
+.box-informative {
+  background: lighten($color-informative, 25%);
+  color: darken($color-informative, 25%);
+}
+
 .box-positive {
-  border: 1px solid $color-positive;
-  background: lighten($color-positive, 35%);
-  color: darken($color-positive, 35%);
+  background: lighten($color-positive, 25%);
+  color: darken($color-positive, 25%);
 }
 
 .box-negative {
-  border: 1px solid $color-negative;
-  background: lighten($color-negative, 35%);
-  color: darken($color-negative, 35%);
-}
-
-.box-informative {
-  border: 1px solid $color-informative;
-  background: lighten($color-informative, 35%);
-  color: darken($color-informative, 35%);
+  background: lighten($color-negative, 25%);
+  color: darken($color-negative, 25%);
 }
