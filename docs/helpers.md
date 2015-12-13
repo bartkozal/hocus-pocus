@@ -76,7 +76,7 @@ Color and background color helpers are based on the `$color-map`.
 *Color helpers are using !important directive.*
 
 ```scss
-.clr[-color];
+.color[-color];
 .bg[-color];
 
 // color: -aqua, -blue, -navy, -teal, -green, -olive, -lime, -yellow, -orange,
@@ -87,11 +87,11 @@ Color and background color helpers are based on the `$color-map`.
 Examples:
 
 ```scss
-.clr-white {
+.color-white {
   color: #fff;
 }
 
-.clr-brand {
+.color-brand {
   color: $color-brand;
 }
 
