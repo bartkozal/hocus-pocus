@@ -10,9 +10,8 @@ Each breakpoint gets width, spacing, visibility helpers and a sass mixin.
 $rwd-type: desktop-first;
 $rwd-map: (mobile: 680px, tablet: 681px 1200px);
 
-// Custom sass mixin
-p {
-  @include rwd('tablet') {
+@include rwd('mobile') {
+  h1 {
     color: red;
   }
 }

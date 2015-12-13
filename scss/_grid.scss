@@ -43,6 +43,18 @@
   align-items: flex-end;
 }
 
+.grid-reverse {
+  flex-direction: row-reverse;
+}
+
+.grid-stack {
+  flex-direction: column;
+
+  > .grid-item {
+    flex-basis: auto;
+  }
+}
+
 .grid-flat {
   margin-right: 0;
   margin-left: 0;
@@ -61,5 +73,4 @@
       text-align: right;
     }
   }
-
 }

@@ -204,7 +204,7 @@ You can create a flat grid without the gutter too:
 </div>
 ```
 
-Or a grid with two elements where content of the first one is aligned to the
+Grid with two elements where content of the first one is aligned to the
 left and content of the second one is aligned to the right.
 
 <div class="example">
@@ -228,6 +228,63 @@ left and content of the second one is aligned to the right.
     ...
   </div>
   <div class="grid-item 1/2">
+    ...
+  </div>
+</div>
+```
+
+Change grid items order:
+
+<div class="example">
+  <div class="grid grid-reverse">
+    <div class="grid-item 1/3">
+      <div class="grid-preview">
+        .grid-item.1/3
+      </div>
+    </div>
+    <div class="grid-item 2/3">
+      <div class="grid-preview">
+        .grid-item.2/3
+      </div>
+    </div>
+  </div>
+</div>
+
+```html
+<div class="grid grid-reverse">
+  <div class="grid-item 1/3">
+    ...
+  </div>
+  <div class="grid-item 2/3">
+    ...
+  </div>
+</div>
+```
+
+Or even stack elements:
+
+
+<div class="example">
+  <div class="grid grid-stack">
+    <div class="grid-item 1/3">
+      <div class="grid-preview">
+        .grid-item.1/3
+      </div>
+    </div>
+    <div class="grid-item 2/3">
+      <div class="grid-preview">
+        .grid-item.2/3
+      </div>
+    </div>
+  </div>
+</div>
+
+```html
+<div class="grid grid-stack">
+  <div class="grid-item 1/3">
+    ...
+  </div>
+  <div class="grid-item 2/3">
     ...
   </div>
 </div>
