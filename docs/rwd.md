@@ -4,7 +4,7 @@ Choose your preferred way of writing RWD by setting the
 Define custom breakpoints as `$rwd-map` variable. You can provide values
 with one or two sizes.
 
-Each breakpoint gets visibility and grid helpers.
+Each breakpoint gets width and visibility helpers.
 
 ```scss
 $rwd-type: desktop-first;

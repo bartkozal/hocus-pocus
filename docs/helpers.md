@@ -69,6 +69,41 @@ There are available fractions of these numbers: `n/1`, `n/2`, `n/3`, `n/4`,
   </div>
 </div>
 
+### Color Helpers
+
+Color and background color helpers are based on the `$color-map`.
+
+*Color helpers are using !important directive.*
+
+```scss
+.clr[-color];
+.bg[-color];
+
+// color: -aqua, -blue, -navy, -teal, -green, -olive, -lime, -yellow, -orange,
+//        -red, -fuchsia, -purple, -maroon, -white, -silver, -grey, -black,
+//        -brand, -positive, -negative, -informative
+```
+
+Examples:
+
+```scss
+.clr-white {
+  color: #fff;
+}
+
+.clr-brand {
+  color: $color-brand;
+}
+
+.bg-black {
+  background-color: #111;
+}
+
+.bg-negative {
+  background-color: $color-negative;
+}
+```
+
 ### Visibility Helpers
 
 `.hidden`, `.visible`, `.block`, `.inline-block`, `.inline`
@@ -78,8 +113,10 @@ brakepoints and using !important directive.*
 
 ### Spacing Helpers
 
-Spacing helpers are generated based on the `$spacing-map` hash. By default you
-get access to four helpers with various types and sizes:
+Spacing helpers are based on the `$spacing-map`. There are four
+helpers with different variants and sizes:
+
+*Spacing helpers are using !important directive.*
 
 ```scss
 .margin[-size][-type];
@@ -120,9 +157,6 @@ Examples:
   padding-top: halve($spacing-unit);
 }
 ```
-
-*Spacing helpers are automatically generated for responsive web design
-brakepoints and using !important directive.*
 
 ### Layout Helpers
 

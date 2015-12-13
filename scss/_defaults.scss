@@ -4,11 +4,35 @@ $color-font: $color-black !default;
 $color-link: $color-blue !default;
 $color-muted: $color-gray !default;
 $color-disabled: $color-ui !default;
-$color-brand: $color-blue !default;
 
+$color-brand: $color-blue !default;
 $color-positive: $color-green !default;
 $color-negative: $color-red !default;
 $color-informative: $color-blue !default;
+
+$color-map: (
+  'white': $color-white,
+  'silver': $color-silver,
+  'gray': $color-gray,
+  'black': $color-black,
+  'red': $color-red,
+  'orange': $color-orange,
+  'yellow': $color-yellow,
+  'lime': $color-lime,
+  'green': $color-green,
+  'olive': $color-olive,
+  'teal': $color-teal,
+  'aqua': $color-aqua,
+  'blue': $color-blue,
+  'navy': $color-navy,
+  'fuchsia': $color-fuchsia,
+  'purple': $color-purple,
+  'maroon': $color-maroon,
+  'brand': $color-brand,
+  'positive': $color-positive,
+  'negative': $color-negative,
+  'informative': $color-informative
+) !default;
 
 $font-leading: 1.4 !default;
 $font-size-micro: 11 !default;
@@ -29,14 +53,25 @@ $vertical-align-body: 16 !default;
 $vertical-align-factor: 1.5 !default;
 
 $spacing-unit: round($font-size-base * $font-leading) / $vertical-align-body * 1rem !default;
-$spacing-map: (base: $spacing-unit, quarter: quarter($spacing-unit), third: third($spacing-unit), halve: halve($spacing-unit), double: double($spacing-unit), triple: triple($spacing-unit), quadruple: quadruple($spacing-unit)) !default;
+$spacing-map: (
+  'base': $spacing-unit,
+  'quarter': quarter($spacing-unit),
+  'third': third($spacing-unit),
+  'halve': halve($spacing-unit),
+  'double': double($spacing-unit),
+  'triple': triple($spacing-unit),
+  'quadruple': quadruple($spacing-unit)
+) !default;
 
 $ui-border-radius: 4px !default;
 $ui-padding-vertical: quarter($spacing-unit) !default;
 $ui-padding-horizontal: halve($spacing-unit) !default;
 
 $rwd-type: mobile-first !default;
-$rwd-map: (tablet: 768px 1200px, desktop: 1201px) !default;
+$rwd-map: (
+  'tablet': 768px 1200px,
+  'desktop': 1201px
+) !default;
 
 $grid-container: 1020px !default;
 $grid-gutter: $spacing-unit !default;

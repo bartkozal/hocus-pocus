@@ -3,6 +3,7 @@
     <li><a href="#home">Home</a></li>
     <li><a href="#quick-start">Quick Start</a></li>
     <li><a href="#defaults">Defaults</a></li>
+    <li><a href="#colors">Colors</a></li>
     <li><a href="#functions">Functions</a></li>
     <li><a href="#grid">Grid & Layout</a></li>
     <li><a href="#helpers">Helpers</a></li>

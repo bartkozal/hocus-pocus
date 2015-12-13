@@ -1,0 +1,17 @@
+<div class="color-block bg-white clr-black">$color-white</div>
+<div class="color-block bg-silver">$color-silver</div>
+<div class="color-block bg-gray">$color-gray</div>
+<div class="color-block bg-black">$color-black</div>
+<div class="color-block bg-red">$color-red</div>
+<div class="color-block bg-orange">$color-orange</div>
+<div class="color-block bg-yellow">$color-yellow</div>
+<div class="color-block bg-lime">$color-lime</div>
+<div class="color-block bg-green">$color-green</div>
+<div class="color-block bg-olive">$color-olive</div>
+<div class="color-block bg-teal">$color-teal</div>
+<div class="color-block bg-aqua">$color-aqua</div>
+<div class="color-block bg-blue">$color-blue</div>
+<div class="color-block bg-navy">$color-navy</div>
+<div class="color-block bg-fuchsia">$color-fuchsia</div>
+<div class="color-block bg-purple">$color-purple</div>
+<div class="color-block bg-maroon">$color-maroon</div>
