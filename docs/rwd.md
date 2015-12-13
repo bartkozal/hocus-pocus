@@ -1,14 +1,21 @@
-Choose your preferred way of writing RWD by setting the
+Choose your preferred way of writing responsive web design by setting the
 `$rwd-type` variable to `mobile-first` or `desktop-first`.
 
 Define custom breakpoints as `$rwd-map` variable. You can provide values
 with one or two sizes.
 
-Each breakpoint gets width, spacing and visibility helpers.
+Each breakpoint gets width, spacing, visibility helpers and a sass mixin.
 
 ```scss
 $rwd-type: desktop-first;
 $rwd-map: (mobile: 680px, tablet: 681px 1200px);
+
+// Custom sass mixin
+p {
+  @include rwd('tablet') {
+    color: red;
+  }
+}
 ```
 
 ```html

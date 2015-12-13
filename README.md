@@ -18,7 +18,7 @@ Included features:
 * Global box-sizing set to border-box (excluding `<img>`)
 * Flexbox based grid
 * Fraction width helpers
-* Visibility and spacing helpers (automatically generated for all brakepoints)
+* Visibility, spacing and color helpers (generated for specific brakepoints!)
 * Responsive web design support with customizable breakpoints and approach (mobile or desktop first)
 * Base typography with vertical rhythm and additional helpers
 * Lists, definition lists and menus

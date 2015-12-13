@@ -1,19 +1,37 @@
+@mixin rwd-brakepoint($rwd-screen-name, $rwd-screen-size) {
+  @if length($rwd-screen-size) == 2 {
+    @media screen and (min-width: nth($rwd-screen-size, 1)) and (max-width: nth($rwd-screen-size, 2)) {
+      @content;
+    }
+  } @else {
+    $rwd-width-attr: min-width;
+
+    @if $rwd-type == desktop-first {
+      $rwd-width-attr: max-width;
+    }
+
+    @media screen and (#{$rwd-width-attr}: nth($rwd-screen-size, 1)) {
+      @content;
+    }
+  }
+}
+
 @mixin rwd-helpers {
   @each $rwd-screen-name, $rwd-screen-size in $rwd-map {
-    @if length($rwd-screen-size) == 2 {
-      @media screen and (min-width: nth($rwd-screen-size, 1)) and (max-width: nth($rwd-screen-size, 2)) {
-        @include rwd-helpers-content($rwd-screen-name);
-      }
-    } @else {
-      $rwd-width-attr: min-width;
-
-      @if $rwd-type == desktop-first {
-        $rwd-width-attr: max-width;
-      }
-
-      @media screen and (#{$rwd-width-attr}: nth($rwd-screen-size, 1)) {
-        @include rwd-helpers-content($rwd-screen-name);
-      }
+    @include rwd-brakepoint($rwd-screen-name, $rwd-screen-size) {
+      @include rwd-helpers-content($rwd-screen-name);
     }
+  }
+}
+
+@mixin rwd($rwd-screen-name) {
+  @if map-has-key($rwd-map, $rwd-screen-name) {
+    $rwd-screen-size: map-get($rwd-map, $rwd-screen-name);
+
+    @include rwd-brakepoint($rwd-screen-name, $rwd-screen-size) {
+      @content;
+    }
+  } @else {
+    @warn "Screen "#{$rwd-screen-name}" is not defined in $rwd-screen";
   }
 }
