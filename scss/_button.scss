@@ -36,6 +36,10 @@ button[disabled],
   text-align: center;
 }
 
+.btn-brand {
+  background-color: $color-brand;
+}
+
 .btn-positive {
   background-color: $color-positive;
 }

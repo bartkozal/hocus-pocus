@@ -27,6 +27,14 @@
 ```
 
 <div class="example">
+  <a href="#" class="btn btn-brand">Brand button</a>
+</div>
+
+```html
+<a href="#" class="btn btn-brand">Brand button</a>
+```
+
+<div class="example">
   <a href="#" class="btn btn-positive">Positive button</a>
 </div>
 
