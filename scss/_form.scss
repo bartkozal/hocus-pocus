@@ -37,7 +37,11 @@ input[type="checkbox"] {
 }
 
 input[disabled] {
-  background-color: $color-disabled;
+  background-color: lighten($color-ui, 5%);
+
+  &:hover {
+    cursor: not-allowed;
+  }
 }
 
 .form-inline {

@@ -1,3 +1,14 @@
+@mixin btn($name, $color) {
+  .btn-#{$name} {
+    border-bottom-color: darken($color, 25%);
+    background-color: $color;
+
+    &:hover {
+      background-color: lighten($color, 5%);
+    }
+  }
+}
+
 input[type="button"],
 input[type="submit"],
 button,
@@ -7,6 +18,7 @@ button,
   display: inline-block;
   margin: 0;
   border: 0;
+  border-bottom: 2px solid darken($color-btn, 25%);
   border-radius: $ui-border-radius;
   background-color: $color-btn;
   color: $color-white;
@@ -15,12 +27,21 @@ button,
   cursor: pointer;
   vertical-align: middle;
   appearance: none;
+
+  &:hover {
+    background-color: lighten($color-btn, 5%);
+  }
 }
 
 button[disabled],
 .btn-disabled {
+  border-bottom-color: darken($color-disabled, 20%);
   background-color: $color-disabled;
-  cursor: default;
+  cursor: not-allowed;
+
+  &:hover {
+    background-color: $color-disabled;
+  }
 
   @if $link-active {
     &:active {
@@ -36,14 +57,6 @@ button[disabled],
   text-align: center;
 }
 
-.btn-brand {
-  background-color: $color-brand;
-}
-
-.btn-positive {
-  background-color: $color-positive;
-}
-
-.btn-negative {
-  background-color: $color-negative;
-}
+@include btn('brand', $color-brand);
+@include btn('positive', $color-positive);
+@include btn('negative', $color-negative);

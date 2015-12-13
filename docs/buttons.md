@@ -49,3 +49,5 @@
 ```html
 <a href="#" class="btn btn-negative">Negative button</a>
 ```
+
+It's possible to define own button types with a `+btn($name, $color)` mixin.
