@@ -192,9 +192,9 @@ Default styles for `<p>`, `<strong>`, `<em>`, `<sup>`, `<sub>`, `<small>`,
 </div>
 
 ```html
-<p class="text-lowercase">Lowercase text</p>
-<p class="text-uppercase">Uppercase text</p>
-<p class="text-capitalize">Capitalize text</p>
+<p class="text-lowercase">Lowercased text</p>
+<p class="text-uppercase">Uppercased text</p>
+<p class="text-capitalize">Capitalized text</p>
 ```
 
 <div class="example">
