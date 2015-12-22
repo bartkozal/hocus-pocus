@@ -32,6 +32,6 @@
       @content;
     }
   } @else {
-    @warn "Screen "#{$rwd-screen-name}" is not defined in $rwd-screen";
+    @warn 'Screen "#{$rwd-screen-name}" is not defined in $rwd-screen';
   }
 }
