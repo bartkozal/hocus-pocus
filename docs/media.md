@@ -77,7 +77,7 @@ using values from `$spacing-map`.
   <div class="media media-double">
     <img src="http://placehold.it/75x75/39cccc/fff">
     <div class="media-body">
-      <p>example text</p>
+      <p>Example Text</p>
     </div>
   </div>
 </div>
