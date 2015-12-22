@@ -1,6 +1,8 @@
-<a href="http://hocus-pocus.io">
-  <img src="http://bkzl.github.io/hocus-pocus/img/brand-light.png" width="144px" height="72px">
-</a>
+<div class="hidden">
+  <a href="http://hocus-pocus.io">
+    <img src="http://bkzl.github.io/hocus-pocus/img/brand-light.png" width="144px" height="72px">
+  </a>
+</div>
 
 Hocus-Pocus is a design-free [Sass](http://sass-lang.com) micro-framework.
 
@@ -48,6 +50,7 @@ these projects:
 * [sassy-gridlover](https://github.com/hiulit/Sassy-Gridlover)
 * [colors](https://github.com/mrmrs/colors)
 
+<div class="hidden">
 ### Development
 
 To edit and compile documentation locally fetch npm dependencies
@@ -67,3 +70,4 @@ section](https://github.com/bkzl/hocus-pocus/releases).
 
 Have you noticed a bug or have an idea? Please [add a new
 issue](https://github.com/bkzl/hocus-pocus/issues). Thanks!
+</div>
