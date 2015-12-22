@@ -2,13 +2,13 @@ Use `.box` to create an element out of your content. The last element inside
 has no bottom margin.
 
 <div class="example">
-  <div class="box" style="background-color: #eee;">
+  <div class="box bg-silver">
     <p>Element inside a box</p>
   </div>
 </div>
 
 ```html
-<div class="box" style="background-color: #eee;">
+<div class="box bg-silver">
   ...
 </div>
 ```

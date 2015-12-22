@@ -76,22 +76,22 @@ Color and background color helpers are based on the `$color-map`.
 *Color helpers are using !important directive.*
 
 ```scss
-.color[-color];
+.text[-color];
 .bg[-color];
 
 // color: -aqua, -blue, -navy, -teal, -green, -olive, -lime, -yellow, -orange,
 //        -red, -fuchsia, -purple, -maroon, -white, -silver, -grey, -black,
-//        -brand, -positive, -negative, -informative
+//        -brand, -positive, -negative, -informative, -muted
 ```
 
 Examples:
 
 ```scss
-.color-white {
-  color: #fff;
+.text-muted {
+  color: $color-muted;
 }
 
-.color-brand {
+.text-brand {
   color: $color-brand;
 }
 

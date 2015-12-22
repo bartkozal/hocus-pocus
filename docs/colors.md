@@ -1,4 +1,4 @@
-<div class="color-block bg-white color-black">$color-white</div>
+<div class="color-block bg-white text-muted">$color-white</div>
 <div class="color-block bg-silver">$color-silver</div>
 <div class="color-block bg-gray">$color-gray</div>
 <div class="color-block bg-black">$color-black</div>

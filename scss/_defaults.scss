@@ -31,7 +31,8 @@ $color-map: (
   'brand': $color-brand,
   'positive': $color-positive,
   'negative': $color-negative,
-  'informative': $color-informative
+  'informative': $color-informative,
+  'muted': $color-muted
 ) !default;
 
 $font-leading: 1.4 !default;

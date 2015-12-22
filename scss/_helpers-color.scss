@@ -1,5 +1,5 @@
 @each $name, $color in $color-map {
-  .color-#{$name} {
+  .text-#{$name} {
     color: $color !important;
   }
 
