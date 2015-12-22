@@ -51,7 +51,6 @@ these projects:
 * [sassy-gridlover](https://github.com/hiulit/Sassy-Gridlover)
 * [colors](https://github.com/mrmrs/colors)
 
-<div class="hidden">
 ### Development
 
 To edit and compile documentation locally fetch npm dependencies
@@ -71,4 +70,3 @@ section](https://github.com/bkzl/hocus-pocus/releases).
 
 Have you noticed a bug or have an idea? Please [add a new
 issue](https://github.com/bkzl/hocus-pocus/issues). Thanks!
-</div>
