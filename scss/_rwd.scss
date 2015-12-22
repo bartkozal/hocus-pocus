@@ -1,4 +1,4 @@
-@mixin rwd-brakepoint($rwd-screen-name, $rwd-screen-size) {
+@mixin rwd-breakpoint($rwd-screen-name, $rwd-screen-size) {
   @if length($rwd-screen-size) == 2 {
     @media screen and (min-width: nth($rwd-screen-size, 1)) and (max-width: nth($rwd-screen-size, 2)) {
       @content;
@@ -18,7 +18,7 @@
 
 @mixin rwd-helpers {
   @each $rwd-screen-name, $rwd-screen-size in $rwd-map {
-    @include rwd-brakepoint($rwd-screen-name, $rwd-screen-size) {
+    @include rwd-breakpoint($rwd-screen-name, $rwd-screen-size) {
       @include rwd-helpers-content($rwd-screen-name);
     }
   }
@@ -28,7 +28,7 @@
   @if map-has-key($rwd-map, $rwd-screen-name) {
     $rwd-screen-size: map-get($rwd-map, $rwd-screen-name);
 
-    @include rwd-brakepoint($rwd-screen-name, $rwd-screen-size) {
+    @include rwd-breakpoint($rwd-screen-name, $rwd-screen-size) {
       @content;
     }
   } @else {
