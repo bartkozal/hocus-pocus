@@ -30,6 +30,7 @@ Included features:
 * Media object
 * Boxes
 * Navbar
+* Hero
 * Sticky footer
 
 Sites built with Hocus-Pocus:

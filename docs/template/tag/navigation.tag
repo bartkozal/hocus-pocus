@@ -17,6 +17,7 @@
     <li><a href="#boxes">Boxes</a></li>
     <li><a href="#media">Media</a></li>
     <li><a href="#navbar">Navbar</a></li>
+    <li><a href="#hero">Hero</a></li>
     <li><a href="#sticky-footer">Sticky Footer</a></li>
   </ul>
 </navigation>
