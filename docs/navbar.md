@@ -3,7 +3,7 @@ Modify following variables to adjust colors: `$navbar-background`,
 
 <div class="example">
   <div class="navbar">
-    <div class="container navbar-container">
+    <div class="container">
       <div class="grid grid-pair">
         <div class="grid-item 1/4">
           <a href="#" class="navbar-link">Title</a>
@@ -23,7 +23,7 @@ Modify following variables to adjust colors: `$navbar-background`,
 
 ```html
 <div class="navbar">
-  <div class="container navbar-container">
+  <div class="container">
     <div class="grid grid-pair">
       <div class="grid-item 1/4">
         <a href="#" class="navbar-link">Title</a>

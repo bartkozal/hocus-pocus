@@ -9,7 +9,6 @@
 %navbar-link,
 .navbar-link {
   @include ui-padding;
-
   border-radius: $ui-border-radius;
   color: $navbar-link-color;
   text-decoration: none;
@@ -21,9 +20,7 @@
 
 .navbar-menu {
   @extend %list-menu;
-
   @extend %list-inline;
-
   margin-top: 0;
 
   > li > a {
@@ -31,7 +28,7 @@
   }
 }
 
-.navbar-container > .grid > .grid-item {
+.navbar > .container > .grid > .grid-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
