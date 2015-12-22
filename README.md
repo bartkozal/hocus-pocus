@@ -25,6 +25,7 @@ Included features:
 * Tables
 * Forms
 * Buttons
+* Media object
 * Boxes
 * Navbar
 * Sticky footer

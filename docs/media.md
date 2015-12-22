@@ -5,7 +5,7 @@ using values from `$spacing-map`.
   <div class="media">
     <img src="http://placehold.it/75x75/39cccc/fff">
     <div class="media-body">
-      <p>Example Caption</p>
+      <p>Example Text</p>
     </div>
   </div>
 </div>
@@ -23,7 +23,7 @@ using values from `$spacing-map`.
   <div class="media media-middle">
     <img src="http://placehold.it/75x75/39cccc/fff">
     <div class="media-body">
-      <p>Caption</p>
+      <p>Example Text</p>
     </div>
   </div>
 </div>
@@ -41,7 +41,7 @@ using values from `$spacing-map`.
   <div class="media media-bottom">
     <img src="http://placehold.it/75x75/39cccc/fff">
     <div class="media-body">
-      <p>Caption</p>
+      <p>Example Text</p>
     </div>
   </div>
 </div>
@@ -59,7 +59,7 @@ using values from `$spacing-map`.
   <div class="media media-halve">
     <img src="http://placehold.it/75x75/39cccc/fff">
     <div class="media-body">
-      <p>Caption</p>
+      <p>Example Text</p>
     </div>
   </div>
 </div>
@@ -77,7 +77,7 @@ using values from `$spacing-map`.
   <div class="media media-double">
     <img src="http://placehold.it/75x75/39cccc/fff">
     <div class="media-body">
-      <p>Caption</p>
+      <p>example text</p>
     </div>
   </div>
 </div>
@@ -96,7 +96,7 @@ using values from `$spacing-map`.
   <div class="media media-flat">
     <img src="http://placehold.it/75x75/39cccc/fff">
     <div class="media-body">
-      <p>Caption</p>
+      <p>Example Text</p>
     </div>
   </div>
 </div>
@@ -114,7 +114,7 @@ using values from `$spacing-map`.
   <div class="media media-reverse">
     <img src="http://placehold.it/75x75/39cccc/fff">
     <div class="media-body">
-      <p>Caption</p>
+      <p>Example Text</p>
     </div>
   </div>
 </div>
@@ -132,7 +132,7 @@ using values from `$spacing-map`.
   <div class="media media-reverse media-middle media-triple">
     <img src="http://placehold.it/75x75/39cccc/fff">
     <div class="media-body">
-      <p>Caption</p>
+      <p>Example Text</p>
     </div>
   </div>
 </div>
