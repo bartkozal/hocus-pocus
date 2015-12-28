@@ -57,7 +57,7 @@ $spacing-unit: round($font-size-base * $font-leading) / $vertical-align-body * 1
 $spacing-map: (
   'quarter': quarter($spacing-unit),
   'third': third($spacing-unit),
-  'halve': halve($spacing-unit),
+  'half': halve($spacing-unit),
   'double': double($spacing-unit),
   'triple': triple($spacing-unit),
   'quadruple': quadruple($spacing-unit)
