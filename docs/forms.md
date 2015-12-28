@@ -26,7 +26,7 @@ Usage:
     <input type="text" id="email">
 
     <label for="password">Password</label>
-    <input type="email" id="email">
+    <input type="password" id="password">
 
     <label for="search">Search</label>
     <input type="search" id="search">
@@ -58,7 +58,7 @@ Usage:
   <input type="text" id="email">
 
   <label for="password">Password</label>
-  <input type="email" id="email">
+  <input type="password" id="password">
 
   <label>
     <input type="checkbox">Remember me</input>
@@ -113,7 +113,7 @@ Usage:
 
   <div class="form-item">
     <label for="password" class="1/4">Password</label>
-    <input type="email" id="email">
+    <input type="password" id="password">
   </div>
 
   <div class="grid grid-right">
