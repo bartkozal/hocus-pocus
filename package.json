@@ -1,6 +1,6 @@
 {
   "name": "hocus-pocus",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "homepage": "http://hocus-pocus.io",
   "author": "Bartlomiej Kozal <bkzl@me.com> (http://bkzl.github.io)",
   "description": "Design-free Sass micro framework",
