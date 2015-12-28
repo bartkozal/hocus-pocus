@@ -41,23 +41,6 @@ $rwd-map: (
   'desktop': 1201px
 ) !default;
 
-$spacing-unit: round($font-size-base * $font-leading) / $vertical-align-body * 1rem !default;
-$spacing-map: (
-  'quarter': quarter($spacing-unit),
-  'third': third($spacing-unit),
-  'half': halve($spacing-unit),
-  'double': double($spacing-unit),
-  'triple': triple($spacing-unit),
-  'quadruple': quadruple($spacing-unit)
-) !default;
-
-$grid-container: 1020px !default;
-$grid-gutter: $spacing-unit !default;
-
-$ui-border-radius: 4px !default;
-$ui-padding-vertical: quarter($spacing-unit) !default;
-$ui-padding-horizontal: halve($spacing-unit) !default;
-
 $vertical-align-body: 16 !default;
 $vertical-align-factor: 1.5 !default;
 
@@ -78,6 +61,23 @@ $font-weight-headings: $font-weight-bold !default;
 
 $link-underline: true !default;
 $link-active: false !default;
+
+$spacing-unit: round($font-size-base * $font-leading) / $vertical-align-body * 1rem !default;
+$spacing-map: (
+  'quarter': quarter($spacing-unit),
+  'third': third($spacing-unit),
+  'half': halve($spacing-unit),
+  'double': double($spacing-unit),
+  'triple': triple($spacing-unit),
+  'quadruple': quadruple($spacing-unit)
+) !default;
+
+$grid-container: 1020px !default;
+$grid-gutter: $spacing-unit !default;
+
+$ui-border-radius: 4px !default;
+$ui-padding-vertical: quarter($spacing-unit) !default;
+$ui-padding-horizontal: halve($spacing-unit) !default;
 
 $list-menu-color: $color-white !default;
 $list-menu-background: $color-link !default;
