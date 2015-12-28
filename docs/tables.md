@@ -1,3 +1,14 @@
+### Tables
+
+Defaults:
+
+```scss
+$table-zebra-background: rgba($color-ui, .5);     // zebra table highlight color
+$table-hover-background: $table-zebra-background; // hover table highlight color
+```
+
+Usage:
+
 <div class="example">
   <table>
     <colgroup>
@@ -101,8 +112,6 @@
 </table>
 ```
 
-Set background color of odd rows as `$table-zebra-background` variable.
-
 <div class="example">
   <table class="table-bordered table-zebra">
     <thead>
@@ -137,8 +146,6 @@ Set background color of odd rows as `$table-zebra-background` variable.
   ...
 </table>
 ```
-
-Change `$table-hover-background` to change the color of hover.
 
 <div class="example">
   <table class="table-bordered table-hover">

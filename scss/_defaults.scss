@@ -35,6 +35,32 @@ $color-map: (
   'muted': $color-muted
 ) !default;
 
+$rwd-type: mobile-first !default;
+$rwd-map: (
+  'tablet': 768px 1200px,
+  'desktop': 1201px
+) !default;
+
+$spacing-unit: round($font-size-base * $font-leading) / $vertical-align-body * 1rem !default;
+$spacing-map: (
+  'quarter': quarter($spacing-unit),
+  'third': third($spacing-unit),
+  'half': halve($spacing-unit),
+  'double': double($spacing-unit),
+  'triple': triple($spacing-unit),
+  'quadruple': quadruple($spacing-unit)
+) !default;
+
+$grid-container: 1020px !default;
+$grid-gutter: $spacing-unit !default;
+
+$ui-border-radius: 4px !default;
+$ui-padding-vertical: quarter($spacing-unit) !default;
+$ui-padding-horizontal: halve($spacing-unit) !default;
+
+$vertical-align-body: 16 !default;
+$vertical-align-factor: 1.5 !default;
+
 $font-leading: 1.4 !default;
 $font-size-micro: 11 !default;
 $font-size-small: 13 !default;
@@ -50,47 +76,21 @@ $font-weight-normal: 400 !default;
 $font-weight-bold: 700 !default;
 $font-weight-headings: $font-weight-bold !default;
 
-$vertical-align-body: 16 !default;
-$vertical-align-factor: 1.5 !default;
-
-$spacing-unit: round($font-size-base * $font-leading) / $vertical-align-body * 1rem !default;
-$spacing-map: (
-  'quarter': quarter($spacing-unit),
-  'third': third($spacing-unit),
-  'half': halve($spacing-unit),
-  'double': double($spacing-unit),
-  'triple': triple($spacing-unit),
-  'quadruple': quadruple($spacing-unit)
-) !default;
-
-$ui-border-radius: 4px !default;
-$ui-padding-vertical: quarter($spacing-unit) !default;
-$ui-padding-horizontal: halve($spacing-unit) !default;
-
-$rwd-type: mobile-first !default;
-$rwd-map: (
-  'tablet': 768px 1200px,
-  'desktop': 1201px
-) !default;
-
-$grid-container: 1020px !default;
-$grid-gutter: $spacing-unit !default;
-
 $link-underline: true !default;
 $link-active: false !default;
 
 $list-menu-color: $color-white !default;
 $list-menu-background: $color-link !default;
 
+$table-zebra-background: rgba($color-ui, .5) !default;
+$table-hover-background: $table-zebra-background !default;
+
 $navbar-background: $color-black !default;
 $navbar-color: $color-white !default;
 $navbar-link-color: $color-white !default;
 $navbar-link-background: rgba($color-white, .15) !default;
 
-$hero-img: "/img/bg-hero.png" !default;
+$hero-img: '/img/bg-hero.png' !default;
 $hero-size: 40 !default;
 
 $sticky-footer-height: 0 !default;
-
-$table-zebra-background: rgba($color-ui, .5) !default;
-$table-hover-background: $table-zebra-background !default;

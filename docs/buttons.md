@@ -1,3 +1,19 @@
+### Buttons
+
+Define own button types:
+
+```scss
+@include btn($name, $color)
+```
+
+Usage:
+
+```scss
+@include btn('primary', #00F)
+```
+
+### Button Types
+
 <div class="example">
   <button type="submit">Form button</button> <a href="#" class="btn">Link as a button</a>
 </div>
@@ -49,5 +65,3 @@
 ```html
 <a href="#" class="btn btn-negative">Negative button</a>
 ```
-
-It's possible to define own button types with a `+btn($name, $color)` mixin.

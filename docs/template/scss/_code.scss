@@ -19,4 +19,6 @@ p > code {
   margin-right: halve(quarter($spacing-unit));
   margin-left: halve(quarter($spacing-unit));
   padding: halve(quarter($spacing-unit)) quarter($spacing-unit);
+  background-color: rgba($color-silver, .5);
+  color: rgba($color-black, .8);
 }

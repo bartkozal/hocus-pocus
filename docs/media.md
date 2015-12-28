@@ -1,5 +1,10 @@
-Media object works with any html element. Various size of gutters are generated
-using values from `$spacing-map`.
+### Media
+
+Media object works with any html element.
+
+Gutter size modifiers are generated for each size in `$spacing-map`.
+
+Usage:
 
 <div class="example">
   <div class="media">

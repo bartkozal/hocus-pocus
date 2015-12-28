@@ -4,6 +4,12 @@
   padding-bottom: halve($spacing-unit);
   background: $navbar-background;
   color: $navbar-color;
+
+  > .container > .grid > .grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 %navbar-link,
@@ -26,10 +32,4 @@
   > li > a {
     @extend %navbar-link;
   }
-}
-
-.navbar > .container > .grid > .grid-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }

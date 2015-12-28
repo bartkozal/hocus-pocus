@@ -1,5 +1,15 @@
-Use `.container` class to create a centered wrapper. It has a width of
-`$grid-container`.
+### Container
+
+Create a centered wrapper for grid elements. Usually used as a root element
+for a whole layout.
+
+Defaults:
+
+```scss
+$grid-container: 1020px; // container's width
+```
+
+Usage:
 
 <div class="example">
   <div class="container grid-preview">
@@ -15,7 +25,16 @@ Use `.container` class to create a centered wrapper. It has a width of
 
 ### Grid
 
-Use `.grid` with nested `.grid-item` elements to build a grid.
+Build a grid using a combination of grid items and [width helpers](/#rwd).
+Grid elements can be nested. It's based on flexbox.
+
+Defaults:
+
+```scss
+$grid-gutter: $spacing-unit; // width of grid gutter
+```
+
+Usage:
 
 <div class="example">
   <div class="grid">
@@ -41,8 +60,9 @@ Use `.grid` with nested `.grid-item` elements to build a grid.
 </div>
 ```
 
-There are a few additional classes to align block elements horizontally
-and vertically.
+### Grid Types
+
+Set horizontal and/or vertical alignment:
 
 <div class="example">
   <div class="grid grid-left">
@@ -176,7 +196,7 @@ and vertically.
 </div>
 ```
 
-You can create a flat grid without the gutter too:
+Create a flat grid without gutter:
 
 <div class="example">
   <div class="grid grid-flat grid-preview">
@@ -204,8 +224,8 @@ You can create a flat grid without the gutter too:
 </div>
 ```
 
-Grid with two elements where content of the first one is aligned to the
-left and content of the second one is aligned to the right.
+Create a grid where content of a first item is aligned to left and content
+of a second item is aligned to right.
 
 <div class="example">
   <div class="grid grid-pair">
@@ -233,7 +253,7 @@ left and content of the second one is aligned to the right.
 </div>
 ```
 
-Change grid items order:
+Reverse grid items order:
 
 <div class="example">
   <div class="grid grid-reverse">
@@ -261,8 +281,7 @@ Change grid items order:
 </div>
 ```
 
-Or even stack elements:
-
+Stack grid items:
 
 <div class="example">
   <div class="grid grid-stack">
@@ -287,5 +306,23 @@ Or even stack elements:
   <div class="grid-item 2/3">
     ...
   </div>
+</div>
+```
+
+### Float Helpers
+
+Clearfix and float helpers.
+
+<div class="example">
+  <div class="clearfix">
+    <div class="float-left grid-preview">.float-left</div>
+    <div class="float-right grid-preview">.float-right</div>
+  </div>
+</div>
+
+```html
+<div class="clearfix">
+  <div class="float-left">.float-left</div>
+  <div class="float-right">.float-right</div>
 </div>
 ```

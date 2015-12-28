@@ -1,12 +1,12 @@
 .hero {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   height: #{$hero-size}vh;
   background-image: url(#{$hero-img});
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-  background-attachment: fixed;
   text-align: center;
+  background-attachment: fixed;
 }

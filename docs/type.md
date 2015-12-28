@@ -1,18 +1,44 @@
-Base font is described by: `$font-size-base`,
-`$font-family-base`, `$font-weight-normal` and `$color-font`.
+### Typography
 
-The `+font-size` mixin allows to set a custom font size
-and keep the proper vertical rhythm:
+Typography elements keep vertical rhythm and have custom reset.
+
+Defaults:
 
 ```scss
-div {
+$font-leading: 1.4;                       // base font leading
+$font-size-micro: 11;                     // font size of `.text-micro`
+$font-size-small: 13;                     // font size of `small` and `.text-small`
+$font-size-base: 15;                      // base font size
+$font-size-lead: 18;                      // font size of `.text-lead` element
+
+$font-family-base: sans-serif;            // base font family
+$font-family-headings: $font-family-base; // headings font family
+$font-family-monospace: monospace;        // monospace font family
+
+$font-weight-light: 100;                  // light font weight
+$font-weight-normal: 400;                 // normal/base font weight
+$font-weight-bold: 700;                   // bold font weight
+$font-weight-headings: $font-weight-bold; // default font weight of headings
+
+$link-underline: true;                    // should links have underline
+$link-active: false;                      // should active links look like clicked
+```
+
+Set a custom font size and keep the proper vertical rhythm:
+
+```scss
+@include font-size($size);
+```
+
+Usage:
+
+```scss
+.text {
   @include font-size(12);
 }
 ```
 
 ### Headings
-
-You can change a font-weight for all headings with `$font-weight-headings`.
 
 <div class="example">
   <h1>Heading Level 1</h1>
@@ -151,7 +177,7 @@ Default styles for `<p>`, `<strong>`, `<em>`, `<sup>`, `<sub>`, `<small>`,
 <hr>
 ```
 
-### Helpers
+### Text Helpers
 
 <div class="example">
   <p class="text-micro">Micro text</p>
@@ -207,18 +233,4 @@ Default styles for `<p>`, `<strong>`, `<em>`, `<sup>`, `<sub>`, `<small>`,
 <p class="text-left">Left aligned text</p>
 <p class="text-center">Center aligned text</p>
 <p class="text-right">Right aligned text</p>
-```
-
-<div class="example">
-  <p class="text-muted">Muted text</p>
-  <p class="text-positive">Positive text</p>
-  <p class="text-negative">Negative text</p>
-  <p class="text-informative">Informative text</p>
-</div>
-
-```html
-<p class="text-muted">Muted text</p>
-<p class="text-positive">Positive text</p>
-<p class="text-negative">Negative text</p>
-<p class="text-informative">Informative text</p>
 ```

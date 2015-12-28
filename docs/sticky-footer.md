@@ -1,6 +1,14 @@
-Pin footer to the bottom of a viewport, like on this page.
+### Sticky Footer
 
-Please remember to set the height of footer first with `$sticky-footer-height`.
+Pin footer to the bottom of a viewport regardless of the content, like on this page.
+
+Defaults
+
+```scss
+$sticky-footer-height: 0; // sticky footer height
+```
+
+Usage:
 
 ```html
 <footer class="sticky-footer">

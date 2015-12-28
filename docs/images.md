@@ -1,16 +1,23 @@
-Images are verically aligned to the middle and their
-`box-sizing` is set to `content-box`.
+### Images
 
-The `+img-replace` mixin allows to replace any element contains text with
-image.
+Images are vertically aligned to the middle of container and have
+`box-sizing` set to `content-box`.
+
+Replace any element that contains text with an image:
 
 ```scss
-div {
+@include img-replace($path, $width, $height);
+```
+
+Usage:
+
+```scss
+.logo {
   @include img-replace('path/to/img.svg', 100px, 40px);
 }
 ```
 
-### Image helpers
+### Image Helpers
 
 <div class="example">
   <img src="http://placehold.it/1200x200/39cccc/fff" alt="example" class="img-responsive">

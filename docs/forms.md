@@ -1,3 +1,7 @@
+### Forms
+
+Usage:
+
 <div class="example">
   <form class="form-inline">
     <input type="email" placeholder="E-mail">

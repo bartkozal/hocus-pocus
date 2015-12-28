@@ -1,23 +1,19 @@
-### Installation
+### Requirements
 
 Hocus-Pocus requires [Sass](http://sass-lang.com) and
 [autoprefixer](https://github.com/postcss/autoprefixer) to proper work.
 
-Use Bower to install it:
+### Installation
+
+Bower is a recommended way to install:
 
 ```sh
 $ bower install hocus-pocus
 ```
 
-If you prefer, it's available as the NPM package too:
-
-```sh
-$ npm install hocus-pocus
-```
-
-Then import a main file just after your variables, but before
-the rest of stylesheets. If you want to use color variables
-in your settings import them at the beginning.
+Then import a main file just after your defaults, but before
+rest of stylesheets. If you want to use color variables
+in your settings import them first.
 
 ```scss
 // Import colors
@@ -37,9 +33,19 @@ $navbar-background: $color-blue;
         "inbox/landing-headings-fix";
 ```
 
+### Npm
+
+If you prefer, Hocus-Pocus is available as a npm package:
+
+```sh
+$ npm install hocus-pocus
+```
+
+
 ### Principles
 
-Stick to the rules from [Mark Otto's Code Guide](http://codeguide.co/#css).
+Stick to rules from [Mark Otto's Code Guide](http://codeguide.co/#css).
+
 Hocus-Pocus applies a following naming convention:
 
 ```html

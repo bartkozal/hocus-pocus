@@ -1,5 +1,13 @@
-Set `$hero-img` to path to your background. Change `$hero-size` to define
-what % of a viewport hero element takes, default is 40.
+### Hero
+
+Defaults:
+
+```scss
+$hero-img: '/img/bg-hero.png'; // path to a background image
+$hero-size: 40;                // % of a viewport taken
+```
+
+Usage:
 
 <div class="example">
   <div class="hero">

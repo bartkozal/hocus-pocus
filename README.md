@@ -16,12 +16,12 @@ Included features:
 
 * Improved Normalize reset
 * Default colors set
-* Global box-sizing set to border-box (excluding `<img>`)
+* Global box-sizing set to border-box
 * Flexbox based grid
 * Fraction width helpers
-* Visibility, spacing and color helpers (generated for specific breakpoints!)
 * Responsive web design support with customizable breakpoints and approach (mobile or desktop first)
-* Base typography with vertical rhythm and additional helpers
+* Visibility, spacing and color helpers (generated for custom responsive breakpoints!)
+* Base typography with vertical rhythm
 * Lists, definition lists and menus
 * Image helpers
 * Tables
@@ -32,6 +32,9 @@ Included features:
 * Navbar
 * Hero
 * Sticky footer
+* Clearfix
+
+* * *
 
 Sites built with Hocus-Pocus:
 
@@ -44,12 +47,11 @@ Sites built with Hocus-Pocus:
 Hocus-Pocus could not exist without work of awesome people responsible for
 these projects:
 
+* [normalize.css](https://github.com/necolas/normalize.css)
+* [colors](https://github.com/mrmrs/colors)
+* [gridlover](http://www.gridlover.net/try)
 * [inuitcss](https://github.com/inuitcss)
 * [primer](https://github.com/primer/primer)
-* [normalize.css](https://github.com/necolas/normalize.css)
-* [flexboxgrid](https://github.com/kristoferjoseph/flexboxgrid)
-* [sassy-gridlover](https://github.com/hiulit/Sassy-Gridlover)
-* [colors](https://github.com/mrmrs/colors)
 
 ### Development
 

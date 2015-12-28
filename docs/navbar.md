@@ -1,5 +1,15 @@
-Modify following variables to adjust colors: `$navbar-background`,
-`$navbar-color`, `$navbar-link-color` and `$navbar-link-background`
+### Navbar
+
+Defaults:
+
+```scss
+$navbar-background: $color-black;                 // navbar background color
+$navbar-color: $color-white;                      // navbar text color
+$navbar-link-color: $color-white;                 // navbar link color
+$navbar-link-background: rgba($color-white, .15); // navbar link background color
+```
+
+Usage:
 
 <div class="example">
   <div class="navbar">

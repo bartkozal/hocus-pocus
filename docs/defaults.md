@@ -1,5 +1,8 @@
-The most common settings are listed below. All available defaults
-you can find under `scss/_defaults.scss`.
+### Defaults
+
+The most common settings are listed below. Other defaults are listed
+on corresponding documentation pages or you can find them [in the source code](https://github.com/bkzl/hocus-pocus/blob/master/scss/_defaults.scss)
+under `scss/_defaults.scss`.
 
 ```scss
 $color-brand: $color-blue;
@@ -9,15 +12,11 @@ $font-size-base: 15;
 
 $font-family-base: sans-serif;
 $font-family-headings: $font-family-base;
-$font-family-monospace: monospace;
-
-$grid-container: 1020px;
 
 $rwd-type: mobile-first;
 $rwd-map: (tablet: 768px 1200px, desktop: 1201px);
 
-$link-underline: true;
-$link-active: false;
+$grid-container: 1020px;
 
-$sticky-footer-height: 0;
+$link-underline: true;
 ```

@@ -1,3 +1,14 @@
+### Lists
+
+Defaults:
+
+```scss
+$list-menu-color: $color-white;      // list menu color
+$list-menu-background: $color-link;  // list menu background color
+```
+
+Usage:
+
 <div class="example">
   <ol>
     <li>List item 1</li>
