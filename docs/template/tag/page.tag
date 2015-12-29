@@ -21,7 +21,7 @@
       request.send();
     }
 
-    self.on('mount', getHTML('home'));
+    self.on('mount', getHTML(window.location.hash.substring(1) || 'home'));
 
     riot.route('*', function(name) {
       getHTML(name);
