@@ -35,7 +35,7 @@ $navbar-background: $color-blue;
 
 ### Npm
 
-If you prefer, Hocus-Pocus is available as a npm package:
+If you prefer Hocus-Pocus is available as a npm package:
 
 ```sh
 $ npm install hocus-pocus
