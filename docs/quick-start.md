@@ -17,7 +17,7 @@ in your settings import them first.
 
 ```scss
 // Import colors
-@import "bower_components/hocus-pocus/hocus-pocus/scss/colors";
+@import "bower_components/hocus-pocus/scss/colors";
 
 // Define your settings
 $font-family-base: "Open Sans", sans-serif;
