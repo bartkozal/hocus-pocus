@@ -61,7 +61,7 @@ Usage:
 ```
 
 <div class="example">
-  <div class="media media-halve">
+  <div class="media media-half">
     <img src="http://placehold.it/75x75/39cccc/fff">
     <div class="media-body">
       <p>Example Text</p>
@@ -70,7 +70,7 @@ Usage:
 </div>
 
 ```html
-<div class="media media-halve">
+<div class="media media-half">
   <img src="...">
   <div class="media-body">
     ...
