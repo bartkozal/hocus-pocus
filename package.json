@@ -3,7 +3,7 @@
   "version": "0.2.3",
   "homepage": "http://hocus-pocus.io",
   "author": "Bartlomiej Kozal <bkzl@me.com> (http://bkzl.github.io)",
-  "description": "Design-free Sass micro framework",
+  "description": "Design-free Sass framework",
   "main": "hocus-pocus.scss",
   "keywords": [
     "css",

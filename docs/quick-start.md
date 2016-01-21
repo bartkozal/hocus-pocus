@@ -1,6 +1,6 @@
 ### Requirements
 
-Hocus-Pocus requires [Sass](http://sass-lang.com) and
+Hocus-Pocus requires [Sass](http://sass-lang.com) (version 3.3.0 or later) and
 [autoprefixer](https://github.com/postcss/autoprefixer) to proper work.
 
 ### Installation
