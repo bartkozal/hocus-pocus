@@ -5,7 +5,7 @@
 </div>
 
 Hocus-Pocus is a design-free [Sass](http://sass-lang.com) framework
-inspired by [Primer](https://github.com/primer/primer) and [inuitcss](https://github.com/inuitcss/tools.widths).
+inspired by [Primer](https://github.com/primer/primer) and [inuitcss](https://github.com/inuitcss/).
 
 The main idea behind is to make a universal and lightweight stylesheets starter
 kit that only includes the most common stuff. There is no need to overwrite
