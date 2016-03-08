@@ -32,7 +32,7 @@ input[type="radio"],
 input[type="checkbox"] {
   position: relative;
   bottom: 1px;
-  margin-right: quarter($spacing-unit);
+  margin-right: halve($spacing-unit);
   vertical-align: middle;
 }
 
