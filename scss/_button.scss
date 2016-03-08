@@ -6,6 +6,12 @@
     &:hover {
       background-color: lighten($color, 5%);
     }
+
+    &.btn-outline {
+      border-color: $color;
+      background-color: transparent;
+      color: $color
+    }
   }
 }
 
@@ -46,6 +52,16 @@ button[disabled],
     &:active {
       top: 0;
     }
+  }
+}
+
+.btn-outline {
+  border: 1px solid $color-btn;
+  background-color: transparent;
+  color: $color-btn;
+
+  &:hover {
+    background-color: transparent;
   }
 }
 

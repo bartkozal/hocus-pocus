@@ -35,6 +35,16 @@ Usage:
 ```
 
 <div class="example">
+  <a href="#" class="btn btn-outline">Outline button</a> <a href="#" class="btn btn-brand btn-outline">Outline brand button</a>
+</div>
+
+```html
+<a href="#" class="btn btn-outline">Outline button</a>
+
+<a href="#" class="btn btn-brand btn-outline">Outline brand button</a>
+```
+
+<div class="example">
   <a href="#" class="btn btn-block">Block button</a>
 </div>
 
