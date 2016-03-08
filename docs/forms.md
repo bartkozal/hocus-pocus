@@ -87,25 +87,21 @@ Usage:
 <div class="example">
   <form class="form-horizontal">
   <div class="form-item">
-  <label for="email" class="1/4">E-mail</label>
+  <label for="email">E-mail</label>
   <input type="email" id="email">
   </div>
 
   <div class="form-item">
-  <label for="password" class="1/4">Password</label>
+  <label for="password">Password</label>
   <input type="email" id="email">
   </div>
 
-  <div class="grid grid-right">
-  <div class="grid-item 3/4">
-  <div class="form-item">
+  <div class="form-group">
   <label>
   <input type="checkbox">Remember me</input>
   </label>
-  </div>
 
   <button type="submit">Submit</button>
-  </div>
   </div>
   </form>
 </div>
@@ -113,25 +109,21 @@ Usage:
 ```html
 <form class="form-horizontal">
   <div class="form-item">
-    <label for="email" class="1/4">E-mail</label>
+    <label for="email">E-mail</label>
     <input type="email" id="email">
   </div>
 
   <div class="form-item">
-    <label for="password" class="1/4">Password</label>
+    <label for="password">Password</label>
     <input type="password" id="password">
   </div>
 
-  <div class="grid grid-right">
-    <div class="grid-item 3/4">
-      <div class="form-item">
-        <label>
-          <input type="checkbox">Remember me</input>
-        </label>
-      </div>
+  <div class="form-group">
+    <label>
+      <input type="checkbox">Remember me</input>
+    </label>
 
-      <button type="submit">Submit</button>
-    </div>
+    <button type="submit">Submit</button>
   </div>
 </form>
 ```
