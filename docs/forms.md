@@ -22,8 +22,11 @@ Usage:
 
 <div class="example">
   <form class="form-stacked">
+    <label for="name">Name</label>
+    <input id="name">
+
     <label for="email">E-mail</label>
-    <input type="text" id="email">
+    <input type="email" id="email">
 
     <label for="password">Password</label>
     <input type="password" id="password">
@@ -35,7 +38,7 @@ Usage:
     <input type="text" id="disabled" disabled>
 
     <label>
-      <input type="checkbox"> Remember me
+      <input type="checkbox">Remember me</input>
     </label>
 
     <label for="gender">Gender</label>
@@ -54,8 +57,11 @@ Usage:
 
 ```html
 <form class="form-stacked">
+  <label for="name">Name</label>
+  <input id="name">
+
   <label for="email">E-mail</label>
-  <input type="text" id="email">
+  <input type="email" id="email">
 
   <label for="password">Password</label>
   <input type="password" id="password">
@@ -82,7 +88,7 @@ Usage:
   <form class="form-horizontal">
   <div class="form-item">
   <label for="email" class="1/4">E-mail</label>
-  <input type="text" id="email">
+  <input type="email" id="email">
   </div>
 
   <div class="form-item">
@@ -108,7 +114,7 @@ Usage:
 <form class="form-horizontal">
   <div class="form-item">
     <label for="email" class="1/4">E-mail</label>
-    <input type="text" id="email">
+    <input type="email" id="email">
   </div>
 
   <div class="form-item">
