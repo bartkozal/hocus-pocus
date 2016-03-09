@@ -1,3 +1,22 @@
+.vertical-top,
+.vertical-middle,
+.vertical-bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.vertical-top {
+  justify-content: flex-start;
+}
+
+.vertical-middle {
+  justify-content: center;
+}
+
+.vertical-bottom {
+  justify-content: flex-end;
+}
+
 .clearfix {
   &:before,
   &:after {

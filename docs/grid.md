@@ -309,6 +309,20 @@ Stack grid items:
 </div>
 ```
 
+### Vertical Helpers
+
+<div class="example">
+  <div class="vertical-top preview-vertical">Aligned to top</div>
+  <div class="vertical-middle preview-vertical">Aligned to middle</div>
+  <div class="vertical-bottom preview-vertical">Aligned to bottom</div>
+</div>
+
+```html
+<div class="vertical-top">Aligned to top</div>
+<div class="vertical-middle">Aligned to middle</div>
+<div class="vertical-bottom">Aligned to bottom</div>
+```
+
 ### Float Helpers
 
 Clearfix and float helpers.
