@@ -59,6 +59,7 @@ button[disabled],
   border: 1px solid $color-btn;
   background-color: transparent;
   color: $color-btn;
+  vertical-align: 0;
 
   &:hover {
     background-color: transparent;
