@@ -12,7 +12,7 @@ $grid-container: 1020px; // container's width
 Usage:
 
 <div class="example">
-  <div class="container grid-preview">
+  <div class="container preview-grid">
     .container
   </div>
 </div>
@@ -39,11 +39,11 @@ Usage:
 <div class="example">
   <div class="grid">
   <div class="grid-item 1/3">
-    <div class="grid-preview">.grid-item.1/3</div>
+    <div class="preview-grid">.grid-item.1/3</div>
   </div>
 
   <div class="grid-item 2/3">
-    <div class="grid-preview">.grid-item.2/3</div>
+    <div class="preview-grid">.grid-item.2/3</div>
   </div>
   </div>
 </div>
@@ -67,7 +67,7 @@ Set horizontal and/or vertical alignment:
 <div class="example">
   <div class="grid grid-left">
     <div class="grid-item 1/3">
-      <div class="grid-preview">
+      <div class="preview-grid">
         .grid-item.1/3
       </div>
     </div>
@@ -85,7 +85,7 @@ Set horizontal and/or vertical alignment:
 <div class="example">
   <div class="grid grid-center">
     <div class="grid-item 1/3">
-      <div class="grid-preview">
+      <div class="preview-grid">
         .grid-item.1/3
       </div>
     </div>
@@ -103,7 +103,7 @@ Set horizontal and/or vertical alignment:
 <div class="example">
   <div class="grid grid-right">
     <div class="grid-item 1/3">
-      <div class="grid-preview">
+      <div class="preview-grid">
         .grid-item.1/3
       </div>
     </div>
@@ -121,12 +121,12 @@ Set horizontal and/or vertical alignment:
 <div class="example">
   <div class="grid grid-top">
     <div class="grid-item 1/2">
-      <div class="grid-preview grid-preview-large">
+      <div class="preview-grid preview-grid-large">
         .grid-item.1/2
       </div>
     </div>
     <div class="grid-item 1/2">
-      <div class="grid-preview">
+      <div class="preview-grid">
         .grid-item.1/2
       </div>
     </div>
@@ -147,12 +147,12 @@ Set horizontal and/or vertical alignment:
 <div class="example">
   <div class="grid grid-middle">
     <div class="grid-item 1/2">
-      <div class="grid-preview grid-preview-large">
+      <div class="preview-grid preview-grid-large">
         .grid-item.1/2
       </div>
     </div>
     <div class="grid-item 1/2">
-      <div class="grid-preview">
+      <div class="preview-grid">
         .grid-item.1/2
       </div>
     </div>
@@ -173,12 +173,12 @@ Set horizontal and/or vertical alignment:
 <div class="example">
   <div class="grid grid-bottom">
     <div class="grid-item 1/2">
-      <div class="grid-preview grid-preview-large">
+      <div class="preview-grid preview-grid-large">
         .grid-item.1/2
       </div>
     </div>
     <div class="grid-item 1/2">
-      <div class="grid-preview">
+      <div class="preview-grid">
         .grid-item.1/2
       </div>
     </div>
@@ -199,14 +199,14 @@ Set horizontal and/or vertical alignment:
 Create a flat grid without gutter:
 
 <div class="example">
-  <div class="grid grid-flat grid-preview">
+  <div class="grid grid-flat preview-grid">
     <div class="grid-item 1/2">
-      <div class="grid-preview">
+      <div class="preview-grid">
         .grid-item.1/2
       </div>
     </div>
     <div class="grid-item 1/2">
-      <div class="grid-preview">
+      <div class="preview-grid">
         .grid-item.1/2
       </div>
     </div>
@@ -230,12 +230,12 @@ of a second item is aligned to right.
 <div class="example">
   <div class="grid grid-pair">
     <div class="grid-item 1/2">
-      <div class="grid-preview">
+      <div class="preview-grid">
         .grid-item.1/2
       </div>
     </div>
     <div class="grid-item 1/2">
-      <div class="grid-preview">
+      <div class="preview-grid">
         .grid-item.1/2
       </div>
     </div>
@@ -258,12 +258,12 @@ Reverse grid items order:
 <div class="example">
   <div class="grid grid-reverse">
     <div class="grid-item 1/3">
-      <div class="grid-preview">
+      <div class="preview-grid">
         .grid-item.1/3
       </div>
     </div>
     <div class="grid-item 2/3">
-      <div class="grid-preview">
+      <div class="preview-grid">
         .grid-item.2/3
       </div>
     </div>
@@ -286,12 +286,12 @@ Stack grid items:
 <div class="example">
   <div class="grid grid-stack">
     <div class="grid-item 1/3">
-      <div class="grid-preview">
+      <div class="preview-grid">
         .grid-item.1/3
       </div>
     </div>
     <div class="grid-item 2/3">
-      <div class="grid-preview">
+      <div class="preview-grid">
         .grid-item.2/3
       </div>
     </div>
@@ -315,14 +315,14 @@ Clearfix and float helpers.
 
 <div class="example">
   <div class="clearfix">
-    <div class="float-left grid-preview">.float-left</div>
-    <div class="float-right grid-preview">.float-right</div>
+    <div class="float-left preview-grid">.float-left</div>
+    <div class="float-right preview-grid">.float-right</div>
   </div>
 </div>
 
 ```html
 <div class="clearfix">
-  <div class="float-left">.float-left</div>
-  <div class="float-right">.float-right</div>
+  <div class="float-left">...</div>
+  <div class="float-right">...</div>
 </div>
 ```

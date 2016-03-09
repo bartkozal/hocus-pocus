@@ -59,7 +59,7 @@ Usage:
 
 <div class="grid">
   <div class="grid-item 1/1">
-    <div class="grid-preview">
+    <div class="preview-grid">
       .1/1
     </div>
   </div>
@@ -67,12 +67,12 @@ Usage:
 
 <div class="grid">
   <div class="grid-item 1/4">
-    <div class="grid-preview">
+    <div class="preview-grid">
       .1/4, .2/8, .3/12
     </div>
   </div>
   <div class="grid-item 3/4">
-    <div class="grid-preview">
+    <div class="preview-grid">
       .3/4, .6/8, .9/12
     </div>
   </div>
@@ -80,12 +80,12 @@ Usage:
 
 <div class="grid">
   <div class="grid-item 2/5">
-    <div class="grid-preview">
+    <div class="preview-grid">
       .2/5, .4/10
     </div>
   </div>
   <div class="grid-item 3/5">
-    <div class="grid-preview">
+    <div class="preview-grid">
       .3/5, .6/10
     </div>
   </div>
@@ -93,12 +93,12 @@ Usage:
 
 <div class="grid">
   <div class="grid-item 1/6">
-    <div class="grid-preview">
+    <div class="preview-grid">
       .1/6, .2/12
     </div>
   </div>
   <div class="grid-item 5/6">
-    <div class="grid-preview">
+    <div class="preview-grid">
       .5/6, .10/12
     </div>
   </div>
@@ -106,17 +106,17 @@ Usage:
 
 <div class="grid">
   <div class="grid-item 1/2">
-    <div class="grid-preview">
+    <div class="preview-grid">
       .1/2, .2/4, .3/6, .4/8, .5/10, .6/12
     </div>
   </div>
   <div class="grid-item 1/8">
-    <div class="grid-preview">
+    <div class="preview-grid">
       .1/8
     </div>
   </div>
   <div class="grid-item 3/8">
-    <div class="grid-preview">
+    <div class="preview-grid">
       .3/8
     </div>
   </div>
@@ -124,12 +124,12 @@ Usage:
 
 <div class="grid">
   <div class="grid-item 1/5 mobile-1/2">
-    <div class="grid-preview">
+    <div class="preview-grid">
       .1/5.mobile-1/2
     </div>
   </div>
   <div class="grid-item 4/5 mobile-1/2">
-    <div class="grid-preview">
+    <div class="preview-grid">
       .4/5.mobile-1/2
     </div>
   </div>

@@ -1,4 +1,4 @@
-.grid-preview {
+.preview-grid {
   @extend %code-block;
 
   background-color: $color-blue;
@@ -13,14 +13,22 @@
     margin-bottom: 0;
   }
 
-  .grid-preview {
+  .preview-grid {
     margin-bottom: 0;
     border-radius: 0;
     background-color: $color-aqua;
   }
 }
 
-.grid-preview-large {
+.preview-grid-large {
   padding-top: double($spacing-unit);
   padding-bottom: double($spacing-unit);
+}
+
+.preview-vertical {
+  height: quadruple($spacing-unit);
+  margin-bottom: $spacing-unit;
+  padding: quarter($spacing-unit);
+  background-color: $color-blue;
+  color: $color-white;
 }
