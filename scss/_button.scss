@@ -10,7 +10,7 @@
     &.btn-outline {
       border-color: $color;
       background-color: transparent;
-      color: $color
+      color: $color;
     }
   }
 }
@@ -23,15 +23,18 @@ button,
   display: inline-block;
   margin: 0;
   border: 0;
-  border-bottom: 2px solid darken($color-btn, 25%);
   border-radius: $ui-border-radius;
   background-color: $color-btn;
   color: $color-white;
   text-decoration: none;
   white-space: nowrap;
   cursor: pointer;
-  vertical-align: 1px;
   appearance: none;
+
+  @if not $btn-flat {
+    border-bottom: 2px solid darken($color-btn, 25%);
+    vertical-align: 1px;
+  }
 
   &:hover {
     background-color: lighten($color-btn, 5%);

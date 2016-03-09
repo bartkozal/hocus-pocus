@@ -1,5 +1,11 @@
 ### Buttons
 
+Defaults:
+
+```scss
+$btn-flat: false;  // disable buttons drop shadow
+```
+
 Define own button types:
 
 ```scss

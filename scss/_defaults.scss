@@ -82,6 +82,8 @@ $ui-padding-horizontal: halve($spacing-unit) !default;
 $list-menu-color: $color-white !default;
 $list-menu-background: $color-link !default;
 
+$btn-flat: false !default;
+
 $table-zebra-background: rgba($color-ui, .5) !default;
 $table-hover-background: $table-zebra-background !default;
 
