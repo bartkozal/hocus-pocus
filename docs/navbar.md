@@ -3,7 +3,7 @@
 Defaults:
 
 ```scss
-$navbar-background: $color-black;                 // navbar background color
+$navbar-background: $color-black;                 // navbar background color or background image
 $navbar-color: $color-white;                      // navbar text color
 $navbar-link-color: $color-white;                 // navbar link color
 $navbar-link-background: rgba($color-white, .15); // navbar link background color
