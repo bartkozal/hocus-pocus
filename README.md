@@ -41,24 +41,16 @@ The following framework features are the most characteristic to Hocus-Pocus:
 * Components like lists, menus, tables, forms, buttons, boxes, navbar or sticky footer
 * Universal media object
 
-### Documentation & Changelog
-
 You can find full documentation at [hocus-pocus.io](hocus-pocus.io). I always
 try to find time to improve it.
 
-Up to date changelog is available under [the releases
-section](https://github.com/bkzl/hocus-pocus/releases) on GitHub.
-
-### Contributing
-
-Code is open sourced and [available on
-GitHub](https://github.com/bkzl/hocus-pocus/).
+Code is open sourced [on GitHub](https://github.com/bkzl/hocus-pocus/). Up to
+date changelog is available under [the releases
+section](https://github.com/bkzl/hocus-pocus/releases).
 
 I appreciate any comments, feedback, and information about potential issues.
-
-Have you experienced a bug in the framework or noticed a mistake in
-documentation? Please [add a new
-issue](https://github.com/bkzl/hocus-pocus/issues). Thanks!
+Have you experienced a framework bug or noticed a mistake in documentation?
+Please [add a new issue](https://github.com/bkzl/hocus-pocus/issues). Thanks!
 
 ### Development
 
