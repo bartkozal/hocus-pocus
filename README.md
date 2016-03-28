@@ -4,38 +4,63 @@
   </a>
 </div>
 
-Hocus-Pocus is a design-free [Sass](http://sass-lang.com) framework
-inspired by [Primer](https://github.com/primer/primer) and [InuitCSS](https://github.com/inuitcss/).
+Hocus-Pocus is a design-free [Sass](http://sass-lang.com) framework inspired by
+[Primer](https://github.com/primer/primer) and
+[InuitCSS](https://github.com/inuitcss/).
 
 The main idea behind is to make a universal and lightweight stylesheet starter
-kit that focuses on the most common features. There is no need to overwrite
-existing Hocus-Pocus classes because every default can be modified in
-a clean way by changing a variable. I wrote [a short story](http://www.sitepoint.com/hocus-pocus-building-a-design-free-sass-framework)
-why have I started working on another framework.
-
-Included features:
-
-* Enhanced [normalize.css](https://github.com/necolas/normalize.css) reset
-* Default colors set and color helpers (thanks to [clrs.cc](http://clrs.cc))
-* Global box-sizing set to border-box
-* Flexbox based grid
-* Fraction width helpers
-* Responsive web design support with customizable breakpoints and approach (mobile or desktop first)
-* Visibility and spacing helpers (generated for specified responsive breakpoints!)
-* Base typography with vertical rhythm (based on [Gridlover](http://www.gridlover.net/try))
-* Lists, definition lists and menus
-* Image helpers
-* Tables
-* Forms
-* Buttons
-* Media object
-* Boxes
-* Navbar
-* Hero
-* Sticky footer
-* Clearfix
+kit that focuses on the most common features. You can change the look of every
+single component, disable some features and define a range of helpers with
+variables. Disadvantage of this approach is lack of compiled CSS version.
 
 Sites built with Hocus-Pocus:
 
 * [Echotags](http://echotags.io)
 * [UIshots](http://uishots.com)
+
+_Do you use Hocus-Pocus? [Please let me know](bkzl@me.com), I will put your project on the list._
+
+### Why not Bootstrap?
+
+ Libraries like Bootstrap or Foundation are great and have greatly changed how
+ people think about CSS. However, in most cases within my own project work, I
+ just don’t need all these features and UI components like progress bars or
+ breadcrumbs. Instead, I prefer to have something more universal that I can use
+ in any project, without needing to override framework CSS classes.
+
+### Key Features
+
+The following framework features are the most characteristic to Hocus-Pocus:
+
+* Enhanced [normalize.css](https://github.com/necolas/normalize.css) reset
+* Default colors set and color helpers thanks to [clrs.cc](http://clrs.cc)
+* Widely responsive web design support with customizable breakpoints and approach (mobile or desktop first)
+* Flexbox grid with universal, fraction based width helpers
+* Visibility and spacing helpers (auto-generated for the each viewport breakpoint!)
+* Typography with vertical rhythm based on [Gridlover](http://www.gridlover.net/try)
+* Components like lists, menus, tables, forms, buttons, boxes, navbar or sticky footer
+* Universal media object
+
+### Documentation & Changelog
+
+You can find full documentation at [hocus-pocus.io](hocus-pocus.io). I always
+try to find time to improve it.
+
+Up to date changelog is available under [the releases
+section](https://github.com/bkzl/hocus-pocus/releases) on GitHub.
+
+### Contributing
+
+Code is open sourced and [available on
+GitHub](https://github.com/bkzl/hocus-pocus/).
+
+I appreciate any comments, feedback, and information about potential issues.
+
+Have you experienced a bug in the framework or noticed a mistake in
+documentation? Please [add a new
+issue](https://github.com/bkzl/hocus-pocus/issues). Thanks!
+
+### Development
+
+To edit and compile Hocus-Pocus locally you need to fetch npm dependencies
+first: `$ npm install`. Then run `$ gulp serve`.
