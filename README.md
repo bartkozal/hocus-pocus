@@ -18,7 +18,7 @@ Sites built with Hocus-Pocus:
 * [Echotags](http://echotags.io)
 * [UIshots](http://uishots.com)
 
-_Do you use Hocus-Pocus? [Please let me know](bkzl@me.com), I will put your project on the list._
+_Do you use Hocus-Pocus? [Please let me know](mailto:bkzl@me.com), I will put your project on the list._
 
 ### Why not Bootstrap?
 
