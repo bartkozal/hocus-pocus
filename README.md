@@ -11,7 +11,7 @@ Hocus-Pocus is a design-free [Sass](http://sass-lang.com) framework inspired by
 The main idea behind is to make a universal and lightweight stylesheet starter
 kit that focuses on the most common features. You can change the look of every
 single component, disable some features and define a range of helpers with
-variables. Disadvantage of this approach is lack of compiled CSS version.
+variables. A disadvantage of this approach is lack of compiled CSS version.
 
 Sites built with Hocus-Pocus:
 
@@ -55,4 +55,6 @@ Please [add a new issue](https://github.com/bkzl/hocus-pocus/issues). Thanks!
 ### Development
 
 To edit and compile Hocus-Pocus locally you need to fetch npm dependencies
-first: `$ npm install`. Then run `$ gulp serve`.
+first: `npm install`.
+
+Then run `gulp serve`.
