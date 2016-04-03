@@ -45,10 +45,18 @@ $vertical-align-body: 16 !default;
 $vertical-align-factor: 1.5 !default;
 
 $font-leading: 1.4 !default;
+
 $font-size-micro: 11 !default;
 $font-size-small: 13 !default;
 $font-size-base: 15 !default;
 $font-size-lead: 18 !default;
+
+$font-size-h1: $font-size-base !default;
+$font-size-h2: $font-size-base !default;
+$font-size-h3: $font-size-base !default;
+$font-size-h4: $font-size-base !default;
+$font-size-h5: $font-size-base !default;
+$font-size-h6: $font-size-base !default;
 
 $font-family-base: sans-serif !default;
 $font-family-headings: $font-family-base !default;

@@ -10,6 +10,8 @@ $font-size-micro: 11;                     // font size of `.text-micro`
 $font-size-small: 13;                     // font size of `small` and `.text-small`
 $font-size-base: 15;                      // base font size
 $font-size-lead: 18;                      // font size of `.text-lead` element
+$font-size-h{1-6}: $font-size-base;       // font size of a heading, set to `$font-size-base` means
+                                          // that it will be calculated to keep the vertical-rhythm
 
 $font-family-base: sans-serif;            // base font family
 $font-family-headings: $font-family-base; // headings font family

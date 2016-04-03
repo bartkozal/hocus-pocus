@@ -21,10 +21,13 @@
   line-height: round($font-size * $font-leading) / $vertical-align-body * 1rem;
 }
 
-@mixin font-size-heading($step) {
-  $font-size: $font-size-base;
+@mixin font-size-heading($step, $font-size: $font-size-base) {
   $line-height: round($font-size * $font-leading);
-  $computed-font-size: round($font-size * vertical-rhythm-exponent($vertical-align-factor, $step));
+  $computed-font-size: $font-size;
+
+  @if $font-size == $font-size-base {
+    $computed-font-size: round($font-size * vertical-rhythm-exponent($vertical-align-factor, $step));
+  }
 
   font-size: $computed-font-size / $vertical-align-body * 1rem;
   line-height: $line-height * ceil($computed-font-size / $line-height) / $vertical-align-body * 1rem;
@@ -37,28 +40,34 @@
   }
 }
 
-body {
-  @include font-size($font-size-base);
-}
-
 h1,
 .h1 {
-  @include font-size-heading(3);
+  @include font-size-heading(3, $font-size-h1);
 }
 
 h2,
 .h2 {
-  @include font-size-heading(2);
+  @include font-size-heading(2, $font-size-h2);
 }
 
 h3,
 .h3 {
-  @include font-size-heading(1);
+  @include font-size-heading(1, $font-size-h3);
 }
 
-h4, h5, h6,
-.h4, .h5, .h6 {
-  @include font-size-heading(0);
+h4,
+.h4 {
+  @include font-size-heading(0, $font-size-h4);
+}
+
+h5,
+.h5 {
+  @include font-size-heading(0, $font-size-h5);
+}
+
+h6,
+.h6 {
+  @include font-size-heading(0, $font-size-h6);
 }
 
 h1, h2, h3, h4, h5, h6,
