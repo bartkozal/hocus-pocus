@@ -309,6 +309,20 @@ Stack grid items:
 </div>
 ```
 
+### Horizontal Helpers
+
+<div class="example">
+  <div class="horizontal-left preview-horizontal">Aligned to left</div>
+  <div class="horizontal-center preview-horizontal">Aligned to center</div>
+  <div class="horizontal-right preview-horizontal">Aligned to right</div>
+</div>
+
+```html
+  <div class="horizontal-left">Aligned to left</div>
+  <div class="horizontal-center">Aligned to center</div>
+  <div class="horizontal-right">Aligned to right</div>
+```
+
 ### Vertical Helpers
 
 <div class="example">
