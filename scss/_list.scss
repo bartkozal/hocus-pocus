@@ -36,6 +36,19 @@ dd + dt {
   }
 }
 
+.list-divided {
+  @extend %list-inline;
+
+  > li {
+    padding-right: halve($spacing-unit);
+    padding-left: halve($spacing-unit);
+
+    + li {
+      border-left: 1px solid $color-ui;
+    }
+  }
+}
+
 %list-menu,
 .list-menu {
   @extend %list-reset;

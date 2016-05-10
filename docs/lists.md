@@ -78,6 +78,20 @@ Usage:
 ```
 
 <div class="example">
+  <ul class="list-divided">
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+  </ul>
+</div>
+
+```html
+<ul class="list-divided">
+  ...
+</ul>
+```
+
+<div class="example">
   <ul class="list-menu">
     <li><a href="#">List item 1</a></li>
     <li><a href="#">List item 2</a></li>
