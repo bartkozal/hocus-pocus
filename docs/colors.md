@@ -25,7 +25,7 @@ Defaults:
 ```scss
 $color-ui: $color-silver;        // ui elements color like rules, borders, form inputs
 $color-btn: $color-black;        // button color without any modifiers
-$color-font: $color-black;       // base font color
+$color-text: $color-black;       // base font color
 $color-link: $color-blue;        // links color
 $color-muted: $color-gray;       // blockquote and `.text-muted` color
 $color-disabled: $color-ui;      // disabled form input and buttons color
