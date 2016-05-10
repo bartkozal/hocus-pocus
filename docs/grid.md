@@ -253,7 +253,7 @@ of a second item is aligned to right.
 </div>
 ```
 
-Reverse grid items order:
+Reverse grid items order (available for each breakpoint in `$rwd-map`):
 
 <div class="example">
   <div class="grid grid-reverse">
@@ -281,7 +281,33 @@ Reverse grid items order:
 </div>
 ```
 
-Stack grid items:
+<div class="example">
+  <div class="grid mobile-grid-reverse">
+    <div class="grid-item 2/5">
+      <div class="preview-grid">
+        .grid-item.2/5
+      </div>
+    </div>
+    <div class="grid-item 3/5">
+      <div class="preview-grid">
+        .grid-item.3/5
+      </div>
+    </div>
+  </div>
+</div>
+
+```html
+<div class="grid mobile-grid-reverse">
+  <div class="grid-item 2/5">
+    ...
+  </div>
+  <div class="grid-item 3/5">
+    ...
+  </div>
+</div>
+```
+
+Stack grid items (available for each breakpoint in `$rwd-map`):
 
 <div class="example">
   <div class="grid grid-stack">
@@ -300,6 +326,86 @@ Stack grid items:
 
 ```html
 <div class="grid grid-stack">
+  <div class="grid-item 1/3">
+    ...
+  </div>
+  <div class="grid-item 2/3">
+    ...
+  </div>
+</div>
+```
+
+<div class="example">
+  <div class="grid mobile-grid-stack">
+    <div class="grid-item 2/5 mobile-1/1">
+      <div class="preview-grid">
+        .grid-item.2/5.mobile-1/1
+      </div>
+    </div>
+    <div class="grid-item 3/5 mobile-1/1">
+      <div class="preview-grid">
+        .grid-item.3/5.mobile-1/1
+      </div>
+    </div>
+  </div>
+</div>
+
+```html
+<div class="grid mobile-grid-stack">
+  <div class="grid-item 2/5 mobile-1/1">
+    ...
+  </div>
+  <div class="grid-item 3/5 mobile-1/1">
+    ...
+  </div>
+</div>
+```
+
+Combination of stack and reverse:
+
+<div class="example">
+  <div class="grid grid-reverse grid-stack">
+    <div class="grid-item 5/6">
+      <div class="preview-grid">
+        .grid-item.5/6
+      </div>
+    </div>
+    <div class="grid-item 1/6">
+      <div class="preview-grid">
+        .grid-item.1/6
+      </div>
+    </div>
+  </div>
+</div>
+
+```html
+<div class="grid grid-reverse grid-stack">
+  <div class="grid-item 5/6">
+    ...
+  </div>
+  <div class="grid-item 1/6">
+    ...
+  </div>
+</div>
+```
+
+<div class="example">
+  <div class="grid mobile-grid-reverse mobile-grid-stack">
+    <div class="grid-item 1/3">
+      <div class="preview-grid">
+        .grid-item.1/3
+      </div>
+    </div>
+    <div class="grid-item 2/3">
+      <div class="preview-grid">
+        .grid-item.2/3
+      </div>
+    </div>
+  </div>
+</div>
+
+```html
+<div class="grid mobile-grid-reverse mobile-grid-stack">
   <div class="grid-item 1/3">
     ...
   </div>

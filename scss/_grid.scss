@@ -50,6 +50,10 @@
 .grid-stack {
   flex-direction: column;
 
+  &.grid-reverse {
+    flex-direction: column-reverse;
+  }
+
   > .grid-item {
     flex-basis: auto;
   }
@@ -74,3 +78,23 @@
     }
   }
 }
+
+@mixin rwd-helpers-content($rwd-screen-name) {
+  .#{$rwd-screen-name}-grid-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .#{$rwd-screen-name}-grid-stack {
+    flex-direction: column;
+
+    &.#{$rwd-screen-name}-grid-reverse {
+      flex-direction: column-reverse;
+    }
+
+    > .grid-item {
+      flex-basis: auto;
+    }
+  }
+}
+
+@include rwd-helpers;

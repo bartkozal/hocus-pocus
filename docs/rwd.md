@@ -12,7 +12,7 @@ $rwd-type: mobile-first;  // choose between `mobile-first` and `desktop-first`
 $rwd-map: (
   'tablet': 768px 1200px,
   'desktop': 1201px
-);                        // helpers are generated based on this map
+);                        // helpers are based on this map
 ```
 
 Usage:
