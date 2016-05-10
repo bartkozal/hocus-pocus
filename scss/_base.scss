@@ -1,6 +1,8 @@
 @mixin ui-padding {
-  padding-top: $ui-padding-vertical + $ui-padding-vertical * .2;
-  padding-bottom: $ui-padding-vertical - $ui-padding-vertical * .2;
+  $ui-padding-modifier: $ui-padding-vertical * $ui-padding-vertical-ratio / 2;
+
+  padding-top: $ui-padding-vertical + $ui-padding-modifier;
+  padding-bottom: $ui-padding-vertical - $ui-padding-modifier;
   padding-right: $ui-padding-horizontal;
   padding-left: $ui-padding-horizontal;
 }

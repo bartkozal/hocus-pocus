@@ -87,6 +87,7 @@ $grid-gutter: $spacing-unit !default;
 $ui-border-radius: 4px !default;
 $ui-padding-vertical: quarter($spacing-unit) !default;
 $ui-padding-horizontal: halve($spacing-unit) !default;
+$ui-padding-vertical-ratio: .4 !default;
 
 $list-menu-color: $color-white !default;
 $list-menu-background: $color-link !default;
