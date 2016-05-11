@@ -3,7 +3,8 @@
 Defaults:
 
 ```scss
-$btn-flat: false;  // disable buttons drop shadow
+$btn-flat: false;                // disable drop shadow
+$font-size-btn: $font-size-base; // set font size
 ```
 
 Define own button types:

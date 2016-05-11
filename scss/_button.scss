@@ -20,6 +20,7 @@ input[type="submit"],
 button,
 .btn {
   @include ui-padding;
+  @include font-size($font-size-btn);
   display: inline-block;
   margin: 0;
   border: 0;
