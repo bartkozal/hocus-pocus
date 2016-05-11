@@ -15,6 +15,12 @@ $rwd-map: (
 );                        // helpers are based on this map
 ```
 
+Additional helper for hidpi displays:
+
+```scss
+@include hidpi($density); // in dpi, defaults to 192 (retina displays)
+```
+
 Usage:
 
 ```scss
@@ -24,6 +30,12 @@ $rwd-map: (mobile: 680px, tablet: 681px 1200px);
 @include rwd('mobile') {
   h1 {
     color: $color-red;
+  }
+}
+
+@include hidpi {
+  .logo {
+    background-image: url('logo@2x.png');
   }
 }
 ```
