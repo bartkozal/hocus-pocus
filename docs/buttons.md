@@ -52,6 +52,22 @@ Usage:
 ```
 
 <div class="example">
+  <a href="#" class="btn btn-flat bg-aqua">Flat button</a>
+</div>
+
+```html
+<a href="#" class="btn btn-flat">Flat button</a>
+```
+
+<div class="example">
+  <a href="#" class="btn btn-shadow bg-aqua">Shadowed button</a>
+</div>
+
+```html
+  <a href="#" class="btn btn-shadow">Shadowed button</a>
+```
+
+<div class="example">
   <a href="#" class="btn btn-block">Block button</a>
 </div>
 

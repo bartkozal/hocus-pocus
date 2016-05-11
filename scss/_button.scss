@@ -24,7 +24,9 @@ button,
   display: inline-block;
   margin: 0;
   border: 0;
+  border-bottom-style: solid;
   border-radius: $ui-border-radius;
+  border-bottom-color: darken($color-btn, 25%);
   background-color: $color-btn;
   color: $color-white;
   text-decoration: none;
@@ -33,7 +35,7 @@ button,
   appearance: none;
 
   @if not $btn-flat {
-    border-bottom: 2px solid darken($color-btn, 25%);
+    border-bottom-width: 2px;
     vertical-align: 1px;
   }
 
@@ -68,6 +70,14 @@ button[disabled],
   &:hover {
     background-color: transparent;
   }
+}
+
+.btn-flat {
+  border-bottom-width: 0;
+}
+
+.btn-shadow {
+  border-bottom-width: 2px;
 }
 
 .btn-block {
