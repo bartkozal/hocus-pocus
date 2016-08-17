@@ -26,13 +26,13 @@ dd + dt {
   @extend %list-reset;
   margin-bottom: 0;
   margin-left: quarter($spacing-unit) * -1;
-  font-size: 0;
+  letter-spacing: -4px;
 
   > li {
-    @include font-size($font-size-base);
     display: inline-block;
     padding-right: quarter($spacing-unit);
     padding-left: quarter($spacing-unit);
+    letter-spacing: 0;
   }
 }
 
