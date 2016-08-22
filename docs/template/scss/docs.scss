@@ -1,5 +1,8 @@
-$font-family-base: 'Roboto';
-$font-family-monospace: 'Roboto Mono';
+$font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+$font-family-monospace: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+$font-size-base: 16;
+
+$ui-padding-vertical-ratio: 0;
 
 $rwd-type: desktop-first;
 $rwd-map: (mobile: 680px);

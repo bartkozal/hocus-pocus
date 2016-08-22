@@ -1,5 +1,6 @@
 .color-block {
   @extend %code-block;
+  @include ui-padding;
 }
 
 .color-block.bg-white {

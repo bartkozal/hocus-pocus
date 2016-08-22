@@ -1,5 +1,6 @@
 .preview-grid {
   @extend %code-block;
+  @include ui-padding;
 
   background-color: $color-blue;
   color: $color-white;
