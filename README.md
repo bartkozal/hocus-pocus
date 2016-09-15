@@ -1,5 +1,5 @@
 <div class="hidden">
-  <a href="http://bkzl.github.io/hocus-pocus">
+  <a href="http://hocus-pocus.io">
     <img src="http://bkzl.github.io/hocus-pocus/img/brand-light.png" width="144px" height="72px">
   </a>
 </div>
@@ -41,7 +41,7 @@ The following framework features are the most characteristic to Hocus-Pocus:
 * Components like lists, menus, tables, forms, buttons, boxes, navbar or sticky footer
 * Universal media object
 
-You can find full documentation at [bkzl.github.io/hocus-pocus](http://bkzl.github.io/hocus-pocus). I always
+You can find full documentation at [hocus-pocus.io](http://hocus-pocus.io). I always
 try to find time to improve it.
 
 Code is open sourced [on GitHub](https://github.com/bkzl/hocus-pocus/). Up to

@@ -71,13 +71,18 @@ gulp.task('connect', function() {
   });
 });
 
+gulp.task('cname', function() {
+  return file('CNAME', 'hocus-pocus.io', { src: true })
+    .pipe(gulp.dest('build'));
+});
+
 gulp.task('deploy', function() {
   return gulp.src('build/**/*')
     .pipe(ghPages());
 });
 
 gulp.task('template', ['img', 'tag', 'html']);
-gulp.task('build', ['sass', 'markdown', 'template']);
+gulp.task('build', ['sass', 'markdown', 'template', 'cname']);
 gulp.task('default', ['serve']);
 
 gulp.task('serve', function(callback) {

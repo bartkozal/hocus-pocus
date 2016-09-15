@@ -1,9 +1,9 @@
 {
   "name": "hocus-pocus",
   "version": "0.2.11",
-  "homepage": "http://bkzl.github.io/hocus-pocus",
+  "homepage": "http://hocus-pocus.io",
   "author": "Bartlomiej Kozal <bkzl@me.com> (http://bkzl.github.io)",
-  "description": "Design-free Sass framework",
+  "description": "Universal and lightweight stylesheet starter kit",
   "main": "hocus-pocus.scss",
   "keywords": [
     "css",
