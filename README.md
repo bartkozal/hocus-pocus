@@ -1,6 +1,6 @@
 <div class="hidden">
   <a href="http://hocus-pocus.io">
-    <img src="http://bkzl.github.io/hocus-pocus/img/brand-light.png" width="144px" height="72px">
+    <img src="http://hocus-pocus.io/img/brand-light.png" width="144px" height="72px">
   </a>
 </div>
 
