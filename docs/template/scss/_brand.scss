@@ -1,5 +1,8 @@
-.brand {
-  @include img-replace("/img/brand-dark.png", 144px, 72px);
+$brand-width: 164px;
+$brand-height: 75px;
 
-  background-size: 144px 72px;
+.brand {
+  @include img-replace("/img/brand-dark.png", $brand-width, $brand-height);
+
+  background-size: $brand-width $brand-height;
 }
