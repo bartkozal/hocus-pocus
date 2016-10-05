@@ -5,7 +5,7 @@ on corresponding documentation pages or you can find them [in the source code](h
 under `scss/_defaults.scss`.
 
 ```scss
-$color-brand: $color-blue;
+$font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 
 $font-leading: 1.4;
 $font-size-base: 15;
