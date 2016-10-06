@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+{% capture page %}
+  {% include_relative _pages/home.md %}
+  {% include_relative _pages/quick-start.md %}
+  {% include_relative _pages/defaults.md %}
+  {% include_relative _pages/functions.md %}
+  {% include_relative _pages/colors.md %}
+  {% include_relative _pages/rwd.md %}
+  {% include_relative _pages/grid.md %}
+  {% include_relative _pages/type.md %}
+  {% include_relative _pages/lists.md %}
+  {% include_relative _pages/images.md %}
+  {% include_relative _pages/tables.md %}
+  {% include_relative _pages/forms.md %}
+  {% include_relative _pages/buttons.md %}
+  {% include_relative _pages/boxes.md %}
+  {% include_relative _pages/media.md %}
+  {% include_relative _pages/navbar.md %}
+  {% include_relative _pages/hero.md %}
+  {% include_relative _pages/sticky-footer.md %}
+{% endcapture %}
+
+{{ page | markdownify }}

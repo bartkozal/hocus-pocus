@@ -1,6 +1,5 @@
----
-layout: default
----
+
+# Hocus-Pocus
 
 Hocus-Pocus is a universal and lightweight stylesheet starter kit that focuses
 on base html elements and typography. You can change the look of every single

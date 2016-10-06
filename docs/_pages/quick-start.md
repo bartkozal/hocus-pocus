@@ -1,6 +1,3 @@
----
-layout: default
----
 
 ## Requirements
 
@@ -47,8 +44,7 @@ If you prefer Hocus-Pocus is available as a npm package:
 $ npm install hocus-pocus
 ```
 
-
-### Principles
+## Principles
 
 Stick to rules from [Mark Otto's Code Guide](http://codeguide.co/#css).
 
