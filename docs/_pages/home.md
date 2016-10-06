@@ -1,6 +1,10 @@
 
 # Hocus-Pocus
 
+<a href="https://github.com/bkzl/hocus-pocus" class="btn btn-brand">
+  Follow on GitHub
+</a>
+
 Hocus-Pocus is a universal and lightweight stylesheet starter kit that focuses
 on base html elements and typography. You can change the look of every single
 component, disable some features and define a range of helpers with variables.
