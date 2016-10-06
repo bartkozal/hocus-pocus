@@ -1,4 +1,8 @@
-### Forms
+---
+layout: default
+---
+
+## Forms
 
 Usage:
 

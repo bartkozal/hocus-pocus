@@ -1,4 +1,8 @@
-### Defaults
+---
+layout: default
+---
+
+## Defaults
 
 The most common settings are listed below. Other defaults are listed
 on corresponding documentation pages or you can find them [in the source code](https://github.com/bkzl/hocus-pocus/blob/master/scss/_defaults.scss)

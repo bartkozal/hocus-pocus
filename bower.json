@@ -16,12 +16,8 @@
   "license": "MIT",
   "ignore": [
     "**/.*",
-    "build",
     "docs",
-    "node_modules",
-    "Gulpfile.js",
     "package.json",
-    ".codeclimate.yml",
     ".scss-lint.yml"
   ]
 }

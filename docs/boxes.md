@@ -1,4 +1,8 @@
-### Boxes
+---
+layout: default
+---
+
+## Boxes
 
 Create an element that is out of a rest of content. Useful for flashes, islands,
 sidebar boxes etc. The last element inside it will have removed a bottom margin.

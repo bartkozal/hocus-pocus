@@ -1,4 +1,8 @@
-### Buttons
+---
+layout: default
+---
+
+## Buttons
 
 Defaults:
 

@@ -1,4 +1,8 @@
-### Media
+---
+layout: default
+---
+
+## Media
 
 Media object works with any html element.
 

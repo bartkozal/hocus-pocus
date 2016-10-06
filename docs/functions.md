@@ -1,4 +1,8 @@
-### Size Functions
+---
+layout: default
+---
+
+## Functions
 
 Return a quotient/product of a provided value.
 

@@ -1,3 +1,2 @@
-.publish
-node_modules
-build
+.sass-cache
+docs/_site

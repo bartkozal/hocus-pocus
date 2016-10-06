@@ -1,4 +1,8 @@
-### Hero
+---
+layout: default
+---
+
+## Hero
 
 Defaults:
 

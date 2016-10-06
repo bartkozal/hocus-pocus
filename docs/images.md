@@ -1,4 +1,8 @@
-### Images
+---
+layout: default
+---
+
+## Images
 
 Images are vertically aligned to the middle of container and have
 `box-sizing` set to `content-box`.

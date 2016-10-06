@@ -1,4 +1,8 @@
-### Navbar
+---
+layout: default
+---
+
+## Navbar
 
 Defaults:
 

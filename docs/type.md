@@ -1,4 +1,8 @@
-### Typography
+---
+layout: default
+---
+
+## Typography
 
 Typography elements keep vertical rhythm and have custom reset.
 
@@ -180,7 +184,7 @@ Default styles for `<p>`, `<strong>`, `<em>`, `<sup>`, `<sub>`, `<small>`,
 <hr>
 ```
 
-### Text Helpers
+## Text Helpers
 
 <div class="example">
   <p class="text-micro">Micro text</p>

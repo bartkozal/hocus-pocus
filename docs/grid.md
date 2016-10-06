@@ -1,4 +1,8 @@
-### Container
+---
+layout: default
+---
+
+## Container
 
 Create a centered wrapper for grid elements. Usually used as a root element
 for a whole layout.
@@ -23,7 +27,7 @@ Usage:
 </div>
 ```
 
-### Grid
+## Grid
 
 Build a grid using a combination of grid items and [width helpers](/#rwd).
 Grid elements can be nested. It's based on flexbox.
@@ -415,7 +419,7 @@ Combination of stack and reverse:
 </div>
 ```
 
-### Horizontal Helpers
+## Horizontal Helpers
 
 <div class="example">
   <div class="horizontal-left preview-horizontal">Aligned to left</div>
@@ -429,7 +433,7 @@ Combination of stack and reverse:
   <div class="horizontal-right">Aligned to right</div>
 ```
 
-### Vertical Helpers
+## Vertical Helpers
 
 <div class="example">
   <div class="vertical-top preview-vertical">Aligned to top</div>
@@ -443,7 +447,7 @@ Combination of stack and reverse:
 <div class="vertical-bottom">Aligned to bottom</div>
 ```
 
-### Float Helpers
+## Float Helpers
 
 Clearfix and float helpers.
 

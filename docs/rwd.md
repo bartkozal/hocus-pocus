@@ -1,4 +1,8 @@
-### Responsive Design
+---
+layout: default
+---
+
+## Responsive Design
 
 Choose approach of writing responsive design that you prefer:
 `mobile-first` or `desktop-first`.
@@ -57,7 +61,7 @@ $rwd-map: (mobile: 680px, tablet: 681px 1200px);
 </div>
 ```
 
-### Width Helpers
+## Width Helpers
 
 Width helpers work with various elements like grid items, boxes, form inputs,
 table cells etc.
@@ -147,7 +151,7 @@ Usage:
   </div>
 </div>
 
-### Visibility Helpers
+## Visibility Helpers
 
 Specify visibility of an element.
 
@@ -168,7 +172,7 @@ Usage:
 <small class="hidden mobile-block">Block small text visible on mobile</small>
 ```
 
-### Spacing Helpers
+## Spacing Helpers
 
 Specify spacing (margin/padding) of an element.
 

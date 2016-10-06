@@ -1,4 +1,8 @@
-### Lists
+---
+layout: default
+---
+
+## Lists
 
 Defaults:
 

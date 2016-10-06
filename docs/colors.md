@@ -1,4 +1,8 @@
-### Colors
+---
+layout: default
+---
+
+## Colors
 
 Colors available as variables (so you can override them if you wish):
 

@@ -1,4 +1,8 @@
-### Tables
+---
+layout: default
+---
+
+## Tables
 
 Defaults:
 
