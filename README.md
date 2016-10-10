@@ -1,8 +1,9 @@
 # Hocus-Pocus
 
-Hocus-Pocus is a universal and lightweight stylesheet starter kit that focuses
-on base html elements and typography. You can change the look of every single
-component, disable some features and define a range of helpers with variables.
+[Hocus-Pocus](http://hocus-pocus.io) is a universal and lightweight stylesheet
+starter kit that focuses on base html elements and typography. You can change
+the look of every single component, disable some features and define a range
+of helpers with variables.
 
 ## Why not Bootstrap?
 
