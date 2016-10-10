@@ -13,7 +13,9 @@
     <div class="container">
       <div class="grid">
         <div class="grid-item 1/5 compact-hidden">
-          {% include navigation.html list="menu" %}
+          <div class="navigation" data-gumshoe-header>
+            {% include navigation.html list="menu" %}
+          </div>
         </div>
         <div class="grid-item 4/5 compact-1/1">
           <div class="hidden compact-visible margin-bottom">
@@ -24,6 +26,24 @@
       </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gumshoe/3.3.1/js/gumshoe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/10.1.0/js/smooth-scroll.min.js"></script>
+    <script>
+      var scrolled = false;
+
+      document.addEventListener("scroll", function() {
+        if (!scrolled) {
+          gumshoe.init({
+            activeClass: 'is-active',
+          });
+          scrolled = true
+        }
+      })
+
+      smoothScroll.init({
+        offset: 32
+      });
+    </script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

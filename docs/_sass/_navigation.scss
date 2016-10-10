@@ -1,0 +1,10 @@
+.navigation {
+  position: fixed;
+
+  .is-active {
+    transition: all .3s ease;
+    border-radius: $ui-border-radius;
+    background-color: $color-blue;
+    color: $color-white;
+  }
+}

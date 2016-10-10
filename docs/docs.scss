@@ -9,5 +9,11 @@ $font-weight-headings: 400;
         'color-block',
         'highlight',
         'example',
-        'footer',
+        'navigation',
         'preview';
+
+@include btn('favorite', $color-yellow);
+
+.btn-favorite {
+  color: darken($color-yellow, 25%);
+}
