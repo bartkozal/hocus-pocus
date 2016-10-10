@@ -24,7 +24,7 @@ input[type="password"],
 input[type="search"],
 input[type="url"],
 textarea {
-  padding: ($spacing-unit / 4) ($spacing-unit / 2);
+  padding: $spacing-unit / 4;
   border: 1px solid $color-ui;
 }
 
