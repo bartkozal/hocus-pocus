@@ -1,30 +1,39 @@
+<h2 id="rwd">Responsive Design</h2>
 
-## Responsive Design
+<p>
+  Choose approach of writing responsive design that you prefer:
+  <code>mobile-first</code> or <code>desktop-first</code>.
+</p>
 
-Choose approach of writing responsive design that you prefer:
-`mobile-first` or `desktop-first`.
+<p>
+  Define custom breakpoints. Each of them gets a mixin and own set of helpers.
+</p>
 
-Define custom breakpoints. Each of them gets a mixin and own set of helpers.
+<p>
+  Defaults:
+</p>
 
-Defaults:
-
-```scss
+{% highlight scss %}
 $rwd-type: mobile-first;  // choose between `mobile-first` and `desktop-first`
 $rwd-map: (
   'tablet': 768px 1200px,
   'desktop': 1201px
 );                        // helpers are based on this map
-```
+{% endhighlight %}
 
-Additional helper for hidpi displays:
+<p>
+  Additional helper for hidpi displays:
+</p>
 
-```scss
+{% highlight scss %}
 @include hidpi($density); // in dpi, defaults to 192 (retina displays)
-```
+{% endhighlight %}
 
-Usage:
+<p>
+  Usage:
+</p>
 
-```scss
+{% highlight scss %}
 $rwd-type: desktop-first;
 $rwd-map: (mobile: 680px, tablet: 681px 1200px);
 
@@ -39,9 +48,9 @@ $rwd-map: (mobile: 680px, tablet: 681px 1200px);
     background-image: url('logo@2x.png');
   }
 }
-```
+{% endhighlight %}
 
-```html
+{% highlight html %}
 <div class="mobile-hidden">...</div>
 <div class="hidden mobile-visible">...</div>
 
@@ -56,19 +65,28 @@ $rwd-map: (mobile: 680px, tablet: 681px 1200px);
     </h1>
   </div>
 </div>
-```
+{% endhighlight %}
 
-## Width Helpers
+<h3 id="width-helpers">Width Helpers</h3>
 
-Width helpers work with various elements like grid items, boxes, form inputs,
-table cells etc.
+<p>
+  Width helpers work with various elements like grid items, boxes, form inputs,
+  table cells etc.
+</p>
 
-Fractions of these numbers are available: `n/1`, `n/2`, `n/3`, `n/4`,
-`n/5`, `n/6`, `n/8`, `n/9`, `n/10` and `n/12`.
+<p>
+  Fractions of these numbers are available: <code>n/1</code>, <code>n/2</code>,
+  <code>n/3</code>, <code>n/4</code>, <code>n/5</code>, <code>n/6</code>,
+  <code>n/8</code>, <code>n/9</code>, <code>n/10</code> and <code>n/12</code>.
+</p>
 
-Width helpers are generated for each breakpoint in `$rwd-map`.
+<p>
+  Width helpers are generated for each breakpoint in <code>$rwd-map</code>.
+</p>
 
-Usage:
+<p>
+  Usage:
+</p>
 
 <div class="grid">
   <div class="grid-item 1/1">
@@ -148,37 +166,51 @@ Usage:
   </div>
 </div>
 
-## Visibility Helpers
+<h3 id="visibility-helpers">Visibility Helpers</h3>
 
-Specify visibility of an element.
+<p>
+  Specify visibility of an element.
+</p>
 
-Visibility helpers use `!important` and are generated for each breakpoint in `$rwd-map`.
+<p>
+  Visibility helpers use <code>!important</code> and are generated for each breakpoint in <code>$rwd-map</code>.
+</p>
 
-Following classes are available: `.hidden`, `.visible`, `.block`,
-`.inline-block` and `.inline`
+<p>
+  Following classes are available: <code>.hidden</code>, <code>.visible</code>,
+  <code>.block</code>, <code>.inline-block</code> and <code>.inline</code>
+</p>
 
-Usage:
+<p>
+  Usage:
+</p>
 
 <div class="example">
   <p class="inline mobile-hidden">Inline paragraph hidden on mobile</p>
   <small class="hidden mobile-block">Block small text visible on mobile</small>
 </div>
 
-```html
+{% highlight html %}
 <p class="inline mobile-hidden">Inline paragraph hidden on mobile</p>
 <small class="hidden mobile-block">Block small text visible on mobile</small>
-```
+{% endhighlight %}
 
-## Spacing Helpers
+<h3 id="spacing-helpers">Spacing Helpers</h3>
 
-Specify spacing (margin/padding) of an element.
+<p>
+  Specify spacing (margin/padding) of an element.
+</p>
 
-Spacing helpers use `!important` and are generated for each size
-in `$spacing-map` and each breakpoint in `$rwd-map`.
+<p>
+  Spacing helpers use <code>!important</code> and are generated for each size
+  in <code>$spacing-map</code> and each breakpoint in <code>$rwd-map</code>.
+</p>
 
-Defaults:
+<p>
+  Defaults:
+</p>
 
-```scss
+{% highlight scss %}
 // spacing helpers and media gutter modifiers are generated based on this map
 $spacing-map: (
   'quarter': quarter($spacing-unit),
@@ -188,11 +220,13 @@ $spacing-map: (
   'triple': triple($spacing-unit),
   'quadruple': quadruple($spacing-unit)
 );
-```
+{% endhighlight %}
 
-Usage:
+<p>
+  Usage:
+</p>
 
-```scss
+{% highlight scss %}
 .margin[-size][-type];
 .padding[-size][-type];
 .no-margin[-type];
@@ -205,7 +239,7 @@ Usage:
  * Where [-size] is blank ($spacing-unit) or one of these values:
  *   -quarter, -third, -half, -double, -triple, -quadruple
  */
-```
+{% endhighlight %}
 
 <div class="example">
   <div class="padding-ends bg-green text-white text-mono text-small">
@@ -228,11 +262,11 @@ Usage:
   </div>
 </div>
 
-```html
+{% highlight html %}
 <div class="padding-ends">...</div>
 <div class="margin no-padding">...</div>
 <div class="margin-double-bottom">...</div>
 <div class="padding-half-left padding-half-top mobile-no-padding-left">...</div>
 <div class="mobile-margin-sides">...</div>
 <div class="mobile-padding-half">...</div>
-```
+{% endhighlight %}

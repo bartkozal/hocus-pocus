@@ -1,27 +1,27 @@
+<h2 id="quick-start">Quick Start</h2>
 
-## Requirements
+<p>
+  Hocus-Pocus requires <a href="http://sass-lang.com">Sass</a>
+  (version 3.3.0 or later) to proper work.
+</p>
 
-Hocus-Pocus requires [Sass](http://sass-lang.com) (version 3.3.0 or later) and
-[autoprefixer](https://github.com/postcss/autoprefixer) to proper work.
+<h3 id="bower">Bower</h3>
 
-## Installation
+<p>
+  Bower is a recommended way to install:
+</p>
 
-### Bower
-
-Bower is a recommended way to install:
-
-```sh
+{% highlight sh %}
 $ bower install hocus-pocus
-```
+{% endhighlight %}
 
-Then import a main file just after your defaults, but before
-rest of stylesheets. If you want to use color variables
-in your settings import them first.
+<p>
+  Then import a main file just after your defaults, but before rest of
+  stylesheets. If you want to use color variables in your settings import
+  them first.
+</p>
 
-```scss
-// Import colors
-@import "bower_components/hocus-pocus/scss/colors";
-
+{% highlight scss %}
 // Define your settings
 $font-family-base: "Open Sans", sans-serif;
 $grid-container: 70rem;
@@ -33,23 +33,29 @@ $grid-container: 70rem;
 @import "compontents/meter",
         "compontents/price-box",
         "inbox/landing-headings-fix";
-```
+{% endhighlight %}
 
-### Npm
+<h3 id="npm">npm</h3>
 
-If you prefer Hocus-Pocus is available as a npm package:
+<p>
+  If you prefer Hocus-Pocus is available as a npm package:
+</p>
 
-```sh
+{% highlight sh %}
 $ npm install hocus-pocus
-```
+{% endhighlight %}
 
-## Principles
+<h2 id="principles">Principles</h2>
 
-Stick to rules from [Mark Otto's Code Guide](http://codeguide.co/#css).
+<p>
+  Stick to rules from <a href="http://codeguide.co/#css">Mark Otto's Code Guide</a>.
+</p>
 
-Hocus-Pocus applies a following naming convention:
+<p>
+  Hocus-Pocus applies a following naming convention:
+</p>
 
-```html
+{% highlight html %}
 <!-- Element -->
 <div class="media"></div>
 <a class="btn"></a>
@@ -65,8 +71,8 @@ Hocus-Pocus applies a following naming convention:
 <a class="btn btn-primary"></a>
 
 <!-- Element with state -->
-<a class="btn is-btn-active"></a>
-<a class="btn is-btn-disabled"></a>
+<a class="btn is-active"></a>
+<a class="btn is-disabled"></a>
 
 <!-- Element that requires a wrapper -->
 <!-- i.e. "position: relative" and "position: absolute" pair -->
@@ -76,4 +82,4 @@ Hocus-Pocus applies a following naming convention:
 
 <!-- JavaScript handler -->
 <div class="alert js-alert"></div>
-```
+{% endhighlight %}

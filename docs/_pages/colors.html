@@ -1,7 +1,8 @@
+<h2 id="colors">Colors</h2>
 
-## Colors
-
-Colors available as variables (so you can override them if you wish):
+<p>
+  Colors available as variables (so you can override them if you wish to):
+</p>
 
 <div class="color-block bg-white text-muted">$color-white</div>
 <div class="color-block bg-silver">$color-silver</div>
@@ -21,9 +22,11 @@ Colors available as variables (so you can override them if you wish):
 <div class="color-block bg-purple">$color-purple</div>
 <div class="color-block bg-maroon">$color-maroon</div>
 
-Defaults:
+<p>
+  Defaults:
+</p>
 
-```scss
+{% highlight scss %}
 $color-ui: $color-silver;        // ui elements color like rules, borders, form inputs
 $color-btn: $color-black;        // button color without any modifiers
 $color-text: $color-black;       // base font color
@@ -58,17 +61,24 @@ $color-map: (
   'informative': $color-informative,
   'muted': $color-muted
 );                               // color helpers are generated based on this map
-```
+{% endhighlight %}
 
-### Color Helpers
+<h3 id="color-helpers">Color Helpers</h3>
 
-Specify text and background color of an element.
+<p>
+  Specify text and background color of an element.
+</p>
 
-Color helpers use `!important` and are generated for each color in `$color-map`.
+<p>
+  Color helpers use <code>!important</code> and are generated for each color in
+  <code>$color-map</code>.
+</p>
 
-Usage:
+<p>
+  Usage:
+</p>
 
-```scss
+{% highlight scss %}
 .text[-color];
 .bg[-color];
 
@@ -78,7 +88,7 @@ Usage:
  *   -red, -fuchsia, -purple, -maroon, -white, -silver, -grey, -black,
  *   -informative, -positive, -negative, -brand, -muted
  */
-```
+{% endhighlight %}
 
 <div class="example">
   <p class="text-muted">Paragraph with a muted text</p>
@@ -87,9 +97,9 @@ Usage:
   <p class="bg-black text-white">Paragraph with a black background and white text</p>
 </div>
 
-```html
+{% highlight html %}
 <p class="text-muted">Paragraph with a muted text</p>
 <p class="text-brand">Paragraph with a brand text</p>
 <p class="bg-negative">Paragraph with a negative background</p>
 <p class="bg-black text-white">Paragraph with a black background and white text</p>
-```
+{% endhighlight %}

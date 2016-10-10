@@ -1,101 +1,107 @@
+<h2 id="buttons">Buttons</h2>
 
-## Buttons
+<p>
+  Defaults:
+</p>
 
-Defaults:
-
-```scss
+{% highlight scss %}
 $btn-flat: false;                // disable drop shadow
-$font-size-btn: $font-size-base; // set font size
-```
+$color-btn: $color-text;         // default button color
+$font-size-btn: $font-size-base; // default button font size
+{% endhighlight %}
 
-Define own button types:
+<p>
+  Define own button types:
+</p>
 
-```scss
+{% highlight scss %}
 @include btn($name, $color)
-```
+{% endhighlight %}
 
-Usage:
+<p>
+  Usage:
+</p>
 
-```scss
+{% highlight scss %}
 @include btn('primary', #00F)
-```
+{% endhighlight %}
 
-### Button Types
+<h3 id="button-types">Button Types</h2>
 
 <div class="example">
   <button type="submit">Form button</button> <a href="#" class="btn">Link as a button</a>
 </div>
 
-```html
+{% highlight html %}
 <button type="submit">Form button</button>
 
 <a href="#" class="btn">Link as a button</a>
-```
+{% endhighlight %}
 
 <div class="example">
   <button disabled>Disabled button</button> <a href="#" class="btn btn-disabled">Disabled link as a button</a>
 </div>
 
-```html
+{% highlight html %}
 <button disabled>Disabled button</button>
 
 <a href="#" class="btn btn-disabled">Disabled link as a button</a>
-```
+{% endhighlight %}
 
 <div class="example">
   <a href="#" class="btn btn-outline">Outline button</a> <a href="#" class="btn btn-brand btn-outline">Outline brand button</a>
 </div>
 
-```html
+{% highlight html %}
 <a href="#" class="btn btn-outline">Outline button</a>
 
 <a href="#" class="btn btn-brand btn-outline">Outline brand button</a>
-```
+{% endhighlight %}
 
 <div class="example">
   <a href="#" class="btn btn-flat bg-aqua">Flat button</a>
 </div>
 
-```html
+{% highlight html %}
 <a href="#" class="btn btn-flat">Flat button</a>
-```
+{% endhighlight %}
 
 <div class="example">
   <a href="#" class="btn btn-shadow bg-aqua">Shadowed button</a>
 </div>
 
-```html
+{% highlight html %}
   <a href="#" class="btn btn-shadow">Shadowed button</a>
-```
+{% endhighlight %}
 
 <div class="example">
   <a href="#" class="btn btn-block">Block button</a>
 </div>
 
-```html
+{% highlight html %}
 <a href="#" class="btn btn-block">Block button</a>
-```
+{% endhighlight %}
 
 <div class="example">
-  <a href="#" class="btn btn-blue">Brand button</a>
+  <a href="#" class="btn btn-brand">Brand button</a>
 </div>
 
-```html
+{% highlight html %}
 <a href="#" class="btn btn-brand">Brand button</a>
-```
+{% endhighlight %}
 
 <div class="example">
   <a href="#" class="btn btn-positive">Positive button</a>
 </div>
 
-```html
+{% highlight html %}
 <a href="#" class="btn btn-positive">Positive button</a>
-```
+{% endhighlight %}
 
 <div class="example">
   <a href="#" class="btn btn-negative">Negative button</a>
 </div>
 
-```html
+{% highlight html %}
 <a href="#" class="btn btn-negative">Negative button</a>
-```
+{% endhighlight %}

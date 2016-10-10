@@ -2,23 +2,19 @@
 layout: default
 ---
 
-{% capture page %}
-  {% include_relative _pages/home.md %}
-  {% include_relative _pages/quick-start.md %}
-  {% include_relative _pages/defaults.md %}
-  {% include_relative _pages/functions.md %}
-  {% include_relative _pages/colors.md %}
-  {% include_relative _pages/rwd.md %}
-  {% include_relative _pages/grid.md %}
-  {% include_relative _pages/type.md %}
-  {% include_relative _pages/lists.md %}
-  {% include_relative _pages/images.md %}
-  {% include_relative _pages/tables.md %}
-  {% include_relative _pages/forms.md %}
-  {% include_relative _pages/buttons.md %}
-  {% include_relative _pages/boxes.md %}
-  {% include_relative _pages/media.md %}
-  {% include_relative _pages/sticky-footer.md %}
-{% endcapture %}
-
-{{ page | markdownify }}
+{% include_relative _pages/intro.html %}
+{% include_relative _pages/quick-start.html %}
+{% include_relative _pages/defaults.html %}
+{% include_relative _pages/functions.html %}
+{% include_relative _pages/colors.html %}
+{% include_relative _pages/rwd.html %}
+{% include_relative _pages/grid.html %}
+{% include_relative _pages/typography.html %}
+{% include_relative _pages/lists.html %}
+{% include_relative _pages/images.html %}
+{% include_relative _pages/tables.html %}
+{% include_relative _pages/forms.html %}
+{% include_relative _pages/buttons.html %}
+{% include_relative _pages/boxes.html %}
+{% include_relative _pages/media.html %}
+{% include_relative _pages/sticky-footer.html %}

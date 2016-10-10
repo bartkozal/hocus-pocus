@@ -2,8 +2,6 @@
 ---
 
 $font-family-monospace: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
-$font-size-base: 16;
-$font-leading: 1.5;
 $font-weight-headings: 400;
 
 $ui-padding-vertical-ratio: 0;
@@ -17,7 +15,7 @@ $sticky-footer-height: 72px;
 
 @import 'code',
         'color-block',
-        'colorscheme',
+        'highlight',
         'example',
         'footer',
         'preview';

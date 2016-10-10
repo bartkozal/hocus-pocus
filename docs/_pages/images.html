@@ -1,45 +1,50 @@
+<h2 id="images">Images</h2>
 
-## Images
+<p>
+  Images are vertically aligned to the middle of container and have
+  <code>box-sizing</code> set to <code>content-box</code>.
+</p>
 
-Images are vertically aligned to the middle of container and have
-`box-sizing` set to `content-box`.
+<p>
+  Replace any element that contains text with an image:
+</p>
 
-Replace any element that contains text with an image:
-
-```scss
+{% highlight scss %}
 @include img-replace($path, $width, $height);
-```
+{% endhighlight %}
 
-Usage:
+<p>
+  Usage:
+</p>
 
-```scss
+{% highlight scss %}
 .logo {
   @include img-replace('path/to/img.svg', 100px, 40px);
 }
-```
+{% endhighlight %}
 
-### Image Helpers
+<h3 id="image-helpers">Image Helpers</h3>
 
 <div class="example">
   <img src="http://placehold.it/1200x200/39cccc/fff" alt="example" class="img-responsive">
 </div>
 
-```html
+{% highlight html %}
 <img src="img.png" alt="placeholder" class="img-responsive">
-```
+{% endhighlight %}
 
 <div class="example">
   <img src="http://placehold.it/150x150/39cccc/fff" alt="example" class="img-rounded">
 </div>
 
-```html
+{% highlight html %}
 <img src="img.png" alt="placeholder" class="img-rounded">
-```
+{% endhighlight %}
 
 <div class="example">
   <img src="http://placehold.it/150x150/39cccc/fff" alt="example" class="img-circle">
 </div>
 
-```html
+{% highlight html %}
 <img src="img.png" alt="placeholder" class="img-circle">
-```
+{% endhighlight %}

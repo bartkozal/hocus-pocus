@@ -1,9 +1,15 @@
 .highlight {
   @include font-size(12);
   display: block;
+  margin: 0;
+  margin-bottom: double($spacing-unit);
   padding: halve($spacing-unit);
   background: #1d1f21;
   color: #c5c8c6;
+
+  > pre {
+    margin-bottom: 0;
+  }
 }
 
 .highlight .c { color: #969896 } /* Comment */

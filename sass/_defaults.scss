@@ -1,7 +1,6 @@
 $color-ui: $color-silver !default;
 $color-btn: $color-black !default;
 $color-text: $color-black !default;
-$color-font: $color-text !default;
 $color-link: $color-blue !default;
 $color-muted: $color-gray !default;
 $color-disabled: $color-ui !default;
@@ -45,11 +44,11 @@ $rwd-map: (
 $vertical-align-body: 16 !default;
 $vertical-align-factor: 1.5 !default;
 
-$font-leading: 1.4 !default;
+$font-leading: 1.5 !default;
 
 $font-size-micro: 11 !default;
 $font-size-small: 13 !default;
-$font-size-base: 15 !default;
+$font-size-base: 16 !default;
 $font-size-lead: 18 !default;
 $font-size-btn: $font-size-base !default;
 

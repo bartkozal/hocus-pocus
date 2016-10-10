@@ -1,15 +1,18 @@
+<h2 id="typography">Typography</h2>
 
-## Typography
+<p>
+  Typography elements keep vertical rhythm and have custom reset.
+</p>
 
-Typography elements keep vertical rhythm and have custom reset.
+<p>
+  Defaults:
+</p>
 
-Defaults:
-
-```scss
-$font-leading: 1.4;                       // base font leading
+{% highlight scss %}
+$font-leading: 1.5;                       // base font leading
 $font-size-micro: 11;                     // font size of `.text-micro`
 $font-size-small: 13;                     // font size of `small` and `.text-small`
-$font-size-base: 15;                      // base font size
+$font-size-base: 16;                      // base font size
 $font-size-lead: 18;                      // font size of `.text-lead` element
 $font-size-h{1-6}: $font-size-base;       // font size of a heading, set to `$font-size-base` means
                                           // that it will be calculated to keep the vertical-rhythm
@@ -26,82 +29,91 @@ $font-weight-headings: $font-weight-bold; // default font weight of headings
 
 $link-underline: true;                    // should links have underline
 $link-active: false;                      // should active links look like clicked
-```
+{% endhighlight %}
 
-Set a custom font size and keep the proper vertical rhythm:
+<p>
+  Set a custom font size and keep the proper vertical rhythm:
+</p>
 
-```scss
+{% highlight scss %}
 @include font-size($size);
-```
+{% endhighlight %}
 
-Usage:
+<p>
+  Usage:
+</p>
 
-```scss
+{% highlight scss %}
 .text {
   @include font-size(12);
 }
-```
+{% endhighlight %}
 
-### Headings
+<h3 id="headings">Headings</h3>
 
 <div class="example">
   <h1>Heading Level 1</h1>
 </div>
 
-```html
+{% highlight html %}
 <h1>Heading Level 1</h1>
 <span class="h1">Heading Level 1</span>
-```
+{% endhighlight %}
 
 <div class="example">
   <h2>Heading Level 2</h2>
 </div>
 
-```html
+{% highlight html %}
 <h2>Heading Level 2</h2>
 <span class="h2">Heading Level 2</span>
-```
+{% endhighlight %}
 
 <div class="example">
   <h3>Heading Level 3</h3>
 </div>
 
-```html
+{% highlight html %}
 <h3>Heading Level 3</h3>
 <span class="h3">Heading Level 3</span>
-```
+{% endhighlight %}
 
 <div class="example">
   <h4>Heading Level 4</h4>
 </div>
 
-```html
+{% highlight html %}
 <h4>Heading Level 4</h4>
 <span class="h4">Heading Level 4</span>
-```
+{% endhighlight %}
 
 <div class="example">
   <h5>Heading Level 5</h5>
 </div>
 
-```html
+{% highlight html %}
 <h5>Heading Level 5</h5>
 <span class="h5">Heading Level 5</span>
-```
+{% endhighlight %}
 
 <div class="example">
   <h6>Heading Level 6</h6>
 </div>
 
-```html
+{% highlight html %}
 <h6>Heading Level 6</h6>
 <span class="h6">Heading Level 6</span>
-```
+{% endhighlight %}
 
-### Paragraphs
+<h3 id="paragraphs">Paragraphs</h3>
 
-Default styles for `<p>`, `<strong>`, `<em>`, `<sup>`, `<sub>`, `<small>`,
-`<a>`, `<mark>`, `<del>`, `<ins>`, `<s>` and `<u>`.
+<p>
+  Default styles for <code>&lt;p&gt;</code>, <code>&lt;strong&gt;</code>,
+  <code>&lt;em&gt;</code>, <code>&lt;sup&gt;</code>, <code>&lt;sub&gt;</code>,
+  <code>&lt;small&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;mark&gt;</code>,
+  <code>&lt;del&gt;</code>, <code>&lt;ins&gt;</code>, <code>&lt;s&gt;</code>
+  and <code>&lt;u&gt;</code>.
+</p>
 
 <div class="example">
   <p>Paragraph with a <strong>strong</strong> element.</p>
@@ -116,7 +128,7 @@ Default styles for `<p>`, `<strong>`, `<em>`, `<sup>`, `<sub>`, `<small>`,
   <p>Paragraph with an <u>underline</u> element.</p>
 </div>
 
-```html
+{% highlight html %}
 <p>Paragraph with a <strong>strong</strong> element.</p>
 <p>Paragraph with an <em>emphasis</em> element.</p>
 <p>Paragraph with a <sup>sup</sup> element.</p>
@@ -127,9 +139,9 @@ Default styles for `<p>`, `<strong>`, `<em>`, `<sup>`, `<sub>`, `<small>`,
 <p>Paragraph with a <del>deleted text</del> and an <ins>inserted text</ins> elements.</p>
 <p>Paragraph with a <s>strikethrough</s> element.</p>
 <p>Paragraph with an <u>underline</u> element.</p>
-```
+{% endhighlight %}
 
-### Blockquote
+<h3 id="blockquote">Blockquote</h3>
 
 <div class="example">
   <blockquote>
@@ -140,16 +152,16 @@ Default styles for `<p>`, `<strong>`, `<em>`, `<sup>`, `<sub>`, `<small>`,
   </blockquote>
 </div>
 
-```html
+{% highlight html %}
 <blockquote>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna.
     Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida.
   </p>
 </blockquote>
-```
+{% endhighlight %}
 
-### Code
+<h3 id="code">Code</h3>
 
 <div class="example">
 <pre>
@@ -161,7 +173,7 @@ Default styles for `<p>`, `<strong>`, `<em>`, `<sup>`, `<sub>`, `<small>`,
 </pre>
 </div>
 
-```html
+{% highlight html %}
 <pre>
   <code>
     .hocus-pocus {
@@ -169,19 +181,19 @@ Default styles for `<p>`, `<strong>`, `<em>`, `<sup>`, `<sub>`, `<small>`,
     }
   </code>
 </pre>
-```
+{% endhighlight %}
 
-### Rule
+<h3 id="rule">Rule</h3>
 
 <div class="example">
   <hr>
 </div>
 
-```html
+{% highlight html %}
 <hr>
-```
+{% endhighlight %}
 
-## Text Helpers
+<h3 id="text-helpers">Text Helpers</h3>
 
 <div class="example">
   <p class="text-micro">Micro text</p>
@@ -189,19 +201,19 @@ Default styles for `<p>`, `<strong>`, `<em>`, `<sup>`, `<sub>`, `<small>`,
   <p class="text-lead">Lead text</p>
 </div>
 
-```html
+{% highlight html %}
 <p class="text-micro">Micro text</p>
 <p class="text-small">Small text</p>
 <p class="text-lead">Lead text</p>
-```
+{% endhighlight %}
 
 <div class="example">
   <p class="text-mono">Mono text</p>
 </div>
 
-```html
+{% highlight html %}
 <p class="text-mono">Mono text</p>
-```
+{% endhighlight %}
 
 <div class="example">
   <p class="text-light">Light weight text</p>
@@ -209,11 +221,11 @@ Default styles for `<p>`, `<strong>`, `<em>`, `<sup>`, `<sub>`, `<small>`,
   <p class="text-bold">Bold weight text</p>
 </div>
 
-```html
+{% highlight html %}
 <p class="text-light">Light weight text</p>
 <p class="text-normal">Normal weight text</p>
 <p class="text-bold">Bold weight text</p>
-```
+{% endhighlight %}
 
 <div class="example">
   <p class="text-lowercase">Lowercased text</p>
@@ -221,11 +233,11 @@ Default styles for `<p>`, `<strong>`, `<em>`, `<sup>`, `<sub>`, `<small>`,
   <p class="text-capitalize">Capitalized text</p>
 </div>
 
-```html
+{% highlight html %}
 <p class="text-lowercase">Lowercased text</p>
 <p class="text-uppercase">Uppercased text</p>
 <p class="text-capitalize">Capitalized text</p>
-```
+{% endhighlight %}
 
 <div class="example">
   <p class="text-left">Left aligned text</p>
@@ -233,8 +245,8 @@ Default styles for `<p>`, `<strong>`, `<em>`, `<sup>`, `<sub>`, `<small>`,
   <p class="text-right">Right aligned text</p>
 </div>
 
-```html
+{% highlight html %}
 <p class="text-left">Left aligned text</p>
 <p class="text-center">Center aligned text</p>
 <p class="text-right">Right aligned text</p>
-```
+{% endhighlight %}

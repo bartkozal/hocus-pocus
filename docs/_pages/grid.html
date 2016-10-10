@@ -1,16 +1,21 @@
+<h2 id="grid">Grid</h2>
 
-## Container
+<p>
+  Create a centered wrapper for grid elements. Usually used as a root element
+  for a whole layout.
+</p>
 
-Create a centered wrapper for grid elements. Usually used as a root element
-for a whole layout.
+<p>
+  Defaults:
+</p>
 
-Defaults:
-
-```scss
+{% highlight scss %}
 $grid-container: 1020px; // container's width
-```
+{% endhighlight %}
 
-Usage:
+<p>
+  Usage:
+</p>
 
 <div class="example">
   <div class="container preview-grid">
@@ -18,24 +23,28 @@ Usage:
   </div>
 </div>
 
-```html
+{% highlight html %}
 <div class="container">
   ...
 </div>
-```
+{% endhighlight %}
 
-## Grid
+<p>
+  Build a grid using a combination of grid items and <a href="#width-helpers">width helpers</a>.
+  Grid elements can be nested. It's based on flexbox.
+</p>
 
-Build a grid using a combination of grid items and [width helpers](/#rwd).
-Grid elements can be nested. It's based on flexbox.
+<p>
+  Defaults:
+</p>
 
-Defaults:
-
-```scss
+{% highlight scss %}
 $grid-gutter: $spacing-unit; // width of grid gutter
-```
+{% endhighlight %}
 
-Usage:
+<p>
+  Usage:
+</p>
 
 <div class="example">
   <div class="grid">
@@ -49,7 +58,7 @@ Usage:
   </div>
 </div>
 
-```html
+{% highlight html %}
 <div class="grid">
   <div class="grid-item 1/3">
     ...
@@ -59,11 +68,13 @@ Usage:
     ...
   </div>
 </div>
-```
+{% endhighlight %}
 
-### Grid Types
+<h3 id="grid-types">Grid Types</h3>
 
-Set horizontal and/or vertical alignment:
+<p>
+  Set horizontal and/or vertical alignment:
+</p>
 
 <div class="example">
   <div class="grid grid-left">
@@ -75,13 +86,13 @@ Set horizontal and/or vertical alignment:
   </div>
 </div>
 
-```html
+{% highlight html %}
 <div class="grid grid-left">
   <div class="grid-item 1/3">
     ...
   </div>
 </div>
-```
+{% endhighlight %}
 
 <div class="example">
   <div class="grid grid-center">
@@ -93,13 +104,13 @@ Set horizontal and/or vertical alignment:
   </div>
 </div>
 
-```html
+{% highlight html %}
 <div class="grid grid-center">
   <div class="grid-item 1/3">
     ...
   </div>
 </div>
-```
+{% endhighlight %}
 
 <div class="example">
   <div class="grid grid-right">
@@ -111,13 +122,13 @@ Set horizontal and/or vertical alignment:
   </div>
 </div>
 
-```html
+{% highlight html %}
 <div class="grid grid-right">
   <div class="grid-item 1/3">
     ...
   </div>
 </div>
-```
+{% endhighlight %}
 
 <div class="example">
   <div class="grid grid-top">
@@ -134,7 +145,7 @@ Set horizontal and/or vertical alignment:
   </div>
 </div>
 
-```html
+{% highlight html %}
 <div class="grid grid-top">
   <div class="grid-item 1/2">
     ...
@@ -143,7 +154,7 @@ Set horizontal and/or vertical alignment:
     ...
   </div>
 </div>
-```
+{% endhighlight %}
 
 <div class="example">
   <div class="grid grid-middle">
@@ -160,7 +171,7 @@ Set horizontal and/or vertical alignment:
   </div>
 </div>
 
-```html
+{% highlight html %}
 <div class="grid grid-middle">
   <div class="grid-item 1/2">
     ...
@@ -169,7 +180,7 @@ Set horizontal and/or vertical alignment:
     ...
   </div>
 </div>
-```
+{% endhighlight %}
 
 <div class="example">
   <div class="grid grid-bottom">
@@ -186,7 +197,7 @@ Set horizontal and/or vertical alignment:
   </div>
 </div>
 
-```html
+{% highlight html %}
 <div class="grid grid-bottom">
   <div class="grid-item 1/2">
     ...
@@ -195,9 +206,11 @@ Set horizontal and/or vertical alignment:
     ...
   </div>
 </div>
-```
+{% endhighlight %}
 
-Create a flat grid without gutter:
+<p>
+  Create a flat grid without gutter:
+</p>
 
 <div class="example">
   <div class="grid grid-flat preview-grid">
@@ -214,7 +227,7 @@ Create a flat grid without gutter:
   </div>
 </div>
 
-```html
+{% highlight html %}
 <div class="grid grid-flat">
   <div class="grid-item 1/2">
     ...
@@ -223,10 +236,12 @@ Create a flat grid without gutter:
     ...
   </div>
 </div>
-```
+{% endhighlight %}
 
-Create a grid where content of a first item is aligned to left and content
-of a second item is aligned to right.
+<p>
+  Create a grid where content of a first item is aligned to left and content
+  of a second item is aligned to right:
+</p>
 
 <div class="example">
   <div class="grid grid-pair">
@@ -243,7 +258,7 @@ of a second item is aligned to right.
   </div>
 </div>
 
-```html
+{% highlight html %}
 <div class="grid grid-pair">
   <div class="grid-item 1/2">
     ...
@@ -252,9 +267,11 @@ of a second item is aligned to right.
     ...
   </div>
 </div>
-```
+{% endhighlight %}
 
-Reverse grid items order (available for each breakpoint in `$rwd-map`):
+<p>
+  Reverse grid items order (available for each breakpoint in <code>$rwd-map</code>):
+</p>
 
 <div class="example">
   <div class="grid grid-reverse">
@@ -271,7 +288,7 @@ Reverse grid items order (available for each breakpoint in `$rwd-map`):
   </div>
 </div>
 
-```html
+{% highlight html %}
 <div class="grid grid-reverse">
   <div class="grid-item 1/3">
     ...
@@ -280,7 +297,7 @@ Reverse grid items order (available for each breakpoint in `$rwd-map`):
     ...
   </div>
 </div>
-```
+{% endhighlight %}
 
 <div class="example">
   <div class="grid mobile-grid-reverse">
@@ -297,7 +314,7 @@ Reverse grid items order (available for each breakpoint in `$rwd-map`):
   </div>
 </div>
 
-```html
+{% highlight html %}
 <div class="grid mobile-grid-reverse">
   <div class="grid-item 2/5">
     ...
@@ -306,9 +323,11 @@ Reverse grid items order (available for each breakpoint in `$rwd-map`):
     ...
   </div>
 </div>
-```
+{% endhighlight %}
 
-Stack grid items (available for each breakpoint in `$rwd-map`):
+<p>
+  Stack grid items (available for each breakpoint in <code>$rwd-map</code>):
+</p>
 
 <div class="example">
   <div class="grid grid-stack">
@@ -325,7 +344,7 @@ Stack grid items (available for each breakpoint in `$rwd-map`):
   </div>
 </div>
 
-```html
+{% highlight html %}
 <div class="grid grid-stack">
   <div class="grid-item 1/3">
     ...
@@ -334,7 +353,7 @@ Stack grid items (available for each breakpoint in `$rwd-map`):
     ...
   </div>
 </div>
-```
+{% endhighlight %}
 
 <div class="example">
   <div class="grid mobile-grid-stack">
@@ -351,7 +370,7 @@ Stack grid items (available for each breakpoint in `$rwd-map`):
   </div>
 </div>
 
-```html
+{% highlight html %}
 <div class="grid mobile-grid-stack">
   <div class="grid-item 2/5 mobile-1/1">
     ...
@@ -360,9 +379,11 @@ Stack grid items (available for each breakpoint in `$rwd-map`):
     ...
   </div>
 </div>
-```
+{% endhighlight %}
 
-Combination of stack and reverse:
+<p>
+  Combination of stack and reverse:
+</p>
 
 <div class="example">
   <div class="grid grid-reverse grid-stack">
@@ -379,7 +400,7 @@ Combination of stack and reverse:
   </div>
 </div>
 
-```html
+{% highlight html %}
 <div class="grid grid-reverse grid-stack">
   <div class="grid-item 5/6">
     ...
@@ -388,7 +409,7 @@ Combination of stack and reverse:
     ...
   </div>
 </div>
-```
+{% endhighlight %}
 
 <div class="example">
   <div class="grid mobile-grid-reverse mobile-grid-stack">
@@ -405,7 +426,7 @@ Combination of stack and reverse:
   </div>
 </div>
 
-```html
+{% highlight html %}
 <div class="grid mobile-grid-reverse mobile-grid-stack">
   <div class="grid-item 1/3">
     ...
@@ -414,9 +435,9 @@ Combination of stack and reverse:
     ...
   </div>
 </div>
-```
+{% endhighlight %}
 
-## Horizontal Helpers
+<h3 id="horizontal-helpers">Horizontal Helpers</h3>
 
 <div class="example">
   <div class="horizontal-left preview-horizontal">Aligned to left</div>
@@ -424,13 +445,13 @@ Combination of stack and reverse:
   <div class="horizontal-right preview-horizontal">Aligned to right</div>
 </div>
 
-```html
+{% highlight html %}
   <div class="horizontal-left">Aligned to left</div>
   <div class="horizontal-center">Aligned to center</div>
   <div class="horizontal-right">Aligned to right</div>
-```
+{% endhighlight %}
 
-## Vertical Helpers
+<h3 id="vertcal-helpers">Vertical Helpers</h3>
 
 <div class="example">
   <div class="vertical-top preview-vertical">Aligned to top</div>
@@ -438,15 +459,17 @@ Combination of stack and reverse:
   <div class="vertical-bottom preview-vertical">Aligned to bottom</div>
 </div>
 
-```html
+{% highlight html %}
 <div class="vertical-top">Aligned to top</div>
 <div class="vertical-middle">Aligned to middle</div>
 <div class="vertical-bottom">Aligned to bottom</div>
-```
+{% endhighlight %}
 
-## Float Helpers
+<h3 id="float-helpers">Float Helpers</h3>
 
-Clearfix and float helpers.
+<p>
+  Clearfix and float helpers.
+</p>
 
 <div class="example">
   <div class="clearfix">
@@ -455,9 +478,9 @@ Clearfix and float helpers.
   </div>
 </div>
 
-```html
+{% highlight html %}
 <div class="clearfix">
   <div class="float-left">...</div>
   <div class="float-right">...</div>
 </div>
-```
+{% endhighlight %}
