@@ -1,9 +1,9 @@
 .sticky-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: $sticky-footer-height;
-  padding-top: $spacing-unit;
-  padding-bottom: $spacing-unit;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  > *:first-child {
+    flex: 1;
+  }
 }

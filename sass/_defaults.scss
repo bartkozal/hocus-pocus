@@ -48,8 +48,8 @@ $vertical-align-factor: 1.5 !default;
 
 $font-leading: 1.5 !default;
 
-$font-size-micro: 11 !default;
-$font-size-small: 13 !default;
+$font-size-micro: 12 !default;
+$font-size-small: 14 !default;
 $font-size-base: 16 !default;
 $font-size-lead: 18 !default;
 $font-size-btn: $font-size-base !default;
@@ -98,5 +98,3 @@ $btn-flat: false !default;
 
 $table-zebra-background: rgba($color-ui, .5) !default;
 $table-hover-background: $table-zebra-background !default;
-
-$sticky-footer-height: 0 !default;

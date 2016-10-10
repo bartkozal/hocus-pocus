@@ -1,23 +1,18 @@
 <h2 id="sticky-footer">Sticky Footer</h2>
 
 <p>
-  Pin footer to the bottom of a viewport regardless of the content, like on this page.
+  Pin footer to the bottom of a viewport regardless of the content.
 </p>
-
-<p>
-  Defaults
-</p>
-
-{% highlight scss %}
-$sticky-footer-height: 0; // sticky footer height
-{% endhighlight %}
 
 <p>
   Usage:
 </p>
 
 {% highlight html %}
-<footer class="sticky-footer">
-  ...
-</footer>
+<body class="sticky-footer">
+  <div> <!-- Content wrapper -->
+    ...
+  </div>
+  <footer>...</footer>
+</body>
 {% endhighlight %}
