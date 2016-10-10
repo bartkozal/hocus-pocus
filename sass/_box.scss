@@ -1,4 +1,3 @@
-%box,
 .box {
   padding: halve($spacing-unit);
 
@@ -9,7 +8,6 @@
 
 @mixin box($name, $color, $contrast: 25%) {
   .box-#{$name} {
-    @extend %box;
     background: lighten($color, $contrast);
     color: darken($color, $contrast);
   }
