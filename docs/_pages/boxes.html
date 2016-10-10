@@ -6,8 +6,22 @@
 </p>
 
 <p>
+  Define own box types:
+</p>
+
+{% highlight scss %}
+@include box($name, $color, $contrast: 25%)
+{% endhighlight %}
+
+<p>
   Usage:
 </p>
+
+{% highlight scss %}
+@include box('alert', $color-red)
+{% endhighlight %}
+
+<h3 id="box-types">Box Types</h3>
 
 <div class="example">
   <div class="box">
@@ -34,37 +48,37 @@
 {% endhighlight %}
 
 <div class="example">
-  <div class="box box-informative">
+  <div class="box-informative">
     <p>Informative box</p>
   </div>
 </div>
 
 {% highlight html %}
-<div class="box box-informative">
+<div class="box-informative">
   <p>Informative box</p>
 </div>
 {% endhighlight %}
 
 <div class="example">
-  <div class="box box-positive">
+  <div class="box-positive">
     <p>Positive box</p>
   </div>
 </div>
 
 {% highlight html %}
-<div class="box box-positive">
+<div class="box-positive">
   <p>Positive box</p>
 </div>
 {% endhighlight %}
 
 <div class="example">
-  <div class="box box-negative">
+  <div class="box-negative">
     <p>Negative box</p>
   </div>
 </div>
 
 {% highlight html %}
-<div class="box box-negative">
+<div class="box-negative">
   <p>Negative box</p>
 </div>
 {% endhighlight %}

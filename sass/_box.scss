@@ -1,3 +1,4 @@
+%box,
 .box {
   padding: halve($spacing-unit);
 
@@ -6,17 +7,14 @@
   }
 }
 
-.box-informative {
-  background: lighten($color-informative, 25%);
-  color: darken($color-informative, 25%);
+@mixin box($name, $color, $contrast: 25%) {
+  .box-#{$name} {
+    @extend %box;
+    background: lighten($color, $contrast);
+    color: darken($color, $contrast);
+  }
 }
 
-.box-positive {
-  background: lighten($color-positive, 25%);
-  color: darken($color-positive, 25%);
-}
-
-.box-negative {
-  background: lighten($color-negative, 25%);
-  color: darken($color-negative, 25%);
-}
+@include box("informative", $color-informative);
+@include box("positive", $color-positive);
+@include box("negative", $color-negative);
