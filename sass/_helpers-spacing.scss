@@ -19,12 +19,12 @@
     #{$attr}-left: $spacing-unit !important;
   }
 
-  .#{$attr}-sides {
+  .#{$attr}-horizontal {
     #{$attr}-right: $spacing-unit !important;
     #{$attr}-left: $spacing-unit !important;
   }
 
-  .#{$attr}-ends {
+  .#{$attr}-vertical {
     #{$attr}-top: $spacing-unit !important;
     #{$attr}-bottom: $spacing-unit !important;
   }
@@ -49,43 +49,43 @@
     #{$attr}-left: 0 !important;
   }
 
-  .no-#{$attr}-sides {
+  .no-#{$attr}-horizontal {
     #{$attr}-right: 0 !important;
     #{$attr}-left: 0 !important;
   }
 
-  .no-#{$attr}-ends {
+  .no-#{$attr}-vertical {
     #{$attr}-top: 0 !important;
     #{$attr}-bottom: 0 !important;
   }
 
   @each $name, $size in $spacing-map {
-    .#{$attr}-#{$name} {
+    [class~="#{$attr}-#{$name}"] {
       #{$attr}: #{$size} !important;
     }
 
-    .#{$attr}-#{$name}-top {
+    [class~="#{$attr}-#{$name}-top"] {
       #{$attr}-top: #{$size} !important;
     }
 
-    .#{$attr}-#{$name}-right {
+    [class~="#{$attr}-#{$name}-right"] {
       #{$attr}-right: #{$size} !important;
     }
 
-    .#{$attr}-#{$name}-bottom {
+    [class~="#{$attr}-#{$name}-bottom"] {
       #{$attr}-bottom: #{$size} !important;
     }
 
-    .#{$attr}-#{$name}-left {
+    [class~="#{$attr}-#{$name}-left"] {
       #{$attr}-left: #{$size} !important;
     }
 
-    .#{$attr}-#{$name}-sides {
+    [class~="#{$attr}-#{$name}-horizontal"] {
       #{$attr}-right: #{$size} !important;
       #{$attr}-left: #{$size} !important;
     }
 
-    .#{$attr}-#{$name}-ends {
+    [class~="#{$attr}-#{$name}-vertical"] {
       #{$attr}-top: #{$size} !important;
       #{$attr}-bottom: #{$size} !important;
     }
@@ -114,12 +114,12 @@
       #{$attr}-left: $spacing-unit !important;
     }
 
-    .#{$rwd-screen-name}-#{$attr}-sides {
+    .#{$rwd-screen-name}-#{$attr}-horizontal {
       #{$attr}-right: $spacing-unit !important;
       #{$attr}-left: $spacing-unit !important;
     }
 
-    .#{$rwd-screen-name}-#{$attr}-ends {
+    .#{$rwd-screen-name}-#{$attr}-vertical {
       #{$attr}-top: $spacing-unit !important;
       #{$attr}-bottom: $spacing-unit !important;
     }
@@ -144,43 +144,43 @@
       #{$attr}-left: 0 !important;
     }
 
-    .#{$rwd-screen-name}-no-#{$attr}-sides {
+    .#{$rwd-screen-name}-no-#{$attr}-horizontal {
       #{$attr}-right: 0 !important;
       #{$attr}-left: 0 !important;
     }
 
-    .#{$rwd-screen-name}-no-#{$attr}-ends {
+    .#{$rwd-screen-name}-no-#{$attr}-vertical {
       #{$attr}-top: 0 !important;
       #{$attr}-bottom: 0 !important;
     }
 
     @each $name, $size in $spacing-map {
-      .#{$rwd-screen-name}-#{$attr}-#{$name} {
+      [class~="#{$rwd-screen-name}-#{$attr}-#{$name}"] {
         #{$attr}: #{$size} !important;
       }
 
-      .#{$rwd-screen-name}-#{$attr}-#{$name}-top {
+      [class~="#{$rwd-screen-name}-#{$attr}-#{$name}-top"] {
         #{$attr}-top: #{$size} !important;
       }
 
-      .#{$rwd-screen-name}-#{$attr}-#{$name}-right {
+      [class~="#{$rwd-screen-name}-#{$attr}-#{$name}-right"] {
         #{$attr}-right: #{$size} !important;
       }
 
-      .#{$rwd-screen-name}-#{$attr}-#{$name}-bottom {
+      [class~="#{$rwd-screen-name}-#{$attr}-#{$name}-bottom"] {
         #{$attr}-bottom: #{$size} !important;
       }
 
-      .#{$rwd-screen-name}-#{$attr}-#{$name}-left {
+      [class~="#{$rwd-screen-name}-#{$attr}-#{$name}-left"] {
         #{$attr}-left: #{$size} !important;
       }
 
-      .#{$rwd-screen-name}-#{$attr}-#{$name}-sides {
+      [class~="#{$rwd-screen-name}-#{$attr}-#{$name}-horizontal"] {
         #{$attr}-right: #{$size} !important;
         #{$attr}-left: #{$size} !important;
       }
 
-      .#{$rwd-screen-name}-#{$attr}-#{$name}-ends {
+      [class~="#{$rwd-screen-name}-#{$attr}-#{$name}-vertical"] {
         #{$attr}-top: #{$size} !important;
         #{$attr}-bottom: #{$size} !important;
       }

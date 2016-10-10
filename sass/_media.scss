@@ -34,7 +34,7 @@
 }
 
 @each $name, $size in $spacing-map {
-  .media-#{$name} {
+  [class~="media-#{$name}"] {
     > *:not(.media-body) {
       margin-right: #{$size};
     }
@@ -56,7 +56,7 @@
   }
 
   @each $name, $size in $spacing-map {
-    &.media-#{$name} {
+    &[class~="media-#{$name}"] {
       > *:not(.media-body) {
         margin-left: #{$size};
       }

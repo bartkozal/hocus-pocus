@@ -75,12 +75,12 @@ $link-active: false !default;
 
 $spacing-unit: $font-size-base * $font-leading !default;
 $spacing-map: (
-  'quarter': $spacing-unit / 4,
-  'third': $spacing-unit / 3,
-  'half': $spacing-unit / 2,
-  'double': $spacing-unit * 2,
-  'triple': $spacing-unit * 3,
-  'quadruple': $spacing-unit * 4
+  '1/4': $spacing-unit / 4,
+  '1/3': $spacing-unit / 3,
+  '1/2': $spacing-unit / 2,
+  '2/1': $spacing-unit * 2,
+  '3/1': $spacing-unit * 3,
+  '4/1': $spacing-unit * 4
 ) !default;
 
 $grid-container: 1020px !default;
