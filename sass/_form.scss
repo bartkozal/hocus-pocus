@@ -36,7 +36,8 @@ input[type="checkbox"] {
   vertical-align: middle;
 }
 
-input[disabled] {
+input[disabled],
+input[readonly] {
   background-color: lighten($color-ui, 5%);
 
   &:hover {
