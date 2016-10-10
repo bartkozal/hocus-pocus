@@ -39,8 +39,8 @@ $color-map: (
 
 $rwd-type: mobile-first !default;
 $rwd-map: (
-  'tablet': 768px 1200px,
-  'desktop': 1201px
+  'compact': 320px 414px,
+  'regular': 415px
 ) !default;
 
 $vertical-align-body: 16 !default;

@@ -16,8 +16,8 @@
 {% highlight scss %}
 $rwd-type: mobile-first;  // choose between `mobile-first` and `desktop-first`
 $rwd-map: (
-  'tablet': 768px 1200px,
-  'desktop': 1201px
+  'compact': 320px 414px,
+  'regular': 415px
 );                        // helpers are based on this map
 {% endhighlight %}
 
@@ -34,10 +34,7 @@ $rwd-map: (
 </p>
 
 {% highlight scss %}
-$rwd-type: desktop-first;
-$rwd-map: (mobile: 680px, tablet: 681px 1200px);
-
-@include rwd('mobile') {
+@include rwd('compact') {
   h1 {
     color: $color-red;
   }
@@ -51,16 +48,16 @@ $rwd-map: (mobile: 680px, tablet: 681px 1200px);
 {% endhighlight %}
 
 {% highlight html %}
-<div class="mobile-hidden">...</div>
-<div class="hidden mobile-visible">...</div>
+<div class="compact-hidden">...</div>
+<div class="hidden compact-visible">...</div>
 
 <div class="grid">
-  <div class="grid-item 1/4 mobile-hidden">
+  <div class="grid-item 1/4 compact-hidden">
     ...
   </div>
 
-  <div class="grid-item 3/4 mobile-1/1">
-    <h1 class="mobile-no-margin-top">
+  <div class="grid-item 3/4 compact-1/1">
+    <h1 class="compact-no-margin-top">
       ...
     </h1>
   </div>
@@ -154,14 +151,14 @@ $rwd-map: (mobile: 680px, tablet: 681px 1200px);
 </div>
 
 <div class="grid">
-  <div class="grid-item 1/5 mobile-1/2">
+  <div class="grid-item 1/5 compact-1/2">
     <div class="preview-grid">
-      .1/5.mobile-1/2
+      .1/5.compact-1/2
     </div>
   </div>
-  <div class="grid-item 4/5 mobile-1/2">
+  <div class="grid-item 4/5 compact-1/2">
     <div class="preview-grid">
-      .4/5.mobile-1/2
+      .4/5.compact-1/2
     </div>
   </div>
 </div>
@@ -186,13 +183,13 @@ $rwd-map: (mobile: 680px, tablet: 681px 1200px);
 </p>
 
 <div class="example">
-  <p class="inline mobile-hidden">Inline paragraph hidden on mobile</p>
-  <small class="hidden mobile-block">Block small text visible on mobile</small>
+  <p class="inline compact-hidden">Inline paragraph hidden on mobile</p>
+  <small class="hidden compact-block">Block small text visible on mobile</small>
 </div>
 
 {% highlight html %}
-<p class="inline mobile-hidden">Inline paragraph hidden on mobile</p>
-<small class="hidden mobile-block">Block small text visible on mobile</small>
+<p class="inline compact-hidden">Inline paragraph hidden on mobile</p>
+<small class="hidden compact-block">Block small text visible on mobile</small>
 {% endhighlight %}
 
 <h3 id="spacing-helpers">Spacing Helpers</h3>
@@ -251,14 +248,14 @@ $spacing-map: (
   <div class="margin-double-bottom bg-teal text-white text-mono text-small">
     .margin-double-bottom
   </div>
-  <div class="padding-half-left padding-half-top mobile-no-padding-left bg-aqua text-white text-mono text-small">
-    .padding-half-left.padding-half-top.mobile-no-padding-left
+  <div class="padding-half-left padding-half-top compact-no-padding-left bg-aqua text-white text-mono text-small">
+    .padding-half-left.padding-half-top.compact-no-padding-left
   </div>
-  <div class="mobile-margin-sides bg-blue text-white text-mono text-small">
-    .mobile-margin-sides
+  <div class="compact-margin-sides bg-blue text-white text-mono text-small">
+    .compact-margin-sides
   </div>
-  <div class="mobile-padding-half bg-navy text-white text-mono text-small">
-    .mobile-padding-half
+  <div class="compact-padding-half bg-navy text-white text-mono text-small">
+    .compact-padding-half
   </div>
 </div>
 
@@ -266,7 +263,7 @@ $spacing-map: (
 <div class="padding-ends">...</div>
 <div class="margin no-padding">...</div>
 <div class="margin-double-bottom">...</div>
-<div class="padding-half-left padding-half-top mobile-no-padding-left">...</div>
-<div class="mobile-margin-sides">...</div>
-<div class="mobile-padding-half">...</div>
+<div class="padding-half-left padding-half-top compact-no-padding-left">...</div>
+<div class="compact-margin-sides">...</div>
+<div class="compact-padding-half">...</div>
 {% endhighlight %}
