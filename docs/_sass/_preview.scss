@@ -25,20 +25,3 @@
   padding-top: double($spacing-unit);
   padding-bottom: double($spacing-unit);
 }
-
-.preview-horizontal {
-  width: triple(quadruple($spacing-unit));
-}
-
-.preview-vertical {
-  height: quadruple($spacing-unit);
-}
-
-.preview-horizontal,
-.preview-vertical {
-  margin-bottom: $spacing-unit;
-  padding: quarter($spacing-unit);
-  border-radius: $ui-border-radius;
-  background-color: $color-blue;
-  color: $color-white;
-}
