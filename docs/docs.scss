@@ -1,7 +1,6 @@
 ---
 ---
 
-$font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 $font-family-monospace: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
 $font-size-base: 16;
 $font-leading: 1.5;
@@ -11,11 +10,6 @@ $ui-padding-vertical-ratio: 0;
 
 $rwd-type: desktop-first;
 $rwd-map: (mobile: 680px);
-
-$color-brand: #3d9970;
-$color-link: $color-brand;
-$navbar-background: #423737;
-$list-menu-background: $color-brand;
 
 $sticky-footer-height: 72px;
 
@@ -27,5 +21,3 @@ $sticky-footer-height: 72px;
         'example',
         'footer',
         'preview';
-
-@include btn('blue', $color-blue);

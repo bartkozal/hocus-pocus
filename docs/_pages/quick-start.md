@@ -25,7 +25,6 @@ in your settings import them first.
 // Define your settings
 $font-family-base: "Open Sans", sans-serif;
 $grid-container: 70rem;
-$navbar-background: $color-blue;
 
 // Import framework
 @import "bower_components/hocus-pocus/hocus-pocus";

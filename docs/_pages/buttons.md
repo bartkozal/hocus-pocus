@@ -43,7 +43,7 @@ Usage:
 ```
 
 <div class="example">
-  <a href="#" class="btn btn-outline">Outline button</a> <a href="#" class="btn btn-blue btn-outline">Outline brand button</a>
+  <a href="#" class="btn btn-outline">Outline button</a> <a href="#" class="btn btn-brand btn-outline">Outline brand button</a>
 </div>
 
 ```html

@@ -27,11 +27,8 @@ The following framework features are the most characteristic to Hocus-Pocus:
 * Flexbox grid with universal, fraction based width helpers
 * Visibility and spacing helpers (auto-generated for the each viewport breakpoint!)
 * Typography with vertical rhythm based on [Gridlover](http://www.gridlover.net/try)
-* Components like lists, menus, tables, forms, buttons, boxes, navbar or sticky footer
+* Components like lists, menus, tables, forms, buttons, boxes or sticky footer
 * Universal media object
-
-You can find full documentation at [hocus-pocus.io](http://hocus-pocus.io). I
-always try to find time to improve it.
 
 Code is open sourced [on GitHub](https://github.com/bkzl/hocus-pocus/). Up to
 date changelog is available under [the releases
