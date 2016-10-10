@@ -10,17 +10,22 @@
 
 {% highlight scss %}
 $font-leading: 1.5;                       // base font leading
-$font-size-micro: 12;                     // font size of `.text-micro`
-$font-size-small: 14;                     // font size of `small` and `.text-small`
-$font-size-base: 16;                      // base font size
-$font-size-lead: 18;                      // font size of `.text-lead` element
-$font-size-h{1-6}: $font-size-base;       // font size of a heading, set to `$font-size-base` means
-                                          // that it will be calculated to keep the vertical-rhythm
+$font-size-micro: .8rem;                  // font size of `.text-micro`
+$font-size-small: .9rem;                  // font size of `small` and `.text-small`
+$font-size-base: 1rem;                    // base font size
+$font-size-lead: 1.2rem;                  // font size of `.text-lead` element
 $font-size-btn: $font-size-base;          // font size of buttons
 
-$font-family-base: sans-serif;            // base font family
-$font-family-headings: $font-family-base; // headings font family
-$font-family-monospace: monospace;        // monospace font family
+$font-size-h1: 3rem;                      // font size of headings
+$font-size-h2: 2rem;
+$font-size-h3: 1.5rem;
+$font-size-h4: 1.4rem;
+$font-size-h5: 1.3rem;
+$font-size-h6: 1.2rem;
+
+$font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+$font-family-headings: $font-family-base;
+$font-family-monospace: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
 
 $font-weight-light: 100;                  // light font weight
 $font-weight-normal: 400;                 // normal/base font weight
@@ -29,24 +34,6 @@ $font-weight-headings: $font-weight-bold; // default font weight of headings
 
 $link-underline: true;                    // should links have underline
 $link-active: false;                      // should active links look like clicked
-{% endhighlight %}
-
-<p>
-  Set a custom font size and keep the proper vertical rhythm:
-</p>
-
-{% highlight scss %}
-@include font-size($size);
-{% endhighlight %}
-
-<p>
-  Usage:
-</p>
-
-{% highlight scss %}
-.text {
-  @include font-size(12);
-}
 {% endhighlight %}
 
 <h3 id="headings">Headings</h3>
@@ -198,12 +185,14 @@ $link-active: false;                      // should active links look like click
 <div class="example">
   <p class="text-micro">Micro text</p>
   <p class="text-small">Small text</p>
+  <p>Normal text</p>
   <p class="text-lead">Lead text</p>
 </div>
 
 {% highlight html %}
 <p class="text-micro">Micro text</p>
 <p class="text-small">Small text</p>
+<p>Normal text</p>
 <p class="text-lead">Lead text</p>
 {% endhighlight %}
 

@@ -24,8 +24,7 @@ input[type="password"],
 input[type="search"],
 input[type="url"],
 textarea {
-  @include ui-padding;
-
+  padding: ($spacing-unit / 4) ($spacing-unit / 2);
   border: 1px solid $color-ui;
 }
 
@@ -33,7 +32,7 @@ input[type="radio"],
 input[type="checkbox"] {
   position: relative;
   bottom: 1px;
-  margin-right: halve($spacing-unit);
+  margin-right: $spacing-unit / 2;
   vertical-align: middle;
 }
 
@@ -53,14 +52,14 @@ input[disabled] {
   }
 
   > * {
-    margin-right: quarter($spacing-unit);
+    margin-right: $spacing-unit / 4;
   }
 }
 
 .form-stacked {
   > label {
     display: block;
-    margin-bottom: quarter($spacing-unit);
+    margin-bottom: $spacing-unit / 3;
   }
 
   > label + input,
@@ -76,18 +75,17 @@ input[disabled] {
     margin-bottom: $spacing-unit;
 
     > label {
-      @include ui-padding;
-
       display: inline-block;
       width: 25%;
       margin: 0;
+      padding: ($spacing-unit / 4) ($spacing-unit / 2);
       text-align: right;
     }
   }
 
   .form-group {
     margin-left: 25%;
-    padding-left: quarter($spacing-unit);
+    padding-left: $spacing-unit / 4;
 
     > label {
       margin-bottom: $spacing-unit;

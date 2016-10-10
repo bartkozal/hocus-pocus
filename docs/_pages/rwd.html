@@ -213,12 +213,12 @@ $rwd-map: (mobile: 680px, tablet: 681px 1200px);
 {% highlight scss %}
 // spacing helpers and media gutter modifiers are generated based on this map
 $spacing-map: (
-  'quarter': quarter($spacing-unit),
-  'third': third($spacing-unit),
-  'half': halve($spacing-unit),
-  'double': double($spacing-unit),
-  'triple': triple($spacing-unit),
-  'quadruple': quadruple($spacing-unit)
+  'quarter': $spacing-unit / 4,
+  'third': $spacing-unit / 3,
+  'half': $spacing-unit / 2,
+  'double': $spacing-unit * 2,
+  'triple': $spacing-unit * 3,
+  'quadruple': $spacing-unit * 4
 );
 {% endhighlight %}
 

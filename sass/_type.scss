@@ -1,81 +1,42 @@
-@function vertical-rhythm-exponent($base, $exponent) {
-  $value: $base;
-
-  @if $exponent > 1 {
-    @for $i from 2 through $exponent {
-      $value: $value * $base;
-    }
-  }
-
-  @if $exponent < 1 {
-    @for $i from 0 through -$exponent {
-      $value: $value / $base;
-    }
-  }
-
-  @return $value;
-}
-
-@mixin font-size($font-size: $font-size-base) {
-  font-size: $font-size / $vertical-align-body * 1rem;
-  line-height: round($font-size * $font-leading) / $vertical-align-body * 1rem;
-}
-
-@mixin font-size-heading($step, $font-size: $font-size-base) {
-  $line-height: round($font-size * $font-leading);
-  $computed-font-size: $font-size;
-
-  @if $font-size == $font-size-base {
-    $computed-font-size: round($font-size * vertical-rhythm-exponent($vertical-align-factor, $step));
-  }
-
-  font-size: $computed-font-size / $vertical-align-body * 1rem;
-  line-height: $line-height * ceil($computed-font-size / $line-height) / $vertical-align-body * 1rem;
-  margin-bottom: $line-height / $vertical-align-body * 1rem;
-
-  @if $step > 1 {
-    margin-top: $line-height * 2 / $vertical-align-body * 1rem;
-  } @else {
-    margin-top: $line-height / $vertical-align-body * 1rem;
-  }
-}
-
 body {
-  @include font-size($font-size-base);
+  font-size: $font-size-base;
+  line-height: $font-leading;
 }
 
 h1,
 .h1 {
-  @include font-size-heading(3, $font-size-h1);
+  margin-bottom: $spacing-unit * 2;
+  font-size: $font-size-h1;
 }
 
 h2,
 .h2 {
-  @include font-size-heading(2, $font-size-h2);
+  font-size: $font-size-h2;
 }
 
 h3,
 .h3 {
-  @include font-size-heading(1, $font-size-h3);
+  font-size: $font-size-h3;
 }
 
 h4,
 .h4 {
-  @include font-size-heading(0, $font-size-h4);
+  font-size: $font-size-h4;
 }
 
 h5,
 .h5 {
-  @include font-size-heading(0, $font-size-h5);
+  font-size: $font-size-h5;
 }
 
 h6,
 .h6 {
-  @include font-size-heading(0, $font-size-h6);
+  font-size: $font-size-h6;
 }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: $spacing-unit;
   font-family: $font-family-headings;
   font-weight: $font-weight-headings;
 }
@@ -142,20 +103,20 @@ pre code {
 }
 
 small {
-  @include font-size($font-size-small);
   color: $color-small;
+  font-size: $font-size-small;
 }
 
 .text-small {
-  @include font-size($font-size-small);
+  font-size: $font-size-small;
 }
 
 .text-micro {
-  @include font-size($font-size-micro);
+  font-size: $font-size-micro;
 }
 
 .text-lead {
-  @include font-size($font-size-lead);
+  font-size: $font-size-lead;
 }
 
 .text-mono {

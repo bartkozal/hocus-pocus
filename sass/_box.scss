@@ -1,5 +1,5 @@
 .box {
-  padding: halve($spacing-unit);
+  padding: $spacing-unit / 2;
 
   > *:last-child {
     margin-bottom: 0;

@@ -48,22 +48,22 @@ $vertical-align-factor: 1.5 !default;
 
 $font-leading: 1.5 !default;
 
-$font-size-micro: 12 !default;
-$font-size-small: 14 !default;
-$font-size-base: 16 !default;
-$font-size-lead: 18 !default;
+$font-size-micro: .8rem !default;
+$font-size-small: .9rem !default;
+$font-size-base: 1rem !default;
+$font-size-lead: 1.2rem !default;
 $font-size-btn: $font-size-base !default;
 
-$font-size-h1: $font-size-base !default;
-$font-size-h2: $font-size-base !default;
-$font-size-h3: $font-size-base !default;
-$font-size-h4: $font-size-base !default;
-$font-size-h5: $font-size-base !default;
-$font-size-h6: $font-size-base !default;
+$font-size-h1: 3rem !default;
+$font-size-h2: 2rem !default;
+$font-size-h3: 1.5rem !default;
+$font-size-h4: 1.4rem !default;
+$font-size-h5: 1.3rem !default;
+$font-size-h6: 1.2rem !default;
 
 $font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !default;
 $font-family-headings: $font-family-base !default;
-$font-family-monospace: monospace !default;
+$font-family-monospace: Consolas, 'Liberation Mono', Menlo, Courier, monospace !default;
 
 $font-weight-light: 100 !default;
 $font-weight-normal: 400 !default;
@@ -73,23 +73,20 @@ $font-weight-headings: $font-weight-bold !default;
 $link-underline: true !default;
 $link-active: false !default;
 
-$spacing-unit: round($font-size-base * $font-leading) / $vertical-align-body * 1rem !default;
+$spacing-unit: $font-size-base * $font-leading !default;
 $spacing-map: (
-  'quarter': quarter($spacing-unit),
-  'third': third($spacing-unit),
-  'half': halve($spacing-unit),
-  'double': double($spacing-unit),
-  'triple': triple($spacing-unit),
-  'quadruple': quadruple($spacing-unit)
+  'quarter': $spacing-unit / 4,
+  'third': $spacing-unit / 3,
+  'half': $spacing-unit / 2,
+  'double': $spacing-unit * 2,
+  'triple': $spacing-unit * 3,
+  'quadruple': $spacing-unit * 4
 ) !default;
 
 $grid-container: 1020px !default;
 $grid-gutter: $spacing-unit !default;
 
 $ui-border-radius: 4px !default;
-$ui-padding-vertical: quarter($spacing-unit) !default;
-$ui-padding-horizontal: halve($spacing-unit) !default;
-$ui-padding-vertical-ratio: .4 !default;
 
 $list-menu-color: $color-white !default;
 $list-menu-background: $color-link !default;

@@ -19,16 +19,16 @@ input[type="button"],
 input[type="submit"],
 button,
 .btn {
-  @include ui-padding;
-  @include font-size($font-size-btn);
   display: inline-block;
   margin: 0;
+  padding: ($spacing-unit / 4) ($spacing-unit / 2);
   border: 0;
   border-bottom-style: solid;
   border-radius: $ui-border-radius;
   border-bottom-color: darken($color-btn, 25%);
   background-color: $color-btn;
   color: $color-white;
+  font-size: $font-size-btn;
   text-decoration: none;
   white-space: nowrap;
   cursor: pointer;

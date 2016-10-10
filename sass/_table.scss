@@ -8,7 +8,7 @@ thead {
 }
 
 td, th {
-  padding: quarter($spacing-unit);
+  padding: $spacing-unit / 4;
 }
 
 .table-bordered {

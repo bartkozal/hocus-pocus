@@ -1,11 +1,11 @@
 .highlight {
-  @include font-size(12);
   display: block;
   margin: 0;
-  margin-bottom: double($spacing-unit);
-  padding: halve($spacing-unit);
+  margin-bottom: $spacing-unit * 2;
+  padding: $spacing-unit / 2;
   background: #1d1f21;
   color: #c5c8c6;
+  font-size: $font-size-small;
 
   > pre {
     margin-bottom: 0;

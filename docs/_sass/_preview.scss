@@ -1,7 +1,6 @@
 .preview-grid {
   @extend %code-block;
-  @include ui-padding;
-
+  padding: ($spacing-unit / 4) ($spacing-unit / 2);
   background-color: $color-blue;
   color: $color-white;
   text-align: center;
@@ -22,6 +21,6 @@
 }
 
 .preview-grid-large {
-  padding-top: double($spacing-unit);
-  padding-bottom: double($spacing-unit);
+  padding-top: $spacing-unit * 2;
+  padding-bottom: $spacing-unit * 2;
 }
