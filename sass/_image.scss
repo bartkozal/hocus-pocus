@@ -17,7 +17,7 @@ img {
 }
 
 .img-rounded {
-  border-radius: $ui-border-radius;
+  border-radius: $ui-border-radius * 2;
 }
 
 .img-circle {

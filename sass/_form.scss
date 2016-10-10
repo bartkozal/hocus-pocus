@@ -28,6 +28,10 @@ textarea {
   border: 1px solid $color-ui;
 }
 
+input[type="search"] {
+  border-radius: $ui-border-radius * 3;
+}
+
 input[type="radio"],
 input[type="checkbox"] {
   position: relative;
