@@ -141,7 +141,11 @@ pre code {
   white-space: pre-wrap;
 }
 
-small,
+small {
+  @include font-size($font-size-small);
+  color: $color-small;
+}
+
 .text-small {
   @include font-size($font-size-small);
 }
