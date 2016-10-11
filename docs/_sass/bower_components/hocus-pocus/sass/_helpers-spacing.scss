@@ -1,0 +1,191 @@
+@each $attr in margin, padding {
+  .#{$attr} {
+    #{$attr}: $spacing-unit !important;
+  }
+
+  .#{$attr}-top {
+    #{$attr}-top: $spacing-unit !important;
+  }
+
+  .#{$attr}-right {
+    #{$attr}-right: $spacing-unit !important;
+  }
+
+  .#{$attr}-bottom {
+    #{$attr}-bottom: $spacing-unit !important;
+  }
+
+  .#{$attr}-left {
+    #{$attr}-left: $spacing-unit !important;
+  }
+
+  .#{$attr}-horizontal {
+    #{$attr}-right: $spacing-unit !important;
+    #{$attr}-left: $spacing-unit !important;
+  }
+
+  .#{$attr}-vertical {
+    #{$attr}-top: $spacing-unit !important;
+    #{$attr}-bottom: $spacing-unit !important;
+  }
+
+  .no-#{$attr} {
+    #{$attr}: 0 !important;
+  }
+
+  .no-#{$attr}-top {
+    #{$attr}-top: 0 !important;
+  }
+
+  .no-#{$attr}-right {
+    #{$attr}-right: 0 !important;
+  }
+
+  .no-#{$attr}-bottom {
+    #{$attr}-bottom: 0 !important;
+  }
+
+  .no-#{$attr}-left {
+    #{$attr}-left: 0 !important;
+  }
+
+  .no-#{$attr}-horizontal {
+    #{$attr}-right: 0 !important;
+    #{$attr}-left: 0 !important;
+  }
+
+  .no-#{$attr}-vertical {
+    #{$attr}-top: 0 !important;
+    #{$attr}-bottom: 0 !important;
+  }
+
+  @each $name, $size in $spacing-map {
+    [class~="#{$attr}-#{$name}"] {
+      #{$attr}: #{$size} !important;
+    }
+
+    [class~="#{$attr}-#{$name}-top"] {
+      #{$attr}-top: #{$size} !important;
+    }
+
+    [class~="#{$attr}-#{$name}-right"] {
+      #{$attr}-right: #{$size} !important;
+    }
+
+    [class~="#{$attr}-#{$name}-bottom"] {
+      #{$attr}-bottom: #{$size} !important;
+    }
+
+    [class~="#{$attr}-#{$name}-left"] {
+      #{$attr}-left: #{$size} !important;
+    }
+
+    [class~="#{$attr}-#{$name}-horizontal"] {
+      #{$attr}-right: #{$size} !important;
+      #{$attr}-left: #{$size} !important;
+    }
+
+    [class~="#{$attr}-#{$name}-vertical"] {
+      #{$attr}-top: #{$size} !important;
+      #{$attr}-bottom: #{$size} !important;
+    }
+  }
+}
+
+@mixin rwd-helpers-content($rwd-screen-name) {
+  @each $attr in margin, padding {
+    .#{$rwd-screen-name}-#{$attr} {
+      #{$attr}: $spacing-unit !important;
+    }
+
+    .#{$rwd-screen-name}-#{$attr}-top {
+      #{$attr}-top: $spacing-unit !important;
+    }
+
+    .#{$rwd-screen-name}-#{$attr}-right {
+      #{$attr}-right: $spacing-unit !important;
+    }
+
+    .#{$rwd-screen-name}-#{$attr}-bottom {
+      #{$attr}-bottom: $spacing-unit !important;
+    }
+
+    .#{$rwd-screen-name}-#{$attr}-left {
+      #{$attr}-left: $spacing-unit !important;
+    }
+
+    .#{$rwd-screen-name}-#{$attr}-horizontal {
+      #{$attr}-right: $spacing-unit !important;
+      #{$attr}-left: $spacing-unit !important;
+    }
+
+    .#{$rwd-screen-name}-#{$attr}-vertical {
+      #{$attr}-top: $spacing-unit !important;
+      #{$attr}-bottom: $spacing-unit !important;
+    }
+
+    .#{$rwd-screen-name}-no-#{$attr} {
+      #{$attr}: 0 !important;
+    }
+
+    .#{$rwd-screen-name}-no-#{$attr}-top {
+      #{$attr}-top: 0 !important;
+    }
+
+    .#{$rwd-screen-name}-no-#{$attr}-right {
+      #{$attr}-right: 0 !important;
+    }
+
+    .#{$rwd-screen-name}-no-#{$attr}-bottom {
+      #{$attr}-bottom: 0 !important;
+    }
+
+    .#{$rwd-screen-name}-no-#{$attr}-left {
+      #{$attr}-left: 0 !important;
+    }
+
+    .#{$rwd-screen-name}-no-#{$attr}-horizontal {
+      #{$attr}-right: 0 !important;
+      #{$attr}-left: 0 !important;
+    }
+
+    .#{$rwd-screen-name}-no-#{$attr}-vertical {
+      #{$attr}-top: 0 !important;
+      #{$attr}-bottom: 0 !important;
+    }
+
+    @each $name, $size in $spacing-map {
+      [class~="#{$rwd-screen-name}-#{$attr}-#{$name}"] {
+        #{$attr}: #{$size} !important;
+      }
+
+      [class~="#{$rwd-screen-name}-#{$attr}-#{$name}-top"] {
+        #{$attr}-top: #{$size} !important;
+      }
+
+      [class~="#{$rwd-screen-name}-#{$attr}-#{$name}-right"] {
+        #{$attr}-right: #{$size} !important;
+      }
+
+      [class~="#{$rwd-screen-name}-#{$attr}-#{$name}-bottom"] {
+        #{$attr}-bottom: #{$size} !important;
+      }
+
+      [class~="#{$rwd-screen-name}-#{$attr}-#{$name}-left"] {
+        #{$attr}-left: #{$size} !important;
+      }
+
+      [class~="#{$rwd-screen-name}-#{$attr}-#{$name}-horizontal"] {
+        #{$attr}-right: #{$size} !important;
+        #{$attr}-left: #{$size} !important;
+      }
+
+      [class~="#{$rwd-screen-name}-#{$attr}-#{$name}-vertical"] {
+        #{$attr}-top: #{$size} !important;
+        #{$attr}-bottom: #{$size} !important;
+      }
+    }
+  }
+}
+
+@include rwd-helpers;

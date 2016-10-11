@@ -1,0 +1,107 @@
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+label,
+textarea,
+input[type="file"] {
+  display: block;
+}
+
+input {
+  cursor: pointer;
+}
+
+input,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="url"],
+textarea {
+  padding: $spacing-unit / 4;
+  border: 1px solid $color-ui;
+}
+
+input[type="search"] {
+  border-radius: $ui-border-radius * 3;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  position: relative;
+  bottom: 1px;
+  margin-right: $spacing-unit / 2;
+  vertical-align: middle;
+}
+
+input[disabled],
+input[readonly] {
+  background-color: lighten($color-ui, 5%);
+
+  &:hover {
+    cursor: not-allowed;
+  }
+}
+
+.form-inline {
+  margin-bottom: 0;
+
+  label {
+    display: inline-block;
+  }
+
+  > * {
+    margin-right: $spacing-unit / 4;
+  }
+}
+
+.form-stacked {
+  label {
+    display: block;
+    margin-bottom: $spacing-unit / 3;
+  }
+
+  label + input,
+  label + select,
+  label + textarea,
+  label:not([for]) {
+    margin-bottom: $spacing-unit;
+  }
+
+  button {
+    display: inline-block;
+  }
+}
+
+.form-horizontal {
+  .form-item {
+    margin-bottom: $spacing-unit;
+
+    label {
+      display: inline-block;
+      width: 25%;
+      margin: 0;
+      padding: ($spacing-unit / 4) ($spacing-unit / 2);
+      text-align: right;
+    }
+  }
+
+  .form-group {
+    margin-left: 25%;
+    padding-left: $spacing-unit / 4;
+
+    label {
+      margin-bottom: $spacing-unit;
+    }
+  }
+
+  button {
+    display: inline-block;
+  }
+}
