@@ -13,7 +13,7 @@
     <div class="container">
       <div class="grid">
         <div class="grid-item 1/5 compact-hidden">
-          <div class="navigation" data-gumshoe-header>
+          <div class="navigation">
             {% include navigation.html list="menu" %}
           </div>
         </div>
@@ -31,14 +31,16 @@
     <script>
       var scrolled = false;
 
-      document.addEventListener("scroll", function() {
+      window.addEventListener("scroll", function() {
         if (!scrolled) {
           gumshoe.init({
+            selector: '.list-menu[data-gumshoe] a',
             activeClass: 'is-active',
+            offset: 200
           });
           scrolled = true
         }
-      })
+      }, false)
 
       smoothScroll.init({
         offset: 32
