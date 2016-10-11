@@ -21,7 +21,7 @@ var paths = {
   },
   img: {
     src: 'docs/img/*.png',
-    dest: 'build'
+    dest: 'build/img'
   },
   html: {
     src: 'docs/index.html',
