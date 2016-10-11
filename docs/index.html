@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="google-site-verification" content="2KpvCeE4Oo8GfkHKQwHppQGPgLU3ih57WtS6hVDZ2MQ">
     <title>Hocus-Pocus</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/tabby/11.1.0/css/tabby.min.css">
     <link rel="stylesheet" href="docs.css">
   </head>
 
@@ -43,6 +44,7 @@
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/gumshoe/3.3.1/js/gumshoe.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/smooth-scroll/10.1.0/js/smooth-scroll.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/tabby/11.1.0/js/tabby.min.js"></script>
     <script>
       var scrolled = false;
 
@@ -57,6 +59,10 @@
         }
       }, false)
 
+      tabby.init({
+        toggleActiveClass: 'is-active'
+      });
+
       smoothScroll.init({
         offset: 32
       });
@@ -65,7 +71,7 @@
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
       ga('create', 'UA-51355575-4', 'auto');
       ga('send', 'pageview');

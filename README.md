@@ -11,7 +11,7 @@ of helpers with variables.
  people think about CSS. However, in most cases within my own project work, I
  just don’t need all these features and UI components like progress bars or
  breadcrumbs. Instead, I prefer to have something more universal that I can use
- in any project, without needing to override framework CSS classes.
+ in any project.
 
 ## Key Features
 

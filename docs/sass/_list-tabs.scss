@@ -1,0 +1,26 @@
+.list-tabs {
+  @extend %list-inline;
+  margin-bottom: $spacing-unit;
+  padding-left: $spacing-unit / 4;
+  border-bottom: 1px solid $color-ui;
+
+  > li {
+    margin-bottom: -1px;
+    padding: ($spacing-unit / 4) ($spacing-unit / 2);
+    border: 1px solid $color-body;
+    border-bottom: 1px solid $color-ui;
+
+    &.is-active {
+      border: 1px solid $color-ui;
+      border-bottom: 1px solid $color-body;
+    }
+
+    + li {
+      margin-left: $spacing-unit / 4;
+    }
+
+    > a {
+      text-decoration: none;
+    }
+  }
+}

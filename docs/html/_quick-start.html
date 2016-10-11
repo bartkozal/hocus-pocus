@@ -1,54 +1,85 @@
 <h2 id="quick-start">Quick Start</h2>
 
-<p>
-  Hocus-Pocus requires <a href="http://sass-lang.com">Sass</a>
-  (version 3.3.0 or later) to proper work.
-</p>
+<ul class="list-tabs" data-tabs>
+  <li><a href="#npm" data-tab>npm</a></li>
+  <li><a href="#bower" data-tab>Bower</a></li>
+</ul>
 
-<h3 id="bower">Bower</h3>
+<div data-tabs-content>
+  <div class="tabs-pane is-active" id="npm" data-tabs-pane>
+    <p>
+      Hocus-Pocus requires <a href="http://sass-lang.com">Sass</a>
+      (version 3.3.0 or later) to proper work.
+    </p>
 
-<p>
-  Bower is a recommended way to install:
-</p>
+    <p>
+      Run:
+    </p>
+
+<pre><code class="lang-shell">
+$ npm install hocus-pocus --save-dev
+</code></pre>
+
+    <p>
+      Then import a main file just after your settings, but before rest of
+      stylesheets. If you want to use color variables in your variables import
+      them first:
+    </p>
+
+<pre><code class="lang-scss">
+// Import colors (optional)
+@import "node_modules/hocus-pocus/sass/colors";
+
+// Define settings
+$font-family-base: "Open Sans", sans-serif;
+$grid-container: 70rem;
+
+// Import Hocus-Pocus
+@import "node_modules/hocus-pocus/hocus-pocus";
+
+// Import your stylesheets
+@import "compontents/meter";
+@import "compontents/price-box";
+</code></pre>
+  </div>
+
+  <div class="tabs-pane" id="bower" data-tabs-pane>
+    <p>
+      Hocus-Pocus requires <a href="http://sass-lang.com">Sass</a>
+      (version 3.3.0 or later) to proper work.
+    </p>
+
+    <p>
+      Run:
+    </p>
 
 <pre><code class="lang-shell">
 $ bower install hocus-pocus
 </code></pre>
 
-<p>
-  Then import a main file just after your defaults, but before rest of
-  stylesheets. If you want to use color variables in your settings import
-  them first.
-</p>
+    <p>
+      Then import a main file just after your settings, but before rest of
+      stylesheets. If you want to use color variables in your variables import
+      them first:
+    </p>
 
 <pre><code class="lang-scss">
-// Define your settings
+// Import colors (optional)
+@import "bower_components/hocus-pocus/sass/colors";
+
+// Define settings
 $font-family-base: "Open Sans", sans-serif;
 $grid-container: 70rem;
 
-// Import framework
+// Import Hocus-Pocus
 @import "bower_components/hocus-pocus/hocus-pocus";
 
 // Import your stylesheets
 @import "compontents/meter";
 @import "compontents/price-box";
 </code></pre>
-
-<h3 id="npm">npm</h3>
-
-<p>
-  If you prefer Hocus-Pocus is available as a npm package:
-</p>
-
-<pre><code class="lang-shell">
-$ npm install hocus-pocus
-</code></pre>
-
-<h2 id="principles">Principles</h2>
-
-<p>
-  Stick to rules from <a href="http://codeguide.co/#css">Mark Otto's Code Guide</a>.
-</p>
+  </div>
+</div>
 
 <p>
   Hocus-Pocus applies a following naming convention:
