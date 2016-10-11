@@ -10,8 +10,4 @@ $font-weight-headings: 400;
         'sass/preview',
         'sass/list-tabs';
 
-@include btn('favorite', $color-yellow);
-
-.btn-favorite {
-  color: darken($color-yellow, 25%);
-}
+@include btn('favorite', $color-yellow, darken($color-yellow, 25%));

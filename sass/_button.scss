@@ -1,7 +1,8 @@
-@mixin btn($name, $color) {
+@mixin btn($name, $color, $color-text: $color-white) {
   .btn-#{$name} {
     border-bottom-color: darken($color, 25%);
     background-color: $color;
+    color: $color-text;
 
     &:hover {
       background-color: lighten($color, 5%);
@@ -48,6 +49,7 @@ button[disabled],
 .btn-disabled {
   border-bottom-color: darken($color-disabled, 20%);
   background-color: $color-disabled;
+  color: darken($color-disabled, 25%);
   cursor: not-allowed;
 
   &:hover {
