@@ -6,7 +6,6 @@
 
   > li {
     margin-bottom: -1px;
-    padding: ($spacing-unit / 4) ($spacing-unit / 2);
     border: 1px solid $color-body;
     border-bottom: 1px solid $color-ui;
 
@@ -15,11 +14,9 @@
       border-bottom: 1px solid $color-body;
     }
 
-    + li {
-      margin-left: $spacing-unit / 4;
-    }
-
     > a {
+      display: block;
+      padding: ($spacing-unit / 3) ($spacing-unit / 2);
       text-decoration: none;
     }
   }
