@@ -15,7 +15,7 @@ of helpers with variables.
 
 ## Key Features
 
-The following framework features are the most characteristic to Hocus-Pocus:
+The following features are the most characteristic to Hocus-Pocus:
 
 * Enhanced [normalize.css](https://github.com/necolas/normalize.css) reset
 * Default colors set and color helpers thanks to [clrs.cc](http://clrs.cc)
@@ -34,5 +34,5 @@ date changelog is available under [the releases
 section](https://github.com/bkzl/hocus-pocus/releases).
 
 I appreciate any comments, feedback, and information about potential issues.
-Have you experienced a framework bug or noticed a mistake in documentation?
+Have you experienced a bug or noticed a mistake in documentation?
 Please [add a new issue](https://github.com/bkzl/hocus-pocus/issues). Thanks!
