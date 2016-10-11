@@ -1,0 +1,84 @@
+<h2 id="boxes">Boxes</h2>
+
+<p>
+  Create an element that is out of a rest of content. Useful for flashes, islands,
+  sidebar boxes etc. The last element inside it will have removed a bottom margin.
+</p>
+
+<p>
+  Define own box types:
+</p>
+
+<pre><code class="lang-scss">
+@include box($name, $color, $contrast: 25%)
+</code></pre>
+
+<p>
+  Usage:
+</p>
+
+<pre><code class="lang-scss">
+@include box('alert', $color-red)
+</code></pre>
+
+<h3 id="box-types">Box Types</h3>
+
+<div class="example">
+  <div class="box">
+    <p>Element inside a box</p>
+  </div>
+</div>
+
+<pre><code class="lang-html">
+<div class="box">
+  ...
+</div>
+</code></pre>
+
+<div class="example">
+  <div class="box bg-silver">
+    <p>Element inside a box</p>
+  </div>
+</div>
+
+<pre><code class="lang-html">
+<div class="box bg-silver">
+  ...
+</div>
+</code></pre>
+
+<div class="example">
+  <div class="box box-informative">
+    <p>Informative box</p>
+  </div>
+</div>
+
+<pre><code class="lang-html">
+<div class="box box-informative">
+  <p>Informative box</p>
+</div>
+</code></pre>
+
+<div class="example">
+  <div class="box box-positive">
+    <p>Positive box</p>
+  </div>
+</div>
+
+<pre><code class="lang-html">
+<div class="box box-positive">
+  <p>Positive box</p>
+</div>
+</code></pre>
+
+<div class="example">
+  <div class="box box-negative">
+    <p>Negative box</p>
+  </div>
+</div>
+
+<pre><code class="lang-html">
+<div class="box box-negative">
+  <p>Negative box</p>
+</div>
+</code></pre>

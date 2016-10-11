@@ -1,0 +1,105 @@
+<h2 id="buttons">Buttons</h2>
+
+<p>
+  Defaults:
+</p>
+
+<pre><code class="lang-scss">
+$btn-flat: false; // disable drop shadow
+</code></pre>
+
+<p>
+  Define own button types:
+</p>
+
+<pre><code class="lang-scss">
+@include btn($name, $color)
+</code></pre>
+
+<p>
+  Usage:
+</p>
+
+<pre><code class="lang-scss">
+@include btn('primary', #00F)
+</code></pre>
+
+<h3 id="button-types">Button Types</h3>
+
+<div class="example">
+  <button type="submit">Form button</button> <a href="#-" class="btn">Link as a button</a>
+</div>
+
+<pre><code class="lang-html">
+<button type="submit">Form button</button>
+
+<a href="#" class="btn">Link as a button</a>
+</code></pre>
+
+<div class="example">
+  <button disabled>Disabled button</button> <a href="#-" class="btn btn-disabled">Disabled link as a button</a>
+</div>
+
+<pre><code class="lang-html">
+<button disabled>Disabled button</button>
+
+<a href="#" class="btn btn-disabled">Disabled link as a button</a>
+</code></pre>
+
+<div class="example">
+  <a href="#-" class="btn btn-outline">Outline button</a> <a href="#-" class="btn btn-brand btn-outline">Outline brand button</a>
+</div>
+
+<pre><code class="lang-html">
+<a href="#" class="btn btn-outline">Outline button</a>
+
+<a href="#" class="btn btn-brand btn-outline">Outline brand button</a>
+</code></pre>
+
+<div class="example">
+  <a href="#-" class="btn btn-flat bg-aqua">Flat button</a>
+</div>
+
+<pre><code class="lang-html">
+<a href="#" class="btn btn-flat">Flat button</a>
+</code></pre>
+
+<div class="example">
+  <a href="#-" class="btn btn-shadow bg-aqua">Shadowed button</a>
+</div>
+
+<pre><code class="lang-html">
+<a href="#" class="btn btn-shadow">Shadowed button</a>
+</code></pre>
+
+<div class="example">
+  <a href="#-" class="btn btn-block">Block button</a>
+</div>
+
+<pre><code class="lang-html">
+<a href="#" class="btn btn-block">Block button</a>
+</code></pre>
+
+<div class="example">
+  <a href="#-" class="btn btn-brand">Brand button</a>
+</div>
+
+<pre><code class="lang-html">
+<a href="#" class="btn btn-brand">Brand button</a>
+</code></pre>
+
+<div class="example">
+  <a href="#-" class="btn btn-positive">Positive button</a>
+</div>
+
+<pre><code class="lang-html">
+<a href="#" class="btn btn-positive">Positive button</a>
+</code></pre>
+
+<div class="example">
+  <a href="#-" class="btn btn-negative">Negative button</a>
+</div>
+
+<pre><code class="lang-html">
+<a href="#" class="btn btn-negative">Negative button</a>
+</code></pre>

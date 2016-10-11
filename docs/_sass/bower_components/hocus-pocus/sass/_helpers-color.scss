@@ -1,9 +1,0 @@
-@each $name, $color in $color-map {
-  .text-#{$name} {
-    color: $color !important;
-  }
-
-  .bg-#{$name} {
-    background-color: $color !important;
-  }
-}

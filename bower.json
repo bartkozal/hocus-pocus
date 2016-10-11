@@ -17,7 +17,8 @@
   "ignore": [
     "**/.*",
     "docs",
-    "package.json",
-    ".scss-lint.yml"
+    "build",
+    "node_modules",
+    "package.json"
   ]
 }

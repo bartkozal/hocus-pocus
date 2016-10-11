@@ -1,16 +1,13 @@
----
----
-
 $font-weight-headings: 400;
 
-@import 'bower_components/hocus-pocus/hocus-pocus';
+@import '../hocus-pocus';
 
-@import 'code',
-        'color-block',
-        'highlight',
-        'example',
-        'navigation',
-        'preview';
+@import 'sass/code',
+        'sass/color-block',
+        'sass/highlight',
+        'sass/example',
+        'sass/navigation',
+        'sass/preview';
 
 @include btn('favorite', $color-yellow);
 

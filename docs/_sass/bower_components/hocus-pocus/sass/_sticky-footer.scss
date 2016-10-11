@@ -1,9 +1,0 @@
-.sticky-footer {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-
-  > *:first-child {
-    flex: 1;
-  }
-}

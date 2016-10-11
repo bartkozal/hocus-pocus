@@ -1,0 +1,269 @@
+<h2 id="rwd">Responsive Design</h2>
+
+<p>
+  Choose approach of writing responsive design that you prefer:
+  <code class="nohighlight">mobile-first</code> or <code class="nohighlight">desktop-first</code>.
+</p>
+
+<p>
+  Define custom breakpoints. Each of them gets a mixin and own set of helpers.
+</p>
+
+<p>
+  Defaults:
+</p>
+
+<pre><code class="lang-scss">
+$rwd-type: mobile-first;  // choose between `mobile-first` and `desktop-first`
+$rwd-map: (
+  'compact': 320px 414px,
+  'regular': 415px
+);                        // helpers are based on this map
+</code></pre>
+
+<p>
+  Additional helper for hidpi displays:
+</p>
+
+<pre><code class="lang-scss">
+@include hidpi($density); // in dpi, defaults to 192 (retina displays)
+</code></pre>
+
+<p>
+  Usage:
+</p>
+
+<pre><code class="lang-scss">
+@include rwd('compact') {
+  h1 {
+    color: $color-red;
+  }
+}
+
+@include hidpi {
+  .logo {
+    background-image: url('logo@2x.png');
+  }
+}
+</code></pre>
+
+<pre><code class="lang-html">
+<div class="compact-hidden">...</div>
+<div class="hidden compact-visible">...</div>
+
+<div class="grid">
+  <div class="grid-item 1/4 compact-hidden">
+    ...
+  </div>
+
+  <div class="grid-item 3/4 compact-1/1">
+    <h1 class="compact-no-margin-top">
+      ...
+    </h1>
+  </div>
+</div>
+</code></pre>
+
+<h3 id="width-helpers">Width Helpers</h3>
+
+<p>
+  Width helpers work with various elements like grid items, boxes, form inputs,
+  table cells etc.
+</p>
+
+<p>
+  Fractions of these numbers are available: <code class="nohighlight">n/1</code>, <code class="nohighlight">n/2</code>,
+  <code class="nohighlight">n/3</code>, <code class="nohighlight">n/4</code>, <code class="nohighlight">n/5</code>, <code class="nohighlight">n/6</code>,
+  <code class="nohighlight">n/8</code>, <code class="nohighlight">n/9</code>, <code class="nohighlight">n/10</code> and <code class="nohighlight">n/12</code>.
+</p>
+
+<p>
+  Width helpers are generated for each breakpoint in <code class="nohighlight">$rwd-map</code>.
+</p>
+
+<p>
+  Usage:
+</p>
+
+<div class="grid">
+  <div class="grid-item 1/1">
+    <div class="preview-grid">
+      .1/1
+    </div>
+  </div>
+</div>
+
+<div class="grid">
+  <div class="grid-item 1/4">
+    <div class="preview-grid">
+      .1/4, .2/8, .3/12
+    </div>
+  </div>
+  <div class="grid-item 3/4">
+    <div class="preview-grid">
+      .3/4, .6/8, .9/12
+    </div>
+  </div>
+</div>
+
+<div class="grid">
+  <div class="grid-item 2/5">
+    <div class="preview-grid">
+      .2/5, .4/10
+    </div>
+  </div>
+  <div class="grid-item 3/5">
+    <div class="preview-grid">
+      .3/5, .6/10
+    </div>
+  </div>
+</div>
+
+<div class="grid">
+  <div class="grid-item 1/6">
+    <div class="preview-grid">
+      .1/6, .2/12
+    </div>
+  </div>
+  <div class="grid-item 5/6">
+    <div class="preview-grid">
+      .5/6, .10/12
+    </div>
+  </div>
+</div>
+
+<div class="grid">
+  <div class="grid-item 1/2">
+    <div class="preview-grid">
+      .1/2, .2/4, .3/6, .4/8, .5/10, .6/12
+    </div>
+  </div>
+  <div class="grid-item 1/8">
+    <div class="preview-grid">
+      .1/8
+    </div>
+  </div>
+  <div class="grid-item 3/8">
+    <div class="preview-grid">
+      .3/8
+    </div>
+  </div>
+</div>
+
+<div class="grid">
+  <div class="grid-item 1/5 compact-1/2">
+    <div class="preview-grid">
+      .1/5.compact-1/2
+    </div>
+  </div>
+  <div class="grid-item 4/5 compact-1/2">
+    <div class="preview-grid">
+      .4/5.compact-1/2
+    </div>
+  </div>
+</div>
+
+<h3 id="visibility-helpers">Visibility Helpers</h3>
+
+<p>
+  Specify visibility of an element.
+</p>
+
+<p>
+  Visibility helpers use <code class="nohighlight">!important</code> and are generated for each breakpoint in <code class="nohighlight">$rwd-map</code>.
+</p>
+
+<p>
+  Following classes are available: <code class="nohighlight">.hidden</code>, <code class="nohighlight">.visible</code>,
+  <code class="nohighlight">.block</code>, <code class="nohighlight">.inline-block</code> and <code class="nohighlight">.inline</code>
+</p>
+
+<p>
+  Usage:
+</p>
+
+<div class="example">
+  <p class="inline compact-hidden">Inline paragraph hidden on mobile</p>
+  <small class="hidden compact-block">Block small text visible on mobile</small>
+</div>
+
+<pre><code class="lang-html">
+<p class="inline compact-hidden">Inline paragraph hidden on mobile</p>
+<small class="hidden compact-block">Block small text visible on mobile</small>
+</code></pre>
+
+<h3 id="spacing-helpers">Spacing Helpers</h3>
+
+<p>
+  Specify spacing (margin/padding) of an element.
+</p>
+
+<p>
+  Spacing helpers use <code class="nohighlight">!important</code> and are generated for each size
+  in <code class="nohighlight">$spacing-map</code> and each breakpoint in <code class="nohighlight">$rwd-map</code>.
+</p>
+
+<p>
+  Defaults:
+</p>
+
+<pre><code class="lang-scss">
+// spacing helpers and media gutter modifiers are generated based on this map
+$spacing-map: (
+  '1/4': $spacing-unit / 4,
+  '1/3': $spacing-unit / 3,
+  '1/2': $spacing-unit / 2,
+  '2/1': $spacing-unit * 2,
+  '3/1': $spacing-unit * 3,
+  '4/1': $spacing-unit * 4
+);
+</code></pre>
+
+<p>
+  Usage:
+</p>
+
+<pre><code class="lang-scss">
+.margin[-size][-type];
+.padding[-size][-type];
+.no-margin[-type];
+.no-padding[-type];
+
+/*
+ * Where [-type] is blank (all values) or one of these values:
+ *   -top, -right, -bottom, -left, -horizontal, -vertical
+ *
+ * Where [-size] is blank ($spacing-unit) or one of these values:
+ *   -1/4, -1/3, -1/2, -2/1, -3/1, -4/1
+ */
+</code></pre>
+
+<div class="example">
+  <div class="padding-vertical bg-green text-white text-mono text-small">
+    .padding-vertical
+  </div>
+  <div class="margin no-padding bg-olive text-white text-mono text-small">
+    .margin.no-padding
+  </div>
+  <div class="margin-2/1-bottom bg-teal text-white text-mono text-small">
+    .margin-2/1-bottom
+  </div>
+  <div class="padding-1/2-left padding-1/2-top compact-no-padding-left bg-aqua text-white text-mono text-small">
+    .padding-1/2-left.padding-1/2-top.compact-no-padding-left
+  </div>
+  <div class="compact-margin-horizontal bg-blue text-white text-mono text-small">
+    .compact-margin-horizontal
+  </div>
+  <div class="compact-padding-1/2 bg-navy text-white text-mono text-small">
+    .compact-padding-1/2
+  </div>
+</div>
+
+<pre><code class="lang-html">
+<div class="padding-vertical">...</div>
+<div class="margin no-padding">...</div>
+<div class="margin-2/1-bottom">...</div>
+<div class="padding-1/2-left padding-1/2-top compact-no-padding-left">...</div>
+<div class="compact-margin-horizontal">...</div>
+<div class="compact-padding-1/2">...</div>
+</code></pre>

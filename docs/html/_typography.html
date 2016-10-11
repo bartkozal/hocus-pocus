@@ -1,0 +1,237 @@
+<h2 id="typography">Typography</h2>
+
+<p>
+  Typography elements keep vertical rhythm and have custom reset.
+</p>
+
+<p>
+  Defaults:
+</p>
+
+<pre><code class="lang-scss">
+$font-leading: 1.5;                       // base font leading
+$font-size-micro: .8rem;                  // font size of `.text-micro`
+$font-size-small: .9rem;                  // font size of `small` and `.text-small`
+$font-size-base: 1rem;                    // base font size
+$font-size-lead: 1.2rem;                  // font size of `.text-lead` element
+$font-size-btn: $font-size-base;          // font size of buttons
+
+$font-size-h1: 3rem;                      // font size of headings
+$font-size-h2: 2rem;
+$font-size-h3: 1.5rem;
+$font-size-h4: 1.4rem;
+$font-size-h5: 1.3rem;
+$font-size-h6: 1.2rem;
+
+$font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+$font-family-headings: $font-family-base;
+$font-family-monospace: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+
+$font-weight-light: 100;                  // light font weight
+$font-weight-normal: 400;                 // normal/base font weight
+$font-weight-bold: 700;                   // bold font weight
+$font-weight-headings: $font-weight-bold; // default font weight of headings
+
+$link-underline: true;                    // should links have underline
+$link-active: false;                      // should active links look like clicked
+</code></pre>
+
+<h3 id="headings">Headings</h3>
+
+<div class="example">
+  <h1>Heading Level 1</h1>
+</div>
+
+<pre><code class="lang-html">
+<h1>Heading Level 1</h1>
+<span class="h1">Heading Level 1</span>
+</code></pre>
+
+<div class="example">
+  <h2>Heading Level 2</h2>
+</div>
+
+<pre><code class="lang-html">
+<h2>Heading Level 2</h2>
+<span class="h2">Heading Level 2</span>
+</code></pre>
+
+<div class="example">
+  <h3>Heading Level 3</h3>
+</div>
+
+<pre><code class="lang-html">
+<h3>Heading Level 3</h3>
+<span class="h3">Heading Level 3</span>
+</code></pre>
+
+<div class="example">
+  <h4>Heading Level 4</h4>
+</div>
+
+<pre><code class="lang-html">
+<h4>Heading Level 4</h4>
+<span class="h4">Heading Level 4</span>
+</code></pre>
+
+<div class="example">
+  <h5>Heading Level 5</h5>
+</div>
+
+<pre><code class="lang-html">
+<h5>Heading Level 5</h5>
+<span class="h5">Heading Level 5</span>
+</code></pre>
+
+<div class="example">
+  <h6>Heading Level 6</h6>
+</div>
+
+<pre><code class="lang-html">
+<h6>Heading Level 6</h6>
+<span class="h6">Heading Level 6</span>
+</code></pre>
+
+<h3 id="paragraphs">Paragraphs</h3>
+
+<p>
+  Default styles for <code class="nohighlight">&lt;p&gt;</code>, <code class="nohighlight">&lt;strong&gt;</code>,
+  <code class="nohighlight">&lt;em&gt;</code>, <code class="nohighlight">&lt;sup&gt;</code>, <code class="nohighlight">&lt;sub&gt;</code>,
+  <code class="nohighlight">&lt;small&gt;</code>, <code class="nohighlight">&lt;a&gt;</code>, <code class="nohighlight">&lt;mark&gt;</code>,
+  <code class="nohighlight">&lt;del&gt;</code>, <code class="nohighlight">&lt;ins&gt;</code>, <code class="nohighlight">&lt;s&gt;</code>
+  and <code class="nohighlight">&lt;u&gt;</code>.
+</p>
+
+<div class="example">
+  <p>Paragraph with a <strong>strong</strong> element.</p>
+  <p>Paragraph with an <em>emphasis</em> element.</p>
+  <p>Paragraph with a <sup>sup</sup> element.</p>
+  <p>Paragraph with a <sub>sub</sub> element.</p>
+  <p>Paragraph with a <small>small</small> element.</p>
+  <p>Paragraph with a <a href="#">link</a>.</p>
+  <p>Paragraph with a <mark>mark</mark> element.</p>
+  <p>Paragraph with a <del>deleted text</del> and an <ins>inserted text</ins> elements.</p>
+  <p>Paragraph with a <s>strikethrough</s> element.</p>
+  <p>Paragraph with an <u>underline</u> element.</p>
+</div>
+
+<pre><code class="lang-html">
+<p>Paragraph with a <strong>strong</strong> element.</p>
+<p>Paragraph with an <em>emphasis</em> element.</p>
+<p>Paragraph with a <sup>sup</sup> element.</p>
+<p>Paragraph with a <sub>sub</sub> element.</p>
+<p>Paragraph with a <small>small</small> element.</p>
+<p>Paragraph with a <a href="#-">link</a>.</p>
+<p>Paragraph with a <mark>mark</mark> element.</p>
+<p>Paragraph with a <del>deleted text</del> and an <ins>inserted text</ins> elements.</p>
+<p>Paragraph with a <s>strikethrough</s> element.</p>
+<p>Paragraph with an <u>underline</u> element.</p>
+</code></pre>
+
+<h3 id="blockquote">Blockquote</h3>
+
+<div class="example">
+  <blockquote>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna.
+      Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida.
+    </p>
+  </blockquote>
+</div>
+
+<pre><code class="lang-html">
+<blockquote>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna.
+    Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida.
+  </p>
+</blockquote>
+</code></pre>
+
+<h3 id="code">Code</h3>
+
+<div class="example">
+<code class="nohighlight">
+.hocus-pocus {
+  display: block;
+}
+</code>
+</div>
+
+<pre><code class="lang-html">
+<code>
+  .hocus-pocus {
+    display: block;
+  }
+</code>
+</code></pre>
+
+<h3 id="rule">Rule</h3>
+
+<div class="example">
+  <hr>
+</div>
+
+<pre><code class="lang-html">
+<hr>
+</code></pre>
+
+<h3 id="text-helpers">Text Helpers</h3>
+
+<div class="example">
+  <p class="text-micro">Micro text</p>
+  <p class="text-small">Small text</p>
+  <p>Normal text</p>
+  <p class="text-lead">Lead text</p>
+</div>
+
+<pre><code class="lang-html">
+<p class="text-micro">Micro text</p>
+<p class="text-small">Small text</p>
+<p>Normal text</p>
+<p class="text-lead">Lead text</p>
+</code></pre>
+
+<div class="example">
+  <p class="text-mono">Mono text</p>
+</div>
+
+<pre><code class="lang-html">
+<p class="text-mono">Mono text</p>
+</code></pre>
+
+<div class="example">
+  <p class="text-light">Light weight text</p>
+  <p class="text-normal">Normal weight text</p>
+  <p class="text-bold">Bold weight text</p>
+</div>
+
+<pre><code class="lang-html">
+<p class="text-light">Light weight text</p>
+<p class="text-normal">Normal weight text</p>
+<p class="text-bold">Bold weight text</p>
+</code></pre>
+
+<div class="example">
+  <p class="text-lowercase">Lowercased text</p>
+  <p class="text-uppercase">Uppercased text</p>
+  <p class="text-capitalize">Capitalized text</p>
+</div>
+
+<pre><code class="lang-html">
+<p class="text-lowercase">Lowercased text</p>
+<p class="text-uppercase">Uppercased text</p>
+<p class="text-capitalize">Capitalized text</p>
+</code></pre>
+
+<div class="example">
+  <p class="text-left">Left aligned text</p>
+  <p class="text-center">Center aligned text</p>
+  <p class="text-right">Right aligned text</p>
+</div>
+
+<pre><code class="lang-html">
+<p class="text-left">Left aligned text</p>
+<p class="text-center">Center aligned text</p>
+<p class="text-right">Right aligned text</p>
+</code></pre>

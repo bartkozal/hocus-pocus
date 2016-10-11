@@ -1,0 +1,50 @@
+<h2 id="images">Images</h2>
+
+<p>
+  Images are vertically aligned to the middle of container and have
+  <code class="nohighlight">box-sizing</code> set to <code class="nohighlight">content-box</code>.
+</p>
+
+<p>
+  Replace any element that contains text with an image:
+</p>
+
+<pre><code class="lang-scss">
+@include img-replace($path, $width, $height);
+</code></pre>
+
+<p>
+  Usage:
+</p>
+
+<pre><code class="lang-scss">
+.logo {
+  @include img-replace('path/to/img.svg', 100px, 40px);
+}
+</code></pre>
+
+<h3 id="image-helpers">Image Helpers</h3>
+
+<div class="example">
+  <img src="http://placehold.it/1200x200/39cccc/fff" alt="example" class="img-responsive">
+</div>
+
+<pre><code class="lang-html">
+<img src="img.png" alt="placeholder" class="img-responsive">
+</code></pre>
+
+<div class="example">
+  <img src="http://placehold.it/150x150/39cccc/fff" alt="example" class="img-rounded">
+</div>
+
+<pre><code class="lang-html">
+<img src="img.png" alt="placeholder" class="img-rounded">
+</code></pre>
+
+<div class="example">
+  <img src="http://placehold.it/150x150/39cccc/fff" alt="example" class="img-circle">
+</div>
+
+<pre><code class="lang-html">
+<img src="img.png" alt="placeholder" class="img-circle">
+</code></pre>
