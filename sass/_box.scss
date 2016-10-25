@@ -15,4 +15,5 @@
 
 @include box("informative", $color-informative);
 @include box("positive", $color-positive);
+@include box("cautionary", $color-cautionary);
 @include box("negative", $color-negative);

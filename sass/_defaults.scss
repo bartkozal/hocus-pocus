@@ -9,6 +9,7 @@ $color-disabled: $color-ui !default;
 
 $color-brand: $color-blue !default;
 $color-positive: $color-green !default;
+$color-cautionary: $color-yellow !default;
 $color-negative: $color-red !default;
 $color-informative: $color-blue !default;
 
@@ -32,6 +33,7 @@ $color-map: (
   'maroon': $color-maroon,
   'brand': $color-brand,
   'positive': $color-positive,
+  'cautionary': $color-cautionary,
   'negative': $color-negative,
   'informative': $color-informative,
   'muted': $color-muted
