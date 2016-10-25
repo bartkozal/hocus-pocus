@@ -19,12 +19,11 @@ The following features are the most characteristic to Hocus-Pocus:
 
 * Enhanced [normalize.css](https://github.com/necolas/normalize.css) reset
 * Default colors set and color helpers thanks to [clrs.cc](http://clrs.cc)
-* Widely responsive web design support with customizable breakpoints and approach (mobile or desktop first)
+* Widely responsive web design support with customizable breakpoints and approach
 * Flexbox grid with universal, fraction based width helpers
 * Visibility and spacing helpers (auto-generated for the each viewport breakpoint!)
-* Typography with vertical rhythm based on [Gridlover](http://www.gridlover.net/try)
-* Components like lists, menus, tables, forms, buttons, boxes and sticky footer
-* Universal media object
+* Typography with vertical rhythm based on rem units
+* Components like lists, menus, tables, forms, buttons, boxes, media object and sticky footer
 
 You can find full documentation at [hocus-pocus.io](http://hocus-pocus.io). I
 always try to find time to improve it.
