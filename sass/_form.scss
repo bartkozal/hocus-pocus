@@ -63,7 +63,7 @@ input[readonly] {
 
 .form-stacked {
   label {
-    display: block;
+    display: table;
     margin-bottom: $spacing-unit / 3;
   }
 
@@ -75,7 +75,7 @@ input[readonly] {
   }
 
   button {
-    display: inline-block;
+    display: table;
   }
 }
 
