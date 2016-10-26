@@ -49,18 +49,11 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/smooth-scroll/10.1.0/js/smooth-scroll.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/tabby/11.1.0/js/tabby.min.js"></script>
     <script>
-      var scrolled = false;
-
-      window.addEventListener("scroll", function() {
-        if (!scrolled) {
-          gumshoe.init({
-            selector: '.list-menu[data-gumshoe] a',
-            activeClass: 'is-active',
-            offset: 200
-          });
-          scrolled = true
-        }
-      }, false)
+      gumshoe.init({
+        selector: '.list-menu[data-gumshoe] a',
+        activeClass: 'is-active',
+        offset: 200
+      });
 
       tabby.init({
         toggleActiveClass: 'is-active'
