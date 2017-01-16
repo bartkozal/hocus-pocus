@@ -5,6 +5,7 @@
   "author": "Bartlomiej Kozal <bkzl@me.com> (http://lostbananas.com)",
   "description": "Universal and lightweight stylesheet starter kit",
   "main": "hocus-pocus.scss",
+  "style": "hocus-pocus.scss",
   "keywords": [
     "css",
     "sass",
@@ -15,6 +16,11 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bkzl/hocus-pocus.git"
+  },
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "gulp serve",
+    "deploy": "gulp publish"
   },
   "devDependencies": {
     "del": "^2.2.2",
