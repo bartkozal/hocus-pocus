@@ -1,4 +1,5 @@
 .sass-cache
 .publish
+npm-debug.log
 build
 node_modules
