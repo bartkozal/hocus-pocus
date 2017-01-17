@@ -17,7 +17,7 @@
     <div class="container">
       <div class="grid">
         <div class="grid-item 1/5 compact-hidden">
-          <div class="navigation">
+          <div class="navigation" data-gumshoe-header data-gumshoe>
             <include src="html/partials/_navigation.html" list="menu"></include>
           </div>
         </div>
@@ -45,14 +45,13 @@
       </div>
     </div>
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/gumshoe/3.3.1/js/gumshoe.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/smooth-scroll/10.1.0/js/smooth-scroll.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/tabby/11.1.0/js/tabby.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gumshoe/3.3.2/js/gumshoe.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/smooth-scroll/10.2.1/js/smooth-scroll.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/tabby/11.2.0/js/tabby.min.js"></script>
     <script>
       gumshoe.init({
-        selector: '.list-menu[data-gumshoe] a',
         activeClass: 'is-active',
-        offset: 200
+        offset: 120,
       });
 
       tabby.init({
@@ -62,7 +61,7 @@
       tabby.toggleTab('#npm');
 
       smoothScroll.init({
-        offset: 32
+        offset: 30
       });
     </script>
     <script>
