@@ -1,8 +1,8 @@
 {
   "name": "hocus-pocus",
   "version": "0.3.3",
-  "homepage": "http://hocus-pocus.io",
-  "author": "Bartlomiej Kozal <bkzl@me.com> (http://lostbananas.com)",
+  "homepage": "https://hocus-pocus.io",
+  "author": "Bartlomiej Kozal <bkzl@me.com> (https://lostbananas.com)",
   "description": "Universal and lightweight stylesheet starter kit",
   "main": "hocus-pocus.scss",
   "style": "hocus-pocus.scss",
