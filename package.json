@@ -20,7 +20,7 @@
   "scripts": {
     "start": "npm run dev",
     "dev": "gulp serve",
-    "deploy": "gulp publish"
+    "deploy": "gulp build && push-dir --dir=build --branch=gh-pages --force --cleanup --verbose"
   },
   "devDependencies": {
     "del": "^2.2.2",
@@ -32,6 +32,7 @@
     "gulp-html-tag-include": "^1.0.1",
     "gulp-sass": "^2.3.2",
     "gulp-sequence": "^0.4.6",
-    "gulp-util": "^3.0.7"
+    "gulp-util": "^3.0.7",
+    "push-dir": "^0.4.1"
   }
 }

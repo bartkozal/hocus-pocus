@@ -4,7 +4,6 @@ var gulp      = require('gulp'),
     connect   = require('gulp-connect'),
     file      = require('gulp-file'),
     sass      = require('gulp-sass'),
-    ghPages   = require('gulp-gh-pages'),
     util      = require('gulp-util'),
     include   = require('gulp-html-tag-include'),
     highlight = require('gulp-highlight');
@@ -59,7 +58,7 @@ gulp.task('clean', function() {
   return del([paths.build.dest]);
 });
 
-gulp.task('build', ['sass', 'img', 'html', 'cname']);
+gulp.task('build', sequence('clean', ['sass', 'img', 'html', 'cname']));
 
 gulp.task('watch', function() {
   gulp.watch(paths.sass.watch, ['sass']);
@@ -73,13 +72,5 @@ gulp.task('connect', function() {
   });
 });
 
-gulp.task('deploy', function() {
-  return gulp.src(paths.build.src)
-    .pipe(ghPages({
-      force: true
-    }));
-});
-
-gulp.task('serve', sequence('clean', 'build', ['watch', 'connect']));
-gulp.task('publish', sequence('clean', 'build', 'deploy'));
+gulp.task('serve', sequence('build', ['watch', 'connect']));
 gulp.task('default', ['serve']);
