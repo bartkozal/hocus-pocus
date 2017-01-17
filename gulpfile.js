@@ -75,7 +75,9 @@ gulp.task('connect', function() {
 
 gulp.task('deploy', function() {
   return gulp.src(paths.build.src)
-    .pipe(ghPages());
+    .pipe(ghPages({
+      force: true
+    }));
 });
 
 gulp.task('serve', sequence('clean', 'build', ['watch', 'connect']));
