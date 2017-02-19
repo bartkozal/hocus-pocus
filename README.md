@@ -25,11 +25,11 @@ The following features are the most characteristic to Hocus-Pocus:
 * Typography with vertical rhythm based on rem units
 * Components like lists, menus, tables, forms, buttons, boxes, media object and sticky footer
 
-You can find full documentation at [hocus-pocus.io](http://hocus-pocus.io). I
-always try to find time to improve it.
+* * *
 
-Code is open sourced [on GitHub](https://github.com/bkzl/hocus-pocus/). Up to
-date changelog is available under [the releases
+You can find full documentation at [hocus-pocus.io](http://hocus-pocus.io).
+Code is open sourced [on GitHub](https://github.com/bkzl/hocus-pocus/).
+Up to date changelog is available under [the releases
 section](https://github.com/bkzl/hocus-pocus/releases).
 
 I appreciate any comments, feedback, and information about potential issues.
