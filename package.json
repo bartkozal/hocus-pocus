@@ -22,6 +22,10 @@
     "dev": "gulp serve",
     "deploy": "gulp build && push-dir --dir=build --branch=gh-pages --force --cleanup --verbose"
   },
+  "files": [
+    "hocus-pocus.scss",
+    "sass"
+  ],
   "devDependencies": {
     "del": "^2.2.2",
     "gulp": "^3.9.1",
