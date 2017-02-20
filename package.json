@@ -28,7 +28,7 @@
     "gulp-connect": "^5.0.0",
     "gulp-file": "^0.3.0",
     "gulp-gh-pages": "^0.5.4",
-    "gulp-highlight": "^2.0.0",
+    "gulp-highlight": "^2.1.0",
     "gulp-html-tag-include": "^1.0.1",
     "gulp-sass": "^2.3.2",
     "gulp-sequence": "^0.4.6",
