@@ -24,6 +24,7 @@ dd + dt {
 %list-inline,
 .list-inline {
   @extend %list-reset;
+
   margin-bottom: 0;
   margin-left: $spacing-unit / -4;
   letter-spacing: -4px;
@@ -52,17 +53,18 @@ dd + dt {
 %list-menu,
 .list-menu {
   @extend %list-reset;
+
   margin-top: $spacing-unit / -4;
 
   > li > a {
     display: block;
     padding: ($spacing-unit / 4) ($spacing-unit / 2);
-    border-radius: $ui-border-radius;
     text-decoration: none;
+    border-radius: $ui-border-radius;
 
     &:hover {
-      background: $list-menu-background;
       color: $list-menu-color;
+      background: $list-menu-background;
     }
 
     @if $link-active {

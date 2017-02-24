@@ -1,7 +1,7 @@
 @mixin width-element($size) {
+  flex-basis: $size;
   width: $size;
   max-width: $size;
-  flex-basis: $size;
 }
 
 [class~="1/1"] {

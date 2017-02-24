@@ -85,8 +85,8 @@ sub {
 
 blockquote {
   padding-left: $spacing-unit;
-  border-left: 3px solid $color-ui;
   color: $color-muted;
+  border-left: 3px solid $color-ui;
 
   > *:last-child {
     margin-bottom: 0;
@@ -103,8 +103,8 @@ pre code {
 }
 
 small {
-  color: $color-small;
   font-size: $font-size-small;
+  color: $color-small;
 }
 
 .text-small {

@@ -20,7 +20,8 @@
   "scripts": {
     "start": "npm run dev",
     "dev": "gulp serve",
-    "deploy": "gulp build && push-dir --dir=build --branch=gh-pages --force --cleanup --verbose"
+    "deploy": "gulp build && push-dir --dir=build --branch=gh-pages --force --cleanup --verbose",
+    "lint": "stylelint 'sass/*.scss'"
   },
   "files": [
     "hocus-pocus.scss",
@@ -37,6 +38,9 @@
     "gulp-sass": "^2.3.2",
     "gulp-sequence": "^0.4.6",
     "gulp-util": "^3.0.7",
-    "push-dir": "^0.4.1"
+    "push-dir": "^0.4.1",
+    "stylelint": "^7.9.0",
+    "stylelint-config-recess-order": "^1.0.0",
+    "stylelint-config-standard": "^16.0.0"
   }
 }

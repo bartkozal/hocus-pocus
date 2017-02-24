@@ -9,8 +9,8 @@
 
 @mixin box($name, $color, $contrast: 25%) {
   .box-#{$name} {
-    background: lighten($color, $contrast);
     color: darken($color, $contrast);
+    background: lighten($color, $contrast);
   }
 }
 

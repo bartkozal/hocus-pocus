@@ -2,8 +2,8 @@ h1, h2, h3, h4, h5, h6,
 p, ul, ol, dl, dd, hr,
 blockquote, pre, table, th, td,
 form, fieldset, caption, legend {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 p, ul, ol, dl, hr,
@@ -24,8 +24,8 @@ html {
 }
 
 body {
-  background-color: $color-body;
-  color: $color-text;
   font-family: $font-family-base;
   font-weight: $font-weight-normal;
+  color: $color-text;
+  background-color: $color-body;
 }

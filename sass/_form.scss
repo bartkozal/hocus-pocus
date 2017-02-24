@@ -86,15 +86,15 @@ input[readonly] {
     label {
       display: inline-block;
       width: 25%;
-      margin: 0;
       padding: ($spacing-unit / 4) ($spacing-unit / 2);
+      margin: 0;
       text-align: right;
     }
   }
 
   .form-group {
-    margin-left: 25%;
     padding-left: $spacing-unit / 4;
+    margin-left: 25%;
 
     label {
       margin-bottom: $spacing-unit;

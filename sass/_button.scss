@@ -1,17 +1,17 @@
 @mixin btn($name, $color, $color-text: $color-white) {
   .btn-#{$name} {
-    border-bottom-color: darken($color, 25%);
-    background-color: $color;
     color: $color-text;
+    background-color: $color;
+    border-bottom-color: darken($color, 25%);
 
     &:hover {
       background-color: lighten($color, 5%);
     }
 
     &.btn-outline {
-      border-color: $color;
-      background-color: transparent;
       color: $color;
+      background-color: transparent;
+      border-color: $color;
     }
   }
 }
@@ -21,23 +21,24 @@ input[type="submit"],
 button,
 .btn {
   display: inline-block;
-  margin: 0;
   padding: ($spacing-unit / 4) ($spacing-unit / 2);
-  border: 0;
-  border-bottom-style: solid;
-  border-radius: $ui-border-radius;
-  border-bottom-color: darken($color-btn, 25%);
-  background-color: $color-btn;
-  color: $color-white;
+  margin: 0;
   font-size: $font-size-btn;
+  color: $color-white;
   text-decoration: none;
   white-space: nowrap;
   cursor: pointer;
-  appearance: none;
+  background-color: $color-btn;
+  border: 0;
+  border-bottom-color: darken($color-btn, 25%);
+  border-bottom-style: solid;
+  border-radius: $ui-border-radius;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 
   @if not $btn-flat {
-    border-bottom-width: 2px;
     vertical-align: 1px;
+    border-bottom-width: 2px;
   }
 
   &:hover {
@@ -47,10 +48,10 @@ button,
 
 button[disabled],
 .btn-disabled {
-  border-bottom-color: darken($color-disabled, 20%);
-  background-color: $color-disabled;
   color: darken($color-disabled, 25%);
   cursor: not-allowed;
+  background-color: $color-disabled;
+  border-bottom-color: darken($color-disabled, 20%);
 
   &:hover {
     background-color: $color-disabled;
@@ -64,10 +65,10 @@ button[disabled],
 }
 
 .btn-outline {
-  border: 1px solid $color-btn;
-  background-color: transparent;
   color: $color-btn;
   vertical-align: 0;
+  background-color: transparent;
+  border: 1px solid $color-btn;
 
   &:hover {
     background-color: transparent;

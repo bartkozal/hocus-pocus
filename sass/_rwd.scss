@@ -38,8 +38,8 @@
 
 @mixin hidpi($rwd-resolution: 192, $rwd-pixel-ratio: $rwd-resolution / 96) {
   @media (-webkit-min-device-pixel-ratio: $rwd-pixel-ratio),
-         (min-resolution: #{$rwd-pixel-ratio}dppx),
-         (min-resolution: #{$rwd-resolution}dpi) {
-      @content;
-    }
+    (min-resolution: #{$rwd-pixel-ratio}dppx),
+    (min-resolution: #{$rwd-resolution}dpi) {
+    @content;
+  }
 }

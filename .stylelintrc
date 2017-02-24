@@ -1,0 +1,15 @@
+{
+  "syntax": "scss",
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-recess-order"
+  ],
+  "rules": {
+    "number-leading-zero": "never",
+    "selector-list-comma-newline-after": null,
+    "at-rule-empty-line-before": null,
+    "block-closing-brace-newline-after": ["always", {
+      "ignoreAtRules": ["if", "else"]
+    }]
+  }
+}
