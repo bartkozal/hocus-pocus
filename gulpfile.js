@@ -49,16 +49,11 @@ gulp.task('html', function() {
     .pipe(connect.reload());
 });
 
-gulp.task('cname', function() {
-  return file('CNAME', 'hocus-pocus.io', { src: true })
-    .pipe(gulp.dest(paths.build.dest));
-});
-
 gulp.task('clean', function() {
   return del([paths.build.dest]);
 });
 
-gulp.task('build', sequence('clean', ['sass', 'img', 'html', 'cname']));
+gulp.task('build', sequence('clean', ['sass', 'img', 'html']));
 
 gulp.task('watch', function() {
   gulp.watch(paths.sass.watch, ['sass']);

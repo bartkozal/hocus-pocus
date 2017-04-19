@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/bkzl/hocus-pocus.svg?branch=master)](https://travis-ci.org/bkzl/hocus-pocus)
 
-[Hocus-Pocus](https://hocus-pocus.io) is a universal and lightweight stylesheet
+[Hocus-Pocus](https://bkzl.github.io/hocus-pocus) is a universal and lightweight stylesheet
 starter kit that focuses on base html elements and typography. You can change
 the look of every single component, disable some features and define a range
 of helpers with variables.
@@ -29,7 +29,7 @@ The following features are the most characteristic to Hocus-Pocus:
 
 * * *
 
-You can find full documentation at [hocus-pocus.io](http://hocus-pocus.io).
+You can find full documentation at [bkzl.github.io/hocus-pocus](https://bkzl.github.io/hocus-pocus).
 Code is open sourced [on GitHub](https://github.com/bkzl/hocus-pocus/).
 Up to date changelog is available under [the releases
 section](https://github.com/bkzl/hocus-pocus/releases).
