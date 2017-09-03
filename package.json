@@ -2,7 +2,7 @@
   "name": "hocus-pocus",
   "version": "0.3.5",
   "homepage": "https://bkzl.github.io/hocus-pocus",
-  "author": "Bartlomiej Kozal <bkzl@me.com> (https://lostbananas.com)",
+  "author": "Bart Kozal <bkzl@me.com>",
   "description": "Universal and lightweight stylesheet starter kit",
   "main": "hocus-pocus.scss",
   "style": "hocus-pocus.scss",
