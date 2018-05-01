@@ -1,6 +1,4 @@
-# Hocus-Pocus
-
-[![Build Status](https://travis-ci.org/bkzl/hocus-pocus.svg?branch=master)](https://travis-ci.org/bkzl/hocus-pocus)
+# Hocus-Pocus [![Build Status](https://semaphoreci.com/api/v1/bkzl/hocus-pocus/branches/master/shields_badge.svg)](https://semaphoreci.com/bkzl/hocus-pocus)
 
 [Hocus-Pocus](https://bkzl.github.io/hocus-pocus) is a universal and lightweight stylesheet
 starter kit that focuses on base html elements and typography. You can change
@@ -9,11 +7,11 @@ of helpers with variables.
 
 ## Why not Bootstrap?
 
- Libraries like Bootstrap or Foundation are great and have greatly changed how
- people think about CSS. However, in most cases within my own project work, I
- just don’t need all these features and UI components like progress bars or
- breadcrumbs. Instead, I prefer to have something more universal that I can use
- in any project.
+Libraries like Bootstrap or Foundation are great and have greatly changed how
+people think about CSS. However, in most cases within my own project work, I
+just don’t need all these features and UI components like progress bars or
+breadcrumbs. Instead, I prefer to have something more universal that I can use
+in any project.
 
 ## Key Features
 
@@ -27,7 +25,7 @@ The following features are the most characteristic to Hocus-Pocus:
 * Typography with vertical rhythm based on rem units
 * Components like lists, menus, tables, forms, buttons, boxes, media object and sticky footer
 
-* * *
+---
 
 You can find full documentation at [bkzl.github.io/hocus-pocus](https://bkzl.github.io/hocus-pocus).
 Code is open sourced [on GitHub](https://github.com/bkzl/hocus-pocus/).
