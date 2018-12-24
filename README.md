@@ -1,4 +1,4 @@
-# Hocus-Pocus [![Build Status](https://semaphoreci.com/api/v1/bkzl/hocus-pocus/branches/master/shields_badge.svg)](https://semaphoreci.com/bkzl/hocus-pocus)
+# Hocus-Pocus
 
 [Hocus-Pocus](https://bkzl.github.io/hocus-pocus) is a universal and lightweight stylesheet
 starter kit that focuses on base html elements and typography. You can change
@@ -31,7 +31,3 @@ You can find full documentation at [bkzl.github.io/hocus-pocus](https://bkzl.git
 Code is open sourced [on GitHub](https://github.com/bkzl/hocus-pocus/).
 Up to date changelog is available under [the releases
 section](https://github.com/bkzl/hocus-pocus/releases).
-
-I appreciate any comments, feedback, and information about potential issues.
-Have you experienced a bug or noticed a mistake in documentation?
-Please [add a new issue](https://github.com/bkzl/hocus-pocus/issues). Thanks!
