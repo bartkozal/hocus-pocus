@@ -1,0 +1,2255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="2KpvCeE4Oo8GfkHKQwHppQGPgLU3ih57WtS6hVDZ2MQ">
+    <title>Universal and lightweight stylesheet starter kit - Hocus-Pocus</title>
+    <meta property="og:title" content="Universal and lightweight stylesheet starter kit - Hocus-Pocus">
+    <meta property="og:url" content="https://bkzl.github.io/hocus-pocus">
+    <meta property="og:image" content="https://bkzl.github.io/hocus-pocus/img/brand-light.png">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/tabby/11.1.0/css/tabby.min.css">
+    <link rel="stylesheet" href="./docs.css">
+  </head>
+
+  <body class="padding-2/1-vertical">
+    <a href="https://github.com/bkzl/hocus-pocus" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#0074d9; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+
+    <div class="container">
+      <div class="grid">
+        <div class="grid-item 1/5 compact-hidden">
+          <div class="navigation" data-gumshoe-header="" data-gumshoe="">
+            <ul class="list-menu">
+              <li><a href="#intro" data-scroll="">Intro</a></li>
+              <li><a href="#quick-start" data-scroll="">Quick Start</a></li>
+              <li><a href="#defaults" data-scroll="">Defaults</a></li>
+              <li><a href="#colors" data-scroll="">Colors</a></li>
+              <li><a href="#rwd" data-scroll="">Responsive Design</a></li>
+              <li><a href="#grid" data-scroll="">Grid</a></li>
+              <li><a href="#typography" data-scroll="">Typography</a></li>
+              <li><a href="#lists" data-scroll="">Lists</a></li>
+              <li><a href="#images" data-scroll="">Images</a></li>
+              <li><a href="#tables" data-scroll="">Tables</a></li>
+              <li><a href="#forms" data-scroll="">Forms</a></li>
+              <li><a href="#buttons" data-scroll="">Buttons</a></li>
+              <li><a href="#boxes" data-scroll="">Boxes</a></li>
+              <li><a href="#media" data-scroll="">Media</a></li>
+              <li><a href="#sticky-footer" data-scroll="">Sticky Footer</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="grid-item 4/5 compact-1/1">
+          <div class="hidden compact-visible margin-bottom">
+            <ul class="list-inline">
+              <li><a href="#intro" data-scroll="">Intro</a></li>
+              <li><a href="#quick-start" data-scroll="">Quick Start</a></li>
+              <li><a href="#defaults" data-scroll="">Defaults</a></li>
+              <li><a href="#colors" data-scroll="">Colors</a></li>
+              <li><a href="#rwd" data-scroll="">Responsive Design</a></li>
+              <li><a href="#grid" data-scroll="">Grid</a></li>
+              <li><a href="#typography" data-scroll="">Typography</a></li>
+              <li><a href="#lists" data-scroll="">Lists</a></li>
+              <li><a href="#images" data-scroll="">Images</a></li>
+              <li><a href="#tables" data-scroll="">Tables</a></li>
+              <li><a href="#forms" data-scroll="">Forms</a></li>
+              <li><a href="#buttons" data-scroll="">Buttons</a></li>
+              <li><a href="#boxes" data-scroll="">Boxes</a></li>
+              <li><a href="#media" data-scroll="">Media</a></li>
+              <li><a href="#sticky-footer" data-scroll="">Sticky Footer</a></li>
+            </ul>
+
+          </div>
+
+          <h1 id="intro" class="no-margin-vertical">
+            Hocus-Pocus
+            <a class="text-small" href="https://github.com/bkzl/hocus-pocus/tree/v0.3.5">
+              v0.3.5
+            </a>
+          </h1>
+
+
+          <p class="text-muted text-small margin-1/2-bottom">
+            Created and maintained by <a href="https://twitter.com/_bkzl">@_bkzl</a>
+          </p>
+
+          <p>
+            Hocus-Pocus is a universal and lightweight stylesheet starter kit that focuses
+            on base html elements and typography. You can change the look of every single
+            component, disable some features and define a range of helpers with variables.
+          </p>
+
+          <h2 id="why-not-bootstrap">Why not Bootstrap?</h2>
+
+          <p>
+            Libraries like Bootstrap or Foundation are great and have greatly changed how
+            people think about CSS. However, in most cases within my own project work, I
+            just don’t need all these features and UI components like progress bars or
+            breadcrumbs. Instead, I prefer to have something more universal that I can use
+            in any project.
+          </p>
+
+          <h2 id="key-features">Key Features</h2>
+
+          <p>
+            The following features are the most characteristic to Hocus-Pocus:
+          </p>
+
+          <ul>
+            <li>Enhanced <a href="https://github.com/necolas/normalize.css">normalize.css</a> reset</li>
+            <li>Default colors set and color helpers thanks to <a href="http://clrs.cc">clrs.cc</a></li>
+            <li>Widely responsive web design support with customizable breakpoints and approach</li>
+            <li>Flexbox grid with universal, fraction based width helpers</li>
+            <li>Visibility and spacing helpers (auto-generated for the each viewport breakpoint!)</li>
+            <li>Typography with vertical rhythm based on rem units</li>
+            <li>Components like lists, menus, tables, forms, buttons, boxes, media object and sticky footer</li>
+          </ul>
+
+          <p>
+            Code is open sourced <a href="https://github.com/bkzl/hocus-pocus/">on GitHub</a>.
+            Up to date changelog is available under
+            <a href="https://github.com/bkzl/hocus-pocus/releases">the releases section</a>.
+          </p>
+<!--
+          --><h2 id="quick-start">Quick Start</h2>
+
+<ul class="list-tabs" data-tabs="">
+  <li class="is-active"><a href="#npm" data-tab="">npm</a></li>
+  <li><a href="#bower" data-tab="">Bower</a></li>
+</ul>
+
+<div data-tabs-content="">
+  <div class="tabs-pane" id="npm" data-tabs-pane="">
+    <p>
+      Hocus-Pocus requires <a href="http://sass-lang.com">Sass</a>
+      (version 3.3.0 or later) to proper work.
+    </p>
+
+    <p>
+      Run:
+    </p>
+
+<pre><code class="lang-shell hljs">
+$ npm install hocus-pocus --<span class="hljs-built_in">save</span>-<span class="hljs-built_in">dev</span>
+</code></pre>
+
+    <p>
+      Then import a main file just after your settings, but before rest of
+      stylesheets. If you want to use color variables in your variables import
+      them first:
+    </p>
+
+<pre><code class="lang-scss hljs">
+<span class="hljs-comment">// Import colors (optional)</span>
+@<span class="hljs-keyword">import</span> <span class="hljs-string">"node_modules/hocus-pocus/sass/colors"</span>;
+
+<span class="hljs-comment">// Define settings</span>
+<span class="hljs-variable">$font-family-base</span>: <span class="hljs-string">"Open Sans"</span>, sans-serif;
+<span class="hljs-variable">$grid-container</span>: <span class="hljs-number">70rem</span>;
+
+<span class="hljs-comment">// Import Hocus-Pocus</span>
+@<span class="hljs-keyword">import</span> <span class="hljs-string">"node_modules/hocus-pocus/hocus-pocus"</span>;
+
+<span class="hljs-comment">// Import your stylesheets</span>
+@<span class="hljs-keyword">import</span> <span class="hljs-string">"compontents/meter"</span>;
+@<span class="hljs-keyword">import</span> <span class="hljs-string">"compontents/price-box"</span>;
+</code></pre>
+  </div>
+
+  <div class="tabs-pane" id="bower" data-tabs-pane="">
+    <p>
+      Hocus-Pocus requires <a href="http://sass-lang.com">Sass</a>
+      (version 3.3.0 or later) to proper work.
+    </p>
+
+    <p>
+      Run:
+    </p>
+
+<pre><code class="lang-shell hljs">
+$ <span class="hljs-keyword">bower </span><span class="hljs-keyword">install </span>hocus-pocus
+</code></pre>
+
+    <p>
+      Then import a main file just after your settings, but before rest of
+      stylesheets. If you want to use color variables in your variables import
+      them first:
+    </p>
+
+<pre><code class="lang-scss hljs">
+<span class="hljs-comment">// Import colors (optional)</span>
+@<span class="hljs-keyword">import</span> <span class="hljs-string">"bower_components/hocus-pocus/sass/colors"</span>;
+
+<span class="hljs-comment">// Define settings</span>
+<span class="hljs-variable">$font-family-base</span>: <span class="hljs-string">"Open Sans"</span>, sans-serif;
+<span class="hljs-variable">$grid-container</span>: <span class="hljs-number">70rem</span>;
+
+<span class="hljs-comment">// Import Hocus-Pocus</span>
+@<span class="hljs-keyword">import</span> <span class="hljs-string">"bower_components/hocus-pocus/hocus-pocus"</span>;
+
+<span class="hljs-comment">// Import your stylesheets</span>
+@<span class="hljs-keyword">import</span> <span class="hljs-string">"compontents/meter"</span>;
+@<span class="hljs-keyword">import</span> <span class="hljs-string">"compontents/price-box"</span>;
+</code></pre>
+  </div>
+</div>
+
+<p>
+  Hocus-Pocus applies a following naming convention:
+</p>
+
+<pre><code class="lang-html hljs">
+<span class="hljs-comment">&lt;!-- Element --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"media"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Element with a related sub-element --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"media"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"media-img"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"media-body"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Element with modifier --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"media media-milli"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Element with state --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn is-active"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn is-disabled"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- Element that requires a wrapper --&gt;</span>
+<span class="hljs-comment">&lt;!-- i.e. "position: relative" and "position: absolute" pair --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box has-close-link"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"close-link"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- JavaScript handler --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert js-alert"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<!--
+          --><h2 id="defaults">Defaults</h2>
+
+<p>
+  The most common settings are listed below. Other defaults are listed
+  on corresponding documentation pages or you can find them
+  <a href="https://github.com/bkzl/hocus-pocus/blob/master/sass/_defaults.scss">in the source code</a>
+  under <code class="nohighlight">scss/_defaults.scss</code>.
+</p>
+
+<pre><code class="lang-scss hljs">
+<span class="hljs-variable">$rwd-type</span>: mobile-first;
+<span class="hljs-variable">$rwd-map</span>: (compact: <span class="hljs-number">320px</span> <span class="hljs-number">414px</span>, regular: <span class="hljs-number">415px</span>);
+
+<span class="hljs-variable">$font-family-base</span>: -apple-system, BlinkMacSystemFont, <span class="hljs-string">'Segoe UI'</span>, Roboto, Helvetica, Arial, sans-serif;
+<span class="hljs-variable">$font-family-headings</span>: <span class="hljs-variable">$font-family-base</span>;
+<span class="hljs-variable">$font-leading</span>: <span class="hljs-number">1.5</span>;
+<span class="hljs-variable">$font-size-base</span>: <span class="hljs-number">1rem</span>;
+
+<span class="hljs-variable">$grid-container</span>: <span class="hljs-number">1020px</span>;
+
+<span class="hljs-variable">$color-body</span>: <span class="hljs-variable">$color-white</span>;
+<span class="hljs-variable">$link-underline</span>: true;
+<span class="hljs-variable">$btn-flat</span>: false;
+</code></pre>
+<!--
+          --><h2 id="colors">Colors</h2>
+
+<p>
+  Colors available as variables (so you can override them if you wish to):
+</p>
+
+<div class="color-block bg-white text-muted">$color-white</div>
+<div class="color-block bg-silver">$color-silver</div>
+<div class="color-block bg-gray">$color-gray</div>
+<div class="color-block bg-black">$color-black</div>
+<div class="color-block bg-red">$color-red</div>
+<div class="color-block bg-orange">$color-orange</div>
+<div class="color-block bg-yellow">$color-yellow</div>
+<div class="color-block bg-lime">$color-lime</div>
+<div class="color-block bg-green">$color-green</div>
+<div class="color-block bg-olive">$color-olive</div>
+<div class="color-block bg-teal">$color-teal</div>
+<div class="color-block bg-aqua">$color-aqua</div>
+<div class="color-block bg-blue">$color-blue</div>
+<div class="color-block bg-navy">$color-navy</div>
+<div class="color-block bg-fuchsia">$color-fuchsia</div>
+<div class="color-block bg-purple">$color-purple</div>
+<div class="color-block bg-maroon">$color-maroon</div>
+
+<p>
+  Defaults:
+</p>
+
+<pre><code class="lang-scss hljs">
+<span class="hljs-variable">$color-body</span>: <span class="hljs-variable">$color-white</span>;        <span class="hljs-comment">// body background color</span>
+<span class="hljs-variable">$color-ui</span>: <span class="hljs-variable">$color-silver</span>;         <span class="hljs-comment">// ui elements color like rules, borders, form inputs</span>
+<span class="hljs-variable">$color-btn</span>: <span class="hljs-variable">$color-black</span>;         <span class="hljs-comment">// button color without any modifiers</span>
+<span class="hljs-variable">$color-text</span>: <span class="hljs-variable">$color-black</span>;        <span class="hljs-comment">// base font color</span>
+<span class="hljs-variable">$color-link</span>: <span class="hljs-variable">$color-blue</span>;         <span class="hljs-comment">// links color</span>
+<span class="hljs-variable">$color-muted</span>: <span class="hljs-variable">$color-gray</span>;        <span class="hljs-comment">// blockquote and `.text-muted` color</span>
+<span class="hljs-variable">$color-small</span>: <span class="hljs-variable">$color-text</span>;        <span class="hljs-comment">// small color</span>
+<span class="hljs-variable">$color-disabled</span>: <span class="hljs-variable">$color-ui</span>;       <span class="hljs-comment">// disabled form input and buttons color</span>
+<span class="hljs-variable">$color-brand</span>: <span class="hljs-variable">$color-blue</span>;        <span class="hljs-comment">// brand color</span>
+<span class="hljs-variable">$color-positive</span>: <span class="hljs-variable">$color-green</span>;    <span class="hljs-comment">// positive color</span>
+<span class="hljs-variable">$color-cautionary</span>: <span class="hljs-variable">$color-yellow</span>; <span class="hljs-comment">// cautionary color</span>
+<span class="hljs-variable">$color-negative</span>: <span class="hljs-variable">$color-red</span>;      <span class="hljs-comment">// negative color</span>
+<span class="hljs-variable">$color-informative</span>: <span class="hljs-variable">$color-blue</span>;  <span class="hljs-comment">// informative color</span>
+<span class="hljs-variable">$color-map</span>: (
+  <span class="hljs-string">'white'</span>: <span class="hljs-variable">$color-white</span>,
+  <span class="hljs-string">'silver'</span>: <span class="hljs-variable">$color-silver</span>,
+  <span class="hljs-string">'gray'</span>: <span class="hljs-variable">$color-gray</span>,
+  <span class="hljs-string">'black'</span>: <span class="hljs-variable">$color-black</span>,
+  <span class="hljs-string">'red'</span>: <span class="hljs-variable">$color-red</span>,
+  <span class="hljs-string">'orange'</span>: <span class="hljs-variable">$color-orange</span>,
+  <span class="hljs-string">'yellow'</span>: <span class="hljs-variable">$color-yellow</span>,
+  <span class="hljs-string">'lime'</span>: <span class="hljs-variable">$color-lime</span>,
+  <span class="hljs-string">'green'</span>: <span class="hljs-variable">$color-green</span>,
+  <span class="hljs-string">'olive'</span>: <span class="hljs-variable">$color-olive</span>,
+  <span class="hljs-string">'teal'</span>: <span class="hljs-variable">$color-teal</span>,
+  <span class="hljs-string">'aqua'</span>: <span class="hljs-variable">$color-aqua</span>,
+  <span class="hljs-string">'blue'</span>: <span class="hljs-variable">$color-blue</span>,
+  <span class="hljs-string">'navy'</span>: <span class="hljs-variable">$color-navy</span>,
+  <span class="hljs-string">'fuchsia'</span>: <span class="hljs-variable">$color-fuchsia</span>,
+  <span class="hljs-string">'purple'</span>: <span class="hljs-variable">$color-purple</span>,
+  <span class="hljs-string">'maroon'</span>: <span class="hljs-variable">$color-maroon</span>,
+  <span class="hljs-string">'brand'</span>: <span class="hljs-variable">$color-brand</span>,
+  <span class="hljs-string">'positive'</span>: <span class="hljs-variable">$color-positive</span>,
+  <span class="hljs-string">'cautionary'</span>: <span class="hljs-variable">$color-cautionary</span>,
+  <span class="hljs-string">'negative'</span>: <span class="hljs-variable">$color-negative</span>,
+  <span class="hljs-string">'informative'</span>: <span class="hljs-variable">$color-informative</span>,
+  <span class="hljs-string">'muted'</span>: <span class="hljs-variable">$color-muted</span>
+);                                <span class="hljs-comment">// color helpers are generated based on this map</span>
+</code></pre>
+
+<h3 id="color-helpers">Color Helpers</h3>
+
+<p>
+  Specify text and background color of an element.
+</p>
+
+<p>
+  Color helpers use <code class="nohighlight">!important</code> and are generated for each color in
+  <code class="nohighlight">$color-map</code>.
+</p>
+
+<p>
+  Usage:
+</p>
+
+<pre><code class="lang-scss hljs">
+<span class="hljs-selector-class">.text</span>[-<span class="hljs-attribute">color</span>];
+<span class="hljs-selector-class">.bg</span>[-<span class="hljs-attribute">color</span>];
+
+<span class="hljs-comment">/*
+ * Where [-color] is one of these values:
+ *   -aqua, -blue, -navy, -teal, -green, -olive, -lime, -yellow, -orange,
+ *   -red, -fuchsia, -purple, -maroon, -white, -silver, -grey, -black,
+ *   -informative, -positive, -negative, -brand, -muted
+ */</span>
+</code></pre>
+
+<div class="example">
+  <p class="text-muted">Paragraph with a muted text</p>
+  <p class="text-brand">Paragraph with a brand text</p>
+  <p class="bg-negative">Paragraph with a negative background</p>
+  <p class="bg-black text-white">Paragraph with a black background and white text</p>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-selector-tag">p</span> class=<span class="hljs-string">"text-muted"</span>&gt;Paragraph with <span class="hljs-selector-tag">a</span> muted text&lt;/p&gt;
+&lt;<span class="hljs-selector-tag">p</span> class=<span class="hljs-string">"text-brand"</span>&gt;Paragraph with <span class="hljs-selector-tag">a</span> brand text&lt;/p&gt;
+&lt;<span class="hljs-selector-tag">p</span> class=<span class="hljs-string">"bg-negative"</span>&gt;Paragraph with <span class="hljs-selector-tag">a</span> negative <span class="hljs-attribute">background</span>&lt;/p&gt;
+&lt;<span class="hljs-selector-tag">p</span> class=<span class="hljs-string">"bg-black text-white"</span>&gt;Paragraph with <span class="hljs-selector-tag">a</span> black <span class="hljs-attribute">background</span> and white text&lt;/p&gt;
+</code></pre>
+<!--
+          --><h2 id="rwd">Responsive Design</h2>
+
+<p>
+  Choose approach of writing responsive design that you prefer:
+  <code class="nohighlight">mobile-first</code> or <code class="nohighlight">desktop-first</code>.
+</p>
+
+<p>
+  Define custom breakpoints. Each of them gets a mixin and own set of helpers.
+</p>
+
+<p>
+  Defaults:
+</p>
+
+<pre><code class="lang-scss hljs">
+$rwd-<span class="hljs-symbol">type:</span> mobile-first;  <span class="hljs-regexp">//</span> choose between <span class="hljs-string">`mobile-first`</span> <span class="hljs-keyword">and</span> <span class="hljs-string">`desktop-first`</span>
+$rwd-<span class="hljs-symbol">map:</span> (
+  <span class="hljs-string">'compact'</span>: <span class="hljs-number">320</span>px <span class="hljs-number">414</span>px,
+  <span class="hljs-string">'regular'</span>: <span class="hljs-number">415</span>px
+);                        <span class="hljs-regexp">//</span> helpers are based on this map
+</code></pre>
+
+<p>
+  Additional helper for hidpi displays:
+</p>
+
+<pre><code class="lang-scss hljs">
+<span class="hljs-variable">@include</span> hidpi(<span class="hljs-variable">$density</span>); <span class="hljs-regexp">//</span> <span class="hljs-keyword">in</span> dpi, defaults to <span class="hljs-number">192</span> (retina displays)
+</code></pre>
+
+<p>
+  Usage:
+</p>
+
+<pre><code class="lang-scss hljs">
+@<span class="hljs-keyword">include</span> rwd(<span class="hljs-string">'compact'</span>) {
+  <span class="hljs-selector-tag">h1</span> {
+    <span class="hljs-attribute">color</span>: $color-red;
+  }
+}
+
+@<span class="hljs-keyword">include</span> hidpi {
+  <span class="hljs-selector-class">.logo</span> {
+    <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">'logo@2x.png'</span>);
+  }
+}
+</code></pre>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"compact-hidden"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"hidden compact-visible"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
+
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid"</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item 1/4 compact-hidden"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item 3/4 compact-1/1"</span>&gt;
+    &lt;h1 <span class="hljs-built_in">class</span>=<span class="hljs-string">"compact-no-margin-top"</span>&gt;
+      ...
+    &lt;/h1&gt;
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+
+<h3 id="width-helpers">Width Helpers</h3>
+
+<p>
+  Width helpers work with various elements like grid items, boxes, form inputs,
+  table cells etc.
+</p>
+
+<p>
+  Fractions of these numbers are available: <code class="nohighlight">n/1</code>, <code class="nohighlight">n/2</code>,
+  <code class="nohighlight">n/3</code>, <code class="nohighlight">n/4</code>, <code class="nohighlight">n/5</code>, <code class="nohighlight">n/6</code>,
+  <code class="nohighlight">n/8</code>, <code class="nohighlight">n/9</code>, <code class="nohighlight">n/10</code> and <code class="nohighlight">n/12</code>.
+</p>
+
+<p>
+  Width helpers are generated for each breakpoint in <code class="nohighlight">$rwd-map</code>.
+</p>
+
+<p>
+  Usage:
+</p>
+
+<div class="grid">
+  <div class="grid-item 1/1">
+    <div class="preview-grid">
+      .1/1
+    </div>
+  </div>
+</div>
+
+<div class="grid">
+  <div class="grid-item 1/4">
+    <div class="preview-grid">
+      .1/4, .2/8, .3/12
+    </div>
+  </div>
+  <div class="grid-item 3/4">
+    <div class="preview-grid">
+      .3/4, .6/8, .9/12
+    </div>
+  </div>
+</div>
+
+<div class="grid">
+  <div class="grid-item 2/5">
+    <div class="preview-grid">
+      .2/5, .4/10
+    </div>
+  </div>
+  <div class="grid-item 3/5">
+    <div class="preview-grid">
+      .3/5, .6/10
+    </div>
+  </div>
+</div>
+
+<div class="grid">
+  <div class="grid-item 1/6">
+    <div class="preview-grid">
+      .1/6, .2/12
+    </div>
+  </div>
+  <div class="grid-item 5/6">
+    <div class="preview-grid">
+      .5/6, .10/12
+    </div>
+  </div>
+</div>
+
+<div class="grid">
+  <div class="grid-item 1/2">
+    <div class="preview-grid">
+      .1/2, .2/4, .3/6, .4/8, .5/10, .6/12
+    </div>
+  </div>
+  <div class="grid-item 1/8">
+    <div class="preview-grid">
+      .1/8
+    </div>
+  </div>
+  <div class="grid-item 3/8">
+    <div class="preview-grid">
+      .3/8
+    </div>
+  </div>
+</div>
+
+<div class="grid">
+  <div class="grid-item 1/5 compact-1/2">
+    <div class="preview-grid">
+      .1/5.compact-1/2
+    </div>
+  </div>
+  <div class="grid-item 4/5 compact-1/2">
+    <div class="preview-grid">
+      .4/5.compact-1/2
+    </div>
+  </div>
+</div>
+
+<h3 id="visibility-helpers">Visibility Helpers</h3>
+
+<p>
+  Specify visibility of an element.
+</p>
+
+<p>
+  Visibility helpers use <code class="nohighlight">!important</code> and are generated for each breakpoint in <code class="nohighlight">$rwd-map</code>.
+</p>
+
+<p>
+  Following classes are available: <code class="nohighlight">.hidden</code>, <code class="nohighlight">.visible</code>,
+  <code class="nohighlight">.block</code>, <code class="nohighlight">.inline-block</code> and <code class="nohighlight">.inline</code>
+</p>
+
+<p>
+  Usage:
+</p>
+
+<div class="example">
+  <p class="inline compact-hidden">Inline paragraph hidden on mobile</p>
+  <small class="hidden compact-block">Block small text visible on mobile</small>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"inline compact-hidden"</span>&gt;Inline <span class="hljs-built_in">paragraph</span> hidden <span class="hljs-keyword">on</span> mobile&lt;/p&gt;
+&lt;small <span class="hljs-built_in">class</span>=<span class="hljs-string">"hidden compact-block"</span>&gt;Block small <span class="hljs-built_in">text</span> visible <span class="hljs-keyword">on</span> mobile&lt;/small&gt;
+</code></pre>
+
+<h3 id="spacing-helpers">Spacing Helpers</h3>
+
+<p>
+  Specify spacing (margin/padding) of an element.
+</p>
+
+<p>
+  Spacing helpers use <code class="nohighlight">!important</code> and are generated for each size
+  in <code class="nohighlight">$spacing-map</code> and each breakpoint in <code class="nohighlight">$rwd-map</code>.
+</p>
+
+<p>
+  Defaults:
+</p>
+
+<pre><code class="lang-scss hljs">
+<span class="hljs-comment">// spacing helpers and media gutter modifiers are generated based on this map</span>
+$spacing-map: (
+  <span class="hljs-string">'1/4'</span>: $spacing-<span class="hljs-keyword">unit</span> / <span class="hljs-number">4</span>,
+  <span class="hljs-string">'1/3'</span>: $spacing-<span class="hljs-keyword">unit</span> / <span class="hljs-number">3</span>,
+  <span class="hljs-string">'1/2'</span>: $spacing-<span class="hljs-keyword">unit</span> / <span class="hljs-number">2</span>,
+  <span class="hljs-string">'2/1'</span>: $spacing-<span class="hljs-keyword">unit</span> * <span class="hljs-number">2</span>,
+  <span class="hljs-string">'3/1'</span>: $spacing-<span class="hljs-keyword">unit</span> * <span class="hljs-number">3</span>,
+  <span class="hljs-string">'4/1'</span>: $spacing-<span class="hljs-keyword">unit</span> * <span class="hljs-number">4</span>
+);
+</code></pre>
+
+<p>
+  Usage:
+</p>
+
+<pre><code class="lang-scss hljs">
+.margin[<span class="hljs-string">-size</span>][<span class="hljs-symbol">-type</span>];
+.padding[<span class="hljs-string">-size</span>][<span class="hljs-symbol">-type</span>];
+.no-margin[-type];
+.no-padding[-type];
+
+/*
+ * Where [-type] is blank (all values) or one of these values:
+ *   -top, -right, -bottom, -left, -horizontal, -vertical
+ *
+ * Where [-size] is blank ($spacing-unit) or one of these values:
+ *   -1/4, -1/3, -1/2, -2/1, -3/1, -4/1
+ */
+</code></pre>
+
+<div class="example">
+  <div class="padding-vertical bg-green text-white text-mono text-small">
+    .padding-vertical
+  </div>
+  <div class="margin no-padding bg-olive text-white text-mono text-small">
+    .margin.no-padding
+  </div>
+  <div class="margin-2/1-bottom bg-teal text-white text-mono text-small">
+    .margin-2/1-bottom
+  </div>
+  <div class="padding-1/2-left padding-1/2-top compact-no-padding-left bg-aqua text-white text-mono text-small">
+    .padding-1/2-left.padding-1/2-top.compact-no-padding-left
+  </div>
+  <div class="compact-margin-horizontal bg-blue text-white text-mono text-small">
+    .compact-margin-horizontal
+  </div>
+  <div class="compact-padding-1/2 bg-navy text-white text-mono text-small">
+    .compact-padding-1/2
+  </div>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"padding-vertical"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"margin no-padding"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"margin-2/1-bottom"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"padding-1/2-left padding-1/2-top compact-no-padding-left"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"compact-margin-horizontal"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"compact-padding-1/2"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+<!--
+          --><h2 id="grid">Grid</h2>
+
+<p>
+  Create a centered wrapper for grid elements. Usually used as a root element
+  for a whole layout.
+</p>
+
+<p>
+  Defaults:
+</p>
+
+<pre><code class="lang-scss hljs">
+$grid-<span class="hljs-keyword">container</span>: <span class="hljs-number">1020</span>px; <span class="hljs-comment">// container's width</span>
+</code></pre>
+
+<p>
+  Usage:
+</p>
+
+<div class="example">
+  <div class="container preview-grid">
+    .container
+  </div>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"container"</span>&gt;
+  ...
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+
+<p>
+  Build a grid using a combination of grid items and <a href="#width-helpers">width helpers</a>.
+  Grid elements can be nested. It's based on flexbox.
+</p>
+
+<p>
+  Defaults:
+</p>
+
+<pre><code class="lang-scss hljs">
+$grid-gutter: $spacing-<span class="hljs-keyword">unit</span>; <span class="hljs-comment">// width of grid gutter</span>
+</code></pre>
+
+<p>
+  Usage:
+</p>
+
+<div class="example">
+  <div class="grid">
+  <div class="grid-item 1/3">
+    <div class="preview-grid">.grid-item.1/3</div>
+  </div>
+
+  <div class="grid-item 2/3">
+    <div class="preview-grid">.grid-item.2/3</div>
+  </div>
+  </div>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid"</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item 1/3"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item 2/3"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+
+<h3 id="grid-types">Grid Types</h3>
+
+<p>
+  Set horizontal and/or vertical alignment:
+</p>
+
+<div class="example">
+  <div class="grid grid-left">
+    <div class="grid-item 1/3">
+      <div class="preview-grid">
+        .grid-item.1/3
+      </div>
+    </div>
+  </div>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid grid-left"</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item 1/3"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+
+<div class="example">
+  <div class="grid grid-center">
+    <div class="grid-item 1/3">
+      <div class="preview-grid">
+        .grid-item.1/3
+      </div>
+    </div>
+  </div>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid grid-center"</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item 1/3"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+
+<div class="example">
+  <div class="grid grid-right">
+    <div class="grid-item 1/3">
+      <div class="preview-grid">
+        .grid-item.1/3
+      </div>
+    </div>
+  </div>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid grid-right"</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item 1/3"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+
+<div class="example">
+  <div class="grid grid-top">
+    <div class="grid-item 1/2">
+      <div class="preview-grid preview-grid-large">
+        .grid-item.1/2
+      </div>
+    </div>
+    <div class="grid-item 1/2">
+      <div class="preview-grid">
+        .grid-item.1/2
+      </div>
+    </div>
+  </div>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid grid-top"</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item 1/2"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item 1/2"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+
+<div class="example">
+  <div class="grid grid-middle">
+    <div class="grid-item 1/2">
+      <div class="preview-grid preview-grid-large">
+        .grid-item.1/2
+      </div>
+    </div>
+    <div class="grid-item 1/2">
+      <div class="preview-grid">
+        .grid-item.1/2
+      </div>
+    </div>
+  </div>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid grid-middle"</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item 1/2"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item 1/2"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+
+<div class="example">
+  <div class="grid grid-bottom">
+    <div class="grid-item 1/2">
+      <div class="preview-grid preview-grid-large">
+        .grid-item.1/2
+      </div>
+    </div>
+    <div class="grid-item 1/2">
+      <div class="preview-grid">
+        .grid-item.1/2
+      </div>
+    </div>
+  </div>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid grid-bottom"</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item 1/2"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item 1/2"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+
+<p>
+  Create a flat grid without gutter:
+</p>
+
+<div class="example">
+  <div class="grid grid-flat preview-grid">
+    <div class="grid-item 1/2">
+      <div class="preview-grid">
+        .grid-item.1/2
+      </div>
+    </div>
+    <div class="grid-item 1/2">
+      <div class="preview-grid">
+        .grid-item.1/2
+      </div>
+    </div>
+  </div>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid grid-flat"</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item 1/2"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item 1/2"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+
+<p>
+  Create a grid where content of a first item is aligned to left and content
+  of a second item is aligned to right:
+</p>
+
+<div class="example">
+  <div class="grid grid-pair">
+    <div class="grid-item 1/2">
+      <div class="preview-grid">
+        .grid-item.1/2
+      </div>
+    </div>
+    <div class="grid-item 1/2">
+      <div class="preview-grid">
+        .grid-item.1/2
+      </div>
+    </div>
+  </div>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid grid-pair"</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item 1/2"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item 1/2"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+
+<p>
+  Reverse grid items order (available for each breakpoint in <code class="nohighlight">$rwd-map</code>):
+</p>
+
+<div class="example">
+  <div class="grid grid-reverse">
+    <div class="grid-item 1/3">
+      <div class="preview-grid">
+        .grid-item.1/3
+      </div>
+    </div>
+    <div class="grid-item 2/3">
+      <div class="preview-grid">
+        .grid-item.2/3
+      </div>
+    </div>
+  </div>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid grid-reverse"</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item 1/3"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item 2/3"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+
+<div class="example">
+  <div class="grid compact-grid-reverse">
+    <div class="grid-item 2/5">
+      <div class="preview-grid">
+        .grid-item.2/5
+      </div>
+    </div>
+    <div class="grid-item 3/5">
+      <div class="preview-grid">
+        .grid-item.3/5
+      </div>
+    </div>
+  </div>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid compact-grid-reverse"</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item 2/5"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item 3/5"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+
+<p>
+  Stack grid items (available for each breakpoint in <code class="nohighlight">$rwd-map</code>):
+</p>
+
+<div class="example">
+  <div class="grid grid-stack">
+    <div class="grid-item 1/3">
+      <div class="preview-grid">
+        .grid-item.1/3
+      </div>
+    </div>
+    <div class="grid-item 2/3">
+      <div class="preview-grid">
+        .grid-item.2/3
+      </div>
+    </div>
+  </div>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid grid-stack"</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item 1/3"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item 2/3"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+
+<div class="example">
+  <div class="grid compact-grid-stack">
+    <div class="grid-item 2/5 compact-1/1">
+      <div class="preview-grid">
+        .grid-item.2/5.compact-1/1
+      </div>
+    </div>
+    <div class="grid-item 3/5 compact-1/1">
+      <div class="preview-grid">
+        .grid-item.3/5.compact-1/1
+      </div>
+    </div>
+  </div>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid compact-grid-stack"</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item 2/5 compact-1/1"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item 3/5 compact-1/1"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+
+<p>
+  Combination of stack and reverse:
+</p>
+
+<div class="example">
+  <div class="grid grid-reverse grid-stack">
+    <div class="grid-item 5/6">
+      <div class="preview-grid">
+        .grid-item.5/6
+      </div>
+    </div>
+    <div class="grid-item 1/6">
+      <div class="preview-grid">
+        .grid-item.1/6
+      </div>
+    </div>
+  </div>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid grid-reverse grid-stack"</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item 5/6"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item 1/6"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+
+<div class="example">
+  <div class="grid compact-grid-reverse compact-grid-stack">
+    <div class="grid-item 1/3">
+      <div class="preview-grid">
+        .grid-item.1/3
+      </div>
+    </div>
+    <div class="grid-item 2/3">
+      <div class="preview-grid">
+        .grid-item.2/3
+      </div>
+    </div>
+  </div>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid compact-grid-reverse compact-grid-stack"</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item 1/3"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"grid-item 2/3"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+
+<h3 id="float-helpers">Float Helpers</h3>
+
+<p>
+  Clearfix and float helpers.
+</p>
+
+<div class="example">
+  <div class="clearfix">
+    <div class="float-left preview-grid">.float-left</div>
+    <div class="float-right preview-grid">.float-right</div>
+  </div>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"clearfix"</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"float-left"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"float-right"</span>&gt;...&lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+<!--
+          --><h2 id="typography">Typography</h2>
+
+<p>
+  Typography elements keep vertical rhythm and have custom reset.
+</p>
+
+<p>
+  Defaults:
+</p>
+
+<pre><code class="lang-scss hljs">
+<span class="hljs-variable">$font-leading</span>: <span class="hljs-number">1.5</span>;                       <span class="hljs-comment">// base font leading</span>
+<span class="hljs-variable">$font-size-micro</span>: .<span class="hljs-number">8rem</span>;                  <span class="hljs-comment">// font size of `.text-micro`</span>
+<span class="hljs-variable">$font-size-small</span>: .<span class="hljs-number">9rem</span>;                  <span class="hljs-comment">// font size of `small` and `.text-small`</span>
+<span class="hljs-variable">$font-size-base</span>: <span class="hljs-number">1rem</span>;                    <span class="hljs-comment">// base font size</span>
+<span class="hljs-variable">$font-size-lead</span>: <span class="hljs-number">1.2rem</span>;                  <span class="hljs-comment">// font size of `.text-lead` element</span>
+<span class="hljs-variable">$font-size-btn</span>: <span class="hljs-variable">$font-size-base</span>;          <span class="hljs-comment">// font size of buttons</span>
+
+<span class="hljs-variable">$font-size-h1</span>: <span class="hljs-number">3rem</span>;                      <span class="hljs-comment">// font size of headings</span>
+<span class="hljs-variable">$font-size-h2</span>: <span class="hljs-number">2rem</span>;
+<span class="hljs-variable">$font-size-h3</span>: <span class="hljs-number">1.5rem</span>;
+<span class="hljs-variable">$font-size-h4</span>: <span class="hljs-number">1.4rem</span>;
+<span class="hljs-variable">$font-size-h5</span>: <span class="hljs-number">1.3rem</span>;
+<span class="hljs-variable">$font-size-h6</span>: <span class="hljs-number">1.2rem</span>;
+
+<span class="hljs-variable">$font-family-base</span>: -apple-system, BlinkMacSystemFont, <span class="hljs-string">'Segoe UI'</span>, Roboto, Helvetica, Arial, sans-serif;
+<span class="hljs-variable">$font-family-headings</span>: <span class="hljs-variable">$font-family-base</span>;
+<span class="hljs-variable">$font-family-monospace</span>: Consolas, <span class="hljs-string">'Liberation Mono'</span>, Menlo, Courier, monospace;
+
+<span class="hljs-variable">$font-weight-light</span>: <span class="hljs-number">100</span>;                  <span class="hljs-comment">// light font weight</span>
+<span class="hljs-variable">$font-weight-normal</span>: <span class="hljs-number">400</span>;                 <span class="hljs-comment">// normal/base font weight</span>
+<span class="hljs-variable">$font-weight-bold</span>: <span class="hljs-number">700</span>;                   <span class="hljs-comment">// bold font weight</span>
+<span class="hljs-variable">$font-weight-headings</span>: <span class="hljs-variable">$font-weight-bold</span>; <span class="hljs-comment">// default font weight of headings</span>
+
+<span class="hljs-variable">$link-underline</span>: true;                    <span class="hljs-comment">// should links have underline</span>
+<span class="hljs-variable">$link-active</span>: false;                      <span class="hljs-comment">// should active links look like clicked</span>
+</code></pre>
+
+<h3 id="headings">Headings</h3>
+
+<div class="example">
+  <h1>Heading Level 1</h1>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;h1&gt;Heading Level <span class="hljs-number">1</span>&lt;/h1&gt;
+&lt;span <span class="hljs-keyword">class</span>="<span class="hljs-symbol">h1</span>"&gt;<span class="hljs-symbol">Heading</span> <span class="hljs-symbol">Level</span> <span class="hljs-symbol">1</span>&lt;/<span class="hljs-symbol">span</span>&gt;
+</code></pre>
+
+<div class="example">
+  <h2>Heading Level 2</h2>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;h2&gt;Heading Level <span class="hljs-number">2</span>&lt;/h2&gt;
+&lt;span <span class="hljs-keyword">class</span>="<span class="hljs-symbol">h2</span>"&gt;<span class="hljs-symbol">Heading</span> <span class="hljs-symbol">Level</span> <span class="hljs-symbol">2</span>&lt;/<span class="hljs-symbol">span</span>&gt;
+</code></pre>
+
+<div class="example">
+  <h3>Heading Level 3</h3>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;h3&gt;Heading Level <span class="hljs-number">3</span>&lt;/h3&gt;
+&lt;span <span class="hljs-keyword">class</span>="<span class="hljs-symbol">h3</span>"&gt;<span class="hljs-symbol">Heading</span> <span class="hljs-symbol">Level</span> <span class="hljs-symbol">3</span>&lt;/<span class="hljs-symbol">span</span>&gt;
+</code></pre>
+
+<div class="example">
+  <h4>Heading Level 4</h4>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;h4&gt;Heading Level <span class="hljs-number">4</span>&lt;/h4&gt;
+&lt;span <span class="hljs-keyword">class</span>="<span class="hljs-symbol">h4</span>"&gt;<span class="hljs-symbol">Heading</span> <span class="hljs-symbol">Level</span> <span class="hljs-symbol">4</span>&lt;/<span class="hljs-symbol">span</span>&gt;
+</code></pre>
+
+<div class="example">
+  <h5>Heading Level 5</h5>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;h5&gt;Heading Level <span class="hljs-number">5</span>&lt;/h5&gt;
+&lt;span <span class="hljs-keyword">class</span>="<span class="hljs-symbol">h5</span>"&gt;<span class="hljs-symbol">Heading</span> <span class="hljs-symbol">Level</span> <span class="hljs-symbol">5</span>&lt;/<span class="hljs-symbol">span</span>&gt;
+</code></pre>
+
+<div class="example">
+  <h6>Heading Level 6</h6>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;h6&gt;Heading Level <span class="hljs-number">6</span>&lt;/h6&gt;
+&lt;span <span class="hljs-keyword">class</span>="<span class="hljs-symbol">h6</span>"&gt;<span class="hljs-symbol">Heading</span> <span class="hljs-symbol">Level</span> <span class="hljs-symbol">6</span>&lt;/<span class="hljs-symbol">span</span>&gt;
+</code></pre>
+
+<h3 id="paragraphs">Paragraphs</h3>
+
+<p>
+  Default styles for <code class="nohighlight">&lt;p&gt;</code>, <code class="nohighlight">&lt;strong&gt;</code>,
+  <code class="nohighlight">&lt;em&gt;</code>, <code class="nohighlight">&lt;sup&gt;</code>, <code class="nohighlight">&lt;sub&gt;</code>,
+  <code class="nohighlight">&lt;small&gt;</code>, <code class="nohighlight">&lt;a&gt;</code>, <code class="nohighlight">&lt;mark&gt;</code>,
+  <code class="nohighlight">&lt;del&gt;</code>, <code class="nohighlight">&lt;ins&gt;</code>, <code class="nohighlight">&lt;s&gt;</code>
+  and <code class="nohighlight">&lt;u&gt;</code>.
+</p>
+
+<div class="example">
+  <p>Paragraph with a <strong>strong</strong> element.</p>
+  <p>Paragraph with an <em>emphasis</em> element.</p>
+  <p>Paragraph with a <sup>sup</sup> element.</p>
+  <p>Paragraph with a <sub>sub</sub> element.</p>
+  <p>Paragraph with a <small>small</small> element.</p>
+  <p>Paragraph with a <a href="#">link</a>.</p>
+  <p>Paragraph with a <mark>mark</mark> element.</p>
+  <p>Paragraph with a <del>deleted text</del> and an <ins>inserted text</ins> elements.</p>
+  <p>Paragraph with a <s>strikethrough</s> element.</p>
+  <p>Paragraph with an <u>underline</u> element.</p>
+</div>
+
+<pre><code class="lang-html hljs">
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Paragraph with a <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>strong<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> element.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Paragraph with an <span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>emphasis<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span> element.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Paragraph with a <span class="hljs-tag">&lt;<span class="hljs-name">sup</span>&gt;</span>sup<span class="hljs-tag">&lt;/<span class="hljs-name">sup</span>&gt;</span> element.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Paragraph with a <span class="hljs-tag">&lt;<span class="hljs-name">sub</span>&gt;</span>sub<span class="hljs-tag">&lt;/<span class="hljs-name">sub</span>&gt;</span> element.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Paragraph with a <span class="hljs-tag">&lt;<span class="hljs-name">small</span>&gt;</span>small<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span> element.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Paragraph with a <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#-"</span>&gt;</span>link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Paragraph with a <span class="hljs-tag">&lt;<span class="hljs-name">mark</span>&gt;</span>mark<span class="hljs-tag">&lt;/<span class="hljs-name">mark</span>&gt;</span> element.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Paragraph with a <span class="hljs-tag">&lt;<span class="hljs-name">del</span>&gt;</span>deleted text<span class="hljs-tag">&lt;/<span class="hljs-name">del</span>&gt;</span> and an <span class="hljs-tag">&lt;<span class="hljs-name">ins</span>&gt;</span>inserted text<span class="hljs-tag">&lt;/<span class="hljs-name">ins</span>&gt;</span> elements.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Paragraph with a <span class="hljs-tag">&lt;<span class="hljs-name">s</span>&gt;</span>strikethrough<span class="hljs-tag">&lt;/<span class="hljs-name">s</span>&gt;</span> element.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Paragraph with an <span class="hljs-tag">&lt;<span class="hljs-name">u</span>&gt;</span>underline<span class="hljs-tag">&lt;/<span class="hljs-name">u</span>&gt;</span> element.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+
+<h3 id="blockquote">Blockquote</h3>
+
+<div class="example">
+  <blockquote>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna.
+      Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida.
+    </p>
+  </blockquote>
+</div>
+
+<pre><code class="lang-html hljs">
+<span class="hljs-section">&lt;blockquote&gt;</span>
+  <span class="hljs-section">&lt;p&gt;</span>
+    <span class="hljs-attribute">Lorem</span> ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna.
+    <span class="hljs-attribute">Cras</span> in mi at felis aliquet congue. Ut a est eget ligula molestie gravida.
+  <span class="hljs-section">&lt;/p&gt;</span>
+<span class="hljs-section">&lt;/blockquote&gt;</span>
+</code></pre>
+
+<h3 id="code">Code</h3>
+
+<div class="example">
+<code class="nohighlight">
+.hocus-pocus {
+  display: block;
+}
+</code>
+</div>
+
+<pre><code class="lang-html hljs">
+<span class="hljs-params">&lt;code&gt;</span>
+  .hocus-<span class="hljs-class">pocus </span>{
+<span class="hljs-symbol">    display:</span> block;
+  }
+<span class="hljs-params">&lt;/code&gt;</span>
+</code></pre>
+
+<h3 id="rule">Rule</h3>
+
+<div class="example">
+  <hr>
+</div>
+
+<pre><code class="lang-html hljs">
+<span class="hljs-section">&lt;hr&gt;</span>
+</code></pre>
+
+<h3 id="text-helpers">Text Helpers</h3>
+
+<div class="example">
+  <p class="text-micro">Micro text</p>
+  <p class="text-small">Small text</p>
+  <p>Normal text</p>
+  <p class="text-lead">Lead text</p>
+</div>
+
+<pre><code class="lang-html hljs">
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-micro"</span>&gt;</span>Micro text<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-small"</span>&gt;</span>Small text<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Normal text<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-lead"</span>&gt;</span>Lead text<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+
+<div class="example">
+  <p class="text-mono">Mono text</p>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"text-mono"</span>&gt;Mono <span class="hljs-built_in">text</span>&lt;/p&gt;
+</code></pre>
+
+<div class="example">
+  <p class="text-light">Light weight text</p>
+  <p class="text-normal">Normal weight text</p>
+  <p class="text-bold">Bold weight text</p>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"text-light"</span>&gt;Light weight <span class="hljs-built_in">text</span>&lt;/p&gt;
+&lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"text-normal"</span>&gt;Normal weight <span class="hljs-built_in">text</span>&lt;/p&gt;
+&lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"text-bold"</span>&gt;Bold weight <span class="hljs-built_in">text</span>&lt;/p&gt;
+</code></pre>
+
+<div class="example">
+  <p class="text-lowercase">Lowercased text</p>
+  <p class="text-uppercase">Uppercased text</p>
+  <p class="text-capitalize">Capitalized text</p>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"text-lowercase"</span>&gt;Lowercased <span class="hljs-built_in">text</span>&lt;/p&gt;
+&lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"text-uppercase"</span>&gt;Uppercased <span class="hljs-built_in">text</span>&lt;/p&gt;
+&lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"text-capitalize"</span>&gt;Capitalized <span class="hljs-built_in">text</span>&lt;/p&gt;
+</code></pre>
+
+<div class="example">
+  <p class="text-left">Left aligned text</p>
+  <p class="text-center">Center aligned text</p>
+  <p class="text-right">Right aligned text</p>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"text-left"</span>&gt;Left aligned <span class="hljs-built_in">text</span>&lt;/p&gt;
+&lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"text-center"</span>&gt;Center aligned <span class="hljs-built_in">text</span>&lt;/p&gt;
+&lt;p <span class="hljs-built_in">class</span>=<span class="hljs-string">"text-right"</span>&gt;Right aligned <span class="hljs-built_in">text</span>&lt;/p&gt;
+</code></pre>
+<!--
+          --><h2 id="lists">Lists</h2>
+
+<p>
+  Defaults:
+</p>
+
+<pre><code class="lang-scss hljs">
+$<span class="hljs-built_in">list-menu-color:</span> $<span class="hljs-string">color-white;</span>      // <span class="hljs-string">list </span><span class="hljs-string">menu </span><span class="hljs-string">color
+</span>$<span class="hljs-built_in">list-menu-background:</span> $<span class="hljs-string">color-link;</span>  // <span class="hljs-string">list </span><span class="hljs-string">menu </span><span class="hljs-string">background </span><span class="hljs-string">color
+</span></code></pre>
+
+<p>
+  Usage:
+</p>
+
+<div class="example">
+  <ol>
+    <li>List item 1</li>
+    <li>List item 2</li>
+  </ol>
+</div>
+
+<pre><code class="lang-html hljs">
+<span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List item 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List item 2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+</code></pre>
+
+<div class="example">
+  <ul>
+    <li>List item 1</li>
+    <li>
+      List item 2
+      <ul>
+        <li>List item A</li>
+        <li>List item B</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<pre><code class="lang-html hljs">
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List item 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+    List item 2
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List item A<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>List item B<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
+
+<div class="example">
+  <ul class="list-reset">
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+  </ul>
+</div>
+
+<pre><code class="lang-html hljs">
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-reset"</span>&gt;</span>
+  ...
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
+
+<div class="example">
+  <ul class="list-inline">
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+  </ul>
+</div>
+
+<pre><code class="lang-html hljs">
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-inline"</span>&gt;</span>
+  ...
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
+
+<div class="example">
+  <ul class="list-divided">
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+  </ul>
+</div>
+
+<pre><code class="lang-html hljs">
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-divided"</span>&gt;</span>
+  ...
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
+
+<div class="example">
+  <ul class="list-menu">
+    <li><a href="#-">List item 1</a></li>
+    <li><a href="#-">List item 2</a></li>
+    <li><a href="#-">List item 3</a></li>
+  </ul>
+</div>
+
+<pre><code class="lang-html hljs">
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-menu"</span>&gt;</span>
+  ...
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</code></pre>
+
+<div class="example">
+  <dl>
+    <dt>Definition list title</dt>
+    <dd>Definition list description</dd>
+  </dl>
+</div>
+
+<pre><code class="lang-html hljs">
+<span class="hljs-tag">&lt;<span class="hljs-name">dl</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Definition list title<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>Definition list description<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dl</span>&gt;</span>
+</code></pre>
+<!--
+          --><h2 id="images">Images</h2>
+
+<p>
+  Images are vertically aligned to the middle of container and have
+  <code class="nohighlight">box-sizing</code> set to <code class="nohighlight">content-box</code>.
+</p>
+
+<p>
+  Replace any element that contains text with an image:
+</p>
+
+<pre><code class="lang-scss hljs">
+@<span class="hljs-keyword">include</span> img-replace(<span class="hljs-variable">$path</span>, <span class="hljs-variable">$width</span>, <span class="hljs-variable">$height</span>);
+</code></pre>
+
+<p>
+  Usage:
+</p>
+
+<pre><code class="lang-scss hljs">
+.<span class="hljs-keyword">logo</span> {
+  @<span class="hljs-literal">include</span> img-<span class="hljs-literal">replace</span>(<span class="hljs-string">'path/to/img.svg'</span>, <span class="hljs-number">100</span>px, <span class="hljs-number">40</span>px);
+}
+</code></pre>
+
+<h3 id="image-helpers">Image Helpers</h3>
+
+<div class="example">
+  <img src="//placehold.it/1200x200/39cccc/fff" alt="example" class="img-rwd">
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;img <span class="hljs-attribute">src</span>=<span class="hljs-string">"img.png"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-string">"placeholder"</span> <span class="hljs-attribute">class</span>=<span class="hljs-string">"img-rwd"</span>&gt;
+</code></pre>
+
+<div class="example">
+  <img src="//placehold.it/150x150/39cccc/fff" alt="example" class="img-rounded">
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;img <span class="hljs-attribute">src</span>=<span class="hljs-string">"img.png"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-string">"placeholder"</span> <span class="hljs-attribute">class</span>=<span class="hljs-string">"img-rounded"</span>&gt;
+</code></pre>
+
+<div class="example">
+  <img src="//placehold.it/150x150/39cccc/fff" alt="example" class="img-circle">
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;img <span class="hljs-attribute">src</span>=<span class="hljs-string">"img.png"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-string">"placeholder"</span> <span class="hljs-attribute">class</span>=<span class="hljs-string">"img-circle"</span>&gt;
+</code></pre>
+<!--
+          --><h2 id="tables">Tables</h2>
+
+<p>
+  Defaults:
+</p>
+
+<pre><code class="lang-scss hljs">
+<span class="hljs-variable">$table-zebra-background</span>: rgba(<span class="hljs-variable">$color-ui</span>, .<span class="hljs-number">5</span>);     <span class="hljs-comment">// zebra table highlight color</span>
+<span class="hljs-variable">$table-hover-background</span>: <span class="hljs-variable">$table-zebra-background</span>; <span class="hljs-comment">// hover table highlight color</span>
+</code></pre>
+
+<p>
+  Usage:
+</p>
+
+<div class="example">
+  <table>
+    <colgroup>
+      <col class="1/4">
+      <col class="1/2">
+      <col class="1/4">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Cell A</td>
+        <td>Cell B</td>
+        <td>Cell C</td>
+      </tr>
+      <tr>
+        <td>Cell D</td>
+        <td>Cell E</td>
+        <td>Cell F</td>
+      </tr>
+      <tr>
+        <td>Cell G</td>
+        <td>Cell H</td>
+        <td>Cell I</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;table&gt;
+  &lt;colgroup&gt;
+    &lt;col <span class="hljs-keyword">class</span>="<span class="hljs-symbol">1</span>/<span class="hljs-symbol">4</span>"&gt;
+    &lt;<span class="hljs-symbol">col</span> <span class="hljs-symbol">class</span>="<span class="hljs-symbol">1</span>/<span class="hljs-symbol">2</span>"&gt;
+    &lt;<span class="hljs-symbol">col</span> <span class="hljs-symbol">class</span>="<span class="hljs-symbol">1</span>/<span class="hljs-symbol">4</span>"&gt;
+  &lt;/<span class="hljs-symbol">colgroup</span>&gt;
+  &lt;<span class="hljs-symbol">thead</span>&gt;
+    &lt;<span class="hljs-symbol">tr</span>&gt;
+      &lt;<span class="hljs-symbol">th</span>&gt;<span class="hljs-symbol">Header</span> <span class="hljs-symbol">1</span>&lt;/<span class="hljs-symbol">th</span>&gt;
+      &lt;<span class="hljs-symbol">th</span>&gt;<span class="hljs-symbol">Header</span> <span class="hljs-symbol">2</span>&lt;/<span class="hljs-symbol">th</span>&gt;
+      &lt;<span class="hljs-symbol">th</span>&gt;<span class="hljs-symbol">Header</span> <span class="hljs-symbol">3</span>&lt;/<span class="hljs-symbol">th</span>&gt;
+    &lt;/<span class="hljs-symbol">tr</span>&gt;
+  &lt;/<span class="hljs-symbol">thead</span>&gt;
+  &lt;<span class="hljs-symbol">tbody</span>&gt;
+    &lt;<span class="hljs-symbol">tr</span>&gt;
+      &lt;<span class="hljs-symbol">td</span>&gt;<span class="hljs-symbol">Cell</span> <span class="hljs-symbol">A</span>&lt;/<span class="hljs-symbol">td</span>&gt;
+      &lt;<span class="hljs-symbol">td</span>&gt;<span class="hljs-symbol">Cell</span> <span class="hljs-symbol">B</span>&lt;/<span class="hljs-symbol">td</span>&gt;
+      &lt;<span class="hljs-symbol">td</span>&gt;<span class="hljs-symbol">Cell</span> <span class="hljs-symbol">C</span>&lt;/<span class="hljs-symbol">td</span>&gt;
+    &lt;/<span class="hljs-symbol">tr</span>&gt;
+    &lt;<span class="hljs-symbol">tr</span>&gt;
+      &lt;<span class="hljs-symbol">td</span>&gt;<span class="hljs-symbol">Cell</span> <span class="hljs-symbol">D</span>&lt;/<span class="hljs-symbol">td</span>&gt;
+      &lt;<span class="hljs-symbol">td</span>&gt;<span class="hljs-symbol">Cell</span> <span class="hljs-symbol">E</span>&lt;/<span class="hljs-symbol">td</span>&gt;
+      &lt;<span class="hljs-symbol">td</span>&gt;<span class="hljs-symbol">Cell</span> <span class="hljs-symbol">F</span>&lt;/<span class="hljs-symbol">td</span>&gt;
+    &lt;/<span class="hljs-symbol">tr</span>&gt;
+    &lt;<span class="hljs-symbol">tr</span>&gt;
+      &lt;<span class="hljs-symbol">td</span>&gt;<span class="hljs-symbol">Cell</span> <span class="hljs-symbol">G</span>&lt;/<span class="hljs-symbol">td</span>&gt;
+      &lt;<span class="hljs-symbol">td</span>&gt;<span class="hljs-symbol">Cell</span> <span class="hljs-symbol">H</span>&lt;/<span class="hljs-symbol">td</span>&gt;
+      &lt;<span class="hljs-symbol">td</span>&gt;<span class="hljs-symbol">Cell</span> <span class="hljs-symbol">I</span>&lt;/<span class="hljs-symbol">td</span>&gt;
+    &lt;/<span class="hljs-symbol">tr</span>&gt;
+  &lt;/<span class="hljs-symbol">tbody</span>&gt;
+&lt;/<span class="hljs-symbol">table</span>&gt;
+</code></pre>
+
+<div class="example">
+  <table class="table-bordered">
+    <thead>
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Cell A</td>
+        <td>Cell B</td>
+        <td>Cell C</td>
+      </tr>
+      <tr>
+        <td>Cell D</td>
+        <td>Cell E</td>
+        <td>Cell F</td>
+      </tr>
+      <tr>
+        <td>Cell G</td>
+        <td>Cell H</td>
+        <td>Cell I</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-keyword">table</span> class="<span class="hljs-keyword">table</span>-bordered"&gt;
+  ...
+&lt;/<span class="hljs-keyword">table</span>&gt;
+</code></pre>
+
+<div class="example">
+  <table class="table-bordered table-zebra">
+    <thead>
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Cell A</td>
+        <td>Cell B</td>
+        <td>Cell C</td>
+      </tr>
+      <tr>
+        <td>Cell D</td>
+        <td>Cell E</td>
+        <td>Cell F</td>
+      </tr>
+      <tr>
+        <td>Cell G</td>
+        <td>Cell H</td>
+        <td>Cell I</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-keyword">table</span> <span class="hljs-keyword">class</span>=<span class="hljs-string">"table-bordered table-zebra"</span>&gt;
+  ...
+&lt;/<span class="hljs-keyword">table</span>&gt;
+</code></pre>
+
+<div class="example">
+  <table class="table-bordered table-hover">
+    <thead>
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Cell A</td>
+        <td>Cell B</td>
+        <td>Cell C</td>
+      </tr>
+      <tr>
+        <td>Cell D</td>
+        <td>Cell E</td>
+        <td>Cell F</td>
+      </tr>
+      <tr>
+        <td>Cell G</td>
+        <td>Cell H</td>
+        <td>Cell I</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-keyword">table</span> <span class="hljs-keyword">class</span>=<span class="hljs-string">"table-bordered table-hover"</span>&gt;
+  ...
+&lt;/<span class="hljs-keyword">table</span>&gt;
+</code></pre>
+<!--
+          --><h2 id="forms">Forms</h2>
+
+<p>
+  Usage:
+</p>
+
+<div class="example">
+  <form class="form-inline">
+    <input type="email" placeholder="E-mail">
+    <input type="password" placeholder="Password">
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;form <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"form-inline"</span>&gt;
+  &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"email"</span> placeholder=<span class="hljs-string">"E-mail"</span>&gt;
+  &lt;input <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"password"</span> placeholder=<span class="hljs-string">"Password"</span>&gt;
+
+  &lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"submit"</span>&gt;<span class="hljs-type">Submit</span>&lt;/button&gt;
+&lt;/form&gt;
+</code></pre>
+
+<div class="example">
+  <form class="form-stacked">
+    <label for="name">Name</label>
+    <input id="name">
+
+    <label for="email">E-mail</label>
+    <input type="email" id="email">
+
+    <label for="password">Password</label>
+    <input type="password" id="password">
+
+    <label for="search">Search</label>
+    <input type="search" id="search">
+
+    <label for="disabled">Disabled</label>
+    <input type="text" id="disabled" disabled>
+
+    <label for="readonly">Read-only</label>
+    <input type="text" id="readonly" readonly>
+
+    <label>
+      <input type="checkbox">Remember me
+    </label>
+
+    <label for="gender">Gender</label>
+    <select id="gender">
+      <option selected></option>
+      <option value="female">Female</option>
+      <option value="male">Male</option>
+    </select>
+
+    <label for="comment">Comment</label>
+    <textarea id="comment"></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-keyword">form</span> <span class="hljs-keyword">class</span>=<span class="hljs-string">"form-stacked"</span>&gt;
+  &lt;<span class="hljs-keyword">label</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">"name"</span>&gt;Name&lt;/<span class="hljs-keyword">label</span>&gt;
+  &lt;<span class="hljs-keyword">input</span> id=<span class="hljs-string">"name"</span>&gt;
+
+  &lt;<span class="hljs-keyword">label</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">"email"</span>&gt;<span class="hljs-keyword">E</span>-mail&lt;/<span class="hljs-keyword">label</span>&gt;
+  &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"email"</span> id=<span class="hljs-string">"email"</span>&gt;
+
+  &lt;<span class="hljs-keyword">label</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">"password"</span>&gt;Password&lt;/<span class="hljs-keyword">label</span>&gt;
+  &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"password"</span> id=<span class="hljs-string">"password"</span>&gt;
+
+  &lt;<span class="hljs-keyword">label</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">"search"</span>&gt;<span class="hljs-keyword">Search</span>&lt;/<span class="hljs-keyword">label</span>&gt;
+  &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"search"</span> id=<span class="hljs-string">"search"</span>&gt;
+
+  &lt;<span class="hljs-keyword">label</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">"disabled"</span>&gt;Disabled&lt;/<span class="hljs-keyword">label</span>&gt;
+  &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"text"</span> id=<span class="hljs-string">"disabled"</span> disabled&gt;
+
+  &lt;<span class="hljs-keyword">label</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">"readonly"</span>&gt;<span class="hljs-keyword">Read</span>-only&lt;/<span class="hljs-keyword">label</span>&gt;
+  &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"text"</span> id=<span class="hljs-string">"readonly"</span> readonly&gt;
+
+  &lt;<span class="hljs-keyword">label</span>&gt;
+    &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"checkbox"</span>&gt;Remember me
+  &lt;/<span class="hljs-keyword">label</span>&gt;
+
+  &lt;<span class="hljs-keyword">label</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">"gender"</span>&gt;Gender&lt;/<span class="hljs-keyword">label</span>&gt;
+  &lt;select id=<span class="hljs-string">"gender"</span>&gt;
+    &lt;option selected&gt;&lt;/option&gt;
+    &lt;option value=<span class="hljs-string">"female"</span>&gt;Female&lt;/option&gt;
+    &lt;option value=<span class="hljs-string">"male"</span>&gt;Male&lt;/option&gt;
+  &lt;/select&gt;
+
+  &lt;<span class="hljs-keyword">label</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">"comment"</span>&gt;Comment&lt;/<span class="hljs-keyword">label</span>&gt;
+  &lt;textarea id=<span class="hljs-string">"comment"</span>&gt;&lt;/textarea&gt;
+
+  &lt;button <span class="hljs-keyword">type</span>=<span class="hljs-string">"submit"</span>&gt;Submit&lt;/button&gt;
+&lt;/<span class="hljs-keyword">form</span>&gt;
+</code></pre>
+
+<div class="example">
+  <form class="form-horizontal">
+    <div class="form-item">
+      <label for="email-horizontal">E-mail</label>
+      <input type="email" id="email-horizontal">
+    </div>
+
+    <div class="form-item">
+      <label for="password-horizontal">Password</label>
+      <input type="password" id="password-horizontal">
+    </div>
+
+    <div class="form-group">
+      <label>
+        <input type="checkbox">Remember me
+      </label>
+
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-selector-tag">form</span> class=<span class="hljs-string">"form-horizontal"</span>&gt;
+  &lt;<span class="hljs-selector-tag">div</span> class=<span class="hljs-string">"form-item"</span>&gt;
+    &lt;<span class="hljs-selector-tag">label</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">"email"</span>&gt;E-mail&lt;/label&gt;
+    &lt;<span class="hljs-selector-tag">input</span> type=<span class="hljs-string">"email"</span> id=<span class="hljs-string">"email"</span>&gt;
+  &lt;/div&gt;
+
+  &lt;<span class="hljs-selector-tag">div</span> class=<span class="hljs-string">"form-item"</span>&gt;
+    &lt;<span class="hljs-selector-tag">label</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">"password"</span>&gt;Password&lt;/label&gt;
+    &lt;<span class="hljs-selector-tag">input</span> type=<span class="hljs-string">"password"</span> id=<span class="hljs-string">"password"</span>&gt;
+  &lt;/div&gt;
+
+  &lt;<span class="hljs-selector-tag">div</span> class=<span class="hljs-string">"form-group"</span>&gt;
+    &lt;label&gt;
+      &lt;<span class="hljs-selector-tag">input</span> type=<span class="hljs-string">"checkbox"</span>&gt;Remember me
+    &lt;/label&gt;
+
+    &lt;<span class="hljs-selector-tag">button</span> type=<span class="hljs-string">"submit"</span>&gt;Submit&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+</code></pre>
+<!--
+          --><h2 id="buttons">Buttons</h2>
+
+<p>
+  Defaults:
+</p>
+
+<pre><code class="lang-scss hljs">
+<span class="hljs-variable">$btn</span>-flat: <span class="hljs-literal">false</span>; // <span class="hljs-built_in">disable</span> drop shadow
+</code></pre>
+
+<p>
+  Define own button types:
+</p>
+
+<pre><code class="lang-scss hljs">
+@include btn($name, $color, $color-<span class="hljs-keyword">text</span>: $color-white)
+</code></pre>
+
+<p>
+  Usage:
+</p>
+
+<pre><code class="lang-scss hljs">
+<span class="hljs-symbol">@include</span> btn(<span class="hljs-string">'primary'</span>, <span class="hljs-meta">#00F)</span>
+</code></pre>
+
+<h3 id="button-types">Button Types</h3>
+
+<div class="example">
+  <button type="submit">Form button</button> <a href="#-" class="btn">Link as a button</a>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-selector-tag">button</span> type=<span class="hljs-string">"submit"</span>&gt;Form button&lt;/button&gt;
+
+&lt;<span class="hljs-selector-tag">a</span> href=<span class="hljs-string">"#"</span> class=<span class="hljs-string">"btn"</span>&gt;Link as <span class="hljs-selector-tag">a</span> button&lt;/a&gt;
+</code></pre>
+
+<div class="example">
+  <button disabled>Disabled button</button> <a href="#-" class="btn btn-disabled">Disabled link as a button</a>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-selector-tag">button</span> disabled&gt;Disabled button&lt;/button&gt;
+
+&lt;<span class="hljs-selector-tag">a</span> href=<span class="hljs-string">"#"</span> class=<span class="hljs-string">"btn btn-disabled"</span>&gt;Disabled link as <span class="hljs-selector-tag">a</span> button&lt;/a&gt;
+</code></pre>
+
+<div class="example">
+  <a href="#-" class="btn btn-outline">Outline button</a> <a href="#-" class="btn btn-brand btn-outline">Outline brand button</a>
+</div>
+
+<pre><code class="lang-html hljs">
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-outline"</span>&gt;</span>Outline button<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-brand btn-outline"</span>&gt;</span>Outline brand button<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+
+<div class="example">
+  <a href="#-" class="btn btn-flat bg-aqua">Flat button</a>
+</div>
+
+<pre><code class="lang-html hljs">
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-flat"</span>&gt;</span>Flat button<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+
+<div class="example">
+  <a href="#-" class="btn btn-shadow bg-aqua">Shadowed button</a>
+</div>
+
+<pre><code class="lang-html hljs">
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-shadow"</span>&gt;</span>Shadowed button<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+
+<div class="example">
+  <a href="#-" class="btn btn-block">Block button</a>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;a href=<span class="hljs-string">"#"</span> class=<span class="hljs-string">"btn btn-block"</span>&gt;<span class="hljs-keyword">Block </span><span class="hljs-keyword">button&lt;/a&gt;
+</span></code></pre>
+
+<div class="example">
+  <a href="#-" class="btn btn-brand">Brand button</a>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;a href=<span class="hljs-string">"#"</span> class=<span class="hljs-string">"btn btn-brand"</span>&gt;<span class="hljs-keyword">Brand </span><span class="hljs-keyword">button&lt;/a&gt;
+</span></code></pre>
+
+<div class="example">
+  <a href="#-" class="btn btn-positive">Positive button</a>
+</div>
+
+<pre><code class="lang-html hljs">
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-positive"</span>&gt;</span>Positive button<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+
+<div class="example">
+  <a href="#-" class="btn btn-negative">Negative button</a>
+</div>
+
+<pre><code class="lang-html hljs">
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-negative"</span>&gt;</span>Negative button<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+<!--
+          --><h2 id="boxes">Boxes</h2>
+
+<p>
+  Create an element that is out of a rest of content. Useful for flashes, islands,
+  sidebar boxes etc. The last element inside it will have removed a bottom margin.
+</p>
+
+<p>
+  Define own box types:
+</p>
+
+<pre><code class="lang-scss hljs">
+@include box($name, $color, $contrast: <span class="hljs-number">25</span>%)
+</code></pre>
+
+<p>
+  Usage:
+</p>
+
+<pre><code class="lang-scss hljs">
+@include <span class="hljs-built_in">box</span>(<span class="hljs-string">'alert'</span>, $<span class="hljs-built_in">color</span>-<span class="hljs-built_in">red</span>)
+</code></pre>
+
+<h3 id="box-types">Box Types</h3>
+
+<div class="example">
+  <div class="box">
+    <p>Element inside a box</p>
+  </div>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"box"</span>&gt;
+  ...
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+
+<div class="example">
+  <div class="box bg-silver">
+    <p>Element inside a box</p>
+  </div>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"box bg-silver"</span>&gt;
+  ...
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+
+<div class="example">
+  <div class="box box-informative">
+    <p>Informative box</p>
+  </div>
+</div>
+
+<pre><code class="lang-html hljs">
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box box-informative"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Informative box<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+
+<div class="example">
+  <div class="box box-positive">
+    <p>Positive box</p>
+  </div>
+</div>
+
+<pre><code class="lang-html hljs">
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box box-positive"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Positive box<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+
+<div class="example">
+  <div class="box box-cautionary">
+    <p>Cautionary box</p>
+  </div>
+</div>
+
+<pre><code class="lang-html hljs">
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box box-cautionary"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Cautionary box<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+
+<div class="example">
+  <div class="box box-negative">
+    <p>Negative box</p>
+  </div>
+</div>
+
+<pre><code class="lang-html hljs">
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"box box-negative"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Negative box<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<!--
+          --><h2 id="media">Media</h2>
+
+<p>
+  Media object works with any html element.
+</p>
+
+<p>
+  Gutter size modifiers are generated for each size in <code class="hljs"><span class="hljs-meta"><span class="hljs-meta-keyword">$spacing</span>-map</span></code>.
+</p>
+
+<p>
+  Usage:
+</p>
+
+<div class="example">
+  <div class="media">
+    <img src="//placehold.it/75x75/39cccc/fff">
+    <div class="media-body">
+      <p>Example Text</p>
+    </div>
+  </div>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"media"</span>&gt;
+  &lt;img src=<span class="hljs-string">"..."</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"media-body"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+
+<div class="example">
+  <div class="media media-middle">
+    <img src="//placehold.it/75x75/39cccc/fff">
+    <div class="media-body">
+      <p>Example Text</p>
+    </div>
+  </div>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"media media-middle"</span>&gt;
+  &lt;img src=<span class="hljs-string">"..."</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"media-body"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+
+<div class="example">
+  <div class="media media-bottom">
+    <img src="//placehold.it/75x75/39cccc/fff">
+    <div class="media-body">
+      <p>Example Text</p>
+    </div>
+  </div>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"media media-bottom"</span>&gt;
+  &lt;img src=<span class="hljs-string">"..."</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"media-body"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+
+<div class="example">
+  <div class="media media-1/2">
+    <img src="//placehold.it/75x75/39cccc/fff">
+    <div class="media-body">
+      <p>Example Text</p>
+    </div>
+  </div>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"media media-1/2"</span>&gt;
+  &lt;img src=<span class="hljs-string">"..."</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"media-body"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+
+<div class="example">
+  <div class="media media-2/1">
+    <img src="//placehold.it/75x75/39cccc/fff">
+    <div class="media-body">
+      <p>Example Text</p>
+    </div>
+  </div>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"media media-2/1"</span>&gt;
+  &lt;img src=<span class="hljs-string">"..."</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"media-body"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+
+<div class="example">
+  <div class="media media-flat">
+    <img src="//placehold.it/75x75/39cccc/fff">
+    <div class="media-body">
+      <p>Example Text</p>
+    </div>
+  </div>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"media media-flat"</span>&gt;
+  &lt;img src=<span class="hljs-string">"..."</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"media-body"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+
+<div class="example">
+  <div class="media media-reverse">
+    <img src="//placehold.it/75x75/39cccc/fff">
+    <div class="media-body">
+      <p>Example Text</p>
+    </div>
+  </div>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"media media-reverse"</span>&gt;
+  &lt;img src=<span class="hljs-string">"..."</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"media-body"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+
+<div class="example">
+  <div class="media media-reverse media-middle media-3/1">
+    <img src="//placehold.it/75x75/39cccc/fff">
+    <div class="media-body">
+      <p>Example Text</p>
+    </div>
+  </div>
+</div>
+
+<pre><code class="lang-html hljs">
+&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"media media-middle media-3/1 media-reverse"</span>&gt;
+  &lt;img src=<span class="hljs-string">"..."</span>&gt;
+  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"media-body"</span>&gt;
+    ...
+  &lt;/<span class="hljs-keyword">div</span>&gt;
+&lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+<!--
+          --><h2 id="sticky-footer">Sticky Footer</h2>
+
+<p>
+  Pin footer to the bottom of a viewport regardless of the content.
+</p>
+
+<p>
+  Usage:
+</p>
+
+<pre><code class="lang-html hljs">
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sticky-footer"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span> <span class="hljs-comment">&lt;!-- Content wrapper --&gt;</span>
+    ...
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">footer</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+</code></pre>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gumshoe/3.3.2/js/gumshoe.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/smooth-scroll/10.2.1/js/smooth-scroll.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/tabby/11.2.0/js/tabby.min.js"></script>
+    <script>
+      gumshoe.init({
+        activeClass: 'is-active',
+        offset: 120,
+      });
+
+      tabby.init({
+        toggleActiveClass: 'is-active'
+      });
+
+      tabby.toggleTab('#npm');
+
+      smoothScroll.init({
+        offset: 30
+      });
+    </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-51355575-4', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
