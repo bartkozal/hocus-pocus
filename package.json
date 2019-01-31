@@ -1,8 +1,8 @@
 {
   "name": "hocus-pocus",
   "version": "0.3.5",
-  "homepage": "https://bkzl.github.io/hocus-pocus",
-  "author": "Bart Kozal <bkzl@me.com>",
+  "homepage": "https://brtjkzl.github.io/hocus-pocus",
+  "author": "Bart Kozal <brtjkzl@gmail.com>",
   "description": "Universal and lightweight stylesheet starter kit",
   "main": "hocus-pocus.scss",
   "style": "hocus-pocus.scss",
@@ -15,7 +15,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bkzl/hocus-pocus.git"
+    "url": "git+https://github.com/brtjkzl/hocus-pocus.git"
   },
   "scripts": {
     "start": "npm run dev",

@@ -1,24 +1,11 @@
 {
   "name": "hocus-pocus",
   "version": "0.3.5",
-  "homepage": "https://bkzl.github.io/hocus-pocus",
-  "authors": [
-    "Bartlomiej Kozal <bkzl@me.com>"
-  ],
+  "homepage": "https://brtjkzl.github.io/hocus-pocus",
+  "authors": ["Bart Kozal <brtjkzl@gmail.com>"],
   "description": "Universal and lightweight stylesheet starter kit",
   "main": "hocus-pocus.scss",
-  "keywords": [
-    "css",
-    "sass",
-    "scss",
-    "framework"
-  ],
+  "keywords": ["css", "sass", "scss", "framework"],
   "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "docs",
-    "build",
-    "node_modules",
-    "package.json"
-  ]
+  "ignore": ["**/.*", "docs", "build", "node_modules", "package.json"]
 }
